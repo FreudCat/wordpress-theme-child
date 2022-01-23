@@ -1,5 +1,17 @@
-/* I modified below */
-/* CSS Cards */
+/*
+Theme Name:   TwentyTwenty Child
+Theme URI:    https://github.com/FreudCat/wordpress-theme-child
+Description:  A child theme for TwentyTwenty theme
+Author:       Angela Nguyen
+Author URI:   https://angelabloom.com
+Template:     twentytwenty
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  https://github.com/WordPress/twentytwenty/blob/master/LICENSE
+Tags:         responsive-layout, accessibility-ready
+Text Domain:  twentytwentychild
+*/
+
 .cardHolder {
 	display: flex;
 	flex-direction: row;
@@ -46,3 +58,78 @@
 	width: 100%;
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,0));
 }
+
+.imageHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	flex-flow: wrap;
+  gap: 25px;
+	.imageColumn {
+		border: 1px red solid;
+	}
+  .galleryImage {
+    margin: 25px auto; 
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		width: 300px;
+    &:hover, &:focus {
+      box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.image-modal {
+  background-color: rgba(0, 0, 0, 0.35);
+	display: none;
+	opacity: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: fixed;
+	bottom: 0;
+	left: -99999rem;
+	right: 99999rem;
+	top: 0;
+	transition: opacity 0.25s ease-in, left 0s 0.25s, right 0s 0.25s;
+	z-index: 99;
+}
+
+.image-modal.show-modal {
+	display: flex;
+}
+
+.image-modal.active {
+	left: 0;
+	opacity: 1;
+	right: 0;
+	transition: opacity 0.25s ease-out;
+}
+
+.image-modal-inner {
+	background-color:rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	overflow: auto;
+	-ms-overflow-style: auto;
+	width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.modalImage {
+  margin: auto;
+  #imageForModal{
+    width: 35vw;
+  }
+  figcaption {
+    text-align: center;
+    color: white;
+  }
+}
+

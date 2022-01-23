@@ -41,6 +41,7 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - That the `.lenth` property does not work on HTMLCollections
 - The importance of uniform styling while naming classes, file names, etc. 
 - That you *can* incorporate JS and PHP if done correctly 
+- How to override CSS stylesheet with wp_enqueue_style()
 
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)
