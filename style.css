@@ -39,7 +39,8 @@ Text Domain:  twentytwentychild
   padding: 25px;
   margin: 0 0 1px 0;
   border-radius: 3px;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  box-shadow: 0 14px 20px 20px grey; }
 
 #accordion-checkbox + #accordion-label + .accordion-content {
   display: none; }
