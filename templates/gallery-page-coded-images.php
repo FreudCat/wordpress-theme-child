@@ -18,8 +18,8 @@ get_template_part( 'template-parts/modal-image' );
 ?>
 
 <main id="gallery-page-coded-images" role="main">
-  <h1>Image Gallery</h1>
-  <h2>Some of my favorite paintings, photos, and operas. In this version, the images are located in the assets folder and harcoded. See __THISpage for a template to dynamically create a gallery based on user input.</h2>
+  <h1 class="gallery-font">Image Gallery</h1>
+  <h2 class="gallery-font">Some of my favorite paintings, photos, and operas. In this version, the images are located in the assets folder and harcoded. See __THISpage for a template to dynamically create a gallery based on user input.</h2>
 
   <section class="imageHolder"> 
     <div class="imageColumn">
@@ -35,7 +35,7 @@ get_template_part( 'template-parts/modal-image' );
 
     <div class="imageColumn">
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hopper.jpg" alt="Edward Hopper's Room in New York">
-      
+
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/kawasaki.jpg" alt="Audrey Kawasaki backlit">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nighthawks.jpg" alt="Edward Hopper's Nighhawks">

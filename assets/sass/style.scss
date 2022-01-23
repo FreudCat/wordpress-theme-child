@@ -12,6 +12,10 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
 
+/* Accordion Styles */
+
+
+
 .cardHolder {
 	display: flex;
 	flex-direction: row;
@@ -59,7 +63,21 @@ Text Domain:  twentytwentychild
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,0));
 }
 
+h1.gallery-font {
+	text-align: center;
+	font-size: 3em;	
+	margin-top: 20px;
+}
+
+h2.gallery-font {
+	text-align: center;
+	font-size: 1em;
+	width: 50%;
+	margin-top: 20px;
+}
+
 .imageHolder {
+	padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;

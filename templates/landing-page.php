@@ -4,17 +4,8 @@
 get_header();
 ?>
 
-<main id="landingPageContent" role="main">
-<?php
-  if ( have_posts() ) {
-	  while ( have_posts() ) {
-	  	the_post();
-			get_template_part( 'template-parts/content', get_post_type() );
-		}
-	}
-?>
-
 <?php 
+	$topic = get_field("page_image_header");
   $basePrice = get_field("middling_price");
   if (get_field("price_multiplier_mini")) {
     $miniPrice = (get_field("price_multiplier_mini")) * $basePrice;
@@ -28,33 +19,42 @@ get_header();
   }
 ?>
 
-<?php
-	$topic = get_field("page_image_header");
-?>
+<main id="landingPageContent" role="main">
+  
 
-<section class="cardHolder">
-	<div class="card">
-  <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="cardImg" alt="">
-  <div class="container">
-    <p><b>Mini</b></p>
-    <p>Price: $<?php echo number_format($miniPrice, 2, '.', ''); ?></p>
-  </div>
-	</div>
-	<div class="card">
-  <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="cardImg" alt="">
-  <div class="container">
-  <p><b>Middle</b></p>
-    <p>Price: $<?php echo number_format($basePrice, 2, '.', ''); ?></p>
-  </div>
-	</div>
-	<div class="card">
-  <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="cardImg" alt="">
-  <div class="container">
-  <p><b>Massive</b></p>
-    <p>Price: $<?php echo number_format($massivePrice, 2, '.', ''); ?></p>
-  </div>
-	</div>
-</section>
+  <?php
+    if ( have_posts() ) {
+      while ( have_posts() ) {
+        the_post();
+        get_template_part( 'template-parts/content', get_post_type() );
+      }
+    }
+  ?>
+
+  <section class="cardHolder">
+    <div class="card">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="cardImg" alt="">
+    <div class="container">
+      <p><b>Mini</b></p>
+      <p>Price: $<?php echo number_format($miniPrice, 2, '.', ''); ?></p>
+    </div>
+    </div>
+    <div class="card">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="cardImg" alt="">
+    <div class="container">
+    <p><b>Middle</b></p>
+      <p>Price: $<?php echo number_format($basePrice, 2, '.', ''); ?></p>
+    </div>
+    </div>
+    <div class="card">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="cardImg" alt="">
+    <div class="container">
+    <p><b>Massive</b></p>
+      <p>Price: $<?php echo number_format($massivePrice, 2, '.', ''); ?></p>
+    </div>
+    </div>
+  </section>
+</main>
 
 <?php get_footer(); ?>
 
@@ -65,4 +65,4 @@ get_header();
   echo '</script>';
 }
 ?>
-<?php console_log(get_stylesheet_directory()); ?>
+
