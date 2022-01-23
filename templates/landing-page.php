@@ -20,7 +20,6 @@ get_header();
 ?>
 
 <main id="landingPageContent" role="main">
-  
   <label for="accordion-checkbox" class="accordion-label">Abstract</label>  
   <input type="checkbox" id="accordion-checkbox" />
   <div class="accordion-content">
