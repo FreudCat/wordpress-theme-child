@@ -43,5 +43,5 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - That you *can* incorporate JS and PHP if done correctly 
 
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
-![](thanks.gif)
+![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)
 
