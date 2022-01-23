@@ -1,29 +1,18 @@
-<!-- function to use console.log in PHP -->
-<?php function console_log( $dataToLog ){
-  echo '<script>';
-  echo 'console.log('. json_encode( $dataToLog ) .')';
-  echo '</script>';
-}
-?>
-
 <?php
 /**
  * Template Name: Landing Page */
 get_header();
-
 ?>
+
 <main id="landingPageContent" role="main">
 <?php
-
-	if ( have_posts() ) {
-
-		while ( have_posts() ) {
-			the_post();
-
+  if ( have_posts() ) {
+	  while ( have_posts() ) {
+	  	the_post();
 			get_template_part( 'template-parts/content', get_post_type() );
 		}
 	}
-	?>
+?>
 
 <?php 
   $basePrice = get_field("middling_price");
@@ -45,21 +34,21 @@ get_header();
 
 <section class="cardHolder">
 	<div class="card">
-  <img src="<?php echo content_url();?>/uploads/2022/01/<?php echo $topic ?>1.jpg')" class="cardImg" alt="">
+  <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="cardImg" alt="">
   <div class="container">
     <p><b>Mini</b></p>
     <p>Price: $<?php echo number_format($miniPrice, 2, '.', ''); ?></p>
   </div>
 	</div>
 	<div class="card">
-  <img src="<?php echo content_url();?>/uploads/2022/01/<?php echo $topic ?>2.jpg')" class="cardImg" alt="">
+  <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="cardImg" alt="">
   <div class="container">
   <p><b>Middle</b></p>
     <p>Price: $<?php echo number_format($basePrice, 2, '.', ''); ?></p>
   </div>
 	</div>
 	<div class="card">
-  <img src="<?php echo content_url();?>/uploads/2022/01/<?php echo $topic ?>3.jpg" class="cardImg" alt="">
+  <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="cardImg" alt="">
   <div class="container">
   <p><b>Massive</b></p>
     <p>Price: $<?php echo number_format($massivePrice, 2, '.', ''); ?></p>
@@ -68,3 +57,12 @@ get_header();
 </section>
 
 <?php get_footer(); ?>
+
+<!-- function to use console.log in PHP -->
+<?php function console_log( $dataToLog ){
+  echo '<script>';
+  echo 'console.log('. json_encode( $dataToLog ) .')';
+  echo '</script>';
+}
+?>
+<?php console_log(get_stylesheet_directory()); ?>

@@ -1,0 +1,51 @@
+/*
+Theme Name:   TwentyTwenty Child
+Theme URI:    https://github.com/FreudCat/wordpress-theme-child
+Description:  A child theme for TwentyTwenty theme
+Author:       Angela Nguyen
+Author URI:   https://angelabloom.com
+Template:     twentytwenty
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  https://github.com/WordPress/twentytwenty/blob/master/LICENSE
+Tags:         responsive-layout, accessibility-ready
+Text Domain:  twentytwentychild
+*/
+
+.cardHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 10px;
+  width: 100vw; }
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white; }
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.cardImg {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px; }
+
+@media only screen and (max-width: 650px) {
+  .cardHolder {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center; } }
+
+/* Landing page style */
+.landingPage {
+  color: white; }
+
+.overlay {
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
