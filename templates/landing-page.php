@@ -20,10 +20,13 @@ get_header();
 ?>
 
 <main id="landingPageContent" role="main">
-  <label for="accordion-checkbox" class="accordion-label">Abstract</label>  
-  <input type="checkbox" id="accordion-checkbox" />
+<input type="checkbox" id="accordion-checkbox" />
+  <label for="accordion-checkbox" id="accordion-label">Abstract</label>  
+  <!-- Note to self: "id" was used in the label element to provide more specificity over the parent style.css that was previously overriding my styles when just using tag:class -->
+  
   <div class="accordion-content">
-    <p>This is a landing page that...</p>
+    <p>This page is one of three pages that utilize the Landing Page template. My first attempt at a template, the focus is on exploring how to set up a WordPress site, the functionality of PHP, and injecting information from Advanced Custom Fields.</p>
+    <p>This template combines the elements southern California boardwalks where I would see lots of fancy dogs, foods, and people.</p>
   </div> 
 
 
@@ -71,3 +74,4 @@ get_header();
 }
 ?>
 
+<script src="https://kit.fontawesome.com/73971c4e5a.js" crossorigin="anonymous"></script>

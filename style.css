@@ -13,47 +13,42 @@ Text Domain:  twentytwentychild
 */
 /* Accordion Styles */
 #accordion-checkbox {
-  display: none; }
+  display: none;
+  height: 50px; }
 
-.accordion-label {
-  display: block;
-  padding: 8px 22px;
-  margin: 0 0 1px 0;
-  cursor: pointer;
-  background: #cd2653;
-  border-radius: 3px;
-  color: #FFF;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1;
-  border-radius: 0;
-  color: #fff;
-  cursor: pointer;
+#accordion-label {
   display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.0333em;
-  line-height: 1.25;
+  background: #cd2653;
+  font-weight: bold;
+  color: #fff;
+  padding: 1em;
   margin: 0;
-  opacity: 1;
-  padding: 1.1em 1.44em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity 0.15s linear; }
-  .accordion-label:hover {
+  #accordion-label:hover {
     background: #af103b; }
+  #accordion-label::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\a0\a0\a0\f107'; }
 
 .accordion-content {
-  background: #fff;
-  padding: 10px 25px;
+  background: #f5f3f3;
+  padding: 25px;
   margin: 0 0 1px 0;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
-#accordion-checkbox + .accordion-content {
+#accordion-checkbox + #accordion-label + .accordion-content {
   display: none; }
 
-#accordion-checkbox:checked + .accordion-content {
+#accordion-checkbox:checked + #accordion-label + .accordion-content {
   display: block; }
+
+#accordion-checkbox:checked + #accordion-label::after {
+  content: '\a0\a0\a0\f106'; }
 
 .cardHolder {
   display: flex;
