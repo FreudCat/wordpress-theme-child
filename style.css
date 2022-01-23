@@ -13,8 +13,7 @@ Text Domain:  twentytwentychild
 */
 /* Accordion Styles */
 #accordion-checkbox {
-  display: none;
-  height: 50px; }
+  display: none; }
 
 #accordion-label {
   display: inline-block;
@@ -40,7 +39,7 @@ Text Domain:  twentytwentychild
   margin: 0 0 1px 0;
   border-radius: 3px;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-  box-shadow: 0 14px 20px 20px grey; }
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.2), 0px -10px 20px 2px rgba(0, 0, 0, 0.2); }
 
 #accordion-checkbox + #accordion-label + .accordion-content {
   display: none; }
@@ -51,6 +50,7 @@ Text Domain:  twentytwentychild
 #accordion-checkbox:checked + #accordion-label::after {
   content: '\a0\a0\a0\f106'; }
 
+/* End accordion Styles */
 .cardHolder {
   display: flex;
   flex-direction: row;

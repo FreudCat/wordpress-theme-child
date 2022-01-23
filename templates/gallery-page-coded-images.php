@@ -18,8 +18,13 @@ get_template_part( 'template-parts/modal-image' );
 ?>
 
 <main id="gallery-page-coded-images" role="main">
-  <h1 class="gallery-font">Image Gallery</h1>
-  <h2 class="gallery-font">Some of my favorite paintings, photos, and operas. In this version, the images are located in the assets folder and harcoded. See __THISpage for a template to dynamically create a gallery based on user input.</h2>
+<input type="checkbox" id="accordion-checkbox" />
+  <label for="accordion-checkbox" id="accordion-label">Abstract</label>  
+  <!-- Note to self: "id" was used in the label element to provide more specificity over the parent style.css that was previously overriding my styles when just using tag:class -->
+  <div class="accordion-content">
+    <p>This template contains some of my favoriate paintings, artists, locations, and operas. It utilizes CSS flex, sass, and JavaScript to create modals and a carousel to cycle through the images. The src and figcaption in the initial modal are dynamically created based on the user's selection</p>
+    <p>This version has the image src hardcoded and does not require the asset to be uploaded into WordPress. See "Gallery Template - Dynamic" to see a template that can respond to user uploads.</p>
+  </div> 
 
   <section class="imageHolder"> 
     <div class="imageColumn">
@@ -72,5 +77,6 @@ get_template_part( 'template-parts/modal-image' );
     </div>
   </div>
 </main>
-
+<script src="https://kit.fontawesome.com/73971c4e5a.js" crossorigin="anonymous"></script>
 <?php get_footer(); ?>
+
