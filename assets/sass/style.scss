@@ -18,7 +18,7 @@ $tablet-breakpoint: 768px; //481px — 768px
 $small-screen-breakpoint: 1024px; //769px — 1024px
 $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
 
-/* Accordion Styles */
+// Accordion styles
 #accordion-checkbox {
   display: none;
 }
@@ -66,8 +66,9 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 		}
 	}
 }
-/* End accordion Styles */
+// End accordion styles
 
+// Landing page tempate styles
 .card-holder {
 	display: flex;
 	flex-direction: row;
@@ -75,24 +76,21 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 	align-items: center;
 	column-gap: 10px;
 	width: 100vw;
-}
-
-.card {
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	text-align: center;
-	background-color: rgb(255, 255, 255);
-}
-
-.card:hover {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-}
-
-.card-img {
-	width: 250px;
-	height: 200px;
-	border-radius: 10px 10px 0 0;
-	margin-bottom: 20px;
+	.card {
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		text-align: center;
+		background-color: rgb(255, 255, 255);
+		&:hover {
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+		}
+	}
+	.card-img {
+		width: 250px;
+		height: 200px;
+		border-radius: 10px 10px 0 0;
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -102,30 +100,17 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 		row-gap: 20px;
 		align-items: center;
 	}
-	
 }
 
-/* Landing page style */
-.landingPage  {
+.landing-page  {
 	color: white;
 }
+// End landing page template styles
 
+// Gallery template page font
 .overlay {
 	width: 100%;
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,0));
-}
-
-h1.gallery-font {
-	text-align: center;
-	font-size: 3em;	
-	margin-top: 20px;
-}
-
-h2.gallery-font {
-	text-align: center;
-	font-size: 1em;
-	width: 50%;
-	margin-top: 20px;
 }
 
 .image-holder {
@@ -169,12 +154,12 @@ h2.gallery-font {
 @media only screen and (max-width: $tablet-breakpoint) {
 	.image-holder {
 		display: flex;
-	flex-direction: row;
-	flex-flow: row wrap;
-	justify-content: center;
-	gap:10px;
-	padding: 0;
-	margin: 50px auto;
+		flex-direction: row;
+		flex-flow: row wrap;
+		justify-content: center;
+		gap:10px;
+		padding: 0;
+		margin: 50px auto;
 		.gallery-image { 
 			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 			max-width: 40vw;
@@ -204,7 +189,6 @@ h2.gallery-font {
 }
 
 // Modal styles
-
 .image-modal {
   background-color: rgba(0, 0, 0, 0.35);
 	display: none;
@@ -219,7 +203,6 @@ h2.gallery-font {
 	transition: opacity 0.25s ease-in, left 0s 0.25s, right 0s 0.25s !important;
 	z-index: 100;
 }
-
 
 button.close-nav-toggle {
 	color: #fff;
@@ -239,7 +222,7 @@ button.close-nav-toggle {
 			font-family: "Font Awesome 5 Free"; 
 			font-weight: 900;
 			content: '\a0\a0\a0\f00d';
-	}
+		}
 	} 
 }
 
@@ -286,8 +269,8 @@ button.close-nav-toggle {
   	}
 	}
 }
-
-//End modal styles
+// End modal styles
+// End gallery template page font
 
 // $mobile-breakpoint: 480px; //320px — 480px
 // $tablet-breakpoint: 768px; //481px — 768px

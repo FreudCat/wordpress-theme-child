@@ -11,7 +11,6 @@ License URI:  https://github.com/WordPress/twentytwenty/blob/master/LICENSE
 Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
-/* Accordion Styles */
 #accordion-checkbox {
   display: none; }
 
@@ -49,7 +48,6 @@ Text Domain:  twentytwentychild
 #accordion-checkbox:checked + #accordion-label::after {
   content: '\a0\a0\a0\f106'; }
 
-/* End accordion Styles */
 .card-holder {
   display: flex;
   flex-direction: row;
@@ -57,21 +55,18 @@ Text Domain:  twentytwentychild
   align-items: center;
   column-gap: 10px;
   width: 100vw; }
-
-.card {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: white; }
-
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); }
-
-.card-img {
-  width: 250px;
-  height: 200px;
-  border-radius: 10px 10px 0 0;
-  margin-bottom: 20px; }
+  .card-holder .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white; }
+    .card-holder .card:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); }
+  .card-holder .card-img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px; }
 
 @media only screen and (max-width: 650px) {
   .card-holder {
@@ -80,24 +75,12 @@ Text Domain:  twentytwentychild
     row-gap: 20px;
     align-items: center; } }
 
-/* Landing page style */
-.landingPage {
+.landing-page {
   color: white; }
 
 .overlay {
   width: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
-
-h1.gallery-font {
-  text-align: center;
-  font-size: 3em;
-  margin-top: 20px; }
-
-h2.gallery-font {
-  text-align: center;
-  font-size: 1em;
-  width: 50%;
-  margin-top: 20px; }
 
 .image-holder {
   display: flex;

@@ -44,7 +44,7 @@ if ( is_singular() ) {
 		}		
 
 		if ( is_singular() ) {
-			echo "<h1 class='landingPage'>The $topic Page </h1>"; 
+			echo "<h1 class='landing-page'>The $topic Page </h1>"; 
 		} else {
 			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 		}
