@@ -19,7 +19,7 @@ get_header();
   }
 ?>
 
-<main id="landingPageContent" role="main">
+<main id="landing-page-content" role="main">
 <input type="checkbox" id="accordion-checkbox" />
   <label for="accordion-checkbox" id="accordion-label">Abstract</label>  
   <!-- Note to self: "id" was used in the label element to provide more specificity over the parent style.css that was previously overriding my styles when just using tag:class -->
@@ -39,23 +39,23 @@ get_header();
     }
   ?>
 
-  <section class="cardHolder">
+  <section class="card-holder">
     <div class="card">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="cardImg" alt="">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="card-img" alt="">
     <div class="container">
       <p><b>Mini</b></p>
       <p>Price: $<?php echo number_format($miniPrice, 2, '.', ''); ?></p>
     </div>
     </div>
     <div class="card">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="cardImg" alt="">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="card-img" alt="">
     <div class="container">
     <p><b>Middle</b></p>
       <p>Price: $<?php echo number_format($basePrice, 2, '.', ''); ?></p>
     </div>
     </div>
     <div class="card">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="cardImg" alt="">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="card-img" alt="">
     <div class="container">
     <p><b>Massive</b></p>
       <p>Price: $<?php echo number_format($massivePrice, 2, '.', ''); ?></p>

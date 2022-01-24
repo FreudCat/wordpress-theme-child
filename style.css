@@ -50,7 +50,7 @@ Text Domain:  twentytwentychild
   content: '\a0\a0\a0\f106'; }
 
 /* End accordion Styles */
-.cardHolder {
+.card-holder {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -67,14 +67,14 @@ Text Domain:  twentytwentychild
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); }
 
-.cardImg {
+.card-img {
   width: 250px;
   height: 200px;
   border-radius: 10px 10px 0 0;
   margin-bottom: 20px; }
 
 @media only screen and (max-width: 650px) {
-  .cardHolder {
+  .card-holder {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
