@@ -101,20 +101,82 @@ h2.gallery-font {
   margin-top: 20px; }
 
 .imageHolder {
-  padding-top: 20px;
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-flow: wrap;
-  gap: 25px; }
-  .imageHolder .imageColumn {
-    border: 1px red solid; }
+  gap: 10px;
+  padding: 0;
+  margin: 50px auto; }
+  .imageHolder:hover .galleryImage {
+    opacity: 0.3; }
   .imageHolder .galleryImage {
-    margin: 25px auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 300px; }
-    .imageHolder .galleryImage:hover, .imageHolder .galleryImage:focus {
+    max-width: 30vw;
+    transition: .8s opacity; }
+    .imageHolder .galleryImage:hover {
       box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
+    .imageHolder .galleryImage:hover.galleryImage:hover {
+      opacity: 1; }
+
+@media only screen and (max-width: 768px) {
+  .imageHolder {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 50px auto; }
+    .imageHolder:hover .galleryImage {
+      opacity: 0.3; }
+    .imageHolder .galleryImage {
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      max-width: 30vw;
+      transition: .8s opacity; }
+      .imageHolder .galleryImage:hover {
+        box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
+      .imageHolder .galleryImage:hover.galleryImage:hover {
+        opacity: 1; } }
+
+@media only screen and (max-width: 768px) {
+  .imageHolder {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 50px auto; }
+    .imageHolder:focus .galleryImage {
+      opacity: 0.3; }
+    .imageHolder .galleryImage {
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      max-width: 40vw;
+      transition: .8s opacity; }
+      .imageHolder .galleryImage:focus {
+        box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
+      .imageHolder .galleryImage:focus.galleryImage:hover {
+        opacity: 1; } }
+
+@media only screen and (max-width: 480px) {
+  .imageHolder {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 50px auto; }
+    .imageHolder:focus .galleryImage {
+      opacity: 0.3; }
+    .imageHolder .galleryImage {
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      max-width: 80vw;
+      transition: .8s opacity; }
+      .imageHolder .galleryImage:focus {
+        box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
+      .imageHolder .galleryImage:focus.galleryImage:hover {
+        opacity: 1; } }
 
 .image-modal {
   background-color: rgba(0, 0, 0, 0.35);
@@ -162,3 +224,25 @@ h2.gallery-font {
   .modalImage figcaption {
     text-align: center;
     color: white; }
+
+@media (max-width: 480px) {
+  .modalImage {
+    margin: auto;
+    height: 60vh; }
+    .modalImage #imageForModal {
+      width: 100%;
+      height: auto; }
+    .modalImage figcaption {
+      text-align: center;
+      color: white; } }
+
+@media (max-width: 480px) {
+  .modalImage {
+    margin: auto;
+    height: 60vh; }
+    .modalImage #imageForModal {
+      width: 100%;
+      height: auto; }
+    .modalImage figcaption {
+      text-align: center;
+      color: white; } }

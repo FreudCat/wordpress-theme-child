@@ -27,7 +27,6 @@ get_template_part( 'template-parts/modal-image' );
   </div> 
 
   <section class="imageHolder"> 
-    <div class="imageColumn">
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/bosch.jpg" alt="Hieronymus Bosch's Garden of Earthly Delights">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/chicago.jpg" alt="Chicago marquee">
@@ -36,30 +35,27 @@ get_template_part( 'template-parts/modal-image' );
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hoffman.jpg" alt="Tales of Hoffman opera">
 
-    </div>
-
-    <div class="imageColumn">
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hopper.jpg" alt="Edward Hopper's Room in New York">
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/turandot.jpg" alt="Puccini Opera Turandot">
 
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/kawasaki.jpg" alt="Audrey Kawasaki backlit">
     
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hopper.jpg" alt="Edward Hopper's Room in New York">
+
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nighthawks.jpg" alt="Edward Hopper's Nighhawks">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/lunch.jpg" alt="Georges Seurat's A Sunday on La Grande Jatte">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte.jpg" alt="Magritte style painting">
-    </div>
-  
-    <div class="imageColumn">
+
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte2.jpg" alt="Magritte's The Lovers">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nurse.jpg" alt="Roy Lichtenstein's Nurse">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/sydney.jpg" alt="Sydney Opera House">
     
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/turandot.jpg" alt="Puccini Opera Turandot">
-    </div> 
+     
   </section>
+
 
   <div class="image-modal cover-modal header-footer-group" data-modal-target-string=".image-modal">
     <div class="image-modal-inner modal-inner">

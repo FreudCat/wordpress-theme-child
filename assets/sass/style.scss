@@ -12,6 +12,12 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
 
+// SCSS variables 
+$mobile-breakpoint: 480px; //320px — 480px
+$tablet-breakpoint: 768px; //481px — 768px
+$small-screen-breakpoint: 1024px; //769px — 1024px
+$large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
+
 /* Accordion Styles */
 #accordion-checkbox {
   display: none;
@@ -124,24 +130,107 @@ h2.gallery-font {
 }
 
 .imageHolder {
-	padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-	flex-flow: wrap;
-  gap: 25px;
-	.imageColumn {
-		border: 1px red solid;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap:10px;
+	padding: 0;
+	margin: 50px auto;
+	&:hover .galleryImage {
+		opacity: 0.3;
 	}
-  .galleryImage {
-    margin: 25px auto; 
+  .galleryImage { 
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-		width: 300px;
-    &:hover, &:focus {
+		max-width: 30vw;
+		transition: .8s opacity;
+    &:hover {
       box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2);
     }
+		&:hover.galleryImage:hover {
+			opacity: 1;
+		}
   }
 }
+
+@media only screen and (max-width: $tablet-breakpoint) {
+	.imageHolder {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+		justify-content: center;
+		gap:10px;
+		padding: 0;
+		margin: 50px auto;
+		&:hover .galleryImage {
+			opacity: 0.3;
+		}
+		.galleryImage { 
+			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			max-width: 30vw;
+			transition: .8s opacity;
+			&:hover {
+				box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2);
+			}
+			&:hover.galleryImage:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+	.imageHolder {
+		display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap:10px;
+	padding: 0;
+	margin: 50px auto;
+		&:focus .galleryImage {
+			opacity: 0.3;
+		}
+		.galleryImage { 
+			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			max-width: 40vw;
+			transition: .8s opacity;
+			&:focus {
+				box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2);
+			}
+			&:focus.galleryImage:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+	.imageHolder {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		gap:10px;
+		padding: 0;
+		margin: 50px auto;
+		&:focus .galleryImage {
+			opacity: 0.3;
+		}
+		.galleryImage { 
+			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			max-width: 80vw;
+			transition: .8s opacity;
+			&:focus {
+				box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2);
+			}
+			&:focus.galleryImage:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Modal styles
 
 .image-modal {
   background-color: rgba(0, 0, 0, 0.35);
@@ -198,3 +287,37 @@ h2.gallery-font {
   }
 }
 
+@media (max-width: $mobile-breakpoint) {
+	.modalImage {
+		margin: auto;
+		height: 60vh;
+		#imageForModal{
+			width:100%;
+			height:auto;
+		}
+		figcaption {
+			text-align: center;
+			color: white;
+		}
+	}
+}
+@media (max-width: $mobile-breakpoint) {
+	.modalImage {
+		margin: auto;
+		height: 60vh;
+		#imageForModal{
+			width:100%;
+			height:auto;
+		}
+		figcaption {
+			text-align: center;
+			color: white;
+		}
+	}
+}
+//End modal styles
+
+// $mobile-breakpoint: 480px; //320px — 480px
+// $tablet-breakpoint: 768px; //481px — 768px
+// $small-screen-breakpoint: 1024px; //769px — 1024px
+// $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
