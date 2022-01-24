@@ -99,7 +99,7 @@ h2.gallery-font {
   width: 50%;
   margin-top: 20px; }
 
-.imageHolder {
+.image-holder {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
@@ -107,15 +107,15 @@ h2.gallery-font {
   gap: 10px;
   padding: 0;
   margin: 50px auto; }
-  .imageHolder .galleryImage {
+  .image-holder .gallery-image {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     max-width: 30vw;
     transition: box-shadow 0.3s !important; }
-    .imageHolder .galleryImage:hover {
+    .image-holder .gallery-image:hover {
       box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); }
 
 @media only screen and (max-width: 768px) {
-  .imageHolder {
+  .image-holder {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -123,15 +123,15 @@ h2.gallery-font {
     gap: 10px;
     padding: 0;
     margin: 50px auto; }
-    .imageHolder .galleryImage {
+    .image-holder .gallery-image {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       max-width: 30vw;
       transition: box-shadow 0.3s !important; }
-      .imageHolder .galleryImage:focus {
+      .image-holder .gallery-image:focus {
         box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); } }
 
 @media only screen and (max-width: 768px) {
-  .imageHolder {
+  .image-holder {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -139,24 +139,24 @@ h2.gallery-font {
     gap: 10px;
     padding: 0;
     margin: 50px auto; }
-    .imageHolder .galleryImage {
+    .image-holder .gallery-image {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       max-width: 40vw; }
-      .imageHolder .galleryImage:focus {
+      .image-holder .gallery-image:focus {
         box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); } }
 
 @media only screen and (max-width: 480px) {
-  .imageHolder {
+  .image-holder {
     display: flex;
     flex-direction: column;
     align-content: center;
     gap: 10px;
     padding: 0;
     margin: 50px auto; }
-    .imageHolder .galleryImage {
+    .image-holder .gallery-image {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       max-width: 80vw; }
-      .imageHolder .galleryImage:focus {
+      .image-holder .gallery-image:focus {
         box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); } }
 
 .image-modal {
@@ -183,9 +183,8 @@ button.close-nav-toggle {
 
 @media only screen and (max-width: 1200px) {
   button.toggle.close-nav-toggle {
-    font-size: 1.5em;
-    color: #fff;
-    margin-top: 100px; }
+    font-size: 1em;
+    color: #fff; }
     button.toggle.close-nav-toggle::after {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -213,16 +212,16 @@ button.close-nav-toggle {
   justify-content: space-between;
   position: relative; }
 
-.modalImage {
+.modal-image {
   margin: auto;
   height: 60vh; }
-  .modalImage #imageForModal {
+  .modal-image #image-for-modal {
     max-width: 100%;
     max-height: 70vh; }
-  .modalImage figcaption {
+  .modal-image figcaption {
     text-align: center;
     font-size: 1em;
     color: #fff; }
   @media only screen and (max-width: 1200px) {
-    .modalImage figcaption {
-      font-size: 2em; } }
+    .modal-image figcaption {
+      font-size: 1em; } }

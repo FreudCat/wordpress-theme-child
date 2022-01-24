@@ -128,7 +128,7 @@ h2.gallery-font {
 	margin-top: 20px;
 }
 
-.imageHolder {
+.image-holder {
 	display: flex;
 	flex-direction: row;
 	flex-flow: row wrap;
@@ -136,7 +136,7 @@ h2.gallery-font {
 	gap:10px;
 	padding: 0;
 	margin: 50px auto;
-  .galleryImage { 
+  .gallery-image { 
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 		max-width: 30vw;
 		transition: box-shadow 0.3s !important;
@@ -147,7 +147,7 @@ h2.gallery-font {
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-	.imageHolder {
+	.image-holder {
 		display: flex;
 		flex-direction: row;
 		flex-flow: row wrap;
@@ -155,7 +155,7 @@ h2.gallery-font {
 		gap:10px;
 		padding: 0;
 		margin: 50px auto;
-		.galleryImage { 
+		.gallery-image { 
 			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 			max-width: 30vw;
 			transition: box-shadow 0.3s !important;
@@ -167,7 +167,7 @@ h2.gallery-font {
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-	.imageHolder {
+	.image-holder {
 		display: flex;
 	flex-direction: row;
 	flex-flow: row wrap;
@@ -175,7 +175,7 @@ h2.gallery-font {
 	gap:10px;
 	padding: 0;
 	margin: 50px auto;
-		.galleryImage { 
+		.gallery-image { 
 			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 			max-width: 40vw;
 			&:focus {
@@ -186,14 +186,14 @@ h2.gallery-font {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-	.imageHolder {
+	.image-holder {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
 		gap:10px;
 		padding: 0;
 		margin: 50px auto;
-		.galleryImage { 
+		.gallery-image { 
 			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 			max-width: 80vw;
 			&:focus {
@@ -233,9 +233,8 @@ button.close-nav-toggle {
 
 @media only screen and (max-width: $large-screen-breakpoint) {
 	button.toggle.close-nav-toggle {
-		font-size: 1.5em;
+		font-size: 1em;
 		color: #fff;
-		margin-top: 100px;
 		&::after {
 			font-family: "Font Awesome 5 Free"; 
 			font-weight: 900;
@@ -269,10 +268,10 @@ button.close-nav-toggle {
 	position: relative;
 }
 
-.modalImage {
+.modal-image {
   margin: auto;
 	height: 60vh;
-  #imageForModal{
+  #image-for-modal{
 		max-width:100%;
 		max-height: 70vh;
   }
@@ -283,7 +282,7 @@ button.close-nav-toggle {
 	}
 	@media only screen and (max-width: $large-screen-breakpoint) {
   	figcaption {
-			font-size: 2em;
+			font-size: 1em;
   	}
 	}
 }
