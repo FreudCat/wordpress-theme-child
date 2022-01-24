@@ -24,8 +24,7 @@ Text Domain:  twentytwentychild
   margin: 0;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: opacity 0.15s linear; }
+  text-transform: uppercase; }
   #accordion-label:hover {
     background: #af103b; }
   #accordion-label::after {
@@ -108,16 +107,12 @@ h2.gallery-font {
   gap: 10px;
   padding: 0;
   margin: 50px auto; }
-  .imageHolder:hover .galleryImage {
-    opacity: 0.3; }
   .imageHolder .galleryImage {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     max-width: 30vw;
-    transition: .8s opacity; }
+    transition: box-shadow 0.3s !important; }
     .imageHolder .galleryImage:hover {
-      box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
-    .imageHolder .galleryImage:hover.galleryImage:hover {
-      opacity: 1; }
+      box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); }
 
 @media only screen and (max-width: 768px) {
   .imageHolder {
@@ -128,16 +123,12 @@ h2.gallery-font {
     gap: 10px;
     padding: 0;
     margin: 50px auto; }
-    .imageHolder:hover .galleryImage {
-      opacity: 0.3; }
     .imageHolder .galleryImage {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       max-width: 30vw;
-      transition: .8s opacity; }
-      .imageHolder .galleryImage:hover {
-        box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
-      .imageHolder .galleryImage:hover.galleryImage:hover {
-        opacity: 1; } }
+      transition: box-shadow 0.3s !important; }
+      .imageHolder .galleryImage:focus {
+        box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); } }
 
 @media only screen and (max-width: 768px) {
   .imageHolder {
@@ -148,16 +139,11 @@ h2.gallery-font {
     gap: 10px;
     padding: 0;
     margin: 50px auto; }
-    .imageHolder:focus .galleryImage {
-      opacity: 0.3; }
     .imageHolder .galleryImage {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-      max-width: 40vw;
-      transition: .8s opacity; }
+      max-width: 40vw; }
       .imageHolder .galleryImage:focus {
-        box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
-      .imageHolder .galleryImage:focus.galleryImage:hover {
-        opacity: 1; } }
+        box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); } }
 
 @media only screen and (max-width: 480px) {
   .imageHolder {
@@ -167,16 +153,11 @@ h2.gallery-font {
     gap: 10px;
     padding: 0;
     margin: 50px auto; }
-    .imageHolder:focus .galleryImage {
-      opacity: 0.3; }
     .imageHolder .galleryImage {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-      max-width: 80vw;
-      transition: .8s opacity; }
+      max-width: 80vw; }
       .imageHolder .galleryImage:focus {
-        box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2); }
-      .imageHolder .galleryImage:focus.galleryImage:hover {
-        opacity: 1; } }
+        box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); } }
 
 .image-modal {
   background-color: rgba(0, 0, 0, 0.35);
@@ -189,23 +170,38 @@ h2.gallery-font {
   left: -99999rem;
   right: 99999rem;
   top: 0;
-  transition: opacity 0.25s ease-in, left 0s 0.25s, right 0s 0.25s;
-  z-index: 99; }
+  transition: opacity 0.25s ease-in, left 0s 0.25s, right 0s 0.25s !important;
+  z-index: 100; }
 
-.image-modal.show-modal {
-  display: flex; }
+button.close-nav-toggle {
+  color: #fff;
+  font-size: 1em; }
+  button.close-nav-toggle::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\a0\a0\a0\f00d'; }
+
+@media only screen and (max-width: 1200px) {
+  button.toggle.close-nav-toggle {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 100px; }
+    button.toggle.close-nav-toggle::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: '\a0\a0\a0\f00d'; } }
 
 .image-modal.active {
   left: 0;
   opacity: 1;
   right: 0;
-  transition: opacity 0.25s ease-out; }
+  transition: opacity 0.3s ease-out !important; }
 
 .image-modal-inner {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   overflow: auto;
   -ms-overflow-style: auto;
   width: 100%;
@@ -218,31 +214,15 @@ h2.gallery-font {
   position: relative; }
 
 .modalImage {
-  margin: auto; }
+  margin: auto;
+  height: 60vh; }
   .modalImage #imageForModal {
-    width: 35vw; }
+    max-width: 100%;
+    max-height: 70vh; }
   .modalImage figcaption {
     text-align: center;
-    color: white; }
-
-@media (max-width: 480px) {
-  .modalImage {
-    margin: auto;
-    height: 60vh; }
-    .modalImage #imageForModal {
-      width: 100%;
-      height: auto; }
+    font-size: 1em;
+    color: #fff; }
+  @media only screen and (max-width: 1200px) {
     .modalImage figcaption {
-      text-align: center;
-      color: white; } }
-
-@media (max-width: 480px) {
-  .modalImage {
-    margin: auto;
-    height: 60vh; }
-    .modalImage #imageForModal {
-      width: 100%;
-      height: auto; }
-    .modalImage figcaption {
-      text-align: center;
-      color: white; } }
+      font-size: 2em; } }

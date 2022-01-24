@@ -7,7 +7,7 @@ function testModal(selectedImage) {
 }
   function populateModal(selectedImage) {
     console.log(selectedImage.alt);
-    document.getElementsByTagName("figcaption")[0].innerHTML = `<b>${selectedImage.alt}</b>`;
+    document.getElementsByTagName("figcaption")[0].innerHTML = selectedImage.alt;
     document.getElementById("imageForModal").src = selectedImage.src ;
   }
   const galleryImage = document.querySelectorAll('.galleryImage'); //use queryselector since it's more flexible versus getelementbywhatever. 

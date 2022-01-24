@@ -27,15 +27,15 @@ get_template_part( 'template-parts/modal-image' );
   </div> 
 
   <section class="imageHolder"> 
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/bosch.jpg" alt="Hieronymus Bosch's Garden of Earthly Delights">
-    
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/chicago.jpg" alt="Chicago marquee">
 
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/eugene.jpg" alt="Eugene Onegin opera">
-    
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hoffman.jpg" alt="Tales of Hoffman opera">
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/bosch.jpg" alt="Bosch's Garden of Earthly Delights">
 
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/turandot.jpg" alt="Puccini Opera Turandot">
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/eugene.jpg" alt="Tchaikovsky's Eugene Onegin">
+    
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hoffman.jpg" alt="Offenbach's Tales of Hoffman">
+
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/turandot.jpg" alt="Puccini's Turandot">
 
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/kawasaki.jpg" alt="Audrey Kawasaki backlit">
     
@@ -45,26 +45,17 @@ get_template_part( 'template-parts/modal-image' );
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/lunch.jpg" alt="Georges Seurat's A Sunday on La Grande Jatte">
     
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte.jpg" alt="Magritte style painting">
+      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte.jpg" alt="Magritte-style painting">
 
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte2.jpg" alt="Magritte's The Lovers">
     
       <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nurse.jpg" alt="Roy Lichtenstein's Nurse">
-    
-      <img class="galleryImage toggle" data-toggle-target=".image-modal" data-target="#imageModal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/sydney.jpg" alt="Sydney Opera House">
-    
-     
   </section>
-
 
   <div class="image-modal cover-modal header-footer-group" data-modal-target-string=".image-modal">
     <div class="image-modal-inner modal-inner">
       <div class="image-wrapper section-inner">
-        <button class="toggle close-nav-toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" aria-expanded="false" data-set-focus=".image-modal">
-          <span class="toggle-text"><?php _e( 'Close', 'twentytwenty' ); ?></span>
-          <?php twentytwenty_the_theme_svg( 'cross' ); ?>
-        </button><!-- .nav-toggle -->
-      
+        <button class="toggle close-nav-toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" aria-expanded="false" data-set-focus=".image-modal">Close</button>
         <figure class="modalImage">
           <img id="imageForModal" src="">
           <figcaption></figcaption>
