@@ -67,8 +67,8 @@ get_template_part( 'template-parts/modal-image' );
           <figcaption></figcaption>
         </figure>
 
-        <a class="next">&#10095;</a>
-        <a class="previous">&#10094;</a>
+        <button id="modal-next" class="toggle next">&#10094;</button>
+        <button id="modal-previous" class="toggle previous">&#10095;</button>
       
       </div>
     </div>

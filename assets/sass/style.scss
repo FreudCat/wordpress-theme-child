@@ -272,23 +272,7 @@ button.close-nav-toggle {
 // End modal styles
 
 // Carousel styles------------------------------------------------------------
-// do we need this? * {box-sizing:border-box}
-
-/* Slideshow container */
-.slide-holder {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.slide {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+button.toggle.previous#modal-previous, button.toggle.next#modal-next {
   position: absolute;
   top: 50%;
   width: auto;
