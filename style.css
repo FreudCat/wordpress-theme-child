@@ -197,14 +197,53 @@ button.close-nav-toggle {
 
 .modal-image {
   margin: auto;
-  height: 60vh; }
+  height: auto;
+  text-align: center;
+  font-size: 1.5em; }
+  @media only screen and (max-width: 480px) {
+    .modal-image {
+      font-size: 1.2em; } }
   .modal-image #image-for-modal {
     max-width: 100%;
-    max-height: 70vh; }
+    max-height: 70vh;
+    margin: auto; }
   .modal-image figcaption {
     text-align: center;
     font-size: 1em;
-    color: #fff; }
-  @media only screen and (max-width: 1200px) {
-    .modal-image figcaption {
-      font-size: 1em; } }
+    color: #fff;
+    display: inline-block; }
+
+.caption-button-holder {
+  display: inline-block;
+  width: auto;
+  text-align: center; }
+
+.next, .previous {
+  color: white;
+  text-decoration: none;
+  display: inline-block; }
+
+.next:hover {
+  transform: translateX(30%); }
+
+.previous:hover {
+  transform: translateX(-30%); }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }

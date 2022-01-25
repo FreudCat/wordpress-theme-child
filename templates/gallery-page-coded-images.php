@@ -27,7 +27,7 @@ get_template_part( 'template-parts/modal-image' );
   </div> 
 
   <section class="image-holder"> 
-  <div class="slide"></div>   
+  
   <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/chicago.jpg" alt="Chicago marquee">
 
     
@@ -45,7 +45,7 @@ get_template_part( 'template-parts/modal-image' );
 
       <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nighthawks.jpg" alt="Edward Hopper's Nighhawks">
   
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/lunch.jpg" alt="Georges Seurat's A Sunday on La Grande Jatte">
+      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/lunch.jpg" alt="Seurat's A Sunday on La Grande Jatte">
     
     
       <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte.jpg" alt="Magritte-style painting">
@@ -60,15 +60,19 @@ get_template_part( 'template-parts/modal-image' );
     <div class="image-modal-inner modal-inner">
       <div class="image-wrapper section-inner">
         <button class="toggle close-nav-toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" aria-expanded="false" data-set-focus=".image-modal">Close</button>
-        <figure class="modal-image slide">
-        <div class="slides">  
+        
+        <figure class="modal-image">
+        
         <img id="image-for-modal" src="">
-</div>
+        <div class="caption-button-holder">
+          <p class="previous">&#10094;</p>
           <figcaption></figcaption>
+          <p class="next">&#10095;</p>
+        </div>
+          
         </figure>
 
-        <button id="modal-next" class="toggle next">&#10094;</button>
-        <button id="modal-previous" class="toggle previous">&#10095;</button>
+        
       
       </div>
     </div>
