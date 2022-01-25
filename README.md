@@ -33,13 +33,13 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 ### The Landing Page Template
 - How to capture and utilize data from Advanced Custom Fields to populate a template
 - How to use conditionals in PHP to load content 
-- PHP has great documentation 
+- PHP has really great documentation 
 - Basically, how to set up a WordPress site 
 
 ### The Gallery Template
 - The purpose of child themes 
 - That the `.lenth` property does not work on HTMLCollections
-- The importance of uniform styling while naming classes, file names, etc. 
+- The importance of uniform styling when naming classes, file names, etc. 
 - That you *can* incorporate JS and PHP if done correctly 
 - How to override CSS stylesheet with wp_enqueue_style()
 
