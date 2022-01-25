@@ -76,21 +76,22 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 	align-items: center;
 	column-gap: 10px;
 	width: 100vw;
-	.card {
-		border-radius: 10px;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-		text-align: center;
-		background-color: rgb(255, 255, 255);
-		&:hover {
-			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-		}
+}
+
+.card {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	&:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 	}
-	.card-img {
-		width: 250px;
-		height: 200px;
-		border-radius: 10px 10px 0 0;
-		margin-bottom: 20px;
-	}
+}
+.card-img {
+	width: 250px;
+	height: 200px;
+	border-radius: 10px 10px 0 0;
+	margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -102,9 +103,13 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 	}
 }
 
-.landing-page  {
+.landing-page-header  {
 	color: white;
 }
+
+.overlay {
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 // End landing page template styles
 
 
@@ -273,6 +278,7 @@ button.close-nav-toggle {
 	color: white;
 	text-decoration: none;
 	display: inline-block;
+	transition: transform 0.2s !important;
 }
 
 .next {

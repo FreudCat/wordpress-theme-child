@@ -18,62 +18,53 @@ get_template_part( 'template-parts/modal-image' );
 ?>
 
 <main id="gallery-page-coded-images" role="main">
-<input type="checkbox" id="accordion-checkbox" />
+  <input type="checkbox" id="accordion-checkbox" />
   <label for="accordion-checkbox" id="accordion-label">Abstract</label>  
   <!-- Note to self: "id" was used in the label element to provide more specificity over the parent style.css that was previously overriding my styles when just using tag:class -->
   <div class="accordion-content">
-    <p>This template contains some of my favoriate paintings, artists, locations, and operas. It utilizes CSS flex, sass, and JavaScript to create modals and a carousel to cycle through the images. The src and figcaption in the initial modal are dynamically created based on the user's selection</p>
-    <p>This version has the image src hardcoded and does not require the asset to be uploaded into WordPress. See "Gallery Template - Dynamic" to see a template that can respond to user uploads.</p>
+    <p>This template contains some of my favoriate paintings, artists, locations, and operas. This is the first template of this portfolio to use Sass as a preprocessor, and also builds upon my prior use of CSS flex. I also had a heck of a time figuring out how to override the parent theme's styles!</p>
   </div> 
 
   <section class="image-holder"> 
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/chicago.jpg" alt="Chicago marquee">
+    
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/bosch.jpg" alt="Bosch's Garden of Earthly Delights">
+
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/eugene.jpg" alt="Tchaikovsky's Eugene Onegin">
   
-  <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/chicago.jpg" alt="Chicago marquee">
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hoffman.jpg" alt="Offenbach's Tales of Hoffman">
 
-    
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/bosch.jpg" alt="Bosch's Garden of Earthly Delights">
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/turandot.jpg" alt="Puccini's Turandot">
 
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/eugene.jpg" alt="Tchaikovsky's Eugene Onegin">
-    
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hoffman.jpg" alt="Offenbach's Tales of Hoffman">
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/kawasaki.jpg" alt="Audrey Kawasaki backlit">
+
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hopper.jpg" alt="Edward Hopper's Room in New York">
+
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nighthawks.jpg" alt="Edward Hopper's Nighhawks">
+
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/lunch.jpg" alt="Seurat's A Sunday on La Grande Jatte">
   
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/turandot.jpg" alt="Puccini's Turandot">
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte.jpg" alt="Magritte-style painting">
 
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/kawasaki.jpg" alt="Audrey Kawasaki backlit">
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte2.jpg" alt="Magritte's The Lovers">
   
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/hopper.jpg" alt="Edward Hopper's Room in New York">
-
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nighthawks.jpg" alt="Edward Hopper's Nighhawks">
-  
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/lunch.jpg" alt="Seurat's A Sunday on La Grande Jatte">
-    
-    
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte.jpg" alt="Magritte-style painting">
-
-
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/magritte2.jpg" alt="Magritte's The Lovers">
-    
-      <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nurse.jpg" alt="Roy Lichtenstein's Nurse">
+    <img class="gallery-image toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" data-set-focus=".image-modal" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/gallery-page-images/nurse.jpg" alt="Roy Lichtenstein's Nurse">
   </section>
 
   <div class="image-modal cover-modal header-footer-group slide-holder" data-modal-target-string=".image-modal">
     <div class="image-modal-inner modal-inner">
       <div class="image-wrapper section-inner">
-        <button class="toggle close-nav-toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" aria-expanded="false" data-set-focus=".image-modal">Close</button>
-        
-        <figure class="modal-image fade">
-        
+
+      <button class="toggle close-nav-toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" aria-expanded="false" data-set-focus=".image-modal">Close</button>
+        <figure class="modal-image fade"> 
         <img id="image-for-modal" src="">
         <div class="caption-button-holder">
           <p class="previous">&#10094;</p>
           <figcaption></figcaption>
           <p class="next">&#10095;</p>
-        </div>
-          
+        </div>  
         </figure>
 
-        
-      
       </div>
     </div>
   </div>
