@@ -107,12 +107,8 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 }
 // End landing page template styles
 
-// Gallery template page font
-.overlay {
-	width: 100%;
-	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,0));
-}
 
+// Gallery template page font
 .image-holder {
 	display: flex;
 	flex-direction: row;
@@ -131,7 +127,7 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
   }
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
+@media only screen and (max-width: $large-screen-breakpoint) {
 	.image-holder {
 		display: flex;
 		flex-direction: row;
@@ -163,6 +159,7 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 		.gallery-image { 
 			box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 			max-width: 40vw;
+			transition: box-shadow 0.3s !important;
 			&:focus {
 				box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5);
 			}
@@ -214,18 +211,6 @@ button.close-nav-toggle {
 	}
 } 
 
-@media only screen and (max-width: $large-screen-breakpoint) {
-	button.toggle.close-nav-toggle {
-		font-size: 1em;
-		color: #fff;
-		&::after {
-			font-family: "Font Awesome 5 Free"; 
-			font-weight: 900;
-			content: '\a0\a0\a0\f00d';
-		}
-	} 
-}
-
 .image-modal.active {
 	left: 0;
 	opacity: 1;
@@ -234,7 +219,7 @@ button.close-nav-toggle {
 }
 
 .image-modal-inner {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgba(0, 0, 0, 0.5);
 	display: flex;
 	justify-content: center;
   align-items: start;
@@ -257,12 +242,13 @@ button.close-nav-toggle {
 	text-align: center;
 	font-size: 1.5em;
 	@media only screen and (max-width: $mobile-breakpoint) {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
   #image-for-modal{
 		max-width:100%;
 		max-height: 70vh;
 		margin: auto;
+		box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.7),
   }
 	figcaption {
 		text-align: center;
@@ -278,6 +264,9 @@ button.close-nav-toggle {
 	display: inline-block;
 	width: auto;
 	text-align: center;
+	@media only screen and (max-width: $large-screen-breakpoint) {
+		margin-top: 1em;
+	}
 }
 
 .next, .previous {
@@ -297,27 +286,7 @@ button.close-nav-toggle {
 		transform: translateX(-30%);
 	}
 }
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 // End carousel styles------------------------------------------------
-
 // End gallery template page font
 
 

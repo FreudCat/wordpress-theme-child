@@ -36,7 +36,7 @@ function newImage(indexOfNewImage) {
     indexOfNewImage = galleryImage.length-1;
     newSelectedImage = galleryImage[indexOfNewImage];
     console.log(`new selected image ${newSelectedImage.alt}`);
-    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;&nbsp;`;
+    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;`;
     document.querySelector("#image-for-modal").src = newSelectedImage.src;
   }
   if (indexOfNewImage >= galleryImage.length) {
@@ -44,13 +44,13 @@ function newImage(indexOfNewImage) {
     indexOfNewImage = 0;
     newSelectedImage = galleryImage[indexOfNewImage];
     console.log(`new selected image ${newSelectedImage.alt}`);
-    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;&nbsp;`;
+    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;`;
     document.querySelector("#image-for-modal").src = newSelectedImage.src;
   }
   else {
     newSelectedImage = galleryImage[indexOfNewImage];
     console.log(`new selected image ${newSelectedImage.alt}`);
-    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;&nbsp;`;
+    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;`;
     document.querySelector("#image-for-modal").src = newSelectedImage.src;
   }
 }

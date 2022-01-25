@@ -19,7 +19,6 @@ function child_theme_enqueue_styles() {
         array( $parenthandle ),
         $theme->get('Version') // this only works if you have Version in the style header
     );
-    wp_enqueue_script( 'child-customize-preview-js', get_stylesheet_directory_uri().'/assets/js/customize-preview.js', array(), rand(), true );
     if (basename(get_page_template()) == "gallery-page-coded-images.php") { 
         wp_enqueue_script( 'modal-JS',get_stylesheet_directory_uri().'/assets/js/modal.js', array(), rand(), true);
     }
