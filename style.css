@@ -227,3 +227,9 @@ button.close-nav-toggle {
 
 .previous:hover {
   transform: translateX(-30%); }
+
+#sunny-site-header {
+  background: transparent;
+  position: relative;
+  height: 100vh;
+  color: #fff; }

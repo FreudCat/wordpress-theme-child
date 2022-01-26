@@ -16,8 +16,10 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
- if (basename(get_page_template()) == "landing-page.php") {
+ if (basename(get_page_template()) == 'landing-page.php') {
 	get_template_part( 'template-parts/entry-header-landing' );
+ } else if (basename(get_page_template()) == 'sunny-page.php') {
+	get_template_part( 'template-parts/entry-header-sunny');
  } else {
 	get_template_part( 'template-parts/entry-header' );
  }

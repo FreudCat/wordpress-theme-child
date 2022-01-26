@@ -43,6 +43,10 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - That you *can* incorporate JS and PHP if done correctly 
 - How to override CSS stylesheets with wp_enqueue_style() and selector specificity
 
+### Sunny Landing Page Template 
+- How to write useful and descriptive code for troubleshooting purposes 
+- 
+
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)
 
