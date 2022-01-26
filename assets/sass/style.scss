@@ -301,7 +301,45 @@ button.close-nav-toggle {
 // Sunny Header
 
 .navbar {
-	padding: 1.2em 1em;
+	padding: 0.9em 0.5em;
+}
+
+#navbarSupportedContent {
+	background-color: #fff;
+	padding: 2em;
+	margin-top: 2em;
+	
+	a {
+		color: hsl(232, 10%, 55%);
+		font-family: "Barlow", sans-serif;
+		font-weight: 600;
+	}
+	.nav-link {
+		padding-bottom: 1em;
+		margin: 0;
+		text-align: center;
+	}
+	.nav-item {
+		margin: auto;
+	}
+	.contact-button {
+		background-color: hsl(51, 100%, 49%);
+		color: black;
+		font-family: "Fraunces", serif;
+		width: 40vw;
+		border-radius: 50px;
+		padding: 0.8em;
+	}
+}
+
+.arrow {
+	float:right;
+		border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent; 
+	border-right: 25px solid #fff; 
+	position: relative;
+	top: -55px;
+	right: -36px;
 }
 
 nav.navbar.transparent {
@@ -329,6 +367,10 @@ nav.navbar.transparent {
 	color: #fff;
 	background-position: center center; 
 	background-size: cover;
+	@media only screen and (max-width: $tablet-breakpoint) {
+		height: 60vh;
+		max-width: 100%;
+	}
 }
 
 
