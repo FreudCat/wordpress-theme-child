@@ -41,7 +41,7 @@ if ( is_singular() ) {
 		}		
 
 		if ( is_singular() ) {
-			echo "this is something that is echoed"; 
+			echo "this is something that is echoed from the entry-header-sunny.php page"; 
 		} else {
 			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 		}

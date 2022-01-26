@@ -229,51 +229,86 @@ button.close-nav-toggle {
 .previous:hover {
   transform: translateX(-30%); }
 
-.navbar {
-  padding: 0.9em 0.5em; }
+#nav-container {
+  padding-top: 10vh;
+  padding-left: 2vw;
+  padding-right: 2vw; }
+  @media only screen and (max-width: 1024px) {
+    #nav-container {
+      padding-top: 2vh;
+      padding-left: 6vw;
+      padding-right: 5vw; } }
+  #nav-container .navbar-toggler {
+    padding: 0; }
 
 #navbarSupportedContent {
-  background-color: #fff;
+  background-color: transparent;
   padding: 2em;
   margin-top: 2em; }
+  @media only screen and (max-width: 1024px) {
+    #navbarSupportedContent {
+      background-color: #fff;
+      margin-top: 4em; } }
   #navbarSupportedContent a {
-    color: #818498;
+    color: #fff;
+    font-size: 1.5em;
+    padding-right: 2em;
     font-family: "Barlow", sans-serif;
-    font-weight: 600; }
+    font-weight: 400; }
+    @media only screen and (max-width: 1024px) {
+      #navbarSupportedContent a {
+        color: #818498;
+        font-size: 2em;
+        padding: 1em 0;
+        margin: auto;
+        font-family: "Barlow", sans-serif;
+        font-weight: 600; } }
   #navbarSupportedContent .nav-link {
     padding-bottom: 1em;
-    margin: 0;
+    margin: auto;
     text-align: center; }
   #navbarSupportedContent .nav-item {
     margin: auto; }
   #navbarSupportedContent .contact-button {
-    background-color: #fad400;
+    background-color: #fff;
     color: black;
     font-family: "Fraunces", serif;
-    width: 40vw;
     border-radius: 50px;
-    padding: 0.8em; }
+    font-size: 1.2em;
+    padding: 1em 2em;
+    font-weight: 900; }
+    @media only screen and (max-width: 1024px) {
+      #navbarSupportedContent .contact-button {
+        background-color: #fad400;
+        font-size: 1.5em;
+        width: 40vw;
+        padding: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em; } }
 
 .arrow {
-  float: right;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-right: 25px solid #fff;
-  position: relative;
-  top: -55px;
-  right: -36px; }
+  display: none; }
+  @media only screen and (max-width: 1024px) {
+    .arrow {
+      display: inline;
+      float: right;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #fff;
+      position: relative;
+      right: -2em;
+      top: -4em; } }
 
 nav.navbar.transparent {
   margin: auto;
   height: 3em;
   background-color: transparent; }
 
-@media only screen and (max-width: 1200px) {
-  .logo {
-    color: white;
-    font-weight: 900;
-    font-size: 24px;
-    font-family: "Barlow", sans-serif; } }
+.navbar-brand.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Barlow", sans-serif; }
 
 .navbar-toggler {
   padding: 10px 0 0 0; }

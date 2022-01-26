@@ -300,46 +300,82 @@ button.close-nav-toggle {
 // Sunny Landing Page Style 
 // Sunny Header
 
-.navbar {
-	padding: 0.9em 0.5em;
-}
+	#nav-container {
+		padding-top: 10vh;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		@media only screen and (max-width: $small-screen-breakpoint) {
+			padding-top: 2vh;
+			padding-left: 6vw;
+			padding-right: 5vw;
+		}
+		.navbar-toggler {
+			padding: 0;
+		}
+	}
 
 #navbarSupportedContent {
-	background-color: #fff;
+	background-color: transparent;
 	padding: 2em;
 	margin-top: 2em;
-	
+	@media only screen and (max-width: $small-screen-breakpoint) {
+		background-color: #fff;
+		margin-top: 4em;
+	}
 	a {
+		color: #fff;
+		font-size: 1.5em;
+		padding-right: 2em;
+		font-family: "Barlow", sans-serif;
+		font-weight: 400;
+		@media only screen and (max-width: $small-screen-breakpoint) {
 		color: hsl(232, 10%, 55%);
+		font-size: 2em;
+		padding: 1em 0; 
+		margin: auto;
 		font-family: "Barlow", sans-serif;
 		font-weight: 600;
+		}
 	}
 	.nav-link {
 		padding-bottom: 1em;
-		margin: 0;
+		margin: auto;
 		text-align: center;
 	}
 	.nav-item {
 		margin: auto;
 	}
 	.contact-button {
-		background-color: hsl(51, 100%, 49%);
-		color: black;
-		font-family: "Fraunces", serif;
-		width: 40vw;
-		border-radius: 50px;
-		padding: 0.8em;
+			background-color: #fff;
+			color: black;
+			font-family: "Fraunces", serif;
+			border-radius: 50px;
+			font-size: 1.2em;
+			padding: 1em 2em;
+			font-weight: 900;
+			@media only screen and (max-width: $small-screen-breakpoint) {
+				background-color: hsl(51, 100%, 49%);
+				font-size: 1.5em;
+				width: 40vw;
+				padding: 0.8em;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
 	}
 }
 
 .arrow {
-	float:right;
-		border-top: 25px solid transparent;
-	border-bottom: 25px solid transparent; 
-	border-right: 25px solid #fff; 
+	display: none;
+	@media only screen and (max-width: $small-screen-breakpoint) {
+	display: inline;
+	float: right;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent; 
+	border-right: 30px solid #fff; 
 	position: relative;
-	top: -55px;
-	right: -36px;
+	right: -2em;
+	top: -4em;
+	}
 }
 
 nav.navbar.transparent {
@@ -348,13 +384,11 @@ nav.navbar.transparent {
 	background-color: transparent;
 }
 
-@media only screen and (max-width: $large-screen-breakpoint) {
-	.logo {
-		color:white;
-		font-weight: 900;
-		font-size: 24px;
-		font-family: "Barlow", sans-serif;
-	}
+.navbar-brand.logo {
+	color:white;
+	font-weight: bold;
+	font-size: 2em;
+	font-family: "Barlow", sans-serif;
 }
 
 .navbar-toggler {
