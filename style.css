@@ -11,6 +11,7 @@ License URI:  https://github.com/WordPress/twentytwenty/blob/master/LICENSE
 Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@500;600;700;800;900&display=swap");
 #accordion-checkbox {
   display: none; }
 
@@ -228,8 +229,27 @@ button.close-nav-toggle {
 .previous:hover {
   transform: translateX(-30%); }
 
+.navbar {
+  padding: 1.2em 1em; }
+
+nav.navbar.transparent {
+  margin: auto;
+  height: 3em;
+  background-color: transparent; }
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Barlow", sans-serif; } }
+
+.navbar-toggler {
+  padding: 10px 0 0 0; }
+
 #sunny-site-header {
-  background: transparent;
-  position: relative;
   height: 100vh;
-  color: #fff; }
+  width: 100vw;
+  color: #fff;
+  background-position: center center;
+  background-size: cover; }

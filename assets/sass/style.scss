@@ -18,6 +18,8 @@ $tablet-breakpoint: 768px; //481px — 768px
 $small-screen-breakpoint: 1024px; //769px — 1024px
 $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@500;600;700;800;900&display=swap');
+
 // Accordion styles
 #accordion-checkbox {
   display: none;
@@ -296,12 +298,39 @@ button.close-nav-toggle {
 // End gallery template page font
 
 // Sunny Landing Page Style 
-#sunny-site-header {
-	background: transparent;
-	position: relative;
-	height: 100vh;
-	color: #fff;
+// Sunny Header
+
+.navbar {
+	padding: 1.2em 1em;
 }
+
+nav.navbar.transparent {
+	margin: auto;
+	height: 3em;
+	background-color: transparent;
+}
+
+@media only screen and (max-width: $large-screen-breakpoint) {
+	.logo {
+		color:white;
+		font-weight: 900;
+		font-size: 24px;
+		font-family: "Barlow", sans-serif;
+	}
+}
+
+.navbar-toggler {
+	padding: 10px 0 0 0;
+}
+
+#sunny-site-header {
+	height: 100vh;
+	width: 100vw;
+	color: #fff;
+	background-position: center center; 
+	background-size: cover;
+}
+
 
 
 

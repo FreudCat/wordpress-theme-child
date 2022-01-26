@@ -73,5 +73,3 @@ get_header();
   echo '</script>';
 }
 ?>
-
-<script src="https://kit.fontawesome.com/73971c4e5a.js" crossorigin="anonymous"></script>

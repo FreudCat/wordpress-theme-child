@@ -68,8 +68,6 @@ get_template_part( 'template-parts/modal-image' );
       </div>
     </div>
   </div>
-
 </main>
-<script src="https://kit.fontawesome.com/73971c4e5a.js" crossorigin="anonymous"></script>
 <?php get_footer(); ?>
 
