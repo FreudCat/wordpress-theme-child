@@ -18,6 +18,10 @@ $tablet-breakpoint: 768px; //481px — 768px
 $small-screen-breakpoint: 1024px; //769px — 1024px
 $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
 
+// SCSS variables for sunny-landing-page per specs
+$sunny-mobile: 375px;
+$sunny-desktop: 1339px;
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@500;600;700;800;900&display=swap');
 
 // Accordion styles
@@ -299,12 +303,13 @@ button.close-nav-toggle {
 
 // Sunny Landing Page Style 
 // Sunny Header
-
+// $sunny-mobile: 375px;
+// $sunny-desktop: 1339px;
 	#nav-container {
 		padding-top: 10vh;
 		padding-left: 2vw;
 		padding-right: 2vw;
-		@media only screen and (max-width: $small-screen-breakpoint) {
+		@media only screen and (max-width: $sunny-desktop) {
 			padding-top: 2vh;
 			padding-left: 6vw;
 			padding-right: 5vw;
@@ -406,6 +411,89 @@ nav.navbar.transparent {
 		max-width: 100%;
 	}
 }
+//End Sunny Header Styles 
+
+//Start main sunny pages styles
+.main-page-image-div {
+	background-position: center center; 
+	background-size: cover;
+}
+
+.sunny-height {
+	height: 45vw;
+	@media only screen and (max-width: 600px) {
+	height: 90vh;
+	}
+}
+
+img{
+	height:100%;
+overflow-y: hidden;
+ }
+
+.testimonial-header {
+	padding-top: 8em;
+	font-family: "Fraunces", serif;
+	color:hsl(232, 10%, 55%);
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.testimonial-row {
+	padding-top: 2em;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.client-name {
+	font-family: "Fraunces", serif;
+	color:black;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.client-testimonial {
+	font-family: "Barlow", sans-serif;
+	color: gray;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.client-job {
+	font-family: "Barlow", sans-serif;
+	color: gray;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.pictures-row {
+	height: 40vh;
+}
+
+.cube-header {
+	font-family: "Fraunces", serif;
+	font-weight: 900; 
+	font-size: 50px;
+}
+
+.cube-text {
+	font-family: "Barlow", sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	color: hsl(232, 10%, 55%);
+}
+
+a.cube-link {
+		font-family: "Fraunces", serif;
+		font-weight: 900;
+		font-size: 18px;
+		text-decoration: none;
+	}
+
+
+
+
+
 
 
 
