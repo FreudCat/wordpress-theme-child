@@ -358,10 +358,6 @@ nav.navbar.transparent {
     .sunny-height {
       height: 90vh; } }
 
-img {
-  height: 100%;
-  overflow-y: hidden; }
-
 .testimonial-header {
   font-family: "Fraunces", serif;
   color: #9d9faf;
