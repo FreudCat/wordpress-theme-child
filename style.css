@@ -230,8 +230,6 @@ button.close-nav-toggle {
   transform: translateX(-30%); }
 
 .sunny-header-text {
-  position: relative;
-  top: 130px;
   font-family: "Fraunces", serif;
   font-size: 5em;
   font-weight: 900;
@@ -240,10 +238,14 @@ button.close-nav-toggle {
     .sunny-header-text {
       font-size: 4em; } }
 
+.col.page-header-col {
+  margin-top: 25vh; }
+
+.col.arrow-down-col {
+  margin-top: 15vh; }
+
 .arrow-down {
-  margin: auto;
-  position: relative;
-  top: 190px; }
+  margin: auto; }
 
 #nav-container {
   padding-top: 10vh;

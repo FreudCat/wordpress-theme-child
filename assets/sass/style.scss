@@ -305,8 +305,6 @@ button.close-nav-toggle {
 // Sunny Header----------------------------------------------------------------------
 
 .sunny-header-text {
-	position: relative;
-	top: 130px;
 	font-family: "Fraunces", serif;
 	font-size: 5em;
 	font-weight: 900;
@@ -316,10 +314,15 @@ button.close-nav-toggle {
 	}
 }
 
+.col.page-header-col {
+	margin-top: 25vh;
+}
+
+.col.arrow-down-col {
+ margin-top: 15vh; 		
+}
 .arrow-down {
 	margin: auto;
-	position: relative;
-	top: 190px;
 	@media only screen and (max-width: $sunny-desktop) {
 	}
 }
