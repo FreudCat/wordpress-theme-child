@@ -86,21 +86,21 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
 
 
   <div class="row testimonial-row text-center">
-    <div class="col-sm-4">
+    <div class="col-sm-4 testimonial-container">
       <img class="w-25 h-auto mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-emily.jpg'>
       <p class="client-testimonial">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
       <p class="client-name">Emily R.</p>
       <p class="client-job">Marketing Director</p>
     </div>
     
-    <div class="col-sm-4">
+    <div class="col-sm-4 testimonial-container">
     <img class="w-25 h-auto mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-thomas.jpg'>
       <p class="client-testimonial">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
       <p class="client-name">Thomas S.</p>
       <p class="client-job">Chief Operating Officer</p>
     </div>
     
-    <div class="col-sm-4">
+    <div class="col-sm-4 testimonial-container">
     <img class="w-25 h-auto mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-jennie.jpg'>
       <p class="client-testimonial">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
       <p class="client-name">Jennie F.</p>
@@ -111,21 +111,21 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
 
 
 
-  <div class="row pictures-row gx-0">
+  <div class="d-flex flex-wrap mb-3 gx-0">
 
-    <div class="col-md">
+    <div class="picture p-4">
       <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/milkbottles.jpg'>
     </div>
     
-    <div class="col-md">
+    <div class="picture p-4">
     <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/orange.jpg'>
     </div>
-    
-    <div class="col-md">
+
+    <div class="picture p-4">
     <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/cone.jpg'>
     </div>
 
-    <div class="col-md">
+    <div class="picture p-4">
     <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/sugarcubes.jpg'>
       </div>
 
