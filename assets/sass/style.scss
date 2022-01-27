@@ -515,8 +515,6 @@ overflow-y: hidden;
 	}
 }
 
-
-
 .client-job {
 	font-family: "Barlow", sans-serif;
 	color: hsl(232, 10%, 70%);
@@ -525,16 +523,14 @@ overflow-y: hidden;
 }
 
 .pictures-div {
-	height: 250px;
-	width: 250px;
-}
-
-.pictures-row {
-	height: 40vh;
+	width: 100vw;
+	height: 30vw;
 	@media only screen and (max-width: $sunny-desktop) {
-		height: 10vh;
+		width: 100vw;
+		height: 50vw;
 	}
 }
+
 
 @media only screen and (max-width: $sunny-desktop) {
 	.text-holder {
@@ -703,6 +699,43 @@ a.cube-link {
 		color: hsl(198, 62%, 26%);
 		font-size: 3em;
 		font-weight: 900;
+	}
+}
+
+//Sunny footer style 
+.sunny-footer {
+	background-color: hsl(168, 60%, 62%);
+	color: hsl(168, 34%, 41%);
+	width: 100vw;
+	height: 25vw;
+	font-family: "Barlow", sans-serif;
+	@media only screen and (max-width: $sunny-desktop) { 
+		height: 40vh;
+	}
+	.footer-heading {
+		font-weight: 900;
+		font-size: 40px;
+		margin-top: 1.5em;
+	}
+	.footer-nav {
+		font-size: 24px;
+		font-weight: 600;
+		.nav-item {
+			margin: 4em 1em 2em 1em;
+		}
+		@media only screen and (max-width: $sunny-desktop) { 
+			font-size: 18px;
+		}
+	}
+	.socials-row {
+		font-size: 24px;
+		font-weight: 600;
+		.nav-item {
+			margin: 15em 1em 2em 0;
+		}
+		@media only screen and (max-width: $sunny-desktop) { 
+			font-size: 18px;
+		}
 	}
 }
 

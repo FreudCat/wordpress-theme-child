@@ -418,14 +418,12 @@ img {
   font-size: 14px; }
 
 .pictures-div {
-  height: 250px;
-  width: 250px; }
-
-.pictures-row {
-  height: 40vh; }
+  width: 100vw;
+  height: 30vw; }
   @media only screen and (max-width: 1200px) {
-    .pictures-row {
-      height: 10vh; } }
+    .pictures-div {
+      width: 100vw;
+      height: 50vw; } }
 
 @media only screen and (max-width: 1200px) {
   .text-holder {
@@ -577,3 +575,33 @@ a.cube-link {
     color: #19536b;
     font-size: 3em;
     font-weight: 900; }
+
+.sunny-footer {
+  background-color: #64d8c1;
+  color: #458c7e;
+  width: 100vw;
+  height: 25vw;
+  font-family: "Barlow", sans-serif; }
+  @media only screen and (max-width: 1200px) {
+    .sunny-footer {
+      height: 40vh; } }
+  .sunny-footer .footer-heading {
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 1.5em; }
+  .sunny-footer .footer-nav {
+    font-size: 24px;
+    font-weight: 600; }
+    .sunny-footer .footer-nav .nav-item {
+      margin: 4em 1em 2em 1em; }
+    @media only screen and (max-width: 1200px) {
+      .sunny-footer .footer-nav {
+        font-size: 18px; } }
+  .sunny-footer .socials-row {
+    font-size: 24px;
+    font-weight: 600; }
+    .sunny-footer .socials-row .nav-item {
+      margin: 15em 1em 2em 0; }
+    @media only screen and (max-width: 1200px) {
+      .sunny-footer .socials-row {
+        font-size: 18px; } }

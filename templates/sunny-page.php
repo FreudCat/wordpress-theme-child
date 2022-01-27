@@ -111,22 +111,21 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
 
 
 
-  <div class="d-flex flex-wrap mb-3 gx-0">
-
-    <div class="picture p-4">
-      <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/milkbottles.jpg'>
-    </div>
-    
-    <div class="picture p-4">
-    <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/orange.jpg'>
+    <div class="row pictures-row gx-0">
+    <div class="col-lg-3  col-6 gx-0">
+      <img class="square pictures-div" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/milkbottles.jpg'>
     </div>
 
-    <div class="picture p-4">
-    <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/cone.jpg'>
+    <div class="col-lg-3 col-6 gx-0" >
+    <img class="pictures-div" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/orange.jpg'>
     </div>
 
-    <div class="picture p-4">
-    <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/sugarcubes.jpg'>
+    <div class="col-lg-3 col-6 gx-0">
+    <img class="pictures-div" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/cone.jpg'>
+    </div>
+
+    <div class="col-lg-3 col-6 gx-0">
+    <img class="pictures-div" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/sugarcubes.jpg'>
       </div>
 
   </div> 
@@ -138,7 +137,7 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
 
 
 
-<?php echo "This is echoed from sunny-page.php";
+<?php 
 get_footer('sunny')
  ?>
 
