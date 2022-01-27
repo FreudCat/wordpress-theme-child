@@ -496,7 +496,7 @@ overflow-y: hidden;
 .cube-header {
 	font-family: "Fraunces", serif;
 	font-weight: 900; 
-	font-size: 45px;
+	font-size: 43px;
 	line-height: 1.2em;
 }
 
@@ -515,11 +515,110 @@ a.cube-link {
 		font-weight: 900;
 		font-size: 18px;
 		text-decoration: none;
+		color: black;
+		&:hover {
+			color: black;
+		}
 	}
 
+	.transform-div span {
+		display: inline-block;
+		position: relative;
+	}
+	.transform-div span::after {
+		content: '';
+		position: absolute;
+		bottom: 5%;
+		left: -9px;
+		height: .5rem;
+		width: 115%;
+		border: 5px solid hsl(51, 100%, 79%);
+		background-color: hsl(51, 100%, 79%);
+		border-radius: 50px;
+		z-index: -1;
+	}
 
+	.transform-div span:hover::after {
+		content: '';
+		position: absolute;
+		bottom: 5%;
+		left: -9px;
+		height: .5rem;
+		width: 115%;
+		border: 5px solid hsl(51, 100%, 49%);
+		background-color: hsl(51, 100%, 49%);
+		border-radius: 50px;
+		z-index: -1;
+	}
 
+	.stand-out-div span {
+		display: inline-block;
+		position: relative;
+	}
+	.stand-out-div span::after {
+		content: '';
+		position: absolute;
+		bottom: 5%;
+		left: -9px;
+		height: .5rem;
+		width: 115%;
+		border: 5px solid hsl(7, 99%, 90%);
+		background-color: hsl(7, 99%, 90%);
+		border-radius: 50px;
+		z-index: -1;
+	}
 
+	.stand-out-div span:hover::after {
+		content: '';
+		position: absolute;
+		bottom: 5%;
+		left: -9px;
+		height: .5rem;
+		width: 115%;
+		border: 5px solid hsl(7, 99%, 70%);
+		background-color: hsl(7, 99%, 70%);
+		border-radius: 50px;
+		z-index: -1;
+	}
+
+		.graphic-design-header {
+			font-family: "Fraunces", serif;
+			color: hsl(167, 40%, 24%);
+			font-size: 3em;
+			font-weight: 900;
+		}
+
+.design-holder {
+	margin-top: 40em;	
+	.graphic-design-text {
+		font-family: "Barlow", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+		color: hsl(167, 40%, 24%);
+		padding-top: 1em; 
+		padding-bottom: 1em;
+	}
+	.graphic-design-header {
+		font-family: "Fraunces", serif;
+		color: hsl(167, 40%, 24%);
+		font-size: 3em;
+		font-weight: 900;
+	}
+	.photography-text {
+		font-family: "Barlow", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+		color: hsl(198, 62%, 26%);
+		padding-top: 1em; 
+		padding-bottom: 1em;
+	}
+	.photography-header {
+		font-family: "Fraunces", serif;
+		color: hsl(198, 62%, 26%);
+		font-size: 3em;
+		font-weight: 900;
+	}
+}
 
 
 
