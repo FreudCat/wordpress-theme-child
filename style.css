@@ -238,15 +238,12 @@ button.close-nav-toggle {
   letter-spacing: 0.2em; }
   @media only screen and (max-width: 1200px) {
     .sunny-header-text {
-      display: none; } }
+      font-size: 4em; } }
 
 .arrow-down {
   margin: auto;
   position: relative;
   top: 190px; }
-  @media only screen and (max-width: 1200px) {
-    .arrow-down {
-      display: none; } }
 
 #nav-container {
   padding-top: 10vh;
@@ -329,6 +326,9 @@ nav.navbar.transparent {
   font-weight: bold;
   font-size: 2em;
   font-family: "Barlow", sans-serif; }
+  @media only screen and (max-width: 1024px) {
+    .navbar-brand.logo {
+      font-size: 3em; } }
 
 .navbar-toggler {
   padding: 10px 0 0 0; }
@@ -351,7 +351,7 @@ nav.navbar.transparent {
   background-size: cover; }
 
 .sunny-height {
-  height: 45vw; }
+  height: 45vh; }
   @media only screen and (max-width: 600px) {
     .sunny-height {
       height: 90vh; } }
@@ -361,16 +361,23 @@ img {
   overflow-y: hidden; }
 
 .testimonial-header {
-  padding-top: 8em;
   font-family: "Fraunces", serif;
-  color: #818498;
+  color: #9d9faf;
   font-weight: 900;
-  font-size: 18px; }
+  font-size: 20px;
+  letter-spacing: 0.3em; }
+
+.testimonial-header-row {
+  height: 18vh; }
 
 .testimonial-row {
-  padding-top: 2em;
+  height: 60vh;
+  padding-top: 8em;
   padding-left: 10vw;
   padding-right: 10vw; }
+  @media only screen and (max-width: 1200px) {
+    .testimonial-row {
+      height: auto; } }
 
 .client-name {
   font-family: "Fraunces", serif;
@@ -380,24 +387,36 @@ img {
 
 .client-testimonial {
   font-family: "Barlow", sans-serif;
-  color: gray;
+  color: #818498;
   font-weight: 600;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.8em;
+  padding: 4em 2em; }
 
 .client-job {
   font-family: "Barlow", sans-serif;
-  color: gray;
-  font-weight: 400;
+  color: #abadba;
+  font-weight: 600;
   font-size: 14px; }
 
 .pictures-row {
   height: 40vh; }
+
+@media only screen and (max-width: 1200px) {
+  .text-holder {
+    padding: 8em 0;
+    text-align: center; } }
 
 .cube-header {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 43px;
   line-height: 1.2em; }
+  @media only screen and (max-width: 1200px) {
+    .cube-header {
+      text-align: center;
+      font-size: 3.4em;
+      padding: 0 1.3em; } }
 
 .cube-text {
   font-family: "Barlow", sans-serif;
@@ -407,6 +426,13 @@ img {
   color: #818498;
   padding-top: 1em;
   padding-bottom: 1em; }
+  @media only screen and (max-width: 1200px) {
+    .cube-text {
+      margin: auto;
+      width: 84vw;
+      font-weight: 600;
+      line-height: 1.5em;
+      padding-bottom: 2em; } }
 
 a.cube-link {
   font-family: "Fraunces", serif;
@@ -416,6 +442,10 @@ a.cube-link {
   color: black; }
   a.cube-link:hover {
     color: black; }
+
+@media only screen and (max-width: 1200px) {
+  a.transform-div {
+    text-align: center; } }
 
 .transform-div span {
   display: inline-block;
@@ -488,6 +518,13 @@ a.cube-link {
     color: #25564b;
     padding-top: 1em;
     padding-bottom: 1em; }
+    @media only screen and (max-width: 1200px) {
+      .design-holder .graphic-design-text {
+        line-height: 1.5em;
+        padding: 0 1em;
+        font-size: 16px;
+        margin-top: 2em;
+        margin-bottom: 4em; } }
   .design-holder .graphic-design-header {
     font-family: "Fraunces", serif;
     color: #25564b;
@@ -500,6 +537,13 @@ a.cube-link {
     color: #19536b;
     padding-top: 1em;
     padding-bottom: 1em; }
+    @media only screen and (max-width: 1200px) {
+      .design-holder .photography-text {
+        line-height: 1.5em;
+        padding: 0 1em;
+        font-size: 16px;
+        margin-top: 2em;
+        margin-bottom: 4em; } }
   .design-holder .photography-header {
     font-family: "Fraunces", serif;
     color: #19536b;

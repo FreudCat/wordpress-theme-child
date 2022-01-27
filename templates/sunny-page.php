@@ -63,65 +63,69 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
     </div>
   </div>
 
-  <div class="row sunny-height gx-0">
+  <div class="row h-auto gx-0">
     <div class="col-sm main-page-image-div" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/design.jpg');">  
-    <div class="col-lg-7 mx-auto design-holder">
-      <p class="graphic-design-header text-center">Graphic Design</p>
-      <p class="graphic-design-text text-center">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+      <div class="col-lg-7 mx-auto design-holder">
+        <p class="graphic-design-header text-center">Graphic Design</p>
+        <p class="graphic-design-text text-center">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
       </div>
     </div>
     <div class="col-sm main-page-image-div" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/photography.jpg');">
-    <div class="col-lg-6 mx-auto design-holder">  
-    <p class="photography-header text-center">Photography</p>
-      <p class="photography-text text-center">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      <div class="col-lg-6 mx-auto design-holder">  
+        <p class="photography-header text-center">Photography</p>
+        <p class="photography-text text-center">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
     </div>
-</div>
   </div>
 
-  <div class="testimonial-header row gx-0 text-center">
-    <p>CLIENT TESTIMONIALS</p>
+  <div class="row testimonial-header-row align-items-end">
+    <div class="col text-center ">
+      <p class="testimonial-header">CLIENT TESTIMONIALS</p>
+    </div>
   </div>
 
-  <div class="row text-center d-flex flex-wrap h-auto justify-content-evenly testimonial-row gx-0">
 
-    <div class="col-sm-3">
+  <div class="row testimonial-row text-center">
+    <div class="col-sm-4">
       <img class="w-25 h-auto mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-emily.jpg'>
       <p class="client-testimonial">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
       <p class="client-name">Emily R.</p>
       <p class="client-job">Marketing Director</p>
     </div>
     
-    <div class="col-sm-3">
+    <div class="col-sm-4">
     <img class="w-25 h-auto mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-thomas.jpg'>
       <p class="client-testimonial">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
       <p class="client-name">Thomas S.</p>
       <p class="client-job">Chief Operating Officer</p>
     </div>
     
-    <div class="col-sm-3">
+    <div class="col-sm-4">
     <img class="w-25 h-auto mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-jennie.jpg'>
       <p class="client-testimonial">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
       <p class="client-name">Jennie F.</p>
       <p class="client-job">Business Owner</p>
     </div>
+    </div>
 
-  </div> 
+
+
 
   <div class="row pictures-row gx-0">
 
-    <div class="col-sm">
+    <div class="col-md">
       <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/milkbottles.jpg'>
     </div>
     
-    <div class="col-sm">
+    <div class="col-md">
     <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/orange.jpg'>
     </div>
     
-    <div class="col-sm">
+    <div class="col-md">
     <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/cone.jpg'>
     </div>
 
-    <div class="col-sm">
+    <div class="col-md">
     <img src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/sugarcubes.jpg'>
       </div>
 
