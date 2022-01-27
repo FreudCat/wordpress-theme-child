@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays the Sunny Landing Page header
+ * Displays the sunny landing page
  *
  * @package WordPress
  * @subpackage Twenty_Twenty
@@ -10,55 +10,26 @@
 if ( is_singular() ) {
 	$entry_header_classes .= ' header-footer-group';
 }
-
 ?>
 
-
-<div class="">
+<header id="sunny-site-header" class="entry-header has-text-align-center" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/header.jpg');" role="banner">
 	<div class="entry-header-inner section-inner medium">
 	
 		<?php
-		/**
-		 * Allow child themes and plugins to filter the display of the categories in the entry header.
-		 *
-		 * @since Twenty Twenty 1.0
-		 *
-		 * @param bool Whether to show the categories in header. Default true.
-		 */
-		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
-
-		if ( true === $show_categories && has_category() ) {
-			?>
-
-			<div class="entry-categories">
-				<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
-				<div class="entry-categories-inner">
-					<?php the_category( ' ' ); ?>
-				</div><!-- .entry-categories-inner -->
-			</div><!-- .entry-categories -->
-
-			<?php
-		}		
-
+	
 		if ( is_singular() ) {
-			echo "this is something that is echoed from the entry-header-sunny.php page"; 
+			echo "<h1 class='sunny-header-text'>WE ARE CREATIVES</h1>";?>
+
+			<img class="arrow-down" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/icon-arrow-down.svg'>
+			<?php
 		} else {
 			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 		}
 
-		$intro_text_width = '';
 
-		if ( is_singular() ) {
-			$intro_text_width = ' small';
-		} else {
-			$intro_text_width = ' thin';
-		}
 
-	
-		// Default to displaying the post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
 		?>
-		</div>
+
 	</div><!-- .entry-header-inner -->
 
 </header><!-- .entry-header -->

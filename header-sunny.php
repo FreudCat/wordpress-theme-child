@@ -22,9 +22,8 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-	<?php	wp_body_open(); ?>
-  <header id="sunny-site-header" class="header-footer-group" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/header.jpg');" role="banner">
+<body>
+	<?php ?>
     <nav class="navbar navbar-expand-lg transparent">
       <div id="nav-container" class="container-fluid">
 

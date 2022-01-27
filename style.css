@@ -11,7 +11,7 @@ License URI:  https://github.com/WordPress/twentytwenty/blob/master/LICENSE
 Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap");
 #accordion-checkbox {
   display: none; }
 
@@ -229,11 +229,30 @@ button.close-nav-toggle {
 .previous:hover {
   transform: translateX(-30%); }
 
+.sunny-header-text {
+  position: relative;
+  top: 130px;
+  font-family: "Fraunces", serif;
+  font-size: 5em;
+  font-weight: 900;
+  letter-spacing: 0.2em; }
+  @media only screen and (max-width: 1200px) {
+    .sunny-header-text {
+      display: none; } }
+
+.arrow-down {
+  margin: auto;
+  position: relative;
+  top: 190px; }
+  @media only screen and (max-width: 1200px) {
+    .arrow-down {
+      display: none; } }
+
 #nav-container {
   padding-top: 10vh;
   padding-left: 2vw;
   padding-right: 2vw; }
-  @media only screen and (max-width: 1339px) {
+  @media only screen and (max-width: 1200px) {
     #nav-container {
       padding-top: 2vh;
       padding-left: 6vw;
@@ -245,7 +264,7 @@ button.close-nav-toggle {
   background-color: transparent;
   padding: 2em;
   margin-top: 2em; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1200px) {
     #navbarSupportedContent {
       background-color: #fff;
       margin-top: 4em; } }
@@ -300,8 +319,9 @@ button.close-nav-toggle {
       top: -4em; } }
 
 nav.navbar.transparent {
-  margin: auto;
-  height: 3em;
+  margin: 0;
+  height: 0;
+  padding: 0;
   background-color: transparent; }
 
 .navbar-brand.logo {
@@ -315,6 +335,8 @@ nav.navbar.transparent {
 
 #sunny-site-header {
   height: 100vh;
+  margin-top: 0;
+  padding: 0;
   width: 100vw;
   color: #fff;
   background-position: center center;
@@ -374,13 +396,17 @@ img {
 .cube-header {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 50px; }
+  font-size: 45px;
+  line-height: 1.2em; }
 
 .cube-text {
   font-family: "Barlow", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #818498; }
+  font-size: 18px;
+  font-weight: 500;
+  width: 31vw;
+  color: #818498;
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 a.cube-link {
   font-family: "Fraunces", serif;

@@ -2,7 +2,9 @@
 /**
  * Template Name: Sunny Landing Page */
 get_header('sunny');
+remove_action('wp_head', '_admin_bar_bump_cb');
 ?>
+
 
 <?php 
 
@@ -12,6 +14,19 @@ function console_log( $dataToLog ){
   echo '</script>';
 }
 
+$list = 'enqueued';
+if (wp_style_is( 'bootstrapCSS', $list )) {
+    console_log("BootstrapCSS was enqueued");
+} else {
+  console_log("BootstrapCSS was NOT enqueued");
+}
+?>
+<?php
+        get_template_part( 'template-parts/content', get_post_type() ); 
+  ?>
+
+
+<?php
 $list = 'enqueued';
 if (wp_style_is( 'bootstrapCSS', $list )) {
     console_log("BootstrapCSS was enqueued");
@@ -114,11 +129,14 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
 
 
 
+<?php echo "This is echoed from sunny-page.php";
+get_footer('sunny')
+ ?>
 
-<?php echo "This is echoed from sunny-page.php" ?>
 
-<?php
-        get_template_part( 'template-parts/content', get_post_type() );
-get_footer('sunny'); 
-  ?>
+
+
+
+
+
 

@@ -18,7 +18,7 @@
 	<?php
  if (basename(get_page_template()) == 'landing-page.php') {
 	get_template_part( 'template-parts/entry-header-landing' );
- } else if (basename(get_page_template()) == 'sunny-page.php') {
+ } elseif (basename(get_page_template()) == 'sunny-page.php') {
 	get_template_part( 'template-parts/entry-header-sunny');
  } else {
 	get_template_part( 'template-parts/entry-header' );
@@ -29,7 +29,9 @@
 	}
 
 	?>
-
+  <?php if (basename(get_page_template()) == 'sunny-page.php') { ?>
+		<span></span>
+		<?php } else { ?>
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
@@ -45,6 +47,7 @@
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
+	<?php } ?>
 
 	<div class="section-inner">
 		<?php

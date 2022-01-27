@@ -20,9 +20,9 @@ $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 12
 
 // SCSS variables for sunny-landing-page per specs
 $sunny-mobile: 375px;
-$sunny-desktop: 1339px;
+$sunny-desktop: 1200px; //original was 1440px
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap');
 
 // Accordion styles
 #accordion-checkbox {
@@ -301,11 +301,31 @@ button.close-nav-toggle {
 // End carousel styles------------------------------------------------
 // End gallery template page font
 
-// Sunny Landing Page Style 
-// Sunny Header
-// $sunny-mobile: 375px;
-// $sunny-desktop: 1339px;
-	#nav-container {
+// Sunny Landing Page Style ---------------------------------------------------------
+// Sunny Header----------------------------------------------------------------------
+
+.sunny-header-text {
+	position: relative;
+	top: 130px;
+	font-family: "Fraunces", serif;
+	font-size: 5em;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	@media only screen and (max-width: $sunny-desktop) {
+		display: none;
+	}
+}
+
+.arrow-down {
+	margin: auto;
+	position: relative;
+	top: 190px;
+	@media only screen and (max-width: $sunny-desktop) {
+		display: none;
+	}
+}
+
+#nav-container {
 		padding-top: 10vh;
 		padding-left: 2vw;
 		padding-right: 2vw;
@@ -323,7 +343,7 @@ button.close-nav-toggle {
 	background-color: transparent;
 	padding: 2em;
 	margin-top: 2em;
-	@media only screen and (max-width: $small-screen-breakpoint) {
+	@media only screen and (max-width: $sunny-desktop) {
 		background-color: #fff;
 		margin-top: 4em;
 	}
@@ -384,8 +404,9 @@ button.close-nav-toggle {
 }
 
 nav.navbar.transparent {
-	margin: auto;
-	height: 3em;
+	margin: 0;
+	height: 0;
+	padding: 0;
 	background-color: transparent;
 }
 
@@ -402,6 +423,8 @@ nav.navbar.transparent {
 
 #sunny-site-header {
 	height: 100vh;
+	margin-top: 0; 
+	padding: 0;
 	width: 100vw;
 	color: #fff;
 	background-position: center center; 
@@ -473,14 +496,18 @@ overflow-y: hidden;
 .cube-header {
 	font-family: "Fraunces", serif;
 	font-weight: 900; 
-	font-size: 50px;
+	font-size: 45px;
+	line-height: 1.2em;
 }
 
 .cube-text {
 	font-family: "Barlow", sans-serif;
-	font-size: 22px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 500;
+	width: 31vw;
 	color: hsl(232, 10%, 55%);
+	padding-top: 1em; 
+	padding-bottom: 1em;
 }
 
 a.cube-link {
@@ -502,3 +529,4 @@ a.cube-link {
 // $tablet-breakpoint: 768px; //481px — 768px
 // $small-screen-breakpoint: 1024px; //769px — 1024px
 // $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
+
