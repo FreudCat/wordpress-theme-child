@@ -339,6 +339,10 @@ button.close-nav-toggle {
 	}
 }
 
+.sunny-nav-button {
+	color: transparent;
+}
+
 .container-fluid.nav-container {
 	margin-top: 10em;
 	margin-left: 3em; 
@@ -402,6 +406,10 @@ button.close-nav-toggle {
 				margin: auto;
 				margin-top: 1em;
 			}
+			&:hover, &:focus, &:active {
+				color: hsl(0, 0%, 100%);
+				background-color: #60cafffd;
+			}
 		}	
 	.arrow {
 		display: none;
@@ -413,24 +421,13 @@ button.close-nav-toggle {
 		border-right: 30px solid hsl(0, 0%, 100%);
 		right: 2em;
 		top: 9em;
-
 		}
 		@media only screen and (max-width: $sunny-mobile) {
 			right: 2em;
 			top: 9em;
 		}
 	}
-
 }
-
-.nav-item.sunny-list-item {
-	margin: 0;
-}
-
-	.sunny-nav-button {
-		color: transparent;
-	}
-
 
 nav.navbar.transparent {
 	margin: 0;
@@ -439,27 +436,135 @@ nav.navbar.transparent {
 	background-color: transparent;
 }
 
-
-
 .navbar-toggler {
 	padding: 10px 0 0 0;
 }
-
-
-//End Sunny Header Styles 
-
+//End Sunny Header Styles ------------------------------------------------
 //Start main sunny pages styles
-.main-page-image-div {
+section.sunny-sections {
+	padding: 0;
+	margin: 0;
+	.cube-header {
+		font-family: "Fraunces", serif;
+		font-weight: 900; 
+		font-size: 4em;
+		line-height: 1.2em;
+		@media only screen and (max-width: $sunny-desktop) {
+		padding-top: 2em;
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 3em;
+		}
+	}
+	.cube-text {
+		font-family: "Barlow", sans-serif;
+		font-size: 1.5em;
+		font-weight: 500;
+		color: hsl(232, 10%, 55%);
+		padding-top: 1em; 
+		padding-bottom: 1em;
+		@media only screen and (max-width: $sunny-desktop) {
+			margin-top: 1em;
+			padding-right: 3em;
+			padding-left: 3em;
+		}
+	}
+	a.cube-link {
+		font-family: "Fraunces", serif;
+		font-weight: 900;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: black;
+		&:hover {
+			color: black;
+		}
+	}
+}
+.text-holder {
+	@media only screen and (max-width: $sunny-desktop) {
+		text-align: center;
+	}
+}
+
+
+@media only screen and (max-width: $sunny-desktop) {
+	a.transform-div {
+		text-align: center;
+	}
+}
+
+.transform-div span {
+	display: inline-block;
+	position: relative;
+	margin-left: 0.4em;
+}
+.transform-div span::after {
+	content: '';
+	position: absolute;
+	bottom: 5%;
+	left: -9px;
+	height: .5rem;
+	width: 115%;
+	border: 5px solid hsl(51, 100%, 79%);
+	background-color: hsl(51, 100%, 79%);
+	border-radius: 50px;
+	z-index: -1;
+}
+
+.transform-div span:hover::after {
+	content: '';
+	position: absolute;
+	bottom: 5%;
+	left: -9px;
+	height: .5rem;
+	width: 115%;
+	border: 5px solid hsl(51, 100%, 49%);
+	background-color: hsl(51, 100%, 49%);
+	border-radius: 50px;
+	z-index: -1;
+}
+
+.stand-out-div span {
+	display: inline-block;
+	position: relative;
+	margin-left: 0.4em;
+}
+.stand-out-div span::after {
+	content: '';
+	position: absolute;
+	bottom: 5%;
+	left: -9px;
+	height: .5rem;
+	width: 115%;
+	border: 5px solid hsl(7, 99%, 90%);
+	background-color: hsl(7, 99%, 90%);
+	border-radius: 50px;
+	z-index: -1;
+}
+
+.stand-out-div span:hover::after {
+	content: '';
+	position: absolute;
+	bottom: 5%;
+	left: -9px;
+	height: .5rem;
+	width: 115%;
+	border: 5px solid hsl(7, 99%, 70%);
+	background-color: hsl(7, 99%, 70%);
+	border-radius: 50px;
+	z-index: -1;
+}
+
+.image-div {
 	background-position: center center; 
 	background-size: cover;
 }
 
-.sunny-height {
-	height: 45vh;
-	@media only screen and (max-width: 600px) {
-	height: 90vh;
-	}
-}
+
+
+
+
+
 
 .testimonial-header {
 	font-family: "Fraunces", serif;
@@ -536,122 +641,11 @@ nav.navbar.transparent {
 }
 
 
-@media only screen and (max-width: $sunny-desktop) {
-	.text-holder {
-		padding: 8em 0;
-		text-align: center;
-	}
-}
 
 .picture.p-4 {
 	padding: 0 !important;
 }
 
-.cube-header {
-	font-family: "Fraunces", serif;
-	font-weight: 900; 
-	font-size: 43px;
-	line-height: 1.2em;
-	@media only screen and (max-width: $sunny-desktop) {
-		text-align: center;
-		font-size: 3.4em;
-		padding: 0 1.3em;
-	}
-}
-
-.cube-text {
-	font-family: "Barlow", sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	width: 31vw;
-	color: hsl(232, 10%, 55%);
-	padding-top: 1em; 
-	padding-bottom: 1em;
-	@media only screen and (max-width: $sunny-desktop) {
-		margin: auto;
-		width: 84vw;
-		font-weight: 600;
-		line-height: 1.5em;
-		padding-bottom: 2em;
-	}
-}
-
-a.cube-link {
-		font-family: "Fraunces", serif;
-		font-weight: 900;
-		font-size: 18px;
-		text-decoration: none;
-		color: black;
-		&:hover {
-			color: black;
-		}
-	}
-
-	@media only screen and (max-width: $sunny-desktop) {
-		a.transform-div {
-			text-align: center;
-		}
-	}
-
-	.transform-div span {
-		display: inline-block;
-		position: relative;
-	}
-	.transform-div span::after {
-		content: '';
-		position: absolute;
-		bottom: 5%;
-		left: -9px;
-		height: .5rem;
-		width: 115%;
-		border: 5px solid hsl(51, 100%, 79%);
-		background-color: hsl(51, 100%, 79%);
-		border-radius: 50px;
-		z-index: -1;
-	}
-
-	.transform-div span:hover::after {
-		content: '';
-		position: absolute;
-		bottom: 5%;
-		left: -9px;
-		height: .5rem;
-		width: 115%;
-		border: 5px solid hsl(51, 100%, 49%);
-		background-color: hsl(51, 100%, 49%);
-		border-radius: 50px;
-		z-index: -1;
-	}
-
-	.stand-out-div span {
-		display: inline-block;
-		position: relative;
-	}
-	.stand-out-div span::after {
-		content: '';
-		position: absolute;
-		bottom: 5%;
-		left: -9px;
-		height: .5rem;
-		width: 115%;
-		border: 5px solid hsl(7, 99%, 90%);
-		background-color: hsl(7, 99%, 90%);
-		border-radius: 50px;
-		z-index: -1;
-	}
-
-	.stand-out-div span:hover::after {
-		content: '';
-		position: absolute;
-		bottom: 5%;
-		left: -9px;
-		height: .5rem;
-		width: 115%;
-		border: 5px solid hsl(7, 99%, 70%);
-		background-color: hsl(7, 99%, 70%);
-		border-radius: 50px;
-		z-index: -1;
-	}
 
 		.graphic-design-header {
 			font-family: "Fraunces", serif;
