@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Header file for the Sunny Landing Page template.
@@ -25,12 +24,12 @@
 <body>
 	<?php ?>
     <nav class="navbar navbar-expand-lg transparent">
-      <div id="nav-container" class="container-fluid">
+      <div class="container-fluid nav-container g-0">
 
-        <a class="navbar-brand logo" href="#">bloom</a>
-        <!-- Start the hamburger menu -->
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand logo" href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/logo.svg"></a>
+
+        <!-- Start the hamburger menu -->        
+        <button class="navbar-toggler sunny-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <img class="navbar-toggler-icon" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/icon-hamburger.svg">
         </button>
         
@@ -38,25 +37,23 @@
         <span class="arrow"></span>
           <ul class="navbar-nav ms-auto flex-nowrap">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link header-link" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link header-link" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link header-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link contact-button" href="#">CONTACT</a>
             </li>
           </ul>
-        </div>
+        </div>  <!-- End collapsible nav div -->
 
-      </div>
-
+      </div> <!-- End navbar-container div -->
     </nav>
   </header>
-  
 </body>
 </html> 
 
