@@ -46,6 +46,7 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - How to write useful and descriptive code for troubleshooting purposes 
 - If vw is 100% and I add padding to elements along the edge, I get an [annoying hortizontal scrollbar](https://stackoverflow.com/questions/36699885/padding-makes-horizontal-scrollbar-to-appear). I'm sure there's many reasons for the scrollbar appearing, but this was what caused it for me.
 - That a psuedoelement is a pretty cool way to add a style component to the page
+- How to use SVG fill:color and viewbox properties 
 
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)

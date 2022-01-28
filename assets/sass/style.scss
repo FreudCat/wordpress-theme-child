@@ -739,16 +739,17 @@ ul.footer-nav {
 }
 
 .sunny-footer {
-	background-color: hsl(168, 60%, 62%);
+	background-color: hsl(168, 72%, 72%);
 	font-family: "Barlow", sans-serif;
-	@media only screen and (max-width: $sunny-desktop) { 
-	}
 	a.footer-logo {
 		text-decoration: none;
 		font-family: "Barlow", sans-serif;
 		font-weight: 900;
 		font-size: 34px;
 		margin-top: 1.5em;
+		@media only screen and (max-width: $sunny-mobile) { 
+			margin-top: 2em;
+		}
 	}
 	.footer-nav {
 		font-size: 18px;
@@ -758,6 +759,9 @@ ul.footer-nav {
 		color: hsl(169, 36%, 43%);
 		margin-left: 0;
 		padding: 0;
+		@media only screen and (max-width: $sunny-mobile) { 
+			margin-top: 2em;
+		}
 	}
 	.socials-row {
 		font-size: 24px;
@@ -770,12 +774,20 @@ ul.footer-nav {
 		@media only screen and (max-width: $sunny-desktop) { 
 			font-size: 18px;
 		}
+		@media only screen and (max-width: $sunny-mobile) { 
+			margin-top: 4em;
+			margin-bottom: 4em;
+		}
 	}
 	.svg-icons {
 		&:hover, &:focus, &:active {
 			fill:hsl(0, 0%, 100%);
 		}
 	}
+}
+
+.svg-footer {
+	width: 186px;
 }
 
 a.footer-links {
