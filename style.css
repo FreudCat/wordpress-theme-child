@@ -237,9 +237,11 @@ button.close-nav-toggle {
   color: white;
   background-position: center center;
   background-size: cover; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
     #sunny-site-header {
-      height: 80vh; } }
+      background-position: center;
+      background-size: cover;
+      height: 70vh; } }
   #sunny-site-header .sunny-header-text {
     font-family: "Fraunces", serif;
     margin-top: 3em;
@@ -248,10 +250,16 @@ button.close-nav-toggle {
     letter-spacing: 0.2em; }
     @media only screen and (max-width: 991px) {
       #sunny-site-header .sunny-header-text {
+        font-size: 5em; } }
+    @media only screen and (max-width: 600px) {
+      #sunny-site-header .sunny-header-text {
         font-size: 4em; } }
   #sunny-site-header .arrow-down {
     margin: 6em auto;
     height: 40%; }
+    @media only screen and (max-width: 400px) {
+      #sunny-site-header .arrow-down {
+        margin: 5em auto; } }
 
 .container-fluid.nav-container {
   margin-top: 10em;
@@ -259,14 +267,14 @@ button.close-nav-toggle {
   margin-right: 3em; }
   @media only screen and (max-width: 991px) {
     .container-fluid.nav-container {
-      padding-top: 3vh;
-      padding-left: 3vw;
-      padding-right: 3vw; } }
-  @media only screen and (max-width: 376px) {
+      margin-top: 3em;
+      margin-left: 2em;
+      margin-right: 2em; } }
+  @media only screen and (max-width: 400px) {
     .container-fluid.nav-container {
-      padding-top: 3vh;
-      padding-left: 4vw;
-      padding-right: 4vw; } }
+      margin-top: 3em;
+      margin-left: 2em;
+      margin-right: 2em; } }
   .container-fluid.nav-container .navbar-toggler {
     padding: 0;
     margin: 0; }
@@ -274,7 +282,15 @@ button.close-nav-toggle {
 @media only screen and (max-width: 991px) {
   #navbarSupportedContent {
     background-color: white;
-    margin-top: 4em; } }
+    margin-top: 6em;
+    padding-top: 2em;
+    padding-bottom: 4em; } }
+
+@media only screen and (max-width: 400px) {
+  #navbarSupportedContent {
+    background-color: white;
+    margin-top: 5em;
+    padding-top: 3em; } }
 
 #navbarSupportedContent a.header-link {
   color: white;
@@ -287,13 +303,13 @@ button.close-nav-toggle {
     #navbarSupportedContent a.header-link {
       color: #818498;
       font-size: 2em;
-      padding: 0.5em 0;
-      margin: auto;
+      margin: 0;
       font-family: "Barlow", sans-serif;
-      font-weight: 600; } }
+      font-weight: 600;
+      padding-bottom: 1em; } }
 
 #navbarSupportedContent .contact-button {
-  background-color: #fff;
+  background-color: white;
   color: black;
   font-family: "Fraunces", serif;
   border-radius: 50px;
@@ -304,29 +320,31 @@ button.close-nav-toggle {
     #navbarSupportedContent .contact-button {
       background-color: #fad400;
       font-size: 1.5em;
-      width: 15vw;
-      padding: 0.8em;
-      margin-top: 1em;
-      margin-bottom: 1em; } }
-  @media only screen and (max-width: 700px) {
-    #navbarSupportedContent .contact-button {
-      width: 20vw; } }
+      width: 10em;
+      margin: auto;
+      margin-top: 1em; } }
+
+#navbarSupportedContent .arrow {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    #navbarSupportedContent .arrow {
+      display: inline;
+      position: absolute;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid white;
+      right: 2em;
+      top: 9em; } }
+  @media only screen and (max-width: 400px) {
+    #navbarSupportedContent .arrow {
+      right: 2em;
+      top: 9em; } }
+
+.nav-item.sunny-list-item {
+  margin: 0; }
 
 .sunny-nav-button {
   color: transparent; }
-
-.arrow {
-  display: none; }
-  @media only screen and (max-width: 991px) {
-    .arrow {
-      display: inline;
-      float: right;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-      border-right: 30px solid #fff;
-      position: relative;
-      right: -2.5em;
-      top: -5em; } }
 
 nav.navbar.transparent {
   margin: 0;

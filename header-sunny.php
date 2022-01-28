@@ -35,17 +35,17 @@
         
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
         <span class="arrow"></span>
-          <ul class="navbar-nav ms-auto flex-nowrap">
-            <li class="nav-item">
+          <ul class="navbar-nav ms-auto flex-nowrap text-center">
+            <li class="nav-item sunny-list-item">
               <a class="nav-link header-link" aria-current="page" href="#">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item sunny-list-item">
               <a class="nav-link header-link" href="#">Services</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item sunny-list-item">
               <a class="nav-link header-link" href="#">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item sunny-list-item nav-contact">
               <a class="nav-link contact-button" href="#">CONTACT</a>
             </li>
           </ul>

@@ -19,7 +19,7 @@ $small-screen-breakpoint: 1024px; //769px — 1024px
 $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
 
 // SCSS variables for sunny-landing-page per specs
-$sunny-mobile: 376px;
+$sunny-mobile: 400px; //sunny specs use mobil as 375px 
 $sunny-desktop: 991px; //sunny specs use desktop as 1440px - >=992 is the lg breakpoint for bootstrap
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap');
@@ -312,8 +312,10 @@ button.close-nav-toggle {
 	color: hsl(0, 0%, 100%);
 	background-position: center center; 
 	background-size: cover;
-	@media only screen and (max-width: 600px) {
-		height: 80vh;
+	@media only screen and (max-width: $sunny-mobile ) {
+		background-position: center; 
+		background-size: cover;
+		height: 70vh
 	}
 	.sunny-header-text {
 		font-family: "Fraunces", serif;
@@ -322,13 +324,17 @@ button.close-nav-toggle {
 		font-weight: 900;
 		letter-spacing: 0.2em;
 		@media only screen and (max-width: $sunny-desktop) {
+			font-size: 5em;
+		}
+		@media only screen and (max-width: 600px) {
 			font-size: 4em;
 		}
 	}
 	.arrow-down {
 		margin: 6em auto;
 		height: 40%;
-		@media only screen and (max-width: $sunny-desktop) {
+		@media only screen and (max-width: $sunny-mobile) {
+			margin: 5em auto;
 		}
 	}
 }
@@ -338,14 +344,14 @@ button.close-nav-toggle {
 	margin-left: 3em; 
 	margin-right: 3em;
 	@media only screen and (max-width: $sunny-desktop) {
-		padding-top: 3vh;
-		padding-left: 3vw;
-		padding-right: 3vw;
+		margin-top: 3em;
+		margin-left: 2em; 
+		margin-right: 2em;
 	}
 	@media only screen and (max-width: $sunny-mobile) {
-		padding-top: 3vh;
-		padding-left: 4vw;
-		padding-right: 4vw;
+		margin-top: 3em;
+		margin-left: 2em; 
+		margin-right: 2em;
 	}	
 	.navbar-toggler {
 		padding: 0;
@@ -356,7 +362,14 @@ button.close-nav-toggle {
 #navbarSupportedContent {
 	@media only screen and (max-width: $sunny-desktop) {
 		background-color: hsl(0, 0%, 100%);
-		margin-top: 4em;
+		margin-top: 6em;
+		padding-top: 2em;
+		padding-bottom: 4em;
+		}	
+	@media only screen and (max-width: $sunny-mobile) {
+		background-color: hsl(0, 0%, 100%);
+		margin-top: 5em;
+		padding-top: 3em;
 		}	
 		a.header-link{
 			color: hsl(0, 0%, 100%);
@@ -366,16 +379,16 @@ button.close-nav-toggle {
 			margin-top: 0.2em; 
 			margin-right: 1em;
 			@media only screen and (max-width: $sunny-desktop) {
-			color: hsl(232, 10%, 55%);
-			font-size: 2em;
-			padding: 0.5em 0; 
-			margin: auto;
-			font-family: "Barlow", sans-serif;
-			font-weight: 600;
-			}
+				color: hsl(232, 10%, 55%);
+				font-size: 2em; 
+				margin: 0; 
+				font-family: "Barlow", sans-serif;
+				font-weight: 600;
+				padding-bottom: 1em;
+				}
 		}
 		.contact-button {
-			background-color: #fff;
+			background-color: hsl(0, 0%, 100%);
 			color: black;
 			font-family: "Fraunces", serif;
 			border-radius: 50px;
@@ -385,38 +398,39 @@ button.close-nav-toggle {
 			@media only screen and (max-width: $sunny-desktop) {
 				background-color: hsl(51, 100%, 49%);
 				font-size: 1.5em;
-				width: 15vw;
-				padding: 0.8em;
+				width: 10em;
+				margin: auto;
 				margin-top: 1em;
-				margin-bottom: 1em;
 			}
-			@media only screen and (max-width: 700px) {
-				width: 20vw;
-			}
+		}	
+	.arrow {
+		display: none;
+		@media only screen and (max-width: $sunny-desktop) {
+			display: inline;
+			position: absolute;
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent; 
+		border-right: 30px solid hsl(0, 0%, 100%);
+		right: 2em;
+		top: 9em;
+
 		}
+		@media only screen and (max-width: $sunny-mobile) {
+			right: 2em;
+			top: 9em;
+		}
+	}
+
 }
 
-
-
+.nav-item.sunny-list-item {
+	margin: 0;
+}
 
 	.sunny-nav-button {
 		color: transparent;
 	}
 
-
-.arrow {
-	display: none;
-	@media only screen and (max-width: $sunny-desktop) {
-	display: inline;
-	float: right;
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent; 
-	border-right: 30px solid #fff; 
-	position: relative;
-	right: -2.5em;
-	top: -5em;
-	}
-}
 
 nav.navbar.transparent {
 	margin: 0;
