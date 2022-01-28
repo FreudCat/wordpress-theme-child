@@ -636,130 +636,163 @@ section.sunny-sections {
 	}
 }
 
-.testimonial-header-row {
+.testimonial-header {
+	margin-top: 7em;
+	margin-bottom: 3.5em;
+	font-family: "Fraunces", serif;
+	color:hsl(233, 6%, 72%);
+	font-weight: 900;
+	font-size: 20px;
+	letter-spacing: 0.3em;
 	@media only screen and (max-width: $sunny-desktop) {
-		height: 10vh;
+		font-size: 16px;
 	}
-	.testimonial-header {
-		margin-top: 7em;
-		margin-bottom: 4em;
-		font-family: "Fraunces", serif;
-		color:hsl(232, 10%, 65%);
-		font-weight: 900;
-		font-size: 20px;
-		letter-spacing: 0.3em;
-		@media only screen and (max-width: $sunny-desktop) {
-			font-size: 16px;
-		}
-	}	
-}
+	@media only screen and (max-width: $sunny-mobile) {
+		margin-top: 4em;
+	}
+}	
 
 .testimonial-row {
 	@media only screen and (max-width: $sunny-desktop) {
-		height: auto;
 		padding-top: 5em;
 	}
+
+	.testimonial-container {
+		@media only screen and (max-width: $sunny-desktop) {
+		margin-bottom: 6em;
+		}
+		@media only screen and (max-width: $sunny-desktop) {
+			margin-bottom: 0;
+			}
+	}
+	
 	.client-image {
 		width: 20%;
+		margin-bottom: 4em;
+		@media only screen and (max-width: $sunny-mobile) {
+			margin-bottom: 1em;
+		}
 	}
-}
-
-.client-name {
-	font-family: "Fraunces", serif;
-	color:black;
-	font-weight: 900;
-	font-size: 18px;
-}
-
-.client-testimonial {
-	font-family: "Barlow", sans-serif;
-	color: hsl(232, 10%, 55%);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.8em;
-	margin-right: 1em;
-	margin-left: 1em;
-	@media only screen and (max-width: $sunny-desktop) {
-		padding-top: 2em;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 1em;
+	.client-testimonial {
+		font-family: "Barlow", sans-serif;
+		color: hsl(213, 9%, 39%);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.8em;
+		padding: 0;
+		margin-right: 1em;
+		margin-left: 1em;
+		margin-bottom: 3em;
+		@media only screen and (max-width: $sunny-desktop) {
+			margin-top: 2em;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 1em;
+		}
+		@media only screen and (max-width: $sunny-mobile) {
+			margin-top: 2em;
+			margin-bottom: 2em;
+			margin-right: 1em; 
+			margin-left: 1em;
+			font-weight: 600;
+			font-size: 18px;
+		}
 	}
-}
-
-@media only screen and (max-width: $sunny-desktop) {
-	.testimonial-container {
-		margin-bottom: 6em;
+	.client-name {
+		font-family: "Fraunces", serif;
+		color:black;
+		font-weight: 900;
+		font-size: 18px;
+		margin-bottom: 0;
 	}
-}
-
+	
 .client-job {
 	font-family: "Barlow", sans-serif;
 	color: hsl(232, 10%, 70%);
 	font-weight: 600;
 	font-size: 14px;
+	margin-bottom: 10em;
+	@media only screen and (max-width: $sunny-desktop) {
+		margin-bottom: 5em;
+	}
+}
 }
 
 .pictures-div {
 	width: 100%;
-	height: 30vw;
 	@media only screen and (max-width: $sunny-desktop) {
 		width: 100%;
 		height: 50vw;
+		object-fit: cover;
 	}
 }
-
-
-
-.picture.p-4 {
-	padding: 0 !important;
-}
-
 
 //Sunny footer style 
+
+ul, li.footer-list-item {
+	display: inline-block;
+}
+
+ul.footer-nav {
+	padding: 0;
+	padding-inline-start: 0;
+}
+
 .sunny-footer {
 	background-color: hsl(168, 60%, 62%);
-	color: hsl(168, 34%, 41%);
-	width: 100%;
-	height: 25vw;
 	font-family: "Barlow", sans-serif;
 	@media only screen and (max-width: $sunny-desktop) { 
-		height: 40vh;
 	}
-	.footer-heading {
+	a.footer-logo {
+		text-decoration: none;
+		font-family: "Barlow", sans-serif;
 		font-weight: 900;
-		font-size: 40px;
+		font-size: 34px;
 		margin-top: 1.5em;
 	}
 	.footer-nav {
-		font-size: 24px;
-		font-weight: 600;
-		.nav-item {
-			margin: 4em 1em 2em 1em;
-		}
-		@media only screen and (max-width: $sunny-desktop) { 
-			font-size: 18px;
-		}
+		font-size: 18px;
+		font-weight: 500;
+		margin-top: 1.5em;	 
+		margin-right: 0; 
+		color: hsl(169, 36%, 43%);
+		margin-left: 0;
+		padding: 0;
 	}
 	.socials-row {
 		font-size: 24px;
 		font-weight: 600;
-		.nav-item {
-			margin: 15em 1em 2em 0;
-		}
+		margin-top: 3em;
+		margin-right: 0; 
+		margin-left: 0;
+		margin-bottom: 2.5em;
+		padding-left: 0;
 		@media only screen and (max-width: $sunny-desktop) { 
 			font-size: 18px;
 		}
 	}
+	.svg-icons {
+		&:hover, &:focus, &:active {
+			fill:hsl(0, 0%, 100%);
+		}
+	}
 }
 
+a.footer-links {
+	text-decoration: none;
+	color:hsl(167, 41%, 36%);
+	&:hover, &:focus, &:active {
+		color:hsl(0, 0%, 100%);
+	}
+}
 
+a.footer-links.center {
+		margin-right: 3em;
+		margin-left: 3em;
+	}
 
-
-
-
-// $mobile-breakpoint: 480px; //320px — 480px
-// $tablet-breakpoint: 768px; //481px — 768px
-// $small-screen-breakpoint: 1024px; //769px — 1024px
-// $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
-
+li.footer-list-item{
+	text-decoration: none;
+	margin: 0; /* To remove default bottom margin */ 
+	padding: 0; /* To remove default left padding */
+}	

@@ -37,15 +37,15 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - Basically, how to set up a WordPress site 
 
 ### The Gallery Template
-- The purpose of child themes 
-- That the `.length` property does not work on HTMLCollections
+- The purpose of a [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) in WordPress and how to create one
 - The importance of uniform styling when naming classes, file names, etc. 
 - That you *can* incorporate JS and PHP if done correctly 
 - How to override CSS stylesheets with wp_enqueue_style() and selector specificity
 
 ### Sunny Landing Page Template 
 - How to write useful and descriptive code for troubleshooting purposes 
-- 
+- If vw is 100% and I add padding to elements along the edge, I get an [annoying hortizontal scrollbar](https://stackoverflow.com/questions/36699885/padding-makes-horizontal-scrollbar-to-appear). I'm sure there's many reasons for the scrollbar appearing, but this was what caused it for me.
+- That a psuedoelement is a pretty cool way to add a style component to the page
 
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)

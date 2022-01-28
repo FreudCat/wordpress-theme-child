@@ -112,9 +112,6 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
     </div>
   </section>
 
-
-
-
   <section class="row sunny-sections pictures-row gx-0">
     <div class="col-lg-3  col-6 gx-0">
       <img class="square pictures-div" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/milkbottles.jpg'>
@@ -133,10 +130,6 @@ if (wp_style_is( 'bootstrapCSS', $list )) {
       </div>
   </section> 
 </div>
-
-
-
-
 
 <?php 
 get_footer('sunny')
