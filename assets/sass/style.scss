@@ -450,10 +450,17 @@ section.sunny-sections {
 		font-size: 4em;
 		line-height: 1.2em;
 		@media only screen and (max-width: $sunny-desktop) {
-		padding-top: 2em;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-top: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 		font-size: 3em;
+		}
+		@media only screen and (max-width: 766px) {
+		}
+		@media only screen and (max-width: $sunny-mobile) {
+			margin-top: 1.5em;
+			margin-right: 0.8em; 
+			margin-left: 0.8em;
 		}
 	}
 	.cube-text {
@@ -465,8 +472,19 @@ section.sunny-sections {
 		padding-bottom: 1em;
 		@media only screen and (max-width: $sunny-desktop) {
 			margin-top: 1em;
-			padding-right: 3em;
-			padding-left: 3em;
+			padding-right: 0.2em;
+			padding-left: 0.2em;
+		}
+		@media only screen and (max-width: 766px) {
+			margin-top: 1em;
+			margin-right: 10em; 
+			margin-left: 10em;
+		}
+		@media only screen and (max-width: $sunny-mobile) {
+			margin-top: 0.5em;
+			margin-right: 1.5em;
+			font-size: 1.8em;
+			margin-left: 1.5em;
 		}
 	}
 	a.cube-link {
@@ -497,6 +515,12 @@ section.sunny-sections {
 	display: inline-block;
 	position: relative;
 	margin-left: 0.4em;
+	@media only screen and (max-width: 766px) {
+		margin-bottom: 2em;
+	}
+	@media only screen and (max-width: $sunny-mobile) {
+		margin-bottom: 4em;
+	}
 }
 .transform-div span::after {
 	content: '';
@@ -528,6 +552,12 @@ section.sunny-sections {
 	display: inline-block;
 	position: relative;
 	margin-left: 0.4em;
+	@media only screen and (max-width: 766px) {
+		margin-bottom: 2em;
+	}
+	@media only screen and (max-width: $sunny-mobile) {
+		margin-bottom: 4em;
+	}
 }
 .stand-out-div span::after {
 	content: '';
@@ -560,39 +590,77 @@ section.sunny-sections {
 	background-size: cover;
 }
 
-
-
-
-
-
-
-.testimonial-header {
-	font-family: "Fraunces", serif;
-	color:hsl(232, 10%, 65%);
-	font-weight: 900;
-	font-size: 20px;
-	letter-spacing: 0.3em;
-	@media only screen and (max-width: $sunny-desktop) {
-		font-size: 16px;
+.design-holder {
+	margin-top: 40em;	
+	.graphic-design-header {
+		font-family: "Fraunces", serif;
+		color: hsl(167, 40%, 24%);
+		font-size: 3em;
+		font-weight: 900;
+		}
+	.graphic-design-text {
+		font-family: "Barlow", sans-serif;
+		font-size: 18px;
+		font-weight: 600;
+		color: hsl(167, 41%, 36%);
+		padding-top: 1em; 
+		padding-bottom: 2em;
+		@media only screen and (max-width: $sunny-desktop) {
+			line-height: 1.5em;
+			padding: 0 1em;
+			font-size: 16px;
+			margin-top: 2em;
+			margin-bottom: 4em;
+		}
+	}
+	.photography-header {
+		font-family: "Fraunces", serif;
+		color: hsl(198, 62%, 26%);
+		font-size: 3em;
+		font-weight: 900;
+		}
+	.photography-text {
+		font-family: "Barlow", sans-serif;
+		font-size: 18px;
+		font-weight: 600;
+		color: hsl(198, 62%, 26%);
+		padding-top: 1em; 
+		padding-bottom: 1em;
+		@media only screen and (max-width: $sunny-desktop) {
+			line-height: 1.5em;
+			padding: 0 1em;
+			font-size: 16px;
+			margin-top: 2em;
+			margin-bottom: 4em;
+		}
 	}
 }
 
 .testimonial-header-row {
-	height: 18vh;
 	@media only screen and (max-width: $sunny-desktop) {
 		height: 10vh;
 	}
+	.testimonial-header {
+		margin-top: 7em;
+		margin-bottom: 4em;
+		font-family: "Fraunces", serif;
+		color:hsl(232, 10%, 65%);
+		font-weight: 900;
+		font-size: 20px;
+		letter-spacing: 0.3em;
+		@media only screen and (max-width: $sunny-desktop) {
+			font-size: 16px;
+		}
+	}	
 }
 
 .testimonial-row {
-	height: auto;
-	padding-top: 8em;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-bottom: 10vh;
 	@media only screen and (max-width: $sunny-desktop) {
 		height: auto;
 		padding-top: 5em;
+	}
+	.client-image {
+		width: 20%;
 	}
 }
 
@@ -606,10 +674,11 @@ section.sunny-sections {
 .client-testimonial {
 	font-family: "Barlow", sans-serif;
 	color: hsl(232, 10%, 55%);
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.8em;
-	padding: 4em 2em;
+	margin-right: 1em;
+	margin-left: 1em;
 	@media only screen and (max-width: $sunny-desktop) {
 		padding-top: 2em;
 		padding-left: 0;
@@ -646,59 +715,6 @@ section.sunny-sections {
 	padding: 0 !important;
 }
 
-
-		.graphic-design-header {
-			font-family: "Fraunces", serif;
-			color: hsl(167, 40%, 24%);
-			font-size: 3em;
-			font-weight: 900;
-		}
-
-.design-holder {
-	margin-top: 40em;	
-	.graphic-design-text {
-		font-family: "Barlow", sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-		color: hsl(167, 40%, 24%);
-		padding-top: 1em; 
-		padding-bottom: 1em;
-		@media only screen and (max-width: $sunny-desktop) {
-			line-height: 1.5em;
-			padding: 0 1em;
-			font-size: 16px;
-			margin-top: 2em;
-			margin-bottom: 4em;
-		}
-	}
-	.graphic-design-header {
-		font-family: "Fraunces", serif;
-		color: hsl(167, 40%, 24%);
-		font-size: 3em;
-		font-weight: 900;
-	}
-	.photography-text {
-		font-family: "Barlow", sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-		color: hsl(198, 62%, 26%);
-		padding-top: 1em; 
-		padding-bottom: 1em;
-		@media only screen and (max-width: $sunny-desktop) {
-			line-height: 1.5em;
-			padding: 0 1em;
-			font-size: 16px;
-			margin-top: 2em;
-			margin-bottom: 4em;
-		}
-	}
-	.photography-header {
-		font-family: "Fraunces", serif;
-		color: hsl(198, 62%, 26%);
-		font-size: 3em;
-		font-weight: 900;
-	}
-}
 
 //Sunny footer style 
 .sunny-footer {
