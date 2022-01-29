@@ -18,7 +18,7 @@
 	<?php
  if (basename(get_page_template()) == 'landing-page.php') {
 	get_template_part( 'template-parts/entry-header-landing' );
- } elseif (basename(get_page_template()) == 'sunny-page.php') {
+ } elseif ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) {
 	get_template_part( 'template-parts/entry-header-sunny');
  } else {
 	get_template_part( 'template-parts/entry-header' );

@@ -32,6 +32,8 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   }
 ?>
 
+
+
 <!-- gx-0 removes all of the "gutters" which is the padding associated with the container and row classes -->
 <div class="container-fluid g-0"> 
   <section class="row sunny-sections g-0">

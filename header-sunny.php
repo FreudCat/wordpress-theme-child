@@ -18,9 +18,30 @@
   
   <?php wp_head(); ?>
 </head>
-
 <body>
-	<?php ?>
+	<?php if (basename(get_page_template()) == 'sunny-page-dynamic.php') { ?>
+    <nav class="navbar navbar-expand-lg transparent">
+      <div class="container-fluid nav-container g-0">
+        <button class="navbar-toggler sunny-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="navbar-toggler-icon" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/icon-hamburger.svg">
+        </button>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+          <?php 
+            wp_nav_menu (
+              array (
+                'menu' => 'sunny-menu',
+                'container' => '',
+                'theme_location' => 'sunny-menu',
+                'items_wrap' => '<ul id="" class="navbar-nav ms-auto flex-nowrap text-center">%3$s</ul>',
+              )
+            )
+          ?>
+        </div>  <!-- End collapsible nav div -->
+      </div>
+    </nav>
+
+
+  <?php } else { ?>
     <nav class="navbar navbar-expand-lg transparent">
       <div class="container-fluid nav-container g-0">
 
@@ -52,6 +73,7 @@
       </div> <!-- End navbar-container div -->
     </nav>
   </header>
+  <?php } ?>
 </body>
 </html> 
 
