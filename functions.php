@@ -24,13 +24,15 @@ function child_theme_enqueue_styles() {
     if (basename(get_page_template()) == 'gallery-page-coded-images.php') { 
         wp_enqueue_script( 'modal-JS',get_stylesheet_directory_uri().'/assets/js/modal.js', array(), rand(), true);
     }
-    if (basename(get_page_template()) == 'sunny-page.php') { 
+    if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
         wp_enqueue_style( 'bootstrapCSS','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), rand());
     }
 }
 
-
-function remove_admin_tolbar_on_frontend() {
-	remove_action('wp_head', '_admin_bar_bump_cb');
+//function removes the white stripe at the top of the template associated with the admin toolbar
+function remove_admin_tolbar_on_frontend() {  
+    if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
+        remove_action('wp_head', '_admin_bar_bump_cb');
+    }
 }
 add_action('get_header', 'remove_admin_tolbar_on_frontend');

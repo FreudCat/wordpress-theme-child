@@ -705,17 +705,16 @@ section.sunny-sections {
 		font-size: 18px;
 		margin-bottom: 0;
 	}
-	
-.client-job {
-	font-family: "Barlow", sans-serif;
-	color: hsl(232, 10%, 70%);
-	font-weight: 600;
-	font-size: 14px;
-	margin-bottom: 10em;
-	@media only screen and (max-width: $sunny-desktop) {
-		margin-bottom: 5em;
+	.client-job {
+		font-family: "Barlow", sans-serif;
+		color: hsl(232, 10%, 70%);
+		font-weight: 600;
+		font-size: 14px;
+		margin-bottom: 10em;
+		@media only screen and (max-width: $sunny-desktop) {
+			margin-bottom: 5em;
+		}
 	}
-}
 }
 
 .pictures-div {
@@ -727,8 +726,7 @@ section.sunny-sections {
 	}
 }
 
-//Sunny footer style 
-
+//Sunny footer style--------------------------------
 ul, li.footer-list-item {
 	display: inline-block;
 }
@@ -808,3 +806,6 @@ li.footer-list-item{
 	margin: 0; /* To remove default bottom margin */ 
 	padding: 0; /* To remove default left padding */
 }	
+//End sunny landing page ------------------
+
+//Start Dynamic Sunny Landing page -----------------------------------

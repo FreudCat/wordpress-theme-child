@@ -1,10 +1,9 @@
 <?php
 /**
- * Template Name: Sunny Landing Page */
+ * Template Name: Dynamic Sunny Landing Page */
 get_header('sunny');
 remove_action('wp_head', '_admin_bar_bump_cb');
 ?>
-
 <?php 
   function console_log( $dataToLog ){
     echo '<script>';
@@ -22,6 +21,15 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 
 <?php
   get_template_part( 'template-parts/content', get_post_type() ); 
+?>
+
+<?php 
+  if (have_posts()){
+    while (have_posts()) {
+      the_post();
+      the_content(); 
+    }
+  }
 ?>
 
 <!-- gx-0 removes all of the "gutters" which is the padding associated with the container and row classes -->

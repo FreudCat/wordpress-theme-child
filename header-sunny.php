@@ -1,6 +1,6 @@
 <?php
 /**
- * Header file for the Sunny Landing Page template.
+ * Header file for the Sunny Landing Page templates.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -8,8 +8,6 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
-
 ?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
