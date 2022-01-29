@@ -339,6 +339,25 @@ button.close-nav-toggle {
 	}
 }
 
+.header-item {
+	a.nav-link{
+		color: hsl(0, 0%, 100%);
+		font-size: 1.5em;
+		font-family: "Barlow", sans-serif;
+		font-weight: 500;
+		margin-top: 0.2em; 
+		margin-right: 1em;
+		@media only screen and (max-width: $sunny-desktop) {
+			color: hsl(232, 10%, 55%);
+			font-size: 2em; 
+			margin: 0; 
+			font-family: "Barlow", sans-serif;
+			font-weight: 600;
+			padding-bottom: 1em;
+		}
+	}
+}
+
 .sunny-nav-button {
 	color: transparent;
 }
@@ -375,22 +394,7 @@ button.close-nav-toggle {
 		margin-top: 5em;
 		padding-top: 3em;
 		}	
-		a.header-link{
-			color: hsl(0, 0%, 100%);
-			font-size: 1.5em;
-			font-family: "Barlow", sans-serif;
-			font-weight: 500;
-			margin-top: 0.2em; 
-			margin-right: 1em;
-			@media only screen and (max-width: $sunny-desktop) {
-				color: hsl(232, 10%, 55%);
-				font-size: 2em; 
-				margin: 0; 
-				font-family: "Barlow", sans-serif;
-				font-weight: 600;
-				padding-bottom: 1em;
-				}
-		}
+		
 		.contact-button {
 			background-color: hsl(0, 0%, 100%);
 			color: black;

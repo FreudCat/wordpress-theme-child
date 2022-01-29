@@ -39,7 +39,7 @@ function remove_admin_tolbar_on_frontend() {
 }
 
 
-//Register new menus for dynamic sunny landing page 
+//Register new menus for sunny landing page 
 function register_menus() { 
     register_nav_menus(
         array(
@@ -50,7 +50,7 @@ function register_menus() {
 }
 add_action( 'init', 'register_menus' );
 
-//add nav-link class to anchor tags in the dynamic sunny landing page 
+//add nav-link class to anchor tags in the sunny landing page - both fxns needed
 function atg_menu_classes($classes, $item, $args) {
     if($args->theme_location == 'sunny-menu') {
         $classes[] = 'nav-link';
