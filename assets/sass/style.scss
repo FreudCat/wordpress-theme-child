@@ -323,6 +323,7 @@ button.close-nav-toggle {
 		font-size: 5em;
 		font-weight: 900;
 		letter-spacing: 0.2em;
+		text-transform: uppercase;
 		@media only screen and (max-width: $sunny-desktop) {
 			font-size: 5em;
 		}
@@ -395,7 +396,7 @@ button.close-nav-toggle {
 		padding-top: 3em;
 		}	
 		
-		.contact-button {
+		.contact-link {
 			background-color: hsl(0, 0%, 100%);
 			color: black;
 			font-family: "Fraunces", serif;

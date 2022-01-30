@@ -247,7 +247,8 @@ button.close-nav-toggle {
     margin-top: 3em;
     font-size: 5em;
     font-weight: 900;
-    letter-spacing: 0.2em; }
+    letter-spacing: 0.2em;
+    text-transform: uppercase; }
     @media only screen and (max-width: 991px) {
       #sunny-site-header .sunny-header-text {
         font-size: 5em; } }
@@ -311,7 +312,7 @@ button.close-nav-toggle {
     margin-top: 5em;
     padding-top: 3em; } }
 
-#navbarSupportedContent .contact-button {
+#navbarSupportedContent .contact-link {
   background-color: white;
   color: black;
   font-family: "Fraunces", serif;
@@ -320,13 +321,13 @@ button.close-nav-toggle {
   padding: 1em 2em;
   font-weight: 900; }
   @media only screen and (max-width: 991px) {
-    #navbarSupportedContent .contact-button {
+    #navbarSupportedContent .contact-link {
       background-color: #fad400;
       font-size: 1.5em;
       width: 10em;
       margin: auto;
       margin-top: 1em; } }
-  #navbarSupportedContent .contact-button:hover, #navbarSupportedContent .contact-button:focus, #navbarSupportedContent .contact-button:active {
+  #navbarSupportedContent .contact-link:hover, #navbarSupportedContent .contact-link:focus, #navbarSupportedContent .contact-link:active {
     color: white;
     background-color: #60cafffd; }
 

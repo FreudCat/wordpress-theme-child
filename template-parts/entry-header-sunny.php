@@ -28,7 +28,7 @@ if ( is_singular() ) {
 	<div class="entry-header-inner section-inner medium">
 			<div class="row g-0">
 				<div class="col g-0">
-					<h1 class='sunny-header-text'>WE ARE CREATIVES</h1>
+					<h1 class='sunny-header-text'><?php the_title(); ?></h1>
 				</div>
 			</div>
 			<div class="row g-0">
