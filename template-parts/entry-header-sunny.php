@@ -13,10 +13,15 @@ if ( is_singular() ) {
 
 ?>
 
-<?php $featured_image = get_the_post_thumbnail_url(); ?>
+<?php 
+	if (get_the_post_thumbnail_url()) {
+		$header_image = get_the_post_thumbnail_url();
+	} else {
+		$header_image = get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/Pets.jpg;';
+	}
+?>
 
-
-<header id="sunny-site-header" class="entry-header has-text-align-center" style="background-image: url('<?php echo $featured_image?>');" role="banner">
+<header id="sunny-site-header" class="entry-header has-text-align-center" style="background-image: url('<?php echo $header_image?>');" role="banner">
 	<div class="entry-header-inner section-inner medium">
 			<div class="row g-0">
 				<div class="col g-0">
