@@ -8,7 +8,6 @@
  * @since Twenty Twenty 1.0
  */
 
-
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 function child_theme_enqueue_styles() {
     $parenthandle = 'twentytwenty-style'; 
@@ -39,6 +38,7 @@ function remove_admin_tolbar_on_frontend() {
 }
 
 
+
 //Register new menus for sunny landing page 
 function register_menus() { 
     register_nav_menus(
@@ -62,3 +62,5 @@ function add_menuclass($ulclass) {
     return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
 }
 add_filter('wp_nav_menu','add_menuclass');
+
+

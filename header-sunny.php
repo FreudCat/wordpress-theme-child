@@ -18,6 +18,7 @@
   <link rel="profile" href="https://gmpg.org/xfn/11">
   
   <?php wp_head(); ?>
+
 </head>
 <body>
   <header>
@@ -49,12 +50,10 @@
                 echo "<ul id='' class='navbar-nav ms-auto flex-nowrap text-center'>";
                 
                 foreach ($sunny_header_links_reorder as $key=>$new_item) {
-                  $link_url = $new_item->url;
-                  $link_title = $new_item->title;
                   if ($key === array_key_last($sunny_header_links_reorder)) {
-                    echo "<li class='nav-item header-item contact-link'><a class = 'nav-link' href='$link_url'>$link_title</a></li>";
+                    echo "<li class='nav-item header-item'><a class = 'nav-link contact-link' href='$new_item->url'>$new_item->title</a></li>";
                   } else {
-                  echo "<li class='nav-item header-item'><a class = 'nav-link' href='$link_url'>$link_title</a></li>";
+                  echo "<li class='nav-item header-item'><a class = 'nav-link' href='$new_item->url'>$new_item->title</a></li>";
                   }                  
                 }
                 echo "</ul>";
@@ -70,7 +69,7 @@
                   )
                 );
               }
-              
+
             } else {
               console_log("The user indicated there was no contact page");
               wp_nav_menu (

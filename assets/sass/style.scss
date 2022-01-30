@@ -384,6 +384,26 @@ button.close-nav-toggle {
 }
 
 #navbarSupportedContent {
+	.contact-link {
+		background-color: hsl(0, 0%, 100%);
+		color: black;
+		font-family: "Fraunces", serif;
+		border-radius: 50px;
+		font-size: 1.2em;
+		padding: 1em 2em;
+		font-weight: 900;
+		@media only screen and (max-width: $sunny-desktop) {
+			background-color: hsl(51, 100%, 49%);
+			font-size: 1.5em;
+			width: 10em;
+			margin: auto;
+			margin-top: 1em;
+		}
+		&:hover, &:focus, &:active {
+			color: hsl(0, 0%, 100%);
+			background-color: #60cafffd;
+		}
+	}	
 	@media only screen and (max-width: $sunny-desktop) {
 		background-color: hsl(0, 0%, 100%);
 		margin-top: 6em;
@@ -396,26 +416,7 @@ button.close-nav-toggle {
 		padding-top: 3em;
 		}	
 		
-		.contact-link {
-			background-color: hsl(0, 0%, 100%);
-			color: black;
-			font-family: "Fraunces", serif;
-			border-radius: 50px;
-			font-size: 1.2em;
-			padding: 1em 2em;
-			font-weight: 900;
-			@media only screen and (max-width: $sunny-desktop) {
-				background-color: hsl(51, 100%, 49%);
-				font-size: 1.5em;
-				width: 10em;
-				margin: auto;
-				margin-top: 1em;
-			}
-			&:hover, &:focus, &:active {
-				color: hsl(0, 0%, 100%);
-				background-color: #60cafffd;
-			}
-		}	
+		
 	.arrow {
 		display: none;
 		@media only screen and (max-width: $sunny-desktop) {
