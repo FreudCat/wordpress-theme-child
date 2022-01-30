@@ -26,8 +26,15 @@ function child_theme_enqueue_styles() {
     }
     if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
         wp_enqueue_style( 'bootstrapCSS','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), rand());
-    }
+        wp_enqueue_script( 'testimonial-JS', get_stylesheet_directory_uri().'/assets/js/create-testimonial.js', array(), rand(), true);
+
+     
+
+
+
 }
+
+
 
 //function removes the white stripe at the top of the template associated with the admin toolbar
 add_action('get_header', 'remove_admin_tolbar_on_frontend');
@@ -62,3 +69,22 @@ function add_menuclass($ulclass) {
     return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
 }
 add_filter('wp_nav_menu','add_menuclass');
+
+//Sending over an array from php to javascript
+$testimonial_array=array();
+$array_holder=array();
+$i=1;
+do {
+    if (get_field("testimonial_" . $i)[0] === "Yes") {
+        array_push($array_holder, get_field("testimonial_" . $i . "_image"), get_field("testimonial_" . $i . "_text"), get_field("testimonial_" . $i . "_name"), get_field("testimonial_" . $i . "_job"));
+        array_push($testimonial_array, $array_holder);
+        $array_holder=array();
+        $i = $i+1;
+    }
+} while (get_field("testimonial_" . $i)[0] === "Yes");
+wp_add_inline_script( 'testimonial-JS', 'let testimonial_array = ' . wp_json_encode( $testimonial_array ), 'before' );
+}
+
+
+
+?>
