@@ -13,8 +13,10 @@ if ( is_singular() ) {
 
 ?>
 
+<?php $featured_image = get_the_post_thumbnail_url(); ?>
 
-<header id="sunny-site-header" class="entry-header has-text-align-center" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/header.jpg');" role="banner">
+
+<header id="sunny-site-header" class="entry-header has-text-align-center" style="background-image: url('<?php echo $featured_image?>');" role="banner">
 	<div class="entry-header-inner section-inner medium">
 			<div class="row g-0">
 				<div class="col g-0">

@@ -63,4 +63,9 @@ function add_menuclass($ulclass) {
 }
 add_filter('wp_nav_menu','add_menuclass');
 
-
+function remove_featured_image_metabox() {
+  if (basename(get_page_template()) == 'sunny-page.php')
+        // remove featured image metabox
+        remove_meta_box( 'postimagediv','page','side' );
+    }
+add_action( 'do_meta_boxes', 'remove_featured_image_metabox' );
