@@ -37,17 +37,6 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   } else  {
     $image_2 = get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/spilled-coffee.jpg;';
   }
-  if (get_field('image_3')) {
-    $image_3 = get_field('image_3');
-  } else  {
-    $image_3 = get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/milkbottles.jpg;';
-  }
-  if (get_field('image_4')) {
-    $image_4 = get_field('image_4');
-  } else  {
-    $image_4 = get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/orange.jpg;';
-  }
-
 ?>
 
 
@@ -80,13 +69,13 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   </section>
 
   <section class="row sunny-sections h-auto g-0">
-    <div class="col-md image-div" style="background-image: url(<?php echo $image_3?>">  
+    <div class="col-md image-div" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/design.jpg;'?>)">  
       <div class="col-lg-7 mx-auto design-holder">
         <p class="graphic-design-header text-center">Graphic Design</p>
         <p class="graphic-design-text text-center">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
       </div>
     </div>
-    <div class="col-md image-div" style="background-image: url(<?php echo $image_4?>">
+    <div class="col-md image-div" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/photography.jpg;'?>)">
       <div class="col-lg-6 mx-auto design-holder">  
         <p class="photography-header text-center">Photography</p>
         <p class="photography-text text-center">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
@@ -104,7 +93,6 @@ remove_action('wp_head', '_admin_bar_bump_cb');
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
       <div id="testimonial-div" class="row text-center">
-        
       </div>
     </div>
   </section>
