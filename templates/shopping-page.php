@@ -4,7 +4,7 @@
 
 ?>
 
---> entry-header-shopping.php 
+--> entry-header-shopping.php and header-shopping.php 
 
 MOBILE view (375)
 - image of shoe takes up approx 1/3 of screen 
