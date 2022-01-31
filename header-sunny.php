@@ -35,10 +35,10 @@
             if (get_field("contact_page") === "Yes") {
               $contact_page_id = get_field("contact_page_id"); //gets the id of the ACF field that the user filled in
               $menu_locations = get_nav_menu_locations();
-              $sunny_header_links = wp_get_nav_menu_items($menu_locations['sunny-menu']); //prev lines get all of the links and associated info of the navigation links of the pages the user added
+              $sunny_header_links = wp_get_nav_menu_items($menu_locations["sunny-menu"]); //prev lines get all of the links and associated info of the navigation links of the pages the user added
               
               foreach ( $sunny_header_links as $key => $item) {
-                if (get_post_meta( $item->ID, '_menu_item_object_id', true ) === $contact_page_id) { //checks if the page id of the link === the user input id value
+                if (get_post_meta( $item->ID, "_menu_item_object_id", true ) === $contact_page_id) { //checks if the page id of the link === the user input id value
                   $index = $key;
                   break; 
                 }

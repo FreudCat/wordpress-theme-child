@@ -1,4 +1,3 @@
-
 let testimonial_div=document.querySelector("#testimonial-div");
 
 for (let testimonial of testimonial_array) {
@@ -30,3 +29,9 @@ for (let testimonial of testimonial_array) {
 
   testimonial_div.appendChild(new_div);  
 }
+
+//js for scroll into view 
+const arrow = document.querySelector(".arrow");
+arrow.addEventListener('click', function () {
+  document.querySelector("#first-section").scrollIntoView({ block: "start",  behavior: "smooth" });
+});

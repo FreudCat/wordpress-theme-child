@@ -334,8 +334,12 @@ button.close-nav-toggle {
 	.arrow-down {
 		margin: 6em auto;
 		height: 40%;
+		transition: transform 0.5s !important;
 		@media only screen and (max-width: $sunny-mobile) {
 			margin: 5em auto;
+		}
+		&:hover {
+				transform: translateY(40%);
 		}
 	}
 }

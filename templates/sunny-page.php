@@ -14,37 +14,37 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 
   $enqueue = 'enqueued';
   if (wp_style_is( 'bootstrapCSS', $enqueue )) {
-      console_log("BootstrapCSS was enqueued");
+      console_log('BootstrapCSS was enqueued');
   } else {
     console_log("BootstrapCSS was NOT enqueued");
   }
   if (wp_script_is( 'testimonial-JS', $enqueue )) {
-    console_log("testimonialjs was enqueued");
-} else {
-  console_log("testimonialjs was NOT enqueued");
-}
+    console_log('testimonialjs was enqueued');
+  } else {
+    console_log('testimonialjs was NOT enqueued');
+  }
 ?>
 
 <?php
   get_template_part( 'template-parts/content', get_post_type() );
   if (get_field('image_1')) {
-    $image_1 = get_field('image_1');
+    $image_1=get_field('image_1');
   } else  {
-    $image_1 = get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/kitten.jpg;';
+    $image_1=get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/kitten.jpg;';
   }
   if (get_field('image_2')) {
-    $image_2 = get_field('image_2');
+    $image_2=get_field('image_2');
   } else  {
-    $image_2 = get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/spilled-coffee.jpg;';
+    $image_2=get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/spilled-coffee.jpg;';
   }
 ?>
 
 
 <!-- gx-0 removes all of the "gutters" which is the padding associated with the container and row classes -->
 <div class="container-fluid g-0"> 
-  <section class="row sunny-sections g-0">
+  <section id="first-section" class="row sunny-sections g-0">
     <div class="col-md order-md-last">
-    <img src= <?php echo $image_1?>>
+    <img src=<?php echo $image_1?>>
     </div>  
     <div class="col-md align-self-center"> <!-- The order-lg-first means the div will be first in a larger viewscreen, but second in other screens -->
       <div class="col-md-7 mx-auto text-holder">

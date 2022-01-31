@@ -257,10 +257,13 @@ button.close-nav-toggle {
         font-size: 4em; } }
   #sunny-site-header .arrow-down {
     margin: 6em auto;
-    height: 40%; }
+    height: 40%;
+    transition: transform 0.5s !important; }
     @media only screen and (max-width: 400px) {
       #sunny-site-header .arrow-down {
         margin: 5em auto; } }
+    #sunny-site-header .arrow-down:hover {
+      transform: translateY(40%); }
 
 .header-item a.nav-link {
   color: white;

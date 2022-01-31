@@ -7,7 +7,9 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+?>
 
+<?php
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 function child_theme_enqueue_styles() {
     $parenthandle = 'twentytwenty-style'; 
@@ -34,34 +36,30 @@ function child_theme_enqueue_styles() {
     $array_holder=array();
     $i=1;
     do {
-        if (get_field("testimonial_" . $i)[0] === "Yes") {
+        if (get_field('testimonial_' . $i)[0] === 'Yes') {
             $array_holder = array(
-                'image' => get_field("testimonial_" . $i . "_image"),
-                'text' => get_field("testimonial_" . $i . "_text"),
-                'name' => get_field("testimonial_" . $i . "_name"),
-                'job' => get_field("testimonial_" . $i . "_job")
+                'image' => get_field('testimonial_' . $i . '_image'),
+                'text' => get_field('testimonial_' . $i . '_text'),
+                'name' => get_field('testimonial_' . $i . '_name'),
+                'job' => get_field('testimonial_' . $i . '_job')
             );
             array_push($testimonial_array, $array_holder);
             $array_holder=array();
             $i = $i+1;
         }
-    } while (get_field("testimonial_" . $i)[0] === "Yes");
+    } while (get_field('testimonial_' . $i)[0] === 'Yes');
     
     wp_add_inline_script( 'testimonial-JS', 'let testimonial_array = ' . wp_json_encode( $testimonial_array ), 'before' );
     wp_add_inline_script( 'testimonial-JS', 'let directory_uri = ' . wp_json_encode( $directory_uri ), 'before' );
 }
 
-
-
 //function removes the white stripe at the top of the template associated with the admin toolbar
 add_action('get_header', 'remove_admin_tolbar_on_frontend');
 function remove_admin_tolbar_on_frontend() {  
-    if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
+    if (basename(get_page_template()) == 'sunny-page.php') { 
         remove_action('wp_head', '_admin_bar_bump_cb');
     }
 }
-
-
 
 //Register new menus for sunny landing page 
 function register_menus() { 
@@ -86,6 +84,5 @@ function add_menuclass($ulclass) {
     return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
 }
 add_filter('wp_nav_menu','add_menuclass');
-
 
 ?>
