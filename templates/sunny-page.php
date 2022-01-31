@@ -100,36 +100,11 @@ remove_action('wp_head', '_admin_bar_bump_cb');
     </div>
   </section>
 
-  testimonial_#
-  testimonial_#_text
-  testimonial_#_name
-  testimonial_#_job
-
-
   <section class="row sunny-sections testimonial-row text-center">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
       <div id="testimonial-div" class="row text-center">
-        <div class="col-sm-4 testimonial-container">
-          <img class="client-image mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-emily.jpg'>
-          <p class="client-testimonial">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <p class="client-name">Emily R.</p>
-          <p class="client-job">Marketing Director</p>
-        </div>
-      
-        <div class="col-sm-4 testimonial-container">
-          <img class="client-image mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-thomas.jpg'>
-          <p class="client-testimonial">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-          <p class="client-name">Thomas S.</p>
-          <p class="client-job">Chief Operating Officer</p>
-        </div>
-      
-        <div class="col-sm-4 testimonial-container">
-        <img class="client-image mx-auto d-block rounded-circle" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/image-jennie.jpg'>
-          <p class="client-testimonial">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <p class="client-name">Jennie F.</p>
-          <p class="client-job">Business Owner</p>
-        </div>
+        
       </div>
     </div>
   </section>
