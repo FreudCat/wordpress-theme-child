@@ -818,4 +818,16 @@ li.footer-list-item{
 }	
 //End sunny landing page ------------------
 
-//Start Dynamic Sunny Landing page -----------------------------------
+//Start shopping page -----------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$orange: hsl(26, 100%, 55%);
+$pale-orange: hsl(25, 100%, 94%);
+$dark-blue: hsl(220, 13%, 13%);
+$dark-grey-blue: hsl(219, 9%, 45%);
+$gray-blue: hsl(220, 14%, 75%);
+$light-gray-blue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);  //(with 75% opacity for lightbox background)
+
+$shopping-font: 'Kumbh Sans', sans-serif;

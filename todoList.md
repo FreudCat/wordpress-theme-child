@@ -4,7 +4,7 @@
 - [ ] Make the sunny page dynamic
 - [ ] Change all the "" to ''
 - [ ] Add tooltips to the landing page to explain what I did there
-- [ ] 
+- [ ] Redo active states of the sunny page, not just hover! 
 - [ ] 
 - [ ] 
 - [ ] 
