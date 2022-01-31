@@ -1,6 +1,8 @@
 <?php
 /**
  * Template Name: Shopping Landing Page */
+get_header('shopping');
+remove_action('wp_head', '_admin_bar_bump_cb');
 
 ?>
 
@@ -18,43 +20,105 @@ MOBILE view (375)
 
 DESKTOP (1220)
 <main class="container">
-  <div class="row">
+  <div class="row main-row">
     <section class="col left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
       <div class="row">
-        <img>Shoe
+        <carousel> <!-- only shown in mobile/small views -->
+          <img>Shoe
+        </carousel>
       </div>
-      <div class="row"> <!-- nested row to hold the smaller images -->
+      <div class="row thumbmail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
         <div class="col">
-          <img>small shoe 1
+          <img class="thumbnail">small shoe 1
         </div>
         <div class="col">
-          <img>small shoe 2
+          <img class="thumbnail">small shoe 2
         </div>
         <div class="col">
-          <img>small shoe 3
+          <img class="thumbnail">small shoe 3
         </div>
         <div class="col">
-          <img>small shoe 4
+          <img class="thumbnail">small shoe 4
         </div>
       </div>
     </section>
     <section class="col right-col"> 
-      <h1>Sneaker company</h1> <!-- small, orange, upper case - this can come from the page title-->
-      <h2>Fall Limited Edition Sneakers</h2> <!-- large, black, bold --> 
-      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-      <p>$125.00</p> <span>50%</span> <!-- Not sure if this is a span? -->
-      <p>greyed out price</p>
-      <div class="row">
-        <div class="col">
+      <h1 class="company-header">Sneaker company</h1> <!-- small, orange, upper case - this can come from the page title-->
+      <h2 class="shoe-title">Fall Limited Edition Sneakers</h2> <!-- large, black, bold --> 
+      <p class="shoe-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <p class="current-price">$125.00</p> <span>50%</span> <!-- Not sure if this is a span? -->
+      <p class="previous-price">greyed out price</p>
+      <div class="row add-row">
+        <div class="col counter">
           <img> minus sign<num>counter</num><img> + sign <!-- Attach a js counter? -->
         </div>
         <div class="col">
-          <button class="add-to-cart">Add to cart</button> <!-- Don't forget the orange box shadow -->
+          <button class="add-cart-button">Add to cart</button> <!-- Don't forget the orange box shadow -->
         </div>
       </div>
     </section>
   </div> <!-- End main row holder -->
 </main>
+
+<modal> <!-- has box shadow-->
+  <modalheader>Cart</modalheader> <!-- black bold -->
+  <modalbody>
+    if empty {
+      <p>Your cart is empty.</p> <!-- grey, bold(?)-->
+    }
+    if has item -mobile {
+      <div class="container"> <!-- maybe container??-->
+        <div class="row">
+          <div class="col">
+            <img>shoe thumbmail
+          </div>
+          <div class="col">
+            <p>title of shoe</p> <!-- if mobile, then there will be ellipses since title won't fit, but when bigger can show all-->
+            <p>price X amount <span styled bold>total price</span></p>
+          </div>
+          <div class="col">
+            <img> trash can
+          </div>
+        </div>
+        <div>
+          <button>Checkout</button> <!-- orange with white text, rounded borders-->
+        </div>
+      </div>
+
+  </modalbody>
+</modal>
+
+<modal>
+  no header 
+  <div class="container">
+    <div class="row">
+      big shoe image
+    </div>
+    <div class="row">
+      four images in a row 
+    </div>
+  </div>
+</modal>
+
+function addProduct(){
+    let products = [];
+    if(localStorage.getItem('products')){
+        products = JSON.parse(localStorage.getItem('products'));
+    }
+    products.push({'productId' : productId + 1, image : '<imageLink>'});
+    localStorage.setItem('products', JSON.stringify(products));
+}
+function removeProduct(productId){
+
+// Your logic for your app.
+
+// strore products in local storage
+
+let storageProducts = JSON.parse(localStorage.getItem('products'));
+let products = storageProducts.filter(product => product.productId !== productId );
+localStorage.setItem('products', JSON.stringify(products));
+}
+localStorage.getItem('<whatever_the_name>')
 Column 1 (left)
 - large image of shoe - rounded borders
 - below is four smaller images
@@ -84,3 +148,8 @@ ACTIVE ----
 - the image is greyed out, but not as much as the actual active image 
 
 Session should persist until user clears cookies - localstorage object?
+
+<?php 
+  get_footer('shopping')
+?>
+

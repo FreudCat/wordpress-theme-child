@@ -20,6 +20,8 @@
 	get_template_part( 'template-parts/entry-header-landing' );
  } elseif ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) {
 	get_template_part( 'template-parts/entry-header-sunny');
+ } elseif (basename(get_page_template()) == 'shopping-page.php') {
+	get_template_part( 'tmplate-parts/entry-header-shopping');
  } else {
 	get_template_part( 'template-parts/entry-header' );
  }
@@ -29,7 +31,7 @@
 	}
 
 	?>
-  <?php if (basename(get_page_template()) == 'sunny-page.php') { ?>
+  <?php if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'shopping-page.php')) { ?>
 		<span></span>
 		<?php } else { ?>
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">

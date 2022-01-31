@@ -685,3 +685,46 @@ li.footer-list-item {
   /* To remove default bottom margin */
   padding: 0;
   /* To remove default left padding */ }
+
+.shopping-nav {
+  border-bottom: 1px solid #b6bcc8; }
+  @media only screen and (max-width: 900px) {
+    .shopping-nav {
+      border-bottom: none; } }
+  .shopping-nav .shopping-nav-toggle {
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    font-size: 1.8em; }
+  .shopping-nav .shopping-logo {
+    padding: 0;
+    margin-bottom: 0.2em; }
+  .shopping-nav .avatar {
+    width: 15%;
+    height: 15%;
+    margin-top: 0.2em;
+    margin-right: 1.2em;
+    margin-left: 2em; }
+
+.shopping.offcanvas {
+  width: 66%;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2); }
+  .shopping.offcanvas .shopping-unordered-list {
+    padding: 0;
+    margin: 0; }
+  .shopping.offcanvas .offcanvas-header {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+    margin-bottom: 1em; }
+
+.modal-backdrop.show {
+  opacity: 0.7 !important; }
+
+#offcanvas-link {
+  font-family: "Kumbh Sans", sans-serif;
+  color: black;
+  font-size: 1.8em;
+  font-weight: 800; }
