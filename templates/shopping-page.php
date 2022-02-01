@@ -8,13 +8,13 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 
 <main class="container">
   <div class="row main-row">
-    <section class="offset-md-1 col-5 left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
+    <section class="offset-md-1 col-md-5 col-xs-12 left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
       <div class="row">
-        <div class="col px-4">
+        <div class="col px-0 px-md-4 main-shoe-div">
           <img class="main-shoe" data-bs-toggle="modal" data-bs-target="#shoeModal" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1.jpg">
         </div>
       </div>
-      <div class="row justify-content-between thumbnail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
+      <div class="row justify-content-between d-none d-md-flex thumbnail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
         <div class="col-3">
           <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1-thumbnail.jpg">
         </div>
@@ -29,30 +29,33 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </div>
       </div>
     </section>
-    <section class="offset-md-1 col-4 right-col"> 
+    <section class="offset-md-1 col-md-4 col-xs-12 right-col px-5"> 
       <h1 class="company-header">Sneaker Company</h1> <!-- small, orange, upper case - this can come from the page title-->
       <h2 class="shoe-title">Fall Limited Edition Sneakers</h2> <!-- large, black, bold --> 
       <p class="shoe-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
       <div class="row price-row">
-        <div class="col-3 price-div">
+        <div class="col-4 col-md-3 price-div">
           <p class="current-price">$125.00</p> <!-- Not sure if this is a span? -->
         </div>
-        <div class="col-2 sale-tag-div">
+        <div class="col-1 col-2 sale-tag-div">
           <p class="sale-tag text-center">50%</p>
         </div>
+        <div class="offset-4 g-0 col-2 offset-md-0 col-md-12">
+        <p class="previous-price">$250.00</p>
       </div>
-      <p class="previous-price">$250.00</p>
+      </div>
+      
       <div class="row counter-row">
         <div class="col-1 minus-sign d-flex align-items-center counter-holder">
           <img class="w-75" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-minus.svg">
         </div>
-        <div class="col-2 text-center counter-holder">
+        <div class="col-10 text-center counter-holder">
           <p class="number-holder">0</p>
         </div>
         <div class="col-1 plus-sign d-flex align-items-center counter-holder">
           <img class="w-75" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-plus.svg">
         </div>
-        <div class="col-7 d-grid button-div">
+        <div class="col-12 d-grid button-div">
           <button type="button" class="btn add-cart-button"><img class="cart-in-button" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-cart.svg">Add to cart</button> <!-- Don't forget the orange box shadow -->
         </div>
       </div>
