@@ -686,27 +686,37 @@ li.footer-list-item {
   padding: 0;
   /* To remove default left padding */ }
 
-.shopping-nav {
-  border-bottom: 1px solid #b6bcc8; }
-  @media only screen and (max-width: 900px) {
-    .shopping-nav {
-      border-bottom: none; } }
-  .shopping-nav .shopping-nav-toggle {
-    border: none;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-    font-size: 1.8em; }
-  .shopping-nav .shopping-logo {
-    padding: 0;
-    margin-bottom: 0.2em; }
-  .shopping-nav .avatar {
-    width: 15%;
-    height: 15%;
-    margin-top: 0.2em;
-    margin-right: 1.2em;
-    margin-left: 2em; }
+@media only screen and (min-width: 900px) {
+  .shopping-nav {
+    margin-left: 13em;
+    margin-right: 13em;
+    border-bottom: 3px solid #f7f8fd; } }
+
+.shopping-nav .shopping-nav-container {
+  background-color: white;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+@media only screen and (max-width: 900px) {
+  .shopping-nav {
+    border-bottom: none; } }
+
+.shopping-nav .shopping-nav-toggle {
+  border: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  font-size: 1.8em; }
+
+.shopping-nav .shopping-logo {
+  padding: 0;
+  margin-bottom: 0.2em; }
+
+@media only screen and (min-width: 900px) {
+  .shopping-nav .cart-image {
+    width: 2em;
+    margin-right: 4em; } }
 
 .shopping.offcanvas {
   width: 66%;
@@ -723,8 +733,41 @@ li.footer-list-item {
 .modal-backdrop.show {
   opacity: 0.7 !important; }
 
-#offcanvas-link {
+.offcanvas-link {
   font-family: "Kumbh Sans", sans-serif;
-  color: black;
-  font-size: 1.8em;
-  font-weight: 800; }
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em; }
+  @media only screen and (max-width: 900px) {
+    .offcanvas-link {
+      font-family: "Kumbh Sans", sans-serif;
+      color: black !important;
+      font-size: 1.8em;
+      font-weight: 800; } }
+
+.border {
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  width: 4em;
+  height: 4em; }
+  .border::after {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    width: 4em;
+    height: 4em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 0 0 0 #ff7d1a; }
+  .border:hover::after {
+    box-shadow: inset 0 0 0 2px #ff7d1a; }
+  @media only screen and (max-width: 900px) {
+    .border .avatar {
+      width: 15%;
+      height: 15%;
+      margin-top: 0.2em;
+      margin-right: 1.2em;
+      margin-left: 2em; } }
