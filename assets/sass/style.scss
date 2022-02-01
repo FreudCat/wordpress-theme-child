@@ -897,13 +897,10 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 		margin-bottom: 1em;
 	}
 }
-.modal-backdrop.show {
-	opacity: 0.7 !important;
-}
 
 .offcanvas-link {
 	font-family: $shopping-font;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-weight: 600;
 	margin-bottom: 0.5em;
 	@media only screen and (max-width: $shopping-desktop) {
@@ -955,4 +952,20 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	&:hover, &:focus, &:active{
 		border-bottom: 3px solid $orange;
 	}
+}
+
+.thumbnail-row {
+	padding-top: 1.5em;
+	.thumbnail-shoe {
+		border-radius: 10px;
+	}
+}
+.main-shoe {
+	border-radius: 15px;
+	width: 800px;
+}
+
+
+ .right-col {
+	border: 1px solid black;
 }

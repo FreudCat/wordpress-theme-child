@@ -6,43 +6,30 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 
 ?>
 
--->include entry-header-shopping.php and header-shopping.php 
-
-MOBILE view (375)
-- image of shoe takes up approx 1/3 of screen height
-- carousel 
-- "sneaker company" text h1 
-- h2 - Fall Limited Edition Sneakers
-- p - text 
-- price with percent off then pre-sale price 
-- counter to determine how many pairs to add 
-- "Add to cart" button
-
-DESKTOP (1220)
 <main class="container">
   <div class="row main-row">
-    <section class="col left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
+    <section class="offset-md-1 col-5 left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
       <div class="row">
-        <carousel> <!-- only shown in mobile/small views -->
-          <img>Shoe
-        </carousel>
+        <div class="col px-3">
+          <img class="main-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1.jpg">
+        </div>
       </div>
-      <div class="row thumbmail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
-        <div class="col">
-          <img class="thumbnail">small shoe 1
+      <div class="row px-1 justify-content-between thumbnail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
+        <div class="col-3">
+          <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1-thumbnail.jpg">
         </div>
-        <div class="col">
-          <img class="thumbnail">small shoe 2
+        <div class="col-3">
+          <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-2-thumbnail.jpg">
         </div>
-        <div class="col">
-          <img class="thumbnail">small shoe 3
+        <div class="col-3">
+          <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-3-thumbnail.jpg">
         </div>
-        <div class="col">
-          <img class="thumbnail">small shoe 4
+        <div class="col-3">
+          <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-4-thumbnail.jpg">
         </div>
       </div>
     </section>
-    <section class="col right-col"> 
+    <section class="col-5 right-col"> 
       <h1 class="company-header">Sneaker company</h1> <!-- small, orange, upper case - this can come from the page title-->
       <h2 class="shoe-title">Fall Limited Edition Sneakers</h2> <!-- large, black, bold --> 
       <p class="shoe-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
