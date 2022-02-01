@@ -686,6 +686,10 @@ li.footer-list-item {
   padding: 0;
   /* To remove default left padding */ }
 
+@media only screen and (max-width: 400px) {
+  .shopping-nav {
+    margin-left: 1em; } }
+
 @media only screen and (min-width: 900px) {
   .shopping-nav {
     margin-left: 13em;
@@ -694,12 +698,10 @@ li.footer-list-item {
 
 .shopping-nav .shopping-nav-container {
   background-color: white;
-  padding-top: 2em;
-  padding-bottom: 2em; }
-
-@media only screen and (max-width: 900px) {
-  .shopping-nav {
-    border-bottom: none; } }
+  padding-top: 2em; }
+  @media only screen and (max-width: 400px) {
+    .shopping-nav .shopping-nav-container {
+      padding-top: 0em; } }
 
 .shopping-nav .shopping-nav-toggle {
   border: none;
@@ -709,14 +711,27 @@ li.footer-list-item {
   margin-right: 0.4em;
   font-size: 1.8em; }
 
-.shopping-nav .shopping-logo {
-  padding: 0;
-  margin-bottom: 0.2em; }
+@media only screen and (max-width: 400px) {
+  .shopping-nav .shopping-logo {
+    width: 15em;
+    margin-bottom: 0.3em; } }
+
+@media only screen and (min-width: 900px) {
+  .shopping-nav .shopping-logo {
+    padding: 0;
+    margin-bottom: 2em; } }
+
+@media only screen and (max-width: 400px) {
+  .shopping-nav .cart-image {
+    margin-left: 7em;
+    margin-right: 1em; } }
 
 @media only screen and (min-width: 900px) {
   .shopping-nav .cart-image {
     width: 2em;
-    margin-right: 4em; } }
+    margin-left: 31em;
+    margin-right: 4em;
+    margin-bottom: 2em; } }
 
 .shopping.offcanvas {
   width: 66%;
@@ -745,29 +760,39 @@ li.footer-list-item {
       font-size: 1.8em;
       font-weight: 800; } }
 
-.border {
-  display: inline-block;
-  position: relative;
-  border-radius: 50px;
-  width: 4em;
-  height: 4em; }
-  .border::after {
-    content: '';
-    position: absolute;
+@media only screen and (max-width: 400px) {
+  .avatar-holder {
+    width: 15%; } }
+
+@media only screen and (min-width: 900px) {
+  .avatar-holder {
+    display: inline-block;
+    position: relative;
     border-radius: 50px;
     width: 4em;
     height: 4em;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: inset 0 0 0 0 #ff7d1a; }
-  .border:hover::after {
-    box-shadow: inset 0 0 0 2px #ff7d1a; }
-  @media only screen and (max-width: 900px) {
-    .border .avatar {
-      width: 15%;
-      height: 15%;
-      margin-top: 0.2em;
-      margin-right: 1.2em;
-      margin-left: 2em; } }
+    margin-bottom: 2em; }
+    .avatar-holder::after {
+      content: '';
+      position: absolute;
+      border-radius: 50px;
+      width: 4em;
+      height: 4em;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: inset 0 0 0 0 #ff7d1a; }
+    .avatar-holder:hover::after {
+      box-shadow: inset 0 0 0 2px #ff7d1a; } }
+
+@media only screen and (max-width: 400px) {
+  .avatar-holder .avatar {
+    padding: 0;
+    margin: 0; } }
+
+.bottom-border {
+  padding-bottom: 2em;
+  border-bottom: 3px solid transparent; }
+  .bottom-border:hover, .bottom-border:focus, .bottom-border:active {
+    border-bottom: 3px solid #ff7d1a; }

@@ -821,7 +821,7 @@ li.footer-list-item{
 //Start shopping page -----------------------------------
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$shopping-mobile: 350px; 
+$shopping-mobile: 400px; 
 $shopping-desktop: 900px;
 
 $orange: hsl(26, 100%, 55%);
@@ -836,19 +836,20 @@ $black: hsl(0, 0%, 0%);  //(with 75% opacity for lightbox background)
 $shopping-font: 'Kumbh Sans', sans-serif;
 
 .shopping-nav {
+	@media only screen and (max-width: $shopping-mobile) {
+		margin-left: 1em;
+	}
 	@media only screen and (min-width: $shopping-desktop){
 		margin-left: 13em;
 		margin-right: 13em;
 		border-bottom: 3px solid $light-gray-blue;
 	}
 	.shopping-nav-container {
+		@media only screen and (max-width: $shopping-mobile) {
+			padding-top: 0em;
+		}
 		background-color: $white;
 		padding-top: 2em;
-		padding-bottom: 2em;
-
-	}
-	@media only screen and (max-width: $shopping-desktop) {
-		border-bottom: none; 
 	}
 	.shopping-nav-toggle {
 		border: none;
@@ -859,13 +860,25 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 		font-size: 1.8em;
 	}
 	.shopping-logo {
+		@media only screen and (max-width: $shopping-mobile) {
+			width: 15em;
+			margin-bottom: 0.3em;
+		}
+		@media only screen and (min-width: $shopping-desktop) {
 		padding: 0;
-		margin-bottom: 0.2em;
+		margin-bottom: 2em;
+		}
 	}
 	.cart-image {
+		@media only screen and (max-width: $shopping-mobile) {
+			margin-left: 7em;
+			margin-right: 1em;
+		}
 		@media only screen and (min-width: $shopping-desktop) {
 			width: 2em;
+			margin-left: 31em;
 			margin-right: 4em;
+			margin-bottom: 2em;
 	}
 }
 }
@@ -901,12 +914,17 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	}
 }
 
-.border {
+.avatar-holder {
+	@media only screen and (max-width: $shopping-mobile) {
+		width: 15%;
+	}
+	@media only screen and (min-width: $shopping-desktop) {
   display: inline-block;
   position: relative;
 	border-radius: 50px;
 	width: 4em;
 	height: 4em;
+	margin-bottom: 2em;
 	&::after {
 		content: '';
 		position: absolute;
@@ -922,13 +940,19 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	&:hover::after {
 		box-shadow: inset 0 0 0 2px $orange;
 	}
+}
 	.avatar {
-		@media only screen and (max-width: $shopping-desktop) {
-		width: 15%;
-		height: 15%;
-		margin-top: 0.2em;
-		margin-right: 1.2em;
-		margin-left: 2em;
+		@media only screen and (max-width: $shopping-mobile) {
+			padding: 0;
+			margin: 0;
 		}
+	}
+}
+
+.bottom-border {
+	padding-bottom: 2em;
+	border-bottom: 3px solid transparent;
+	&:hover, &:focus, &:active{
+		border-bottom: 3px solid $orange;
 	}
 }
