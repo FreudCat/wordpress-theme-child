@@ -10,11 +10,11 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <div class="row main-row">
     <section class="offset-md-1 col-5 left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
       <div class="row">
-        <div class="col px-3">
-          <img class="main-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1.jpg">
+        <div class="col px-4">
+          <img class="main-shoe" data-bs-toggle="modal" data-bs-target="#shoeModal" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1.jpg">
         </div>
       </div>
-      <div class="row px-1 justify-content-between thumbnail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
+      <div class="row justify-content-between thumbnail-row"> <!-- nested row to hold the smaller images -- NOT shown in mobile view-use bootstrap classes for this purpose -->
         <div class="col-3">
           <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1-thumbnail.jpg">
         </div>
@@ -29,23 +29,54 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </div>
       </div>
     </section>
-    <section class="col-5 right-col"> 
-      <h1 class="company-header">Sneaker company</h1> <!-- small, orange, upper case - this can come from the page title-->
+    <section class="offset-md-1 col-4 right-col"> 
+      <h1 class="company-header">Sneaker Company</h1> <!-- small, orange, upper case - this can come from the page title-->
       <h2 class="shoe-title">Fall Limited Edition Sneakers</h2> <!-- large, black, bold --> 
       <p class="shoe-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-      <p class="current-price">$125.00</p> <span>50%</span> <!-- Not sure if this is a span? -->
-      <p class="previous-price">greyed out price</p>
-      <div class="row add-row">
-        <div class="col counter">
-          <img> minus sign<num>counter</num><img> + sign <!-- Attach a js counter? -->
+      <div class="row price-row">
+        <div class="col-3 price-div">
+          <p class="current-price">$125.00</p> <!-- Not sure if this is a span? -->
         </div>
-        <div class="col">
-          <button class="add-cart-button">Add to cart</button> <!-- Don't forget the orange box shadow -->
+        <div class="col-2 sale-tag-div">
+          <p class="sale-tag text-center">50%</p>
+        </div>
+      </div>
+      <p class="previous-price">$250.00</p>
+      <div class="row counter-row">
+        <div class="col-1 minus-sign d-flex align-items-center counter-holder">
+          <img class="w-75" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-minus.svg">
+        </div>
+        <div class="col-2 text-center counter-holder">
+          <p class="number-holder">0</p>
+        </div>
+        <div class="col-1 plus-sign d-flex align-items-center counter-holder">
+          <img class="w-75" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-plus.svg">
+        </div>
+        <div class="col-7 d-grid button-div">
+          <button type="button" class="btn add-cart-button"><img class="cart-in-button" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-cart.svg">Add to cart</button> <!-- Don't forget the orange box shadow -->
         </div>
       </div>
     </section>
   </div> <!-- End main row holder -->
 </main>
+
+<div class="modal fade" id="shoeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shoeModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body shoe-modal-body">
+        <img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1-thumbnail.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <modal> <!-- has box shadow-->
   <modalheader>Cart</modalheader> <!-- black bold -->

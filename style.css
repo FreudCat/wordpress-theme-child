@@ -795,13 +795,110 @@ li.footer-list-item {
     border-bottom: 3px solid #ff7d1a; }
 
 .thumbnail-row {
-  padding-top: 1.5em; }
+  padding-top: 2.5em;
+  padding-right: 1.5em;
+  padding-left: 0.8em; }
   .thumbnail-row .thumbnail-shoe {
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: 85%; }
 
 .main-shoe {
   border-radius: 15px;
-  width: 800px; }
+  width: 95%; }
 
-.right-col {
-  border: 1px solid black; }
+.right-col .company-header {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #ff7d1a;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 6em; }
+
+.right-col .shoe-title {
+  font-size: 3.8em;
+  color: black;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 0.5em; }
+
+.right-col .shoe-description {
+  font-size: 1.3em;
+  color: #68707d;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  width: 28em;
+  margin-top: 2.5em;
+  margin-bottom: 1.8em; }
+
+.right-col .previous-price {
+  color: #b6bcc8;
+  text-decoration: line-through;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  height: 2em; }
+
+.price-row .current-price {
+  font-size: 2em;
+  color: black;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.price-row .price-div {
+  padding-right: 0;
+  margin-right: 0; }
+
+.price-row .sale-tag-div {
+  padding: 0; }
+
+.price-row .sale-tag {
+  color: #ff7d1a;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: #ffede0;
+  border-radius: 5px;
+  margin-top: 0.2em;
+  width: 3em; }
+
+.counter-row {
+  padding-left: 1em;
+  padding-top: 3em; }
+  .counter-row .counter-holder {
+    background-color: #f7f8fd; }
+  .counter-row .number-holder {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    color: black;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 800; }
+  .counter-row .plus-sign {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  .counter-row .minus-sign {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  .counter-row .add-cart-button {
+    background-color: #ff7d1a;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px; }
+  .counter-row .cart-in-button {
+    display: inline;
+    width: 8%;
+    margin-right: 1em; }
+
+.shoe-modal-body {
+  background-color: transparent; }
+
+.modal-content {
+  background-color: transparent; }
