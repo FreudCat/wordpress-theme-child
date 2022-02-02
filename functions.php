@@ -33,6 +33,9 @@ function child_theme_enqueue_styles() {
     if (basename(get_page_template()) == 'sunny-page.php') { 
         wp_enqueue_style( 'bootstrapCSS','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), rand());
     }
+    if (basename(get_page_template()) == 'shopping-page.php') { 
+        wp_enqueue_script( 'shopping-JS', get_stylesheet_directory_uri().'/assets/js/shopping.js', array(), rand(), true);
+    }
     //Sending over an array from php to javascript if we are on the sunny landing page (how to send over variables!)
     $directory_uri=get_stylesheet_directory_uri();
     $testimonial_array=array();
