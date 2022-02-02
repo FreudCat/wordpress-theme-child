@@ -8,7 +8,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 
 <main class="container">
   <div class="row main-row">
-    <section class="offset-md-1 col-md-5 col-xs-12 left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
+    <section class="offset-md-1 col-md-5 col-sm-12 left-col"> <!-- column 1 with large show image and four smaller shoe images below -->
       <div class="row">
         <div class="col px-0 px-md-4 main-shoe-div">
           <img class="main-shoe" data-bs-toggle="modal" data-bs-target="#shoeModal" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1.jpg">
@@ -29,7 +29,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </div>
       </div>
     </section>
-    <section class="offset-md-1 col-md-4 col-xs-12 right-col px-5"> 
+    <section class="offset-md-1 col-md-4 col-sm-12 right-col px-5 px-md-0"> 
       <h1 class="company-header">Sneaker Company</h1> <!-- small, orange, upper case - this can come from the page title-->
       <h2 class="shoe-title">Fall Limited Edition Sneakers</h2> <!-- large, black, bold --> 
       <p class="shoe-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
@@ -40,9 +40,9 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         <div class="col-1 col-2 sale-tag-div">
           <p class="sale-tag text-center">50%</p>
         </div>
-        <div class="offset-4 g-0 col-2 offset-md-0 col-md-12">
-        <p class="previous-price">$250.00</p>
-      </div>
+        <div class="offset-3 g-0 col-2 offset-md-0 col-md-12">
+          <p class="previous-price">$250.00</p>
+        </div>
       </div>
       
       <div class="row counter-row">

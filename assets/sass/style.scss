@@ -820,8 +820,9 @@ li.footer-list-item{
 
 //Start shopping page -----------------------------------
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$shopping-mobile: 400px; 
+$shopping-mobile: 350px; 
 $shopping-desktop: 900px;
 
 $orange: hsl(26, 100%, 55%);
@@ -832,56 +833,49 @@ $gray-blue: hsl(220, 14%, 75%);
 $light-gray-blue: hsl(223, 64%, 98%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);  //(with 75% opacity for lightbox background)
+$modal-backdrop-opacity: 0.7;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 $shopping-font: 'Kumbh Sans', sans-serif;
 
-.shopping-nav {
-	@media only screen and (max-width: $shopping-mobile) {
-		margin-left: 1em;
+.shopping-nav-toggle {
+	border: none;
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+	font-size: 1.8em;
+}
+
+.shopping-nav-container {
+	border-bottom: 3px solid $light-gray-blue;
+}
+.shopping-logo {
+	@media only screen and (min-width: $shopping-desktop) {
+	padding: 0;
+
 	}
+	@media only screen and (min-width: $shopping-mobile) {
+		margin-bottom: 0.2em;
+	}
+}
+
+.shopping-nav {
 	@media only screen and (min-width: $shopping-desktop){
 		margin-left: 13em;
 		margin-right: 13em;
-		border-bottom: 3px solid $light-gray-blue;
+		padding-top: 0em;
 	}
-	.shopping-nav-container {
-		@media only screen and (max-width: $shopping-mobile) {
-			padding-top: 0em;
+	.cart {
+		@media only screen and (min-width: $shopping-desktop){
+			margin-top: 3em;
 		}
-		background-color: $white;
-		padding-top: 2em;
-	}
-	.shopping-nav-toggle {
-		border: none;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		margin-left: 0.4em;
-		margin-right: 0.4em;
-		font-size: 1.8em;
-	}
-	.shopping-logo {
-		@media only screen and (max-width: $shopping-mobile) {
-			width: 15em;
-			margin-bottom: 0.3em;
-		}
-		@media only screen and (min-width: $shopping-desktop) {
-		padding: 0;
-		margin-bottom: 2em;
-		}
-	}
-	.cart-image {
-		@media only screen and (max-width: $shopping-mobile) {
-			margin-left: 7em;
-			margin-right: 1em;
-		}
-		@media only screen and (min-width: $shopping-desktop) {
-			width: 2em;
-			margin-left: 31em;
-			margin-right: 4em;
-			margin-bottom: 2em;
 	}
 }
+
+.modal-backdrop {
+	z-index: 1;
 }
+
+
 
 .shopping.offcanvas {
 	width: 66%;
@@ -905,15 +899,17 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	margin-bottom: 0.5em;
 	@media only screen and (max-width: $shopping-desktop) {
 	font-family: $shopping-font;
-	color: $black !important;
+	color: $black;
 	font-size: 1.8em;
 	font-weight: 800;
 	}
 }
 
 .avatar-holder {
-	@media only screen and (max-width: $shopping-mobile) {
-		width: 15%;
+	@media only screen and (min-width: $shopping-mobile) and (max-width: 900px){
+		width: 40%;
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 	@media only screen and (min-width: $shopping-desktop) {
   display: inline-block;
@@ -921,7 +917,9 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	border-radius: 50px;
 	width: 4em;
 	height: 4em;
-	margin-bottom: 2em;
+	margin-top: 1.5em;
+	margin-left: 5em;
+	margin-bottom: 1em;
 	&::after {
 		content: '';
 		position: absolute;
@@ -938,15 +936,11 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 		box-shadow: inset 0 0 0 2px $orange;
 	}
 }
-	.avatar {
-		@media only screen and (max-width: $shopping-mobile) {
-			padding: 0;
-			margin: 0;
-		}
-	}
+
 }
 
 .bottom-border {
+	padding-top: 2em;
 	padding-bottom: 2em;
 	border-bottom: 3px solid transparent;
 	&:hover, &:focus, &:active{
@@ -975,7 +969,6 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 		height: 31em;
 	}
 
-	border: 1px solid red;
 	.main-shoe {
 		border-radius: 15px;
 		width: 95%;
@@ -987,10 +980,9 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	}
 	}
 }
-
-
  .right-col {
-	@media only screen and (max-width: $shopping-desktop) {
+	@media only screen and (min-width: $shopping-mobile) {
+
 	}
 	.company-header {
 		font-size: 1.2em;
@@ -1005,7 +997,7 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 		}
 	}
 	.shoe-title {
-		font-size: 3.8em;
+		font-size: 3em;
 		color: $black;
 		font-family: $shopping-font;
 		font-weight: 800;
@@ -1027,19 +1019,6 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 			width: 100%;
 			font-size: 1.4em;
 			margin-top: 1.5em;
-		}
-	}
-	.previous-price {
-		color: $gray-blue;
-		text-decoration: line-through;
-		font-family: $shopping-font;
-		font-weight: 600;
-		font-size: 1.2em;
-		margin: 0;
-		padding: 0;
-		height: 2em;
-		@media only screen and (max-width: $shopping-desktop) {
-			margin-top: 1em;
 		}
 	}
 }
@@ -1070,6 +1049,19 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 		border-radius: 5px;
 		margin-top: 0.2em;
 		width: 3em;
+	}
+	.previous-price {
+		color: $gray-blue;
+		text-decoration: line-through;
+		font-family: $shopping-font;
+		font-weight: 600;
+		font-size: 1.2em;
+		margin: 0;
+		padding: 0;
+		height: 2em;
+		@media only screen and (min-width: $shopping-mobile) {
+			font-size: 1.5em;
+		}
 	}
 }
 
@@ -1122,9 +1114,4 @@ $shopping-font: 'Kumbh Sans', sans-serif;
 	}
 }
 
-.shoe-modal-body {
-	background-color: transparent;
-}
-.modal-content {
-	background-color: transparent;
-}
+
