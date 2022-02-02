@@ -16338,6 +16338,20 @@ textarea.form-control-lg {
 .modal-backdrop {
   z-index: 1; }
 
+.modal-shoe {
+  border-radius: 10px; }
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+  width: 85%; }
+
+.modal-close {
+  padding-left: 20em; }
+
+.modal-footer {
+  border: none; }
+
 .shopping.offcanvas {
   width: 66%;
   box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2); }
@@ -16403,21 +16417,45 @@ textarea.form-control-lg {
   .main-row section {
     padding: 0; } }
 
-.thumbnail-row {
-  padding-top: 2.5em;
+.modal-thumbnail-row {
+  margin: auto;
+  padding-left: 1.5em;
   padding-right: 1.5em;
-  padding-left: 0.8em; }
-  .thumbnail-row .thumbnail-shoe {
+  margin-top: 3em; }
+  .modal-thumbnail-row .thumbnail-shoe {
     border-radius: 10px;
-    width: 85%; }
+    margin: 3em; }
+
+.thumbnail-row {
+  margin-top: 1em; }
+  .thumbnail-row .thumbnail-shoe {
+    border-radius: 10px; }
+    .thumbnail-row .thumbnail-shoe:active, .thumbnail-row .thumbnail-shoe:hover, .thumbnail-row .thumbnail-shoe:focus {
+      opacity: 0.2; }
+
+.shoe-div {
+  position: relative;
+  width: 20%; }
+  .shoe-div::after {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: inset 0 0 0 0 #ff7d1a; }
+  .shoe-div:hover::after {
+    box-shadow: inset 0 0 0 2px #ff7d1a;
+    background-color: rgba(255, 255, 255, 0.8); }
 
 @media only screen and (max-width: 900px) {
   .main-shoe-div {
     height: 31em; } }
 
 .main-shoe-div .main-shoe {
-  border-radius: 15px;
-  width: 95%; }
+  border-radius: 15px; }
   @media only screen and (max-width: 900px) {
     .main-shoe-div .main-shoe {
       width: 100%;
