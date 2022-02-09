@@ -326,25 +326,26 @@ $sunny-mobile: 400px;
 	.sunny-header-text {
 		font-family: "Fraunces", serif;
 		margin-top: 3.5em;
-		font-size: 3.5em;
+		font-size: 3.2em;
 		font-weight: 900;
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
 		@media only screen and (min-width: $sunny-md) {
+			margin-top: 2em;
+			font-size: 5em;
+		}
+		@media only screen and (min-width: $sunny-lg) {
 			margin-top: 3em;
 			font-size: 6em;
 		}
-		@media only screen and (min-width: $sunny-lg) {
-			margin-top: 2em;
-			font-size: 10em;
-		}
-		@media only screen and (min-width: $sunny-lg) {
-			margin-top: 2.5em;
-			font-size: 12em;
-		}
+		
 		@media only screen and (min-width: 1200px) {
 			margin-top: 2em;
 			font-size: 7em;
+		}
+		@media only screen and (min-width: $sunny-xl) {
+			margin-top: 1.8em;
+			font-size: 10em;
 		}
 		@media only screen and (min-width: $sunny-supersize) {
 			margin-top: 4em;
@@ -360,15 +361,20 @@ $sunny-mobile: 400px;
 		height: auto;
 	}
 	@media only screen and (min-width: $sunny-lg) {
-		margin-top: 10em;
-		margin-left: 3em;
-		width: 200px; 
+		margin-top: 6em;
+		margin-left: 2em;
+		width: 150px; 
 		height: auto;
 	}
 	@media only screen and (min-width: 1200px) {
 		margin-top: 1.5em;
 		margin-left: 0;
 		width: 150px;
+	}
+	@media only screen and (min-width: $sunny-xl) {
+		margin-top: 1.5em;
+		margin-left: 0;
+		width: 250px;
 	}
 	@media only screen and (min-width: $sunny-supersize) {
 		margin-top: 18em;
@@ -384,15 +390,18 @@ $sunny-mobile: 400px;
 	height: auto;
 	@media only screen and (min-width: $sunny-md) {
 		margin: 4em auto;
-		width: 40px;
+		width: 35px;
 		height: auto;
 	}
 	@media only screen and (min-width: $sunny-lg) {
-		width: 60px;
+		width: 40px;
 		height: auto;
 	}
 	@media only screen and (min-width: 1200px) {
 		width: 40px;
+	}
+	@media only screen and (min-width: $sunny-xl) {
+		width: 50px;
 	}
 	@media only screen and (min-width: $sunny-supersize) {
 		width: 80px;
@@ -419,15 +428,18 @@ $sunny-mobile: 400px;
 			font-family: "Barlow", sans-serif;
 			font-weight: 500;
 			margin-top: 0.7em; 
-			margin-right: 1em;
 		}
 		@media only screen and (min-width: $sunny-lg) {
-			font-size: 2.2em;
-			margin-top: 5.2em; 
+			font-size: 1.8em;
+			margin-top: 2.5em; 
 			margin-right: 1em;
 		}
 		@media only screen and (min-width: 1200px) {
 			font-size: 1.8em;
+		margin-top: 0;
+		}
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2.5em;
 		margin-top: 0;
 		}
 		@media only screen and (min-width: $sunny-supersize) { 
@@ -435,7 +447,6 @@ $sunny-mobile: 400px;
 			margin-top: 4.8em; 
 			margin-right: 1em;
 		}
-
 	}
 }
 
@@ -497,12 +508,16 @@ $sunny-mobile: 400px;
 				padding: 1em 2em;
 				font-weight: 900;
 				@media only screen and (min-width: $sunny-lg) {
-					margin-top: 7.5em;
+					margin-top: 3em;
 					font-size: 1.5em;
 				}
 				@media only screen and (min-width: 1200px) {
 					font-size: 1.2em;
 					margin-top: 0;
+				}
+				@media only screen and (min-width: $sunny-xl) {
+					font-size: 1.5em;
+				margin-top: 0;
 				}
 				@media only screen and (min-width: $sunny-supersize) {
 					margin-top: 8em;
@@ -550,53 +565,71 @@ section.sunny-sections {
 	.cube-header {
 		font-family: "Fraunces", serif;
 		font-weight: 900; 
-		font-size: 4em;
-		line-height: 1.2em;
-		@media only screen and (max-width: $sunny-desktop) {
-		padding-top: 0.5em;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
 		font-size: 3em;
+		margin-top: 1.5em;
+		margin-right: 0.8em; 
+		margin-left: 0.8em;
+		margin-bottom: 1em;
+		@media only screen and (min-width: $sunny-md) {
+			font-size: 3em;
+			margin-top: 0.8em;
+			margin-right: 0; 
+			margin-left: 0;
+			margin-bottom: 0.8em;
+		}	
+		@media only screen and (min-width: $sunny-lg) {
+			font-size: 4.5em;
+			margin-top: 0em;
+			padding-top: 0;
+			margin-right: 0; 
+			margin-left: 0;
+			margin-bottom: 0.5em;
+			text-align: left;
+		}	
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 5.5em;
 		}
-		@media only screen and (max-width: 500px) {
+		@media only screen and (min-width: 1900px) {
+			font-size: 7em;
 			margin-top: 1.5em;
 		}
-		@media only screen and (max-width: $sunny-mobile) {
-			margin-top: 1.5em;
-			margin-right: 0.8em; 
-			margin-left: 0.8em;
+		@media only screen and (min-width: $sunny-supersize) {
+			font-size: 9em;
+		}
+	}
+	.img-fullwidth {
+		@media only screen and (min-width: 1900px) {
+			width: 100%;
 		}
 	}
 	.cube-text {
+		margin-top: 0.5em;
+		margin-right: 1.5em;
+		margin-bottom: 1em;
+		font-size: 1.8em;
 		font-family: "Barlow", sans-serif;
-		font-size: 1.5em;
-		font-weight: 500;
 		color: hsl(232, 10%, 55%);
-		padding-top: 1em; 
-		padding-bottom: 1em;
-		@media only screen and (max-width: $sunny-desktop) {
-			margin-top: 1em;
-			padding-right: 0.2em;
-			padding-left: 0.2em;
+		margin-left: 1.5em;
+		font-weight: 500;
+		@media only screen and (min-width: $sunny-lg) {
+			text-align: left;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 1.5em;
+			margin-bottom: 2em;
+			}	
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2.5em;
 		}
-		@media only screen and (max-width: 766px) {
-			margin-top: 1em;
-			margin-right: 10em; 
-			margin-left: 10em;
+		@media only screen and (min-width: 1900px) {
+			font-size: 3.2em;
 		}
-		@media only screen and (max-width: 500px) {
-			margin-top: 1em;
-			margin-right: 5em; 
-			margin-left: 5em;
-		}
-		@media only screen and (max-width: $sunny-mobile) {
-			margin-top: 0.5em;
-			margin-right: 1.5em;
-			font-size: 1.8em;
-			margin-left: 1.5em;
+		@media only screen and (min-width: $sunny-supersize) {
+			font-size: 4.5em;
 		}
 	}
 	a.cube-link {
+		
 		font-family: "Fraunces", serif;
 		font-weight: 900;
 		font-size: 1.5em;
@@ -605,30 +638,40 @@ section.sunny-sections {
 		&:hover {
 			color: black;
 		}
+		@media only screen and (min-width: $sunny-lg) {
+			text-align: left;
+		}
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2em;
+		}
+		@media only screen and (min-width: 1900px) {
+			font-size: 3em;
+		}
+		@media only screen and (min-width: $sunny-supersize) {
+			font-size: 3.5em;
+		}
 	}
 }
 .text-holder {
-	@media only screen and (max-width: $sunny-desktop) {
+	@media only screen and (max-width: $sunny-lg) {
 		text-align: center;
 	}
 }
 
 
-@media only screen and (max-width: $sunny-desktop) {
-	a.transform-div {
+a.transform-div {
 		text-align: center;
-	}
+	
 }
+
 
 .transform-div span {
+	margin-bottom: 4em;
 	display: inline-block;
 	position: relative;
 	margin-left: 0.4em;
-	@media only screen and (max-width: 766px) {
+	@media only screen and (min-width: $sunny-md) {
 		margin-bottom: 2em;
-	}
-	@media only screen and (max-width: $sunny-mobile) {
-		margin-bottom: 4em;
 	}
 }
 .transform-div span::after {
@@ -700,111 +743,134 @@ section.sunny-sections {
 }
 
 .design-holder {
-	margin-top: 40em;	
+	margin-top: 25em;
+	@media only screen and (min-width: 1200px) {
+		margin-top: 35em;
+	}
+	@media only screen and (min-width: $sunny-xl) {
+		margin-top: 30em;
+	}
+	@media only screen and (min-width: 1900px) {
+		margin-top: 60em;
+	}
+	// margin-top: 40em;	
 	.graphic-design-header {
 		font-family: "Fraunces", serif;
 		color: hsl(167, 40%, 24%);
-		font-size: 3em;
+		font-size: 2.5em;
 		font-weight: 900;
+		@media only screen and (min-width: 1200px) {
+			font-size: 3em;
 		}
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 4em;
+		}
+		@media only screen and (min-width: 1900px) {
+			font-size: 6em;
+		}
+	}
 	.graphic-design-text {
 		font-family: "Barlow", sans-serif;
-		font-size: 18px;
-		font-weight: 600;
+		line-height: 1.5em;
+		padding: 1em;
+		font-size: 1.5em;
+		margin-top: 0;
+		margin-bottom: 1em;
 		color: hsl(167, 41%, 36%);
-		padding-top: 1em; 
-		padding-bottom: 2em;
-		@media only screen and (max-width: $sunny-desktop) {
-			line-height: 1.5em;
-			padding: 0 1em;
-			font-size: 16px;
-			margin-top: 2em;
-			margin-bottom: 4em;
+		font-weight: 600;
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2em;
+		}
+		@media only screen and (min-width: 1900px) {
+			font-size: 3em;
 		}
 	}
 	.photography-header {
 		font-family: "Fraunces", serif;
 		color: hsl(198, 62%, 26%);
-		font-size: 3em;
+		font-size: 2.5em;
 		font-weight: 900;
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 4em;
+		}
+		@media only screen and (min-width: 1900px) {
+			font-size: 6em;
+		}
 		}
 	.photography-text {
 		font-family: "Barlow", sans-serif;
-		font-size: 18px;
+		line-height: 1.5em;
+		padding: 1em;
+		font-size: 1.5em;
 		font-weight: 600;
+		margin-top: 0;
+		margin-bottom: 1em;
 		color: hsl(198, 62%, 26%);
-		padding-top: 1em; 
-		padding-bottom: 1em;
-		@media only screen and (max-width: $sunny-desktop) {
-			line-height: 1.5em;
-			padding: 0 1em;
-			font-size: 16px;
-			margin-top: 2em;
-			margin-bottom: 4em;
+		padding-top: 1em;
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2em;
+		} 
+		@media only screen and (min-width: 1900px) {
+			font-size: 3em;
 		}
 	}
 }
 
 .testimonial-header {
-	margin-top: 7em;
+	margin-top: 4em;
 	margin-bottom: 3.5em;
 	font-family: "Fraunces", serif;
 	color:hsl(233, 6%, 72%);
 	font-weight: 900;
 	font-size: 20px;
 	letter-spacing: 0.3em;
-	@media only screen and (max-width: $sunny-desktop) {
-		font-size: 16px;
+	@media only screen and (min-width: $sunny-xl) {
+		margin-top: 5em;
+		font-size: 3em;
 	}
-	@media only screen and (max-width: $sunny-mobile) {
-		margin-top: 4em;
+	@media only screen and (min-width: 1900px) {
+		font-size: 5em;
+	}
+	@media only screen and (min-width: $sunny-xxl) {
+		font-size: 6em;
 	}
 }	
 
 .testimonial-row {
-	@media only screen and (max-width: $sunny-desktop) {
-		padding-top: 5em;
-	}
-
+	padding-top: 5em;
 	.testimonial-container {
-		@media only screen and (max-width: $sunny-desktop) {
-		margin-bottom: 6em;
+		margin-bottom: 3em;
+		@media only screen and (min-width: $sunny-md) {
+			margin-bottom: 4em;
 		}
-		@media only screen and (max-width: $sunny-desktop) {
-			margin-bottom: 0;
-			}
 	}
 	
 	.client-image {
-		width: 20%;
-		margin-bottom: 4em;
-		@media only screen and (max-width: $sunny-mobile) {
-			margin-bottom: 1em;
+	  margin-bottom: 1em
+		;width: 20%;
+		@media only screen and (min-width: $sunny-md) {
+			margin-bottom: 4em;
 		}
 	}
 	.client-testimonial {
+		margin-top: 2em;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 1em;
 		font-family: "Barlow", sans-serif;
 		color: hsl(213, 9%, 39%);
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 1.8em;
 		padding: 0;
-		margin-right: 1em;
-		margin-left: 1em;
-		margin-bottom: 3em;
-		@media only screen and (max-width: $sunny-desktop) {
-			margin-top: 2em;
-			margin-right: 0;
-			margin-left: 0;
-			margin-bottom: 1em;
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2em;
 		}
-		@media only screen and (max-width: $sunny-mobile) {
-			margin-top: 2em;
-			margin-bottom: 2em;
-			margin-right: 1em; 
-			margin-left: 1em;
-			font-weight: 600;
-			font-size: 18px;
+		@media only screen and (min-width: 1900px) {
+			font-size: 3em;
+		}
+		@media only screen and (min-width: $sunny-xxl) {
+			font-size: 4em;
 		}
 	}
 	.client-name {
@@ -813,6 +879,15 @@ section.sunny-sections {
 		font-weight: 900;
 		font-size: 18px;
 		margin-bottom: 0;
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2.5em;
+		}
+		@media only screen and (min-width: 1900px) {
+			font-size: 3.5em;
+		}
+		@media only screen and (min-width: $sunny-xxl) {
+			font-size: 4.5em;
+		}
 	}
 	.client-job {
 		font-family: "Barlow", sans-serif;
@@ -822,6 +897,15 @@ section.sunny-sections {
 		margin-bottom: 10em;
 		@media only screen and (max-width: $sunny-desktop) {
 			margin-bottom: 5em;
+		}
+		@media only screen and (min-width: $sunny-xl) {
+			font-size: 2em;
+		}
+		@media only screen and (min-width: 1900px) {
+			font-size: 3em;
+		}
+		@media only screen and (min-width: $sunny-xxl) {
+			font-size: 4em;
 		}
 	}
 }
@@ -878,12 +962,16 @@ ul.footer-nav {
 		margin-left: 0;
 		margin-bottom: 2.5em;
 		padding-left: 0;
-		@media only screen and (max-width: $sunny-desktop) { 
-			font-size: 18px;
+	}
+	.footer-icons {
+		height: auto;
+		@media only screen and (min-width: $sunny-md) {
+			width: 30px;
 		}
-		@media only screen and (max-width: $sunny-mobile) { 
-			margin-top: 4em;
-			margin-bottom: 4em;
+		@media only screen and (min-width: $sunny-xxl) {
+			width: 70px; 
+			margin-bottom: 3em;
+			
 		}
 	}
 	.svg-icons {
@@ -895,19 +983,30 @@ ul.footer-nav {
 
 .svg-footer {
 	width: 186px;
+	@media only screen and (min-width: $sunny-xxl) {
+		width: 350px;
+		padding-top: 3em;
+		padding-bottom: 2em;
+	}
 }
 
 a.footer-links {
 	text-decoration: none;
 	color:hsl(167, 41%, 36%);
+	@media only screen and (min-width: $sunny-md) {
+		font-size: 1.5em;
+	}
+	@media only screen and (min-width: $sunny-xxl) {
+		font-size: 3em;
+	}
 	&:hover, &:focus, &:active {
 		color:hsl(0, 0%, 100%);
 	}
 }
 
 a.footer-links.center {
-		margin-right: 3em;
-		margin-left: 3em;
+		margin-right: 2em;
+		margin-left: 2em;
 	}
 
 li.footer-list-item{

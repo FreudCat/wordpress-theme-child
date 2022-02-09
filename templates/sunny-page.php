@@ -44,10 +44,10 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 <div class="container-fluid g-0"> 
   <section id="first-section" class="row sunny-sections g-0">
     <div class="col-md order-md-last">
-    <img src=<?php echo $image_1?>>
+    <img class="img-fullwidth" src=<?php echo $image_1?>>
     </div>  
     <div class="col-md align-self-center"> <!-- The order-lg-first means the div will be first in a larger viewscreen, but second in other screens -->
-      <div class="col-md-7 mx-auto text-holder">
+      <div class="col-md-12 col-lg-9 mx-auto text-holder">
         <h2 class="cube-header order-md-first">Transform your brand</h2>
         <p class="cube-text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a class="cube-link transform-div" href="#"><span>LEARN MORE</a>
@@ -57,10 +57,10 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 
   <section class="row sunny-sections g-0">
     <div class="col-md image-div">
-      <img src=<?php echo $image_2?>>
+      <img class="img-fullwidth" src=<?php echo $image_2?>>
     </div>
     <div class="col-md align-self-center">
-      <div class="col-md-8 mx-auto text-holder">
+      <div class="col-md-12 col-lg-8 mx-auto text-holder">
         <h2 class="cube-header">Stand out to the right audience</h2>
         <p class="cube-text">Using a collaborative formula of designer, researcher, photographers, videographers, and copywriters, we'll build and extend you brand in digital places.</p>
         <a class="cube-link stand-out-div" href="#"><span>LEARN MORE</a>
@@ -68,7 +68,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
     </div>
   </section>
 
-  <section class="row sunny-sections h-auto g-0">
+  <section class="row sunny-sections g-0">
     <div class="col-md image-div" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/images/sunny-page-images/design.jpg;'?>)">  
       <div class="col-lg-7 mx-auto design-holder">
         <p class="graphic-design-header text-center">Graphic Design</p>

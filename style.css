@@ -244,26 +244,26 @@ button.close-nav-toggle {
   #sunny-site-header .sunny-header-text {
     font-family: "Fraunces", serif;
     margin-top: 3.5em;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 900;
     letter-spacing: 0.2em;
     text-transform: uppercase; }
     @media only screen and (min-width: 768px) {
       #sunny-site-header .sunny-header-text {
+        margin-top: 2em;
+        font-size: 5em; } }
+    @media only screen and (min-width: 1000px) {
+      #sunny-site-header .sunny-header-text {
         margin-top: 3em;
         font-size: 6em; } }
-    @media only screen and (min-width: 1000px) {
-      #sunny-site-header .sunny-header-text {
-        margin-top: 2em;
-        font-size: 10em; } }
-    @media only screen and (min-width: 1000px) {
-      #sunny-site-header .sunny-header-text {
-        margin-top: 2.5em;
-        font-size: 12em; } }
     @media only screen and (min-width: 1200px) {
       #sunny-site-header .sunny-header-text {
         margin-top: 2em;
         font-size: 7em; } }
+    @media only screen and (min-width: 1400px) {
+      #sunny-site-header .sunny-header-text {
+        margin-top: 1.8em;
+        font-size: 10em; } }
     @media only screen and (min-width: 2300px) {
       #sunny-site-header .sunny-header-text {
         margin-top: 4em;
@@ -277,9 +277,9 @@ button.close-nav-toggle {
 
 @media only screen and (min-width: 1000px) {
   .navbar-svg {
-    margin-top: 10em;
-    margin-left: 3em;
-    width: 200px;
+    margin-top: 6em;
+    margin-left: 2em;
+    width: 150px;
     height: auto; } }
 
 @media only screen and (min-width: 1200px) {
@@ -287,6 +287,12 @@ button.close-nav-toggle {
     margin-top: 1.5em;
     margin-left: 0;
     width: 150px; } }
+
+@media only screen and (min-width: 1400px) {
+  .navbar-svg {
+    margin-top: 1.5em;
+    margin-left: 0;
+    width: 250px; } }
 
 @media only screen and (min-width: 2300px) {
   .navbar-svg {
@@ -303,15 +309,18 @@ button.close-nav-toggle {
   @media only screen and (min-width: 768px) {
     .pointer-down {
       margin: 4em auto;
-      width: 40px;
+      width: 35px;
       height: auto; } }
   @media only screen and (min-width: 1000px) {
     .pointer-down {
-      width: 60px;
+      width: 40px;
       height: auto; } }
   @media only screen and (min-width: 1200px) {
     .pointer-down {
       width: 40px; } }
+  @media only screen and (min-width: 1400px) {
+    .pointer-down {
+      width: 50px; } }
   @media only screen and (min-width: 2300px) {
     .pointer-down {
       width: 80px; } }
@@ -332,16 +341,19 @@ button.close-nav-toggle {
       font-size: 1.6em;
       font-family: "Barlow", sans-serif;
       font-weight: 500;
-      margin-top: 0.7em;
-      margin-right: 1em; } }
+      margin-top: 0.7em; } }
   @media only screen and (min-width: 1000px) {
     .header-item a.nav-link {
-      font-size: 2.2em;
-      margin-top: 5.2em;
+      font-size: 1.8em;
+      margin-top: 2.5em;
       margin-right: 1em; } }
   @media only screen and (min-width: 1200px) {
     .header-item a.nav-link {
       font-size: 1.8em;
+      margin-top: 0; } }
+  @media only screen and (min-width: 1400px) {
+    .header-item a.nav-link {
+      font-size: 2.5em;
       margin-top: 0; } }
   @media only screen and (min-width: 2300px) {
     .header-item a.nav-link {
@@ -406,11 +418,15 @@ button.close-nav-toggle {
         font-weight: 900; } }
   @media only screen and (min-width: 768px) and (min-width: 1000px) {
     #navbarSupportedContent .contact-link {
-      margin-top: 7.5em;
+      margin-top: 3em;
       font-size: 1.5em; } }
   @media only screen and (min-width: 768px) and (min-width: 1200px) {
     #navbarSupportedContent .contact-link {
       font-size: 1.2em;
+      margin-top: 0; } }
+  @media only screen and (min-width: 768px) and (min-width: 1400px) {
+    #navbarSupportedContent .contact-link {
+      font-size: 1.5em;
       margin-top: 0; } }
   @media only screen and (min-width: 768px) and (min-width: 2300px) {
     #navbarSupportedContent .contact-link {
@@ -447,50 +463,65 @@ section.sunny-sections {
   section.sunny-sections .cube-header {
     font-family: "Fraunces", serif;
     font-weight: 900;
-    font-size: 4em;
-    line-height: 1.2em; }
-    @media only screen and (max-width: 1200px) {
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-right: 0.8em;
+    margin-left: 0.8em;
+    margin-bottom: 1em; }
+    @media only screen and (min-width: 768px) {
       section.sunny-sections .cube-header {
-        padding-top: 0.5em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        font-size: 3em; } }
-    @media only screen and (max-width: 500px) {
+        font-size: 3em;
+        margin-top: 0.8em;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0.8em; } }
+    @media only screen and (min-width: 1000px) {
       section.sunny-sections .cube-header {
+        font-size: 4.5em;
+        margin-top: 0em;
+        padding-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0.5em;
+        text-align: left; } }
+    @media only screen and (min-width: 1400px) {
+      section.sunny-sections .cube-header {
+        font-size: 5.5em; } }
+    @media only screen and (min-width: 1900px) {
+      section.sunny-sections .cube-header {
+        font-size: 7em;
         margin-top: 1.5em; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (min-width: 2300px) {
       section.sunny-sections .cube-header {
-        margin-top: 1.5em;
-        margin-right: 0.8em;
-        margin-left: 0.8em; } }
+        font-size: 9em; } }
+  @media only screen and (min-width: 1900px) {
+    section.sunny-sections .img-fullwidth {
+      width: 100%; } }
   section.sunny-sections .cube-text {
+    margin-top: 0.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.8em;
     font-family: "Barlow", sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
     color: #818498;
-    padding-top: 1em;
-    padding-bottom: 1em; }
-    @media only screen and (max-width: 1200px) {
+    margin-left: 1.5em;
+    font-weight: 500; }
+    @media only screen and (min-width: 1000px) {
       section.sunny-sections .cube-text {
-        margin-top: 1em;
-        padding-right: 0.2em;
-        padding-left: 0.2em; } }
-    @media only screen and (max-width: 766px) {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 1.5em;
+        margin-bottom: 2em; } }
+    @media only screen and (min-width: 1400px) {
       section.sunny-sections .cube-text {
-        margin-top: 1em;
-        margin-right: 10em;
-        margin-left: 10em; } }
-    @media only screen and (max-width: 500px) {
+        font-size: 2.5em; } }
+    @media only screen and (min-width: 1900px) {
       section.sunny-sections .cube-text {
-        margin-top: 1em;
-        margin-right: 5em;
-        margin-left: 5em; } }
-    @media only screen and (max-width: 400px) {
+        font-size: 3.2em; } }
+    @media only screen and (min-width: 2300px) {
       section.sunny-sections .cube-text {
-        margin-top: 0.5em;
-        margin-right: 1.5em;
-        font-size: 1.8em;
-        margin-left: 1.5em; } }
+        font-size: 4.5em; } }
   section.sunny-sections a.cube-link {
     font-family: "Fraunces", serif;
     font-weight: 900;
@@ -499,25 +530,34 @@ section.sunny-sections {
     color: black; }
     section.sunny-sections a.cube-link:hover {
       color: black; }
+    @media only screen and (min-width: 1000px) {
+      section.sunny-sections a.cube-link {
+        text-align: left; } }
+    @media only screen and (min-width: 1400px) {
+      section.sunny-sections a.cube-link {
+        font-size: 2em; } }
+    @media only screen and (min-width: 1900px) {
+      section.sunny-sections a.cube-link {
+        font-size: 3em; } }
+    @media only screen and (min-width: 2300px) {
+      section.sunny-sections a.cube-link {
+        font-size: 3.5em; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .text-holder {
     text-align: center; } }
 
-@media only screen and (max-width: 1200px) {
-  a.transform-div {
-    text-align: center; } }
+a.transform-div {
+  text-align: center; }
 
 .transform-div span {
+  margin-bottom: 4em;
   display: inline-block;
   position: relative;
   margin-left: 0.4em; }
-  @media only screen and (max-width: 766px) {
+  @media only screen and (min-width: 768px) {
     .transform-div span {
       margin-bottom: 2em; } }
-  @media only screen and (max-width: 400px) {
-    .transform-div span {
-      margin-bottom: 4em; } }
 
 .transform-div span::after {
   content: '';
@@ -583,121 +623,158 @@ section.sunny-sections {
   background-size: cover; }
 
 .design-holder {
-  margin-top: 40em; }
+  margin-top: 25em; }
+  @media only screen and (min-width: 1200px) {
+    .design-holder {
+      margin-top: 35em; } }
+  @media only screen and (min-width: 1400px) {
+    .design-holder {
+      margin-top: 30em; } }
+  @media only screen and (min-width: 1900px) {
+    .design-holder {
+      margin-top: 60em; } }
   .design-holder .graphic-design-header {
     font-family: "Fraunces", serif;
     color: #25564b;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900; }
+    @media only screen and (min-width: 1200px) {
+      .design-holder .graphic-design-header {
+        font-size: 3em; } }
+    @media only screen and (min-width: 1400px) {
+      .design-holder .graphic-design-header {
+        font-size: 4em; } }
+    @media only screen and (min-width: 1900px) {
+      .design-holder .graphic-design-header {
+        font-size: 6em; } }
   .design-holder .graphic-design-text {
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    line-height: 1.5em;
+    padding: 1em;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
     color: #368171;
-    padding-top: 1em;
-    padding-bottom: 2em; }
-    @media only screen and (max-width: 1200px) {
+    font-weight: 600; }
+    @media only screen and (min-width: 1400px) {
       .design-holder .graphic-design-text {
-        line-height: 1.5em;
-        padding: 0 1em;
-        font-size: 16px;
-        margin-top: 2em;
-        margin-bottom: 4em; } }
+        font-size: 2em; } }
+    @media only screen and (min-width: 1900px) {
+      .design-holder .graphic-design-text {
+        font-size: 3em; } }
   .design-holder .photography-header {
     font-family: "Fraunces", serif;
     color: #19536b;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900; }
+    @media only screen and (min-width: 1400px) {
+      .design-holder .photography-header {
+        font-size: 4em; } }
+    @media only screen and (min-width: 1900px) {
+      .design-holder .photography-header {
+        font-size: 6em; } }
   .design-holder .photography-text {
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    line-height: 1.5em;
+    padding: 1em;
+    font-size: 1.5em;
     font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1em;
     color: #19536b;
-    padding-top: 1em;
-    padding-bottom: 1em; }
-    @media only screen and (max-width: 1200px) {
+    padding-top: 1em; }
+    @media only screen and (min-width: 1400px) {
       .design-holder .photography-text {
-        line-height: 1.5em;
-        padding: 0 1em;
-        font-size: 16px;
-        margin-top: 2em;
-        margin-bottom: 4em; } }
+        font-size: 2em; } }
+    @media only screen and (min-width: 1900px) {
+      .design-holder .photography-text {
+        font-size: 3em; } }
 
 .testimonial-header {
-  margin-top: 7em;
+  margin-top: 4em;
   margin-bottom: 3.5em;
   font-family: "Fraunces", serif;
   color: #b3b4bc;
   font-weight: 900;
   font-size: 20px;
   letter-spacing: 0.3em; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .testimonial-header {
-      font-size: 16px; } }
-  @media only screen and (max-width: 400px) {
+      margin-top: 5em;
+      font-size: 3em; } }
+  @media only screen and (min-width: 1900px) {
     .testimonial-header {
-      margin-top: 4em; } }
+      font-size: 5em; } }
+  @media only screen and (min-width: 1900px) {
+    .testimonial-header {
+      font-size: 6em; } }
 
-@media only screen and (max-width: 1200px) {
-  .testimonial-row {
-    padding-top: 5em; } }
-
-@media only screen and (max-width: 1200px) {
+.testimonial-row {
+  padding-top: 5em; }
   .testimonial-row .testimonial-container {
-    margin-bottom: 6em; } }
-
-@media only screen and (max-width: 1200px) {
-  .testimonial-row .testimonial-container {
-    margin-bottom: 0; } }
-
-.testimonial-row .client-image {
-  width: 20%;
-  margin-bottom: 4em; }
-  @media only screen and (max-width: 400px) {
-    .testimonial-row .client-image {
-      margin-bottom: 1em; } }
-
-.testimonial-row .client-testimonial {
-  font-family: "Barlow", sans-serif;
-  color: #5a636c;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.8em;
-  padding: 0;
-  margin-right: 1em;
-  margin-left: 1em;
-  margin-bottom: 3em; }
-  @media only screen and (max-width: 1200px) {
-    .testimonial-row .client-testimonial {
-      margin-top: 2em;
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 1em; } }
-  @media only screen and (max-width: 400px) {
-    .testimonial-row .client-testimonial {
-      margin-top: 2em;
-      margin-bottom: 2em;
-      margin-right: 1em;
-      margin-left: 1em;
-      font-weight: 600;
-      font-size: 18px; } }
-
-.testimonial-row .client-name {
-  font-family: "Fraunces", serif;
-  color: black;
-  font-weight: 900;
-  font-size: 18px;
-  margin-bottom: 0; }
-
-.testimonial-row .client-job {
-  font-family: "Barlow", sans-serif;
-  color: #abadba;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 10em; }
-  @media only screen and (max-width: 1200px) {
-    .testimonial-row .client-job {
-      margin-bottom: 5em; } }
+    margin-bottom: 3em; }
+    @media only screen and (min-width: 768px) {
+      .testimonial-row .testimonial-container {
+        margin-bottom: 4em; } }
+  .testimonial-row .client-image {
+    margin-bottom: 1em;
+    width: 20%; }
+    @media only screen and (min-width: 768px) {
+      .testimonial-row .client-image {
+        margin-bottom: 4em; } }
+  .testimonial-row .client-testimonial {
+    margin-top: 2em;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 1em;
+    font-family: "Barlow", sans-serif;
+    color: #5a636c;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8em;
+    padding: 0; }
+    @media only screen and (min-width: 1400px) {
+      .testimonial-row .client-testimonial {
+        font-size: 2em; } }
+    @media only screen and (min-width: 1900px) {
+      .testimonial-row .client-testimonial {
+        font-size: 3em; } }
+    @media only screen and (min-width: 1900px) {
+      .testimonial-row .client-testimonial {
+        font-size: 4em; } }
+  .testimonial-row .client-name {
+    font-family: "Fraunces", serif;
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 1400px) {
+      .testimonial-row .client-name {
+        font-size: 2.5em; } }
+    @media only screen and (min-width: 1900px) {
+      .testimonial-row .client-name {
+        font-size: 3.5em; } }
+    @media only screen and (min-width: 1900px) {
+      .testimonial-row .client-name {
+        font-size: 4.5em; } }
+  .testimonial-row .client-job {
+    font-family: "Barlow", sans-serif;
+    color: #abadba;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10em; }
+    @media only screen and (max-width: 1200px) {
+      .testimonial-row .client-job {
+        margin-bottom: 5em; } }
+    @media only screen and (min-width: 1400px) {
+      .testimonial-row .client-job {
+        font-size: 2em; } }
+    @media only screen and (min-width: 1900px) {
+      .testimonial-row .client-job {
+        font-size: 3em; } }
+    @media only screen and (min-width: 1900px) {
+      .testimonial-row .client-job {
+        font-size: 4em; } }
 
 .pictures-div {
   width: 100%; }
@@ -745,28 +822,41 @@ ul.footer-nav {
     margin-left: 0;
     margin-bottom: 2.5em;
     padding-left: 0; }
-    @media only screen and (max-width: 1200px) {
-      .sunny-footer .socials-row {
-        font-size: 18px; } }
-    @media only screen and (max-width: 400px) {
-      .sunny-footer .socials-row {
-        margin-top: 4em;
-        margin-bottom: 4em; } }
+  .sunny-footer .footer-icons {
+    height: auto; }
+    @media only screen and (min-width: 768px) {
+      .sunny-footer .footer-icons {
+        width: 30px; } }
+    @media only screen and (min-width: 1900px) {
+      .sunny-footer .footer-icons {
+        width: 70px;
+        margin-bottom: 3em; } }
   .sunny-footer .svg-icons:hover, .sunny-footer .svg-icons:focus, .sunny-footer .svg-icons:active {
     fill: white; }
 
 .svg-footer {
   width: 186px; }
+  @media only screen and (min-width: 1900px) {
+    .svg-footer {
+      width: 350px;
+      padding-top: 3em;
+      padding-bottom: 2em; } }
 
 a.footer-links {
   text-decoration: none;
   color: #368171; }
+  @media only screen and (min-width: 768px) {
+    a.footer-links {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1900px) {
+    a.footer-links {
+      font-size: 3em; } }
   a.footer-links:hover, a.footer-links:focus, a.footer-links:active {
     color: white; }
 
 a.footer-links.center {
-  margin-right: 3em;
-  margin-left: 3em; }
+  margin-right: 2em;
+  margin-left: 2em; }
 
 li.footer-list-item {
   text-decoration: none;
