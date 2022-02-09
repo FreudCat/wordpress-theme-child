@@ -209,6 +209,9 @@ button.close-nav-toggle {
     font-size: 1em;
     color: #fff;
     display: inline-block; }
+    @media only screen and (max-width: 480px) {
+      .modal-image figcaption {
+        font-size: 0.8em; } }
 
 .caption-button-holder {
   display: inline-block;
@@ -238,49 +241,113 @@ button.close-nav-toggle {
   color: white;
   background-position: center center;
   background-size: cover; }
-  @media only screen and (max-width: 400px) {
-    #sunny-site-header {
-      background-position: center;
-      background-size: cover;
-      height: 70vh; } }
   #sunny-site-header .sunny-header-text {
     font-family: "Fraunces", serif;
-    margin-top: 3em;
-    font-size: 5em;
+    margin-top: 3.5em;
+    font-size: 3.5em;
     font-weight: 900;
     letter-spacing: 0.2em;
     text-transform: uppercase; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (min-width: 768px) {
       #sunny-site-header .sunny-header-text {
-        font-size: 5em; } }
-    @media only screen and (max-width: 600px) {
+        margin-top: 3em;
+        font-size: 6em; } }
+    @media only screen and (min-width: 1000px) {
       #sunny-site-header .sunny-header-text {
-        font-size: 4em; } }
-  #sunny-site-header .arrow-down {
-    margin: 6em auto;
-    height: 40%;
-    transition: transform 0.5s !important; }
-    @media only screen and (max-width: 400px) {
-      #sunny-site-header .arrow-down {
-        margin: 5em auto; } }
-    #sunny-site-header .arrow-down:hover {
-      transform: translateY(40%); }
+        margin-top: 2em;
+        font-size: 10em; } }
+    @media only screen and (min-width: 1000px) {
+      #sunny-site-header .sunny-header-text {
+        margin-top: 2.5em;
+        font-size: 12em; } }
+    @media only screen and (min-width: 1200px) {
+      #sunny-site-header .sunny-header-text {
+        margin-top: 2em;
+        font-size: 7em; } }
+    @media only screen and (min-width: 2300px) {
+      #sunny-site-header .sunny-header-text {
+        margin-top: 4em;
+        font-size: 12em; } }
+
+@media only screen and (min-width: 768px) {
+  .navbar-svg {
+    margin-top: 6em;
+    width: 170px;
+    height: auto; } }
+
+@media only screen and (min-width: 1000px) {
+  .navbar-svg {
+    margin-top: 10em;
+    margin-left: 3em;
+    width: 200px;
+    height: auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .navbar-svg {
+    margin-top: 1.5em;
+    margin-left: 0;
+    width: 150px; } }
+
+@media only screen and (min-width: 2300px) {
+  .navbar-svg {
+    margin-top: 18em;
+    margin-left: 5em;
+    width: 350px;
+    height: auto; } }
+
+.pointer-down {
+  margin: 3em auto;
+  width: 30px;
+  height: auto;
+  transition: transform 0.5s !important; }
+  @media only screen and (min-width: 768px) {
+    .pointer-down {
+      margin: 4em auto;
+      width: 40px;
+      height: auto; } }
+  @media only screen and (min-width: 1000px) {
+    .pointer-down {
+      width: 60px;
+      height: auto; } }
+  @media only screen and (min-width: 1200px) {
+    .pointer-down {
+      width: 40px; } }
+  @media only screen and (min-width: 2300px) {
+    .pointer-down {
+      width: 80px; } }
+  .pointer-down:hover {
+    transform: translateY(40%);
+    fill: black; }
 
 .header-item a.nav-link {
-  color: white;
-  font-size: 1.5em;
+  color: #818498;
+  font-size: 2em;
+  margin: 0;
   font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  margin-top: 0.2em;
-  margin-right: 1em; }
-  @media only screen and (max-width: 991px) {
+  font-weight: 600;
+  padding-bottom: 1em; }
+  @media only screen and (min-width: 768px) {
     .header-item a.nav-link {
-      color: #818498;
-      font-size: 2em;
-      margin: 0;
+      color: white;
+      font-size: 1.6em;
       font-family: "Barlow", sans-serif;
-      font-weight: 600;
-      padding-bottom: 1em; } }
+      font-weight: 500;
+      margin-top: 0.7em;
+      margin-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .header-item a.nav-link {
+      font-size: 2.2em;
+      margin-top: 5.2em;
+      margin-right: 1em; } }
+  @media only screen and (min-width: 1200px) {
+    .header-item a.nav-link {
+      font-size: 1.8em;
+      margin-top: 0; } }
+  @media only screen and (min-width: 2300px) {
+    .header-item a.nav-link {
+      font-size: 5em;
+      margin-top: 4.8em;
+      margin-right: 1em; } }
 
 .sunny-nav-button {
   color: transparent; }
@@ -289,7 +356,7 @@ button.close-nav-toggle {
   margin-top: 10em;
   margin-left: 3em;
   margin-right: 3em; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1200px) {
     .container-fluid.nav-container {
       margin-top: 3em;
       margin-left: 2em;
@@ -303,53 +370,67 @@ button.close-nav-toggle {
     padding: 0;
     margin: 0; }
 
-#navbarSupportedContent .contact-link {
+#navbarSupportedContent {
   background-color: white;
-  color: black;
-  font-family: "Fraunces", serif;
-  border-radius: 50px;
-  font-size: 1.2em;
-  padding: 1em 2em;
-  font-weight: 900; }
-  @media only screen and (max-width: 991px) {
+  margin-top: 5em;
+  padding-top: 3em; }
+  @media only screen and (min-width: 768px) {
+    #navbarSupportedContent {
+      background-color: transparent; } }
+  @media only screen and (min-width: 1000px) {
+    #navbarSupportedContent {
+      margin-top: 6em;
+      padding-top: 2em;
+      padding-bottom: 4em; } }
+  #navbarSupportedContent .contact-link {
+    background-color: #fad400;
+    font-size: 1.5em;
+    width: 10em;
+    margin: auto;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    font-family: "Fraunces", serif;
+    border-radius: 50px;
+    color: black;
+    padding: 1em 2em;
+    font-weight: 900;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 768px) {
+      #navbarSupportedContent .contact-link {
+        background-color: white;
+        color: black;
+        font-family: "Fraunces", serif;
+        border-radius: 50px;
+        font-size: 1.2em;
+        padding: 1em 2em;
+        font-weight: 900; } }
+  @media only screen and (min-width: 768px) and (min-width: 1000px) {
     #navbarSupportedContent .contact-link {
-      background-color: #fad400;
-      font-size: 1.5em;
-      width: 10em;
-      margin: auto;
-      margin-top: 1em; } }
-  #navbarSupportedContent .contact-link:hover, #navbarSupportedContent .contact-link:focus, #navbarSupportedContent .contact-link:active {
-    color: white;
-    background-color: #60cafffd; }
-
-@media only screen and (max-width: 991px) {
-  #navbarSupportedContent {
-    background-color: white;
-    margin-top: 6em;
-    padding-top: 2em;
-    padding-bottom: 4em; } }
-
-@media only screen and (max-width: 400px) {
-  #navbarSupportedContent {
-    background-color: white;
-    margin-top: 5em;
-    padding-top: 3em; } }
-
-#navbarSupportedContent .arrow {
-  display: none; }
-  @media only screen and (max-width: 991px) {
-    #navbarSupportedContent .arrow {
-      display: inline;
-      position: absolute;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-      border-right: 30px solid white;
-      right: 2em;
-      top: 9em; } }
-  @media only screen and (max-width: 400px) {
-    #navbarSupportedContent .arrow {
-      right: 2em;
-      top: 9em; } }
+      margin-top: 7.5em;
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+    #navbarSupportedContent .contact-link {
+      font-size: 1.2em;
+      margin-top: 0; } }
+  @media only screen and (min-width: 768px) and (min-width: 2300px) {
+    #navbarSupportedContent .contact-link {
+      margin-top: 8em;
+      font-size: 3em; } }
+    @media only screen and (min-width: 768px) {
+        #navbarSupportedContent .contact-link:hover, #navbarSupportedContent .contact-link:focus, #navbarSupportedContent .contact-link:active {
+          color: white;
+          background-color: #60cafffd; } }
+  #navbarSupportedContent .arrow {
+    display: inline;
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid white;
+    right: 2em;
+    top: 9em; }
+    @media only screen and (min-width: 768px) {
+      #navbarSupportedContent .arrow {
+        display: none; } }
 
 nav.navbar.transparent {
   margin: 0;
@@ -368,12 +449,15 @@ section.sunny-sections {
     font-weight: 900;
     font-size: 4em;
     line-height: 1.2em; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
       section.sunny-sections .cube-header {
         padding-top: 0.5em;
         padding-left: 0.5em;
         padding-right: 0.5em;
         font-size: 3em; } }
+    @media only screen and (max-width: 500px) {
+      section.sunny-sections .cube-header {
+        margin-top: 1.5em; } }
     @media only screen and (max-width: 400px) {
       section.sunny-sections .cube-header {
         margin-top: 1.5em;
@@ -386,7 +470,7 @@ section.sunny-sections {
     color: #818498;
     padding-top: 1em;
     padding-bottom: 1em; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
       section.sunny-sections .cube-text {
         margin-top: 1em;
         padding-right: 0.2em;
@@ -396,6 +480,11 @@ section.sunny-sections {
         margin-top: 1em;
         margin-right: 10em;
         margin-left: 10em; } }
+    @media only screen and (max-width: 500px) {
+      section.sunny-sections .cube-text {
+        margin-top: 1em;
+        margin-right: 5em;
+        margin-left: 5em; } }
     @media only screen and (max-width: 400px) {
       section.sunny-sections .cube-text {
         margin-top: 0.5em;
@@ -411,11 +500,11 @@ section.sunny-sections {
     section.sunny-sections a.cube-link:hover {
       color: black; }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .text-holder {
     text-align: center; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   a.transform-div {
     text-align: center; } }
 
@@ -507,7 +596,7 @@ section.sunny-sections {
     color: #368171;
     padding-top: 1em;
     padding-bottom: 2em; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
       .design-holder .graphic-design-text {
         line-height: 1.5em;
         padding: 0 1em;
@@ -526,7 +615,7 @@ section.sunny-sections {
     color: #19536b;
     padding-top: 1em;
     padding-bottom: 1em; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
       .design-holder .photography-text {
         line-height: 1.5em;
         padding: 0 1em;
@@ -542,22 +631,22 @@ section.sunny-sections {
   font-weight: 900;
   font-size: 20px;
   letter-spacing: 0.3em; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1200px) {
     .testimonial-header {
       font-size: 16px; } }
   @media only screen and (max-width: 400px) {
     .testimonial-header {
       margin-top: 4em; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .testimonial-row {
     padding-top: 5em; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .testimonial-row .testimonial-container {
     margin-bottom: 6em; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .testimonial-row .testimonial-container {
     margin-bottom: 0; } }
 
@@ -578,7 +667,7 @@ section.sunny-sections {
   margin-right: 1em;
   margin-left: 1em;
   margin-bottom: 3em; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1200px) {
     .testimonial-row .client-testimonial {
       margin-top: 2em;
       margin-right: 0;
@@ -606,13 +695,13 @@ section.sunny-sections {
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 10em; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1200px) {
     .testimonial-row .client-job {
       margin-bottom: 5em; } }
 
 .pictures-div {
   width: 100%; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1200px) {
     .pictures-div {
       width: 100%;
       height: 50vw;
@@ -656,7 +745,7 @@ ul.footer-nav {
     margin-left: 0;
     margin-bottom: 2.5em;
     padding-left: 0; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
       .sunny-footer .socials-row {
         font-size: 18px; } }
     @media only screen and (max-width: 400px) {

@@ -31,7 +31,7 @@ for (let testimonial of testimonial_array) {
 }
 
 //js for scroll into view 
-const arrow = document.querySelector(".arrow");
+const arrow = document.querySelector(".pointer-down");
 arrow.addEventListener('click', function () {
   document.querySelector("#first-section").scrollIntoView({ block: "start",  behavior: "smooth" });
 });

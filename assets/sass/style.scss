@@ -18,10 +18,6 @@ $tablet-breakpoint: 768px; //481px — 768px
 $small-screen-breakpoint: 1024px; //769px — 1024px
 $large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
 
-// SCSS variables for sunny-landing-page per specs
-$sunny-mobile: 400px; //sunny specs use mobil as 375px 
-$sunny-desktop: 991px; //sunny specs use desktop as 1440px - >=992 is the lg breakpoint for bootstrap
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap');
 
 // Accordion styles
@@ -266,6 +262,9 @@ button.close-nav-toggle {
 		font-size: 1em;
 		color: #fff;
 		display: inline-block;
+		@media only screen and (max-width: $mobile-breakpoint) {
+			font-size: 0.8em;
+		}
 	}
 }
 // End modal styles
@@ -302,8 +301,20 @@ button.close-nav-toggle {
 // End gallery template page font
 
 // Sunny Landing Page Style ---------------------------------------------------------
-// Use color categories and breakpoints as determined by frontendmentor.io specs
+
 // Sunny Header----------------------------------------------------------------------
+
+// SCSS variables for sunny-landing-page
+$sunny-xs: 375px;
+$sunny-sm: 500px;
+$sunny-md: 768px;
+$sunny-lg: 1000px;
+$sunny-xl: 1400px;
+$sunny-xxl: 1900px; 
+$sunny-supersize: 2300px; 
+$sunny-desktop: 1200px; 
+$sunny-mobile: 400px;
+
 #sunny-site-header {
 	height: 100vh;
 	margin: 0;
@@ -312,54 +323,119 @@ button.close-nav-toggle {
 	color: hsl(0, 0%, 100%);
 	background-position: center center; 
 	background-size: cover;
-	@media only screen and (max-width: $sunny-mobile ) {
-		background-position: center; 
-		background-size: cover;
-		height: 70vh
-	}
 	.sunny-header-text {
 		font-family: "Fraunces", serif;
-		margin-top: 3em;
-		font-size: 5em;
+		margin-top: 3.5em;
+		font-size: 3.5em;
 		font-weight: 900;
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
-		@media only screen and (max-width: $sunny-desktop) {
-			font-size: 5em;
+		@media only screen and (min-width: $sunny-md) {
+			margin-top: 3em;
+			font-size: 6em;
 		}
-		@media only screen and (max-width: 600px) {
-			font-size: 4em;
+		@media only screen and (min-width: $sunny-lg) {
+			margin-top: 2em;
+			font-size: 10em;
 		}
-	}
-	.arrow-down {
-		margin: 6em auto;
-		height: 40%;
-		transition: transform 0.5s !important;
-		@media only screen and (max-width: $sunny-mobile) {
-			margin: 5em auto;
+		@media only screen and (min-width: $sunny-lg) {
+			margin-top: 2.5em;
+			font-size: 12em;
 		}
-		&:hover {
-				transform: translateY(40%);
+		@media only screen and (min-width: 1200px) {
+			margin-top: 2em;
+			font-size: 7em;
+		}
+		@media only screen and (min-width: $sunny-supersize) {
+			margin-top: 4em;
+			font-size: 12em;
 		}
 	}
 }
 
+.navbar-svg {
+	@media only screen and (min-width: $sunny-md) {
+		margin-top: 6em;
+		width: 170px; 
+		height: auto;
+	}
+	@media only screen and (min-width: $sunny-lg) {
+		margin-top: 10em;
+		margin-left: 3em;
+		width: 200px; 
+		height: auto;
+	}
+	@media only screen and (min-width: 1200px) {
+		margin-top: 1.5em;
+		margin-left: 0;
+		width: 150px;
+	}
+	@media only screen and (min-width: $sunny-supersize) {
+		margin-top: 18em;
+		margin-left: 5em;
+		width: 350px; 
+		height: auto;
+	}
+}
+
+.pointer-down {
+	margin: 3em auto;
+	width: 30px; 
+	height: auto;
+	@media only screen and (min-width: $sunny-md) {
+		margin: 4em auto;
+		width: 40px;
+		height: auto;
+	}
+	@media only screen and (min-width: $sunny-lg) {
+		width: 60px;
+		height: auto;
+	}
+	@media only screen and (min-width: 1200px) {
+		width: 40px;
+	}
+	@media only screen and (min-width: $sunny-supersize) {
+		width: 80px;
+	}
+	transition: transform 0.5s !important;
+	&:hover {
+			transform: translateY(40%);
+			fill:hsl(0, 0%, 0%);
+	}
+}	
+
+
 .header-item {
 	a.nav-link{
-		color: hsl(0, 0%, 100%);
-		font-size: 1.5em;
+		color: hsl(232, 10%, 55%);
+		font-size: 2em; 
+		margin: 0; 
 		font-family: "Barlow", sans-serif;
-		font-weight: 500;
-		margin-top: 0.2em; 
-		margin-right: 1em;
-		@media only screen and (max-width: $sunny-desktop) {
-			color: hsl(232, 10%, 55%);
-			font-size: 2em; 
-			margin: 0; 
+		font-weight: 600;
+		padding-bottom: 1em;
+		@media only screen and (min-width: $sunny-md) {
+			color: hsl(0, 0%, 100%);
+			font-size: 1.6em;
 			font-family: "Barlow", sans-serif;
-			font-weight: 600;
-			padding-bottom: 1em;
+			font-weight: 500;
+			margin-top: 0.7em; 
+			margin-right: 1em;
 		}
+		@media only screen and (min-width: $sunny-lg) {
+			font-size: 2.2em;
+			margin-top: 5.2em; 
+			margin-right: 1em;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-size: 1.8em;
+		margin-top: 0;
+		}
+		@media only screen and (min-width: $sunny-supersize) { 
+			font-size: 5em;
+			margin-top: 4.8em; 
+			margin-right: 1em;
+		}
+
 	}
 }
 
@@ -388,56 +464,73 @@ button.close-nav-toggle {
 }
 
 #navbarSupportedContent {
-	.contact-link {
-		background-color: hsl(0, 0%, 100%);
-		color: black;
-		font-family: "Fraunces", serif;
-		border-radius: 50px;
-		font-size: 1.2em;
-		padding: 1em 2em;
-		font-weight: 900;
-		@media only screen and (max-width: $sunny-desktop) {
-			background-color: hsl(51, 100%, 49%);
-			font-size: 1.5em;
-			width: 10em;
-			margin: auto;
-			margin-top: 1em;
-		}
-		&:hover, &:focus, &:active {
-			color: hsl(0, 0%, 100%);
-			background-color: #60cafffd;
-		}
-	}	
-	@media only screen and (max-width: $sunny-desktop) {
-		background-color: hsl(0, 0%, 100%);
-		margin-top: 6em;
-		padding-top: 2em;
-		padding-bottom: 4em;
-		}	
-	@media only screen and (max-width: $sunny-mobile) {
 		background-color: hsl(0, 0%, 100%);
 		margin-top: 5em;
 		padding-top: 3em;
-		}	
-		
-		
-	.arrow {
-		display: none;
-		@media only screen and (max-width: $sunny-desktop) {
-			display: inline;
-			position: absolute;
-		border-top: 30px solid transparent;
-		border-bottom: 30px solid transparent; 
-		border-right: 30px solid hsl(0, 0%, 100%);
-		right: 2em;
-		top: 9em;
+		@media only screen and (min-width: $sunny-md) {
+			background-color: transparent;
 		}
-		@media only screen and (max-width: $sunny-mobile) {
-			right: 2em;
-			top: 9em;
-		}
-	}
-}
+		@media only screen and (min-width: $sunny-lg) {
+			margin-top: 6em;
+			padding-top: 2em;
+			padding-bottom: 4em;
+			}	
+			.contact-link {
+				background-color: hsl(51, 100%, 49%);
+				font-size: 1.5em;
+				width: 10em;
+				margin: auto;
+				margin-top: 0.8em;
+				margin-bottom: 0.8em;
+				font-family: "Fraunces", serif;
+				border-radius: 50px;
+				color: black;
+				padding: 1em 2em;
+				font-weight: 900;
+				text-transform: uppercase;
+				@media only screen and (min-width: $sunny-md) {
+				background-color: hsl(0, 0%, 100%);
+				color: black;
+				font-family: "Fraunces", serif;
+				border-radius: 50px;
+				font-size: 1.2em;
+				padding: 1em 2em;
+				font-weight: 900;
+				@media only screen and (min-width: $sunny-lg) {
+					margin-top: 7.5em;
+					font-size: 1.5em;
+				}
+				@media only screen and (min-width: 1200px) {
+					font-size: 1.2em;
+					margin-top: 0;
+				}
+				@media only screen and (min-width: $sunny-supersize) {
+					margin-top: 8em;
+					font-size: 3em;
+				}
+				&:hover, &:focus, &:active {
+					color: hsl(0, 0%, 100%);
+					background-color: #60cafffd;
+				}
+			}
+	
+			}
+			.arrow {
+				display: inline;
+					position: absolute;
+				border-top: 30px solid transparent;
+				border-bottom: 30px solid transparent; 
+				border-right: 30px solid hsl(0, 0%, 100);
+				right: 2em;
+				top: 9em;
+				@media only screen and (min-width: $sunny-md) {
+				display: none;
+				}	
+			}
+
+
+
+}	
 
 nav.navbar.transparent {
 	margin: 0;
@@ -465,7 +558,8 @@ section.sunny-sections {
 		padding-right: 0.5em;
 		font-size: 3em;
 		}
-		@media only screen and (max-width: 766px) {
+		@media only screen and (max-width: 500px) {
+			margin-top: 1.5em;
 		}
 		@media only screen and (max-width: $sunny-mobile) {
 			margin-top: 1.5em;
@@ -489,6 +583,11 @@ section.sunny-sections {
 			margin-top: 1em;
 			margin-right: 10em; 
 			margin-left: 10em;
+		}
+		@media only screen and (max-width: 500px) {
+			margin-top: 1em;
+			margin-right: 5em; 
+			margin-left: 5em;
 		}
 		@media only screen and (max-width: $sunny-mobile) {
 			margin-top: 0.5em;

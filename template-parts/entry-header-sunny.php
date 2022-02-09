@@ -30,7 +30,7 @@ if ( is_singular() ) {
 			</div>
 			<div class="row g-0">
 				<div class="col g-0">
-				<a href="#first-section"><img class="arrow-down" src='<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/icon-arrow-down.svg'></a>
+				<a href="#first-section"><svg class="pointer-down" viewBox = "0 0 36 114" width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg></a>
 			</div>
 			</div>
 	</div><!-- .entry-header-inner -->
