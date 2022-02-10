@@ -22,7 +22,7 @@ get_template_part( 'template-parts/modal-image' );
   <label for="accordion-checkbox" id="accordion-label">Abstract</label>  
   <!-- Note to self: "id" was used in the label element to provide more specificity over the parent style.css that was previously overriding my styles when just using tag:class -->
   <div class="accordion-content">
-    <p>This template contains some of my favoriate paintings, artists, locations, and operas. This is the first template of this portfolio to use Sass as a preprocessor, and also builds upon my prior use of CSS flex. I also had a heck of a time figuring out how to override the parent theme's styles!</p>
+    <p>This template contains some of my favoriate paintings, artists, locations, and operas. This is the first template of this portfolio to use Sass as a preprocessor, and also builds upon my prior use of CSS flex. I also took a bit of a time figuring out how to override the parent theme's styles.</p>
   </div> 
 
   <section class="image-holder"> 

@@ -12,7 +12,6 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 #accordion-checkbox {
   display: none; }
 
@@ -448,6 +447,115 @@ button.close-nav-toggle {
       #navbarSupportedContent .arrow {
         display: none; } }
 
+.btn.open-sunny-modal {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-radius: 10px; }
+  @media only screen and (min-width: 768px) {
+    .btn.open-sunny-modal {
+      font-size: 2.5em; } }
+  @media only screen and (min-width: 1000px) {
+    .btn.open-sunny-modal {
+      margin-top: 1.5em; } }
+  @media only screen and (min-width: 1400px) {
+    .btn.open-sunny-modal {
+      font-size: 3em; } }
+  @media only screen and (min-width: 1900px) {
+    .btn.open-sunny-modal {
+      font-size: 3.5em; } }
+  @media only screen and (min-width: 2300px) {
+    .btn.open-sunny-modal {
+      font-size: 7em; } }
+
+.sunny-modal-title {
+  color: #1f1e1e;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800; }
+  @media only screen and (min-width: 768px) {
+    .sunny-modal-title {
+      font-size: 2em; } }
+  @media only screen and (min-width: 1000px) {
+    .sunny-modal-title {
+      font-size: 3em; } }
+  @media only screen and (min-width: 1200px) {
+    .sunny-modal-title {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1400px) {
+    .sunny-modal-title {
+      font-size: 3em; } }
+  @media only screen and (min-width: 1900px) {
+    .sunny-modal-title {
+      font-size: 4em; } }
+  @media only screen and (min-width: 2300px) {
+    .sunny-modal-title {
+      font-size: 5em; } }
+
+.sunny-modal-body {
+  color: #818498;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: left; }
+  @media only screen and (min-width: 768px) {
+    .sunny-modal-body {
+      font-size: 1.8em; } }
+  @media only screen and (min-width: 1000px) {
+    .sunny-modal-body {
+      font-size: 2.5em; } }
+  @media only screen and (min-width: 1200px) {
+    .sunny-modal-body {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1400px) {
+    .sunny-modal-body {
+      font-size: 3em; } }
+  @media only screen and (min-width: 1900px) {
+    .sunny-modal-body {
+      font-size: 4em;
+      margin-top: 2em;
+      margin-bottom: 2em; } }
+  @media only screen and (min-width: 2300px) {
+    .sunny-modal-body {
+      font-size: 5em; } }
+
+.btn.sunny-modal-close {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  border-radius: 10px; }
+  @media only screen and (min-width: 768px) {
+    .btn.sunny-modal-close {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1000px) {
+    .btn.sunny-modal-close {
+      font-size: 2.5em; } }
+  @media only screen and (min-width: 1200px) {
+    .btn.sunny-modal-close {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1400px) {
+    .btn.sunny-modal-close {
+      font-size: 3em; } }
+  @media only screen and (min-width: 1900px) {
+    .btn.sunny-modal-close {
+      font-size: 4em; } }
+  @media only screen and (min-width: 2300px) {
+    .btn.sunny-modal-close {
+      font-size: 5em; } }
+
+@media only screen and (min-width: 1200px) {
+  .modal-dialog.sunny-modal-dialog {
+    width: 50%; } }
+
+@media only screen and (min-width: 1400px) {
+  .modal-dialog.sunny-modal-dialog {
+    margin-top: 10em;
+    width: 100%; } }
+
+@media only screen and (min-width: 2300px) {
+  .modal-dialog.sunny-modal-dialog {
+    margin-top: 20em; } }
+
 nav.navbar.transparent {
   margin: 0;
   height: 0;
@@ -864,260 +972,3 @@ li.footer-list-item {
   /* To remove default bottom margin */
   padding: 0;
   /* To remove default left padding */ }
-
-@media only screen and (max-width: 400px) {
-  .shopping-nav {
-    margin-left: 1em; } }
-
-@media only screen and (min-width: 900px) {
-  .shopping-nav {
-    margin-left: 13em;
-    margin-right: 13em;
-    border-bottom: 3px solid #f7f8fd; } }
-
-.shopping-nav .shopping-nav-container {
-  background-color: white;
-  padding-top: 2em; }
-  @media only screen and (max-width: 400px) {
-    .shopping-nav .shopping-nav-container {
-      padding-top: 0em; } }
-
-.shopping-nav .shopping-nav-toggle {
-  border: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-left: 0.4em;
-  margin-right: 0.4em;
-  font-size: 1.8em; }
-
-@media only screen and (max-width: 400px) {
-  .shopping-nav .shopping-logo {
-    width: 15em;
-    margin-bottom: 0.3em; } }
-
-@media only screen and (min-width: 900px) {
-  .shopping-nav .shopping-logo {
-    padding: 0;
-    margin-bottom: 2em; } }
-
-@media only screen and (max-width: 400px) {
-  .shopping-nav .cart-image {
-    margin-left: 7em;
-    margin-right: 1em; } }
-
-@media only screen and (min-width: 900px) {
-  .shopping-nav .cart-image {
-    width: 2em;
-    margin-left: 31em;
-    margin-right: 4em;
-    margin-bottom: 2em; } }
-
-.shopping.offcanvas {
-  width: 66%;
-  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2); }
-  .shopping.offcanvas .shopping-unordered-list {
-    padding: 0;
-    margin: 0; }
-  .shopping.offcanvas .offcanvas-header {
-    margin-top: 1em;
-    margin-left: 0.5em;
-    font-size: 1.2em;
-    margin-bottom: 1em; }
-
-.offcanvas-link {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.4em;
-  font-weight: 600;
-  margin-bottom: 0.5em; }
-  @media only screen and (max-width: 900px) {
-    .offcanvas-link {
-      font-family: "Kumbh Sans", sans-serif;
-      color: black !important;
-      font-size: 1.8em;
-      font-weight: 800; } }
-
-@media only screen and (max-width: 400px) {
-  .avatar-holder {
-    width: 15%; } }
-
-@media only screen and (min-width: 900px) {
-  .avatar-holder {
-    display: inline-block;
-    position: relative;
-    border-radius: 50px;
-    width: 4em;
-    height: 4em;
-    margin-bottom: 2em; }
-    .avatar-holder::after {
-      content: '';
-      position: absolute;
-      border-radius: 50px;
-      width: 4em;
-      height: 4em;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      box-shadow: inset 0 0 0 0 #ff7d1a; }
-    .avatar-holder:hover::after {
-      box-shadow: inset 0 0 0 2px #ff7d1a; } }
-
-@media only screen and (max-width: 400px) {
-  .avatar-holder .avatar {
-    padding: 0;
-    margin: 0; } }
-
-.bottom-border {
-  padding-bottom: 2em;
-  border-bottom: 3px solid transparent; }
-  .bottom-border:hover, .bottom-border:focus, .bottom-border:active {
-    border-bottom: 3px solid #ff7d1a; }
-
-@media only screen and (max-width: 900px) {
-  .main-row section {
-    padding: 0; } }
-
-.thumbnail-row {
-  padding-top: 2.5em;
-  padding-right: 1.5em;
-  padding-left: 0.8em; }
-  .thumbnail-row .thumbnail-shoe {
-    border-radius: 10px;
-    width: 85%; }
-
-.main-shoe-div {
-  border: 1px solid red; }
-  @media only screen and (max-width: 900px) {
-    .main-shoe-div {
-      height: 31em; } }
-  .main-shoe-div .main-shoe {
-    border-radius: 15px;
-    width: 95%; }
-    @media only screen and (max-width: 900px) {
-      .main-shoe-div .main-shoe {
-        width: 100%;
-        height: 31em;
-        border-radius: 0;
-        object-fit: cover; } }
-
-.right-col .company-header {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  color: #ff7d1a;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-top: 6em; }
-  @media only screen and (max-width: 900px) {
-    .right-col .company-header {
-      margin-top: 2em; } }
-
-.right-col .shoe-title {
-  font-size: 3.8em;
-  color: black;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-top: 0.5em; }
-  @media only screen and (max-width: 900px) {
-    .right-col .shoe-title {
-      font-size: 2.5em; } }
-
-.right-col .shoe-description {
-  font-size: 1.3em;
-  color: #68707d;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 600;
-  width: 28em;
-  margin-top: 2.5em;
-  margin-bottom: 1.8em; }
-  @media only screen and (max-width: 900px) {
-    .right-col .shoe-description {
-      width: 100%;
-      font-size: 1.4em;
-      margin-top: 1.5em; } }
-
-.right-col .previous-price {
-  color: #b6bcc8;
-  text-decoration: line-through;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0;
-  height: 2em; }
-  @media only screen and (max-width: 900px) {
-    .right-col .previous-price {
-      margin-top: 1em; } }
-
-.price-row .current-price {
-  font-size: 2em;
-  color: black;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 700;
-  margin-bottom: 0; }
-  @media only screen and (max-width: 900px) {
-    .price-row .current-price {
-      font-size: 2.5em; } }
-
-.price-row .price-div {
-  padding-right: 0;
-  margin-right: 0; }
-
-.price-row .sale-tag-div {
-  padding: 0; }
-
-.price-row .sale-tag {
-  color: #ff7d1a;
-  font-weight: 700;
-  font-size: 1.5em;
-  background-color: #ffede0;
-  border-radius: 5px;
-  margin-top: 0.2em;
-  width: 3em; }
-
-.counter-row {
-  padding-left: 1em;
-  padding-top: 3em; }
-  .counter-row .counter-holder {
-    background-color: #f7f8fd; }
-  .counter-row .number-holder {
-    margin-top: 1.5em;
-    font-size: 1.2em;
-    color: black;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 800; }
-  .counter-row .plus-sign {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-top: 2em;
-    padding-bottom: 2em; }
-  .counter-row .minus-sign {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-top: 2em;
-    padding-bottom: 2em; }
-  .counter-row .add-cart-button {
-    background-color: #ff7d1a;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 5px; }
-    @media only screen and (max-width: 900px) {
-      .counter-row .add-cart-button {
-        padding-top: 1em;
-        padding-bottom: 1em; } }
-  .counter-row .cart-in-button {
-    display: inline;
-    width: 8%;
-    margin-right: 1em; }
-  @media only screen and (max-width: 900px) {
-    .counter-row .button-div {
-      padding: 0;
-      margin-top: 1.5em; } }
-
-.shoe-modal-body {
-  background-color: transparent; }
-
-.modal-content {
-  background-color: transparent; }
