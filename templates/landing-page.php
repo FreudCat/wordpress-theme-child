@@ -7,16 +7,11 @@ get_header();
 <?php 
 	$topic = get_field("page_image_header");
   $basePrice = get_field("middling_price");
-  if (get_field("price_multiplier_mini")) {
-    $miniPrice = (get_field("price_multiplier_mini")) * $basePrice;
-  } else {
-    $miniPrice = $basePrice;
-  }
-  if (get_field("price_multiplier_massive")) {
-    $massivePrice = (get_field("price_multiplier_massive")) * $basePrice;
-  } else {
-    $massivePrice = $basePrice;
-  }
+  $miniPrice = get_field("price_multiplier_mini") ? $miniPrice = (get_field("price_multiplier_mini")) * $basePrice : $miniPrice = $basePrice;
+  $massivePrice = get_field("price_multiplier_massive") ? $massivePrice = (get_field("price_multiplier_massive")) * $basePrice : $massivePrice = $basePrice;
+  $miniItems = get_field("mini_price_items");
+  $middleItems = get_field("middling_price_items");
+  $massiveItems = get_field("massive_price_items");
 ?>
 
 <main id="landing-page-content" role="main">
@@ -41,25 +36,43 @@ get_header();
 
   <section class="card-holder">
     <div class="card">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="card-img" alt="">
-    <div class="container">
-      <p><b>Mini</b></p>
-      <p>Price: $<?php echo number_format($miniPrice, 2, '.', ''); ?></p>
-    </div>
+      <div class="front">
+        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="card-img" alt="">
+        <div class="container">
+          <p><b>Mini</b></p>
+          <p>Price: $<?php echo number_format($miniPrice, 2, '.', ''); ?></p>
+        </div>
+      </div>
+      <div class="back">
+        <p class="card-back-header">Included in this package:</p>
+        <p class="card-back-text"><?php echo $miniItems ?></p>
+      </div>
     </div>
     <div class="card">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="card-img" alt="">
-    <div class="container">
-    <p><b>Middle</b></p>
-      <p>Price: $<?php echo number_format($basePrice, 2, '.', ''); ?></p>
-    </div>
+      <div class="front">
+        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="card-img" alt="">
+        <div class="container">
+          <p><b>Middle</b></p>
+          <p>Price: $<?php echo number_format($basePrice, 2, '.', ''); ?></p>
+        </div>
+      </div>
+      <div class="back">
+        <p class="card-back-header">Included in this package:</p>
+        <p class="card-back-text"><?php echo $middleItems ?></p>
+      </div>
     </div>
     <div class="card">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="card-img" alt="">
-    <div class="container">
-    <p><b>Massive</b></p>
-      <p>Price: $<?php echo number_format($massivePrice, 2, '.', ''); ?></p>
-    </div>
+      <div class="front">
+        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="card-img" alt="">
+        <div class="container">
+          <p><b>Massive</b></p>
+          <p>Price: $<?php echo number_format($massivePrice, 2, '.', ''); ?></p>
+        </div>
+      </div>
+      <div class="back">
+        <p class="card-back-header">Included in this package:</p>
+        <p class="card-back-text"><?php echo $massiveItems ?></p>
+      </div>
     </div>
   </section>
 </main>
