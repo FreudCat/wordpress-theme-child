@@ -12,11 +12,13 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
 
+@import "./swervy";
+
 // SCSS variables 
-$mobile-breakpoint: 480px; //320px — 480px
-$tablet-breakpoint: 768px; //481px — 768px
-$small-screen-breakpoint: 1024px; //769px — 1024px
-$large-screen-breakpoint: 1200px; //1025px — 1200px //larger is greater 1201px and higher
+$mobile-breakpoint: 480px; // 320px — 480px
+$tablet-breakpoint: 768px; // 481px — 768px
+$small-screen-breakpoint: 1024px; // 769px — 1024px
+$large-screen-breakpoint: 1200px; // 1025px — 1200px // larger is greater 1201px and higher
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap');
 
@@ -696,8 +698,8 @@ nav.navbar.transparent {
 .navbar-toggler {
 	padding: 10px 0 0 0;
 }
-//End Sunny Header Styles ------------------------------------------------
-//Start main sunny pages styles
+// End Sunny Header Styles ------------------------------------------------
+// Start main sunny pages styles
 section.sunny-sections {
 	padding: 0;
 	margin: 0;
@@ -1058,7 +1060,7 @@ a.transform-div {
 	}
 }
 
-//Sunny footer style--------------------------------
+// Sunny footer style--------------------------------
 ul, li.footer-list-item {
 	display: inline-block;
 }
@@ -1153,5 +1155,5 @@ li.footer-list-item{
 	margin: 0; /* To remove default bottom margin */ 
 	padding: 0; /* To remove default left padding */
 }	
-//End sunny landing page ------------------
+// End sunny landing page ------------------
 

@@ -1,0 +1,22 @@
+
+$swervy-xs: 320px;
+$swervy-sm: 425px;
+$swervy-md: 768px;
+$swervy-lg: 1000px;
+$swervy-lgxl: 1200px;
+$swervy-xl: 1400px;
+$swervy-xxl: 1900px; 
+$swervy-supersize: 2500px; 
+
+.swervy-logo {
+  color: red;
+}
+
+.swervy-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: red;
+  background-color: black;
+}
+

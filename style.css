@@ -12,6 +12,16 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentychild
 */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Fraunces:wght@500;600;700;800;900&display=swap");
+.swervy-logo {
+  color: red; }
+
+.swervy-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: red;
+  background-color: black; }
+
 #accordion-checkbox {
   display: none; }
 
