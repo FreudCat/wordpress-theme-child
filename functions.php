@@ -59,7 +59,7 @@ function child_theme_enqueue_styles() {
 //function removes the white stripe at the top of the template associated with the admin toolbar
 add_action('get_header', 'remove_admin_tolbar_on_frontend');
 function remove_admin_tolbar_on_frontend() {  
-    if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'shopping-page.php')) { 
+    if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'shopping-page.php') || (basename(get_page_template()) == 'swervy-landing-page.php'))  { 
         remove_action('wp_head', '_admin_bar_bump_cb');
     }
 }
