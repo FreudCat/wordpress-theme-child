@@ -15,40 +15,119 @@ $light-red: hsl(0, 100%, 63%);
 $dark-cyan: hsl(192, 100%, 9%);
 $pale-blue: hsl(207, 100%, 98%);
 $white: hsl(0, 0, 100%);
-$body-font: "Open Sans", sans-serif;
-$header-font: "Poppins", sans-serif;
+$swervy-body-font: "Open Sans", sans-serif;
+$swervy-header-font: "Poppins", sans-serif;
 
 
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 
 .swervy-main {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
-  font-family: $body-font;
+  font-family: $swervy-body-font;
+  padding-top: 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   background-color: $white;
+  @media only screen and (min-width: $swervy-lgxl) {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .swervy-navbar {
-  outline: 1px solid red;
+  display: grid;
   grid-column: -1 / 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  grid-template-columns: 0.3fr 0.7fr;
   .swervy-logo {
-    color: red;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    @media only screen and (min-width: $swervy-md) {
+      width: 65%;
+      height: auto;
+    }
+    @media only screen and (min-width: $swervy-lgxl) {
+      width: 50%;
+      height: auto;
+    }
+  }
+  .try-button {
+    display: flex;
+    margin-left: auto;
+    background: transparent;
+    border: $pink 1px solid; 
+    border-radius: 25px;
+    color: $pink;
+    text-transform: capitalize;
+    font-size: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.4em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    font-weight: 500;
+    @media only screen and (min-width: $swervy-lgxl) {
+      font-size: 1em;
+    }
   }
 }
 
 .swervy-header {
-  outline: 1px black solid;
   grid-column: -1 / 1;
+  grid-template-columns: 0.3fr 0.7fr;
   display: flex;
   flex-direction: column;
   text-align: center;
+  .swervy-header-text {
+    font-size: 1.2em;
+    font-family: $swervy-header-font;
+    margin-top: 100px;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    line-height: 1.5em;
+    font-weight: 700;
+    @media only screen and (min-width: $swervy-md) {
+      font-size: 2em;
+    }
+    @media only screen and (min-width: $swervy-lgxl) {
+      font-size: 2.8em;
+    }
+  }
+  .swervy-header-content {
+    font-size: 0.7em;
+    width: 270px;
+    font-weight: 500;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    @media only screen and (min-width: $swervy-md) {
+      width: 400px;
+    }
+    @media only screen and (min-width: $swervy-lgxl) {
+      width: 500px;
+      font-size: 1em;
+    }
+  }
+  .get-started-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2em;
+    width: 150px;
+    background-color: $pink;
+    border-radius: 25px;
+    font-size: 0.5em;
+    text-transform: capitalize;
+    @media only screen and (min-width: $swervy-lgxl) {
+      width: 200px;
+      font-size: 0.8em;
+    }
+  }
 }
 
 .image-section {
