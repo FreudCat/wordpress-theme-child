@@ -111,27 +111,35 @@ $swervy-header-font: "Poppins", sans-serif;
       font-size: 1em;
     }
   }
-  .get-started-button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 2em;
-    width: 150px;
-    background-color: $pink;
-    border-radius: 25px;
-    font-size: 0.5em;
-    text-transform: capitalize;
-    @media only screen and (min-width: $swervy-lgxl) {
-      width: 200px;
-      font-size: 0.8em;
-    }
-  }
 }
 
 .image-section {
   grid-column: -1 / 1;
+}
+
+.get-started-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2em;
+  width: 150px;
+  background-color: $pink;
+  border-radius: 25px;
+  font-size: 0.5em;
+  text-transform: capitalize;
+  @media only screen and (min-width: $swervy-lgxl) {
+    width: 200px;
+    font-size: 0.8em;
+  }
+}
+
+.second-header {
+  font-size: 1em;
+}
+.info-sections-content {
+  font-size: 0.8em;
 }
 
 .numbers-section {
@@ -153,6 +161,25 @@ $swervy-header-font: "Poppins", sans-serif;
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
     }
+  }
+  .numbers-section-icon {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    .svg-icon {
+      justify-self: center;
+      width: 25%;
+      height: auto;
+    }
+  }
+  .numbers-section-value {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .numbers-section-text {
+    font-size: 0.5em;
+    color: hsl(0, 1%, 50%);
+    margin-bottom: 5em;
   }
 }
 
@@ -219,13 +246,28 @@ $swervy-header-font: "Poppins", sans-serif;
   }
 }
 
-.community-section {
+.build-section {
   grid-column: -1 / 1;
+  display: flex; 
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .swervy-footer {
   grid-column: -1 / 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column-reverse;
   justify-content: space-between;
+  background-color: darkblue;
+  color: $white;
+  @media only screen and (min-width: $swervy-md) {
+    flex-direction: row;
+  }
+  .contact-info {
+   
+  }
 }
