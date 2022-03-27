@@ -14,10 +14,13 @@ add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 function child_theme_enqueue_styles() {
     $parenthandle = 'twentytwenty-style'; 
     $theme = wp_get_theme();
-    wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
-        array(),  // if the parent theme code has a dependency, copy it to here
-        $theme->parent()->get('Version')
-    );
+    //shopping-page uses it's bootstrap and a custom items
+    if (basename(get_page_template()) != 'shopping-page.php') {
+        wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
+            array(),  // if the parent theme code has a dependency, copy it to here
+            $theme->parent()->get('Version')
+        );
+    }
     wp_enqueue_style( 'twentytwenty-child-style', get_stylesheet_uri(),
         array( $parenthandle ),
         $theme->get('Version') // this only works if you have Version in the style header
@@ -30,6 +33,7 @@ function child_theme_enqueue_styles() {
         wp_enqueue_script( 'shopping-JS',get_stylesheet_directory_uri().'/assets/js/shopping.js', array(), rand(), true);
         wp_enqueue_script( 'bootstrap-JS',get_stylesheet_directory_uri().'/assets/bootstrap-5.1.3-dist/js/bootstrap.js', array(), rand(), true);
         wp_enqueue_script( 'bootstrap-CSS',get_stylesheet_directory_uri().'/assets/bootstrap-5.1.3-dist/css/bootstrap.css', array(), rand(), true);
+        wp_enqueue_style( $parenthandle, get_stylesheet_directory_uri() . '/shoe-style.css', array());
     }
     if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
         wp_enqueue_style( 'bootstrapCSS','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), rand());

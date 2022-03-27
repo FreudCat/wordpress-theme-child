@@ -46,7 +46,12 @@
     color: $black;
   }
 }
-.offcanvas-backdrop.show, .modal-backdrop.show {
+
+.modal-backdrop {
+  z-index: 2;
+}
+
+.modal-backdrop.show {
   opacity: 0.7;
 }
 
