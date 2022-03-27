@@ -49,7 +49,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
               <div class="modal-body-items row g-0 mt-4 pt-xl-3">
                 <div class="d-flex justify-content-center col-3 g-0 ps-3 pe-2">
                   <div class="cart-holder w-75">
-                    <img class="w-100 cart-image" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-menu.svg" alt="">
+                    <img class="w-100 cart-image" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-menu.svg" alt="Menu">
                   </div>
                 </div>
                 <div class=" g-0 p-0 m-0 col-7">
@@ -68,7 +68,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
             </div>
           </div>
           <div class="avatar-holder mt-2 mt-md-1 mt-lg-0 me-4 me-md-0 mb-md-3 mb-xxl-0 mt-xxl-1">
-            <img class="avatar w-100" src="../assets/images/image-avatar.png">
+            <img class="avatar w-100" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-avatar.png" alt="avatar">
           </div>
         </div>
       </nav> 
@@ -84,7 +84,8 @@ remove_action('wp_head', '_admin_bar_bump_cb');
                 <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-interval="false" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img class="main-image mt-lg-5 mb-lg-2 w-100" data-bs-toggle="modal" data-bs-target="#shoeModal" src="../assets/images/image-product-1.jpg" alt="A pair of tan and white sneakers with white shoelaces and flat tread">
+                      <img class="main-image mt-lg-5 mb-lg-2 w-100" data-bs-toggle="modal" data-bs-target="#shoeModal" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1.jpg" alt="A pair of tan and white sneakers with white shoelaces and flat tread">
+                      
                     </div>
                   </div>
                   <button class="carousel-control-prev d-md-none ms-3" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -100,10 +101,10 @@ remove_action('wp_head', '_admin_bar_bump_cb');
             </div>
           </div>
           <div class="row thumbnail-row d-none justify-content-between d-md-flex g-0 mt-3">
-            <div class="offset-2 offset-xl-3 col-2 thumbnail-shoe-div"><img class="thumbnail-shoe" src="../assets/images/image-product-1-thumbnail.jpg"></div>
-            <div class="col-2 g-0 thumbnail-shoe-div"><img class="thumbnail-shoe" src="../assets/images/image-product-2-thumbnail.jpg"></div>
-            <div class="col-2 g-0 thumbnail-shoe-div"><img class="thumbnail-shoe" src="../assets/images/image-product-3-thumbnail.jpg"></div>
-            <div class="col-2 g-0 thumbnail-shoe-div"><img class="thumbnail-shoe" src="../assets/images/image-product-4-thumbnail.jpg"></div>
+            <div class="offset-2 offset-xl-3 col-2 thumbnail-shoe-div"><img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1-thumbnail.jpg"></div>
+            <div class="col-2 g-0 thumbnail-shoe-div"><img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-2-thumbnail.jpg"></div>
+            <div class="col-2 g-0 thumbnail-shoe-div"><img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-3-thumbnail.jpg"></div>
+            <div class="col-2 g-0 thumbnail-shoe-div"><img class="thumbnail-shoe" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-4-thumbnail.jpg"></div>
           </div>
         </section>
         <section class="col-md-6 px-4 ps-md-2 ps-lg-4 pe-md-5 pe-lg-1 right-col mt-lg-4 mt-xl-0">
@@ -197,10 +198,10 @@ remove_action('wp_head', '_admin_bar_bump_cb');
               </div>
             </div>
             <div class="row modal-thumbnail-row justify-content-between px-4 mx-1">
-              <div class="g-0 col-2 modal-thumbnail-div"><img class="modal-thumbnail" src="../assets/images/image-product-1-thumbnail.jpg" alt="Thumbnail image of a pair of tan and white sneakers with white shoelaces and flat tread"></div>
-              <div class="col-2 g-0 modal-thumbnail-div"><img class="modal-thumbnail" src="../assets/images/image-product-2-thumbnail.jpg" alt="Thumbnail image of a pair of tan and white sneakers with white shoelaces and orange back"></div>
-              <div class="col-2 g-0 modal-thumbnail-div"><img class="modal-thumbnail" src="../assets/images/image-product-3-thumbnail.jpg" alt="Thumbnail image of a right tan and white sneaker balancing on two rocks with orange background"></div>
-              <div class="col-2 g-0 modal-thumbnail-div"><img class="modal-thumbnail" src="../assets/images/image-product-4-thumbnail.jpg" alt="Thumbnail image of side view of left tan and white sneaker with 1/2 inch heal"></div>
+              <div class="g-0 col-2 modal-thumbnail-div"><img class="modal-thumbnail" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-1-thumbnail.jpg" alt="Thumbnail image of a pair of tan and white sneakers with white shoelaces and flat tread"></div>
+              <div class="col-2 g-0 modal-thumbnail-div"><img class="modal-thumbnail" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-2-thumbnail.jpg" alt="Thumbnail image of a pair of tan and white sneakers with white shoelaces and orange back"></div>
+              <div class="col-2 g-0 modal-thumbnail-div"><img class="modal-thumbnail" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-3-thumbnail.jpg" alt="Thumbnail image of a right tan and white sneaker balancing on two rocks with orange background"></div>
+              <div class="col-2 g-0 modal-thumbnail-div"><img class="modal-thumbnail" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/image-product-4-thumbnail.jpg" alt="Thumbnail image of side view of left tan and white sneaker with 1/2 inch heal"></div>
             </div>
           </div>
         </div>
@@ -212,7 +213,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 <!-------------------------------Offcanvas sidenav-------------------------------------------->
 <div class="offcanvas shopping offcanvas-start" tabindex="-1" id="shoppingSupportedContent" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn ps-2 text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="../assets/images/icon-close.svg"></button>
+    <button type="button" class="btn ps-2 text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/shopping-page-images/icon-close.svg"></button>
   </div>
   <div class="offcanvas-body">
     <ul class='navbar-nav flex-nowrap shopping-unordered-list ms-2'>

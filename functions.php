@@ -26,6 +26,9 @@ function child_theme_enqueue_styles() {
     if (basename(get_page_template()) == 'gallery-page-coded-images.php') { 
         wp_enqueue_script( 'modal-JS',get_stylesheet_directory_uri().'/assets/js/modal.js', array(), rand(), true);
     }
+    if (basename(get_page_template()) == 'shopping-page.php') { 
+        wp_enqueue_script( 'shopping-JS',get_stylesheet_directory_uri().'/assets/js/shopping.js', array(), rand(), true);
+    }
     if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
         wp_enqueue_style( 'bootstrapCSS','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), rand());
         wp_enqueue_script( 'testimonial-JS', get_stylesheet_directory_uri().'/assets/js/create-testimonial.js', array(), rand(), true);
