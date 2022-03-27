@@ -16,6 +16,7 @@ const multiplier = document.querySelector(".multiply-amount");
 const cartTotal = document.querySelector(".cart-item-total");
 const addCartButton = document.querySelector(".add-cart-button");
 
+
 const imageArray = [
   {
     title: "image-product-1",
@@ -128,16 +129,18 @@ let index = "";
 for (let prevButton of carouselPrev) {
   prevButton.addEventListener("click", function() {
     currentSlideSrc = myModal.classList.contains("show") ? modalMain.getAttribute("src") : mainShoe.getAttribute("src");
-    index = imageArray.findIndex( image => image.title === currentSlideSrc.substring(17, 32)); 
+    index = imageArray.findIndex( image => image.title === currentSlideSrc.substring(75, 90)); 
     nextSlide(index-=1);
   })
+  
 }
-
 
 for (let nextButton of carouselNext) {
   nextButton.addEventListener("click", function() {
     currentSlideSrc = myModal.classList.contains("show") ? modalMain.getAttribute("src") : mainShoe.getAttribute("src");
-    index = imageArray.findIndex( image => image.title === currentSlideSrc.substring(17, 32)); 
+    console.log("current slide"); 
+    console.log(currentSlideSrc);
+    index = imageArray.findIndex( image => image.title === currentSlideSrc.substring(75, 90)); 
     nextSlide(index+=1);
   })
 }
@@ -145,7 +148,6 @@ for (let nextButton of carouselNext) {
 function nextSlide(newIndex) {
   let carousel = myModal.classList.contains("show") ? modalMain : mainShoe;
   let carouselArray = myModal.classList.contains("show") ? modalThumbnailArray : mainThumbnailArray;
-
   if (newIndex < 0) {
     index = imageArray.length - 1; 
   } else if (newIndex > imageArray.length - 1) {
@@ -178,9 +180,9 @@ for (let thumbnail of mainThumbnailArray) {
 function highlightShoe(clickedThumbnail) {
   let highlightedShoe = myModal.classList.contains("show") ? modalMain : mainShoe;
   let targetArray = myModal.classList.contains("show") ? modalThumbnailArray : mainThumbnailArray;
-  highlightedShoe.src = `../wp-content/themes/twentytwenty-child/assets/images/shopping-page-images/${(clickedThumbnail.getAttribute("src")).substring(92, 107)}.jpg`;
+  highlightedShoe.src = `../wp-content/themes/twentytwenty-child/assets/images/shopping-page-images/${(clickedThumbnail.getAttribute("src")).substring(75, 90)}.jpg`;
   imageArray.forEach(image => {
-    if (image.title === (clickedThumbnail.getAttribute("src")).substring(92, 107)) {
+    if (image.title === (clickedThumbnail.getAttribute("src")).substring(75, 90)) {
       highlightedShoe.alt = image.alt;
     }
   })
@@ -191,7 +193,7 @@ function highlightShoe(clickedThumbnail) {
     thumbnail.parentElement.classList.add("add-clear-outline");
   }
   imageArray.forEach(image => {
-    if (image.title === (clickedThumbnail.getAttribute("src")).substring(92, 107)) {
+    if (image.title === (clickedThumbnail.getAttribute("src")).substring(75, 90)) {
       clickedThumbnail.parentElement.classList.remove("add-clear-outline");
       console.log("added");
       clickedThumbnail.parentElement.classList.add("add-orange-outline");
@@ -216,12 +218,14 @@ console.log(getComputedStyle(document.body).getPropertyValue("display-none"));
 
 function shoeInModal(clickedShoe) {
   modalMain.src = clickedShoe.getAttribute("src"); 
-  let newThumbnailSrc = `../wp-content/themes/twentytwenty-child/assets/images/shopping-page-images/${(clickedShoe.getAttribute("src")).substring(17, 32)}-thumbnail.jpg`;
+  let newThumbnailSrc = `../wp-content/themes/twentytwenty-child/assets/images/shopping-page-images/${(clickedShoe.getAttribute("src")).substring(75, 90)}-thumbnail.jpg`;
   for (let thumbnail of modalThumbnailArray) {
     if (thumbnail.getAttribute("src") === newThumbnailSrc) {
       thumbnail.parentElement.classList.add("add-orange-outline");
       thumbnail.classList.add("less-opaque");
     }
+    console.log(thumbnail.getAttribute("src"));
+    console.log(newThumbnailSrc);
   }
 } 
 
