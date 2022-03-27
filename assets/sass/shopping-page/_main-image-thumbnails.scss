@@ -1,0 +1,48 @@
+
+
+.main-image {
+  object-fit: cover;
+  height: 16em;
+  @include media-breakpoint-up(sm) {
+    height: 19em;
+  }
+  @include media-breakpoint-up(md) {
+    border-radius: 15px;
+    height: auto;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 0.2em;
+  }
+}
+
+.thumbnail-row {
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 8em;
+  }
+  @media only screen and (min-width: 1900px) {
+    padding-right: 0;
+  }
+}
+
+.thumbnail-shoe-div {
+  @include media-breakpoint-up(md) {
+    border-radius: 13px;
+   // border: 2px solid transparent;
+  }
+  @include media-breakpoint-up(xxl) {
+    border-radius: 15px;
+  }
+}
+
+.thumbnail-shoe {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  @include media-breakpoint-up(xxl) {
+    border-radius: 15px;
+  }
+
+  &:hover, &:focus, &:active {
+    opacity: 0.3;
+  }
+}

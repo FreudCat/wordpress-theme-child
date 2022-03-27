@@ -1,0 +1,132 @@
+
+.shopping-nav {
+  margin-right: 0;
+  margin-left: 0;
+  @include media-breakpoint-up(md) {
+    border-bottom: 1px solid rgb(230, 231, 231);
+  }
+  @media only screen and (min-width: 2500px)  { 
+    margin-bottom: 5em;
+  }
+  .shopping-nav-toggle {
+    border: none;
+  }
+  .shopping-logo {
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 250px; 
+      height: 75px;
+    }
+  }
+}
+
+.cart {
+.cart-amount-holder {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.1em;
+  right: 4.1em;
+  z-index: 2;
+  width: 2em;
+  height: 1.3em;
+  color: $white;
+  font-weight: 600;
+  font-size: 0.75em;
+  font-family: $shopping-font;
+  background-color: $orange;
+  border-radius: 45%;
+  @include media-breakpoint-up(md) {
+    top: 3em;
+    right: 6.7em;
+  }
+  @include media-breakpoint-up(lg) {
+    top: 3.2em;
+    right: 4em;
+  }
+  @include media-breakpoint-up(xl) {
+    top: 3.2em;
+    right: 8em;
+  }
+  @include media-breakpoint-up(xl) {
+    top: 3.3em;
+    right: 7em;
+    width: 3em;
+    height: 2em;
+    font-size: 1em;
+  }
+}
+.svg-cart:hover{
+  fill: #000000;
+}
+}
+
+.cart-svg {
+@include media-breakpoint-up(xxl) {
+  width: 40px; 
+  height: 46px;
+}
+}
+
+.nav-link.header-link {
+font-family: $shopping-font;
+font-weight: 500;
+color: $dark-gray-blue;
+margin-right: 2em;
+border-bottom: 3px solid transparent;
+&:hover, &:focus, &:active {
+  border-bottom: 3px solid $orange;
+  color: $black;
+}
+@include media-breakpoint-up(xxl) {
+  font-size: 1.5em;
+}
+}
+
+.avatar-holder {
+  position: relative;
+  width: 1.4em;
+@include media-breakpoint-up(md) {
+  width: 2em;
+}
+@include media-breakpoint-up(lg) {
+  width: 2.8em;
+}
+@include media-breakpoint-up(xxl) {
+  width: 4.5em;
+} 
+  @include media-breakpoint-up(lg) {
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50px;
+      width: 2.8em;
+      height: 2.8em;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: inset 0 0 0 0 $orange;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 4.5em;
+    height: 4.5em;
+  }
+}
+&:hover::after {
+  box-shadow: inset 0 0 0 2px $orange; 
+}
+.avatar {
+  object-fit: cover;
+}
+}
+
+
+
+  
+
+
+
+

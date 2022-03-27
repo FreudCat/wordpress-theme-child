@@ -1,0 +1,205 @@
+@import "shopping-page/variables";
+@import "shopping-page/header";
+@import "shopping-page/header-menus";
+@import "shopping-page/main-image-thumbnails";
+@import "shopping-page/item-description";
+@import "shopping-page/price-add";
+
+
+// * {
+//   outline: 1px solid red;
+// }
+
+// Dynamic styles used in index.js
+.add-orange-outline {
+  outline: 2px solid $orange;
+}
+.add-clear-outline {
+  outline: 2px solid transparent;
+}
+.opaque {
+  opacity: 1;
+}
+
+.less-opaque {
+  opacity: 0.3;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+// End dynamic styles 
+
+.offcanvas.shopping {
+  width: 66%;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2); 
+  .offcanvas-link {
+    font-family: $shopping-font;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: $black;
+  }
+}
+.offcanvas-backdrop.show, .modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.main-image-button {
+  padding: 0;
+}
+
+.thankyou-content {
+  background-color: transparent;
+  border: none;
+  .thankyou-header {
+    border: none;
+  }
+  .thankyou-body {
+    background-color: $white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .thankyou-footer {
+    background-color: $white;
+  }
+  .thankyou-button {
+    background-color: $orange;
+    font-family: $shopping-font;
+    font-weight: 600;
+    font-size: 1em;
+    color: $white;
+    border-radius: 10px;
+    &:active {
+      opacity: 0.5;
+      border: none;
+    }
+  }
+}
+
+.add-cart-text {
+  font-family: $shopping-font;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.thank-you {
+  font-family: $shopping-font;
+  font-weight: 400;
+  color: $dark-gray-blue;
+}
+
+
+.shoe-modal-content {
+  background-color: transparent;
+  border: none;
+  .modal-image {
+    border-radius: 15px;
+  }
+  .modal-thumbnail-row {
+    margin-top: 2em;
+  }
+}
+
+.carousel-control-next {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: $white;
+  opacity: 1;
+  border-radius: 50px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  &:hover, &:focus, &:active {
+    opacity: 1;
+    .svg-on-hover {
+      stroke: $orange;
+    }
+  }
+  @media only screen and (min-width: $shopping-desktop) {
+    position: absolute;
+    background-color: $white;
+    opacity: 1;
+    border-radius: 50px;
+    top: 43%;
+    height: 3.2em;
+    width: 3.2em;
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
+  }
+  @media only screen and (max-width: $shopping-desktop) {
+    position: absolute;
+    background-color: $white;
+    border-radius: 50px;
+    opacity: 1;
+    height: 2.5em;
+    width: 2.5em;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.carousel-control-next {
+  &:hover, &:focus, &:active {
+    opacity: 1;
+    .svg-on-hover {
+      stroke: $orange;
+    }
+  }
+  @media only screen and (min-width: $shopping-desktop) {
+    position: absolute;
+    background-color: $white;
+    opacity: 1;
+    border-radius: 50px;
+    top: 43%;
+    height: 3.2em;
+    width: 3.2em;
+  -ms-transform: translateX(45%);
+  transform: translateX(45%);
+}
+@media only screen and (max-width: $shopping-desktop) {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+}
+.modal-thumbnail-div {
+  width: 20%;
+  border-radius: 13px;
+  background-color: white;
+  .modal-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+    &:hover, &:focus, &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.next-svg, .prev-svg {
+  overflow: visible;
+}
+
+.close-svg {
+  &:hover {
+    fill: $orange;
+  }
+}
+
+.next-svg {
+  margin-left: 0.8em;
+}
+
+
