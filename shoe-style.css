@@ -7864,8 +7864,8 @@ textarea.form-control-lg {
   border-radius: 45%; }
   @media (min-width: 768px) {
     .cart .cart-amount-holder {
-      top: 3.9em;
-      right: 3.8em;
+      top: 4.3em;
+      right: 7.5em;
       font-size: 0.66em; } }
   @media (min-width: 1024px) {
     .cart .cart-amount-holder {
@@ -8311,6 +8311,34 @@ textarea.form-control-lg {
 
 .display-flex {
   display: flex; }
+
+.accordion-button {
+  width: 35%;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: lightgrey;
+  font-weight: 800;
+  font-size: 0.5em;
+  padding: 0.5em;
+  margin-left: 0; }
+  .accordion-button:not(.collapsed) {
+    width: 35%;
+    color: white;
+    background-color: #ff7d1a; }
+    @media (min-width: 768px) {
+      .accordion-button:not(.collapsed) {
+        width: 20%; } }
+    @media (min-width: 1024px) {
+      .accordion-button:not(.collapsed) {
+        width: 15%; } }
+  @media (min-width: 768px) {
+    .accordion-button {
+      width: 20%; } }
+  @media (min-width: 1024px) {
+    .accordion-button {
+      width: 15%; } }
+
+.accordion-body {
+  box-shadow: 0px 13px 35px -1px rgba(60, 60, 60, 0.2); }
 
 .offcanvas.shopping {
   width: 66%;
