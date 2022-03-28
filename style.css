@@ -208,11 +208,13 @@ button:hover, button:focus {
   padding-left: 1em;
   padding-right: 1em;
   display: flex;
+  text-align: center;
   flex-direction: column-reverse;
   justify-content: center; }
   @media only screen and (min-width: 768px) {
     .grow-section {
-      flex-direction: row; } }
+      flex-direction: row;
+      text-align: left; } }
   @media only screen and (min-width: 768px) {
     .grow-section .grow-section-left {
       flex: 1;
@@ -246,6 +248,7 @@ button:hover, button:focus {
   padding-right: 1em;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center; }
   @media only screen and (min-width: 768px) {
     .convo-section {
@@ -267,7 +270,8 @@ button:hover, button:focus {
     .convo-section .convo-section-right {
       flex: 1;
       padding-left: 1em;
-      padding-right: 1em; } }
+      padding-right: 1em;
+      text-align: left; } }
   @media only screen and (min-width: 1000px) {
     .convo-section .convo-section-right {
       padding-left: 2em;
@@ -282,6 +286,7 @@ button:hover, button:focus {
   padding-left: 1em;
   padding-right: 1em;
   display: flex;
+  text-align: center;
   flex-direction: column-reverse;
   justify-content: center; }
   @media only screen and (min-width: 768px) {
@@ -291,7 +296,8 @@ button:hover, button:focus {
     .user-section .user-section-left {
       flex: 1;
       padding-left: 1em;
-      padding-right: 1em; } }
+      padding-right: 1em;
+      text-align: left; } }
   @media only screen and (min-width: 1000px) {
     .user-section .user-section-left {
       padding-left: 2em;
@@ -355,9 +361,11 @@ button:hover, button:focus {
     .swervy-footer {
       flex-direction: row; } }
   .swervy-footer .footer-huddle {
-    margin-top: 5em;
-    padding-left: 3em;
-    padding-right: 4em; }
+    margin-top: 5em; }
+    @media only screen and (min-width: 768px) {
+      .swervy-footer .footer-huddle {
+        padding-left: 3em;
+        padding-right: 4em; } }
     .swervy-footer .footer-huddle .huddle-logo {
       width: 150px;
       padding-bottom: 1.5em; }
@@ -377,37 +385,39 @@ button:hover, button:focus {
       margin-top: 2em;
       font-size: 1.8em;
       margin-bottom: 3em; }
-  .swervy-footer .newsletter {
-    padding-right: 3em; }
+  @media only screen and (min-width: 768px) {
+    .swervy-footer .newsletter {
+      padding-right: 3em; } }
+  @media only screen and (min-width: 768px) {
+    .swervy-footer .newsletter .newsletter-header {
+      padding-top: 0.8em;
+      font-size: 2em; } }
+  .swervy-footer .newsletter .footer-form {
+    grid-column: -1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end; }
     @media only screen and (min-width: 768px) {
-      .swervy-footer .newsletter .newsletter-header {
-        padding-top: 0.8em;
-        font-size: 2em; } }
-    .swervy-footer .newsletter .footer-form {
-      grid-column: -1 / 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: end; }
+      .swervy-footer .newsletter .footer-form {
+        justify-content: space-between;
+        margin-top: 2em; } }
+    .swervy-footer .newsletter .footer-form #email {
+      border-radius: 5px;
+      margin-bottom: 1em;
+      margin-top: 1em; }
       @media only screen and (min-width: 768px) {
-        .swervy-footer .newsletter .footer-form {
-          flex-direction: row;
-          justify-content: space-between;
-          margin-top: 2em; } }
-      .swervy-footer .newsletter .footer-form #email {
-        border-radius: 5px; }
-        @media only screen and (min-width: 768px) {
-          .swervy-footer .newsletter .footer-form #email {
-            margin-right: 0.2em; } }
-      .swervy-footer .newsletter .footer-form button.subscribe-button {
-        margin-left: auto;
-        border-radius: 5px;
-        width: 50%;
-        background-color: #ff52bf; }
-        @media only screen and (min-width: 768px) {
-          .swervy-footer .newsletter .footer-form button.subscribe-button {
-            font-size: 0.7em;
-            padding: 0;
-            height: 6em; } }
+        .swervy-footer .newsletter .footer-form #email {
+          margin-right: 0.2em; } }
+    .swervy-footer .newsletter .footer-form button.subscribe-button {
+      margin-left: auto;
+      border-radius: 5px;
+      width: 50%;
+      background-color: #ff52bf; }
+      @media only screen and (min-width: 768px) {
+        .swervy-footer .newsletter .footer-form button.subscribe-button {
+          font-size: 0.7em;
+          padding: 0;
+          height: 6em; } }
 
 #accordion-checkbox {
   display: none; }

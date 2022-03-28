@@ -247,10 +247,12 @@ button {
   padding-left: 1em;
   padding-right: 1em;
   display: flex;
+  text-align: center;
   flex-direction: column-reverse;
   justify-content: center;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
+    text-align: left;
   }
   .grow-section-left {
     @media only screen and (min-width: $swervy-md) {
@@ -290,6 +292,7 @@ button {
   padding-right: 1em;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
@@ -314,6 +317,7 @@ button {
       flex: 1;
       padding-left: 1em;
       padding-right: 1em;
+      text-align: left;
     }
     @media only screen and (min-width: $swervy-lg) {
       padding-left: 2em;
@@ -331,6 +335,7 @@ button {
   padding-left: 1em;
   padding-right: 1em;
   display: flex;
+  text-align: center;
   flex-direction: column-reverse;
   justify-content: center;
   @media only screen and (min-width: $swervy-md) {
@@ -341,6 +346,7 @@ button {
       flex: 1;
       padding-left: 1em;
       padding-right: 1em;
+      text-align: left;
     }
     @media only screen and (min-width: $swervy-lg) {
       padding-left: 2em;
@@ -417,8 +423,10 @@ button {
  
   .footer-huddle {
     margin-top: 5em;
+    @media only screen and (min-width: $swervy-md) {
     padding-left: 3em;
     padding-right: 4em;
+    }
     .huddle-logo {
       width: 150px; 
       padding-bottom: 1.5em;
@@ -447,7 +455,9 @@ button {
     }
   }
   .newsletter {
+    @media only screen and (min-width: $swervy-md) {
     padding-right: 3em;
+    }
     .newsletter-header {
       @media only screen and (min-width: $swervy-md) {
       padding-top: 0.8em;
@@ -460,12 +470,13 @@ button {
       flex-direction: column;
       justify-content: end;
       @media only screen and (min-width: $swervy-md) {
-        flex-direction: row;
         justify-content: space-between;
         margin-top: 2em;
       }
       #email {
         border-radius: 5px;
+        margin-bottom: 1em;
+        margin-top: 1em;
         @media only screen and (min-width: $swervy-md) {
           margin-right: 0.2em;
         }
