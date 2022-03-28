@@ -27,18 +27,16 @@ $swervy-header-font: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   font-family: $swervy-body-font;
-  padding-top: 1em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: 0;
   background-color: $white;
-  @media only screen and (min-width: $swervy-lgxl) {
-    padding-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 
 .swervy-navbar {
+  background-color: #e6faff;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 0;
   display: grid;
   grid-column: -1 / 1;
   grid-template-columns: 0.3fr 0.7fr;
@@ -84,7 +82,6 @@ $swervy-header-font: "Poppins", sans-serif;
   .swervy-header-text {
     font-size: 1.2em;
     font-family: $swervy-header-font;
-    margin-top: 100px;
     padding-right: 0.7em;
     padding-left: 0.7em;
     line-height: 1.5em;
@@ -114,6 +111,8 @@ $swervy-header-font: "Poppins", sans-serif;
 }
 
 .image-section {
+  padding-left: 1em;
+  padding-right: 1em;
   grid-column: -1 / 1;
 }
 
@@ -185,6 +184,8 @@ $swervy-header-font: "Poppins", sans-serif;
 
 .grow-section {
   grid-column: -1 / 1;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
@@ -206,6 +207,8 @@ $swervy-header-font: "Poppins", sans-serif;
 
 .convo-section {
   grid-column: -1 / 1;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -227,6 +230,8 @@ $swervy-header-font: "Poppins", sans-serif;
 
 .user-section {
   grid-column: -1 / 1;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
@@ -252,22 +257,80 @@ $swervy-header-font: "Poppins", sans-serif;
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  border-radius: 68% 32% 83% 17% / 45% 70% 30% 55%;
+  background: rgb(200,240,250);
+  background: radial-gradient(circle, rgba(200,240,250,1) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+}
+
+.curved-footer{
+  padding: 0;
+  grid-column: -1 / 1;
+  display: flex; 
 }
 
 .swervy-footer {
   grid-column: -1 / 1;
   display: flex;
+  padding-left: 1em; 
+  padding-right: 1em;
+  font-size: 0.7em;
   flex-direction: column-reverse;
-  text-align: center;
   justify-content: center;
   flex-direction: column-reverse;
   justify-content: space-between;
-  background-color: darkblue;
+  background-color: #110b34;
+  font-family: $swervy-header-font;
   color: $white;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
   }
-  .contact-info {
-   
+  .footer-huddle {
+    margin-top: 5em;
+    .huddle-logo {
+      width: 150px; 
+      padding-bottom: 1.5em;
+      }
+      .fa-phone-alt {
+        font-size: 1.5em;
+        margin-top: 1em;
+      }
+      .fa-phone-alt-text {
+        margin-left: 2em;
+      }
+      .fa-envelope {
+        font-size: 1.5em;
+        margin-top: 0.8em;
+      }
+      .fa-envelope-text {
+        margin-left: 2em;
+      }
+
+    .contact-icons {
+      display: flex; 
+      gap: 1em;
+      margin-top: 2em;
+      font-size: 1.8em;
+      margin-bottom: 3em;
+    }
+    
   }
+  .footer-form {
+    grid-column: -1 / 1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: end;
+    #email {
+      border-radius: 5px;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    button.subscribe-button {
+      display: flex; 
+      margin-left: auto;
+      border-radius: 5px;
+      width: 50%;
+      background-color: $pink;
+    }
+}
+ 
 }

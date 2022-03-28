@@ -18,17 +18,15 @@ Text Domain:  twentytwentychild
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   font-family: "Open Sans", sans-serif;
-  padding-top: 1em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: 0;
   background-color: white; }
-  @media only screen and (min-width: 1200px) {
-    .swervy-main {
-      padding-top: 50px;
-      padding-left: 40px;
-      padding-right: 40px; } }
 
 .swervy-navbar {
+  background-color: #e6faff;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 0;
   display: grid;
   grid-column: -1 / 1;
   grid-template-columns: 0.3fr 0.7fr; }
@@ -71,7 +69,6 @@ Text Domain:  twentytwentychild
   .swervy-header .swervy-header-text {
     font-size: 1.2em;
     font-family: "Poppins", sans-serif;
-    margin-top: 100px;
     padding-right: 0.7em;
     padding-left: 0.7em;
     line-height: 1.5em;
@@ -98,6 +95,8 @@ Text Domain:  twentytwentychild
         font-size: 1em; } }
 
 .image-section {
+  padding-left: 1em;
+  padding-right: 1em;
   grid-column: -1 / 1; }
 
 .get-started-button {
@@ -157,6 +156,8 @@ Text Domain:  twentytwentychild
 
 .grow-section {
   grid-column: -1 / 1;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
@@ -173,6 +174,8 @@ Text Domain:  twentytwentychild
 
 .convo-section {
   grid-column: -1 / 1;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -189,6 +192,8 @@ Text Domain:  twentytwentychild
 
 .user-section {
   grid-column: -1 / 1;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
@@ -208,21 +213,68 @@ Text Domain:  twentytwentychild
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 68% 32% 83% 17% / 45% 70% 30% 55%;
+  background: #c8f0fa;
+  background: radial-gradient(circle, #c8f0fa 0%, white 66%, white 100%); }
+
+.curved-footer {
+  padding: 0;
+  grid-column: -1 / 1;
+  display: flex; }
 
 .swervy-footer {
   grid-column: -1 / 1;
   display: flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.7em;
   flex-direction: column-reverse;
-  text-align: center;
   justify-content: center;
   flex-direction: column-reverse;
   justify-content: space-between;
-  background-color: darkblue;
+  background-color: #110b34;
+  font-family: "Poppins", sans-serif;
   color: white; }
   @media only screen and (min-width: 768px) {
     .swervy-footer {
       flex-direction: row; } }
+  .swervy-footer .footer-huddle {
+    margin-top: 5em; }
+    .swervy-footer .footer-huddle .huddle-logo {
+      width: 150px;
+      padding-bottom: 1.5em; }
+    .swervy-footer .footer-huddle .fa-phone-alt {
+      font-size: 1.5em;
+      margin-top: 1em; }
+    .swervy-footer .footer-huddle .fa-phone-alt-text {
+      margin-left: 2em; }
+    .swervy-footer .footer-huddle .fa-envelope {
+      font-size: 1.5em;
+      margin-top: 0.8em; }
+    .swervy-footer .footer-huddle .fa-envelope-text {
+      margin-left: 2em; }
+    .swervy-footer .footer-huddle .contact-icons {
+      display: flex;
+      gap: 1em;
+      margin-top: 2em;
+      font-size: 1.8em;
+      margin-bottom: 3em; }
+  .swervy-footer .footer-form {
+    grid-column: -1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end; }
+    .swervy-footer .footer-form #email {
+      border-radius: 5px;
+      margin-top: 2em;
+      margin-bottom: 1em; }
+    .swervy-footer .footer-form button.subscribe-button {
+      display: flex;
+      margin-left: auto;
+      border-radius: 5px;
+      width: 50%;
+      background-color: #ff52bf; }
 
 #accordion-checkbox {
   display: none; }
