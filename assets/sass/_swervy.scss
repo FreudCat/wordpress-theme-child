@@ -23,6 +23,40 @@ $swervy-header-font: "Poppins", sans-serif;
 //   outline: 1px solid red;
 // }
 
+  #accordion-label-swervy {
+	display:inline-block;
+	background: #cd2653;
+	font-weight: bold;
+	color: #fff;
+	padding: 1em;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+		&:hover {
+			background: #af103b;
+	}
+		&::after {
+			font-family: "Font Awesome 5 Free"; 
+			font-weight: 900;
+			content: '\a0\a0\a0\f107';
+	}
+}
+
+#accordion-checkbox {
+	+ #accordion-label-swervy + .accordion-content {
+    display: none;
+	}
+	&:checked {
+		+ #accordion-label-swervy + .accordion-content {
+			display: block;
+		}		
+		+ #accordion-label-swervy::after {
+			content: '\a0\a0\a0\f106';
+		}
+	}
+}
+
 .swervy-main {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);

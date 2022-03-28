@@ -27,6 +27,14 @@ remove_action("wp_head", "_admin_bar_bump_cb");
   <header class="swervy-header">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#e6faff" fill-opacity="1" d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,218.7C672,245,768,267,864,250.7C960,235,1056,181,1152,133.3C1248,85,1344,43,1392,21.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <div class="abstract-accordion">
+    <input type="checkbox" id="accordion-checkbox" />
+
+  <label for="accordion-checkbox" id="accordion-label-swervy">Abstract</label>  
+  <div class="accordion-content">
+    <p>The focus of this simple layout are the backgrounds associated with the header, footer, and inner sections. Using a filled SVG path, I added a curvy border to the header and footer sections. I played around with border radii and radial gradients to create a fade-out, angled background for the penultimate section.</p>
+  </div> 
+</div>
     <h1 class="swervy-header-text"><?php the_title(); ?></h1>
     <div class="swervy-header-content">
       <?php
