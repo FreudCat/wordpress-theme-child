@@ -40,6 +40,10 @@ $swervy-header-font: "Poppins", sans-serif;
   display: grid;
   grid-column: -1 / 1;
   grid-template-columns: 0.3fr 0.7fr;
+  @media only screen and (min-width: $swervy-lg) {
+    padding-top: 2em;
+    padding-left: 2em;
+  }
   .swervy-logo {
     display: flex;
     justify-content: center;
@@ -67,9 +71,19 @@ $swervy-header-font: "Poppins", sans-serif;
     padding-right: 1.5em;
     padding-left: 1.5em;
     font-weight: 500;
+    @media only screen and (min-width: $swervy-lg) {
+      font-size: 1em;
+      margin-right: 2em;
+    }
     @media only screen and (min-width: $swervy-lgxl) {
       font-size: 1em;
     }
+  }
+}
+
+button {
+  &:hover, &:focus {
+    background-color: $light-pink;
   }
 }
 
@@ -114,6 +128,16 @@ $swervy-header-font: "Poppins", sans-serif;
   padding-left: 1em;
   padding-right: 1em;
   grid-column: -1 / 1;
+  @media only screen and (min-width: $swervy-lg) {
+    display: flex;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  @media only screen and (min-width: $swervy-xl) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .get-started-button {
@@ -135,7 +159,7 @@ $swervy-header-font: "Poppins", sans-serif;
 }
 
 .second-header {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .info-sections-content {
   font-size: 0.8em;
@@ -149,6 +173,8 @@ $swervy-header-font: "Poppins", sans-serif;
   text-align: center;
   font-size: 10vw;
   @media only screen and (min-width: $swervy-md) {
+    padding-left: 1em;
+    padding-right: 1em;
     flex-direction: row;
   }
   .numbers-section-left {
@@ -171,12 +197,12 @@ $swervy-header-font: "Poppins", sans-serif;
     }
   }
   .numbers-section-value {
-    font-size: 1.8em;
+    font-size: 1em;
     font-weight: 700;
     margin-bottom: 0;
   }
   .numbers-section-text {
-    font-size: 0.5em;
+    font-size: 0.3em;
     color: hsl(0, 1%, 50%);
     margin-bottom: 5em;
   }
@@ -188,7 +214,6 @@ $swervy-header-font: "Poppins", sans-serif;
   padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
-  text-align: center;
   justify-content: center;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
@@ -196,11 +221,31 @@ $swervy-header-font: "Poppins", sans-serif;
   .grow-section-left {
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media only screen and (min-width: $swervy-lg) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    @media only screen and (min-width: $swervy-xl) {
+      padding-left: 4em;
+      padding-right: 4em;
     }
   }
   .grow-section-right {
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media only screen and (min-width: $swervy-lg) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    @media only screen and (min-width: $swervy-xl) {
+      padding-left: 4em;
+      padding-right: 4em;
     }
   }
 }
@@ -211,7 +256,6 @@ $swervy-header-font: "Poppins", sans-serif;
   padding-right: 1em;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
@@ -219,11 +263,31 @@ $swervy-header-font: "Poppins", sans-serif;
   .convo-section-left {
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
+       padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media only screen and (min-width: $swervy-lg) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    @media only screen and (min-width: $swervy-xl) {
+      padding-left: 4em;
+      padding-right: 4em;
     }
   }
   .convo-section-right {
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media only screen and (min-width: $swervy-lg) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    @media only screen and (min-width: $swervy-xl) {
+      padding-left: 4em;
+      padding-right: 4em;
     }
   }
 }
@@ -234,7 +298,6 @@ $swervy-header-font: "Poppins", sans-serif;
   padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
-  text-align: center;
   justify-content: center;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
@@ -242,11 +305,31 @@ $swervy-header-font: "Poppins", sans-serif;
   .user-section-left {
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media only screen and (min-width: $swervy-lg) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    @media only screen and (min-width: $swervy-xl) {
+      padding-left: 4em;
+      padding-right: 4em;
     }
   }
   .user-section-right {
     @media only screen and (min-width: $swervy-md) {
       flex: 1;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media only screen and (min-width: $swervy-lg) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    @media only screen and (min-width: $swervy-xl) {
+      padding-left: 4em;
+      padding-right: 4em;
     }
   }
 }
@@ -260,12 +343,24 @@ $swervy-header-font: "Poppins", sans-serif;
   border-radius: 68% 32% 83% 17% / 45% 70% 30% 55%;
   background: rgb(200,240,250);
   background: radial-gradient(circle, rgba(200,240,250,1) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+  @media only screen and (min-width: $swervy-md) {
+    border-radius: 71% 29% 83% 17% / 44% 79% 21% 56% 
+  }
+  @media only screen and (min-width: $swervy-xl) {
+    margin-top: 4em;
+  }
 }
 
 .curved-footer{
   padding: 0;
   grid-column: -1 / 1;
   display: flex; 
+}
+
+.fab {
+  &:hover, &:focus {
+    color: cyan;
+  }
 }
 
 .swervy-footer {
@@ -284,8 +379,12 @@ $swervy-header-font: "Poppins", sans-serif;
   @media only screen and (min-width: $swervy-md) {
     flex-direction: row;
   }
+  
+ 
   .footer-huddle {
     margin-top: 5em;
+    padding-left: 3em;
+    padding-right: 4em;
     .huddle-logo {
       width: 150px; 
       padding-bottom: 1.5em;
@@ -312,25 +411,42 @@ $swervy-header-font: "Poppins", sans-serif;
       font-size: 1.8em;
       margin-bottom: 3em;
     }
-    
   }
-  .footer-form {
-    grid-column: -1 / 1;
-    display: flex; 
-    flex-direction: column;
-    justify-content: end;
-    #email {
-      border-radius: 5px;
-      margin-top: 2em;
-      margin-bottom: 1em;
+  .newsletter {
+    padding-right: 3em;
+    .newsletter-header {
+      @media only screen and (min-width: $swervy-md) {
+      padding-top: 0.8em;
+      font-size: 2em;
+      }
     }
-    button.subscribe-button {
+    .footer-form {
+      grid-column: -1 / 1;
       display: flex; 
-      margin-left: auto;
-      border-radius: 5px;
-      width: 50%;
-      background-color: $pink;
+      flex-direction: column;
+      justify-content: end;
+      @media only screen and (min-width: $swervy-md) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      #email {
+        border-radius: 5px;
+        @media only screen and (min-width: $swervy-md) {
+          margin-right: 0.2em;
+        }
+      }
+      button.subscribe-button { 
+        margin-left: auto;
+        border-radius: 5px;
+        width: 50%;
+        background-color: $pink;
+        @media only screen and (min-width: $swervy-md) {
+          font-size: 0.7em;
+          padding: 0;
+          height: 6em;
+        }
+      }
     }
-}
- 
+  }
 }

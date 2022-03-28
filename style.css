@@ -30,6 +30,10 @@ Text Domain:  twentytwentychild
   display: grid;
   grid-column: -1 / 1;
   grid-template-columns: 0.3fr 0.7fr; }
+  @media only screen and (min-width: 1000px) {
+    .swervy-navbar {
+      padding-top: 2em;
+      padding-left: 2em; } }
   .swervy-navbar .swervy-logo {
     display: flex;
     justify-content: center;
@@ -56,9 +60,16 @@ Text Domain:  twentytwentychild
     padding-right: 1.5em;
     padding-left: 1.5em;
     font-weight: 500; }
+    @media only screen and (min-width: 1000px) {
+      .swervy-navbar .try-button {
+        font-size: 1em;
+        margin-right: 2em; } }
     @media only screen and (min-width: 1200px) {
       .swervy-navbar .try-button {
         font-size: 1em; } }
+
+button:hover, button:focus {
+  background-color: #ff8fd8; }
 
 .swervy-header {
   grid-column: -1 / 1;
@@ -98,6 +109,16 @@ Text Domain:  twentytwentychild
   padding-left: 1em;
   padding-right: 1em;
   grid-column: -1 / 1; }
+  @media only screen and (min-width: 1000px) {
+    .image-section {
+      display: flex;
+      justify-content: center;
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .image-section {
+      display: flex;
+      justify-content: center; } }
 
 .get-started-button {
   display: flex;
@@ -117,7 +138,7 @@ Text Domain:  twentytwentychild
       font-size: 0.8em; } }
 
 .second-header {
-  font-size: 1em; }
+  font-size: 1.5em; }
 
 .info-sections-content {
   font-size: 0.8em; }
@@ -131,6 +152,8 @@ Text Domain:  twentytwentychild
   font-size: 10vw; }
   @media only screen and (min-width: 768px) {
     .numbers-section {
+      padding-left: 1em;
+      padding-right: 1em;
       flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .numbers-section .numbers-section-left {
@@ -146,11 +169,11 @@ Text Domain:  twentytwentychild
       width: 25%;
       height: auto; }
   .numbers-section .numbers-section-value {
-    font-size: 1.8em;
+    font-size: 1em;
     font-weight: 700;
     margin-bottom: 0; }
   .numbers-section .numbers-section-text {
-    font-size: 0.5em;
+    font-size: 0.3em;
     color: #817e7e;
     margin-bottom: 5em; }
 
@@ -160,17 +183,36 @@ Text Domain:  twentytwentychild
   padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
-  text-align: center;
   justify-content: center; }
   @media only screen and (min-width: 768px) {
     .grow-section {
       flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .grow-section .grow-section-left {
-      flex: 1; } }
+      flex: 1;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .grow-section .grow-section-left {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .grow-section .grow-section-left {
+      padding-left: 4em;
+      padding-right: 4em; } }
   @media only screen and (min-width: 768px) {
     .grow-section .grow-section-right {
-      flex: 1; } }
+      flex: 1;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .grow-section .grow-section-right {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .grow-section .grow-section-right {
+      padding-left: 4em;
+      padding-right: 4em; } }
 
 .convo-section {
   grid-column: -1 / 1;
@@ -178,17 +220,36 @@ Text Domain:  twentytwentychild
   padding-right: 1em;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center; }
   @media only screen and (min-width: 768px) {
     .convo-section {
       flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .convo-section .convo-section-left {
-      flex: 1; } }
+      flex: 1;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .convo-section .convo-section-left {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .convo-section .convo-section-left {
+      padding-left: 4em;
+      padding-right: 4em; } }
   @media only screen and (min-width: 768px) {
     .convo-section .convo-section-right {
-      flex: 1; } }
+      flex: 1;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .convo-section .convo-section-right {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .convo-section .convo-section-right {
+      padding-left: 4em;
+      padding-right: 4em; } }
 
 .user-section {
   grid-column: -1 / 1;
@@ -196,17 +257,36 @@ Text Domain:  twentytwentychild
   padding-right: 1em;
   display: flex;
   flex-direction: column-reverse;
-  text-align: center;
   justify-content: center; }
   @media only screen and (min-width: 768px) {
     .user-section {
       flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .user-section .user-section-left {
-      flex: 1; } }
+      flex: 1;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .user-section .user-section-left {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .user-section .user-section-left {
+      padding-left: 4em;
+      padding-right: 4em; } }
   @media only screen and (min-width: 768px) {
     .user-section .user-section-right {
-      flex: 1; } }
+      flex: 1;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media only screen and (min-width: 1000px) {
+    .user-section .user-section-right {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media only screen and (min-width: 1400px) {
+    .user-section .user-section-right {
+      padding-left: 4em;
+      padding-right: 4em; } }
 
 .build-section {
   grid-column: -1 / 1;
@@ -217,11 +297,20 @@ Text Domain:  twentytwentychild
   border-radius: 68% 32% 83% 17% / 45% 70% 30% 55%;
   background: #c8f0fa;
   background: radial-gradient(circle, #c8f0fa 0%, white 66%, white 100%); }
+  @media only screen and (min-width: 768px) {
+    .build-section {
+      border-radius: 71% 29% 83% 17% / 44% 79% 21% 56%; } }
+  @media only screen and (min-width: 1400px) {
+    .build-section {
+      margin-top: 4em; } }
 
 .curved-footer {
   padding: 0;
   grid-column: -1 / 1;
   display: flex; }
+
+.fab:hover, .fab:focus {
+  color: cyan; }
 
 .swervy-footer {
   grid-column: -1 / 1;
@@ -240,7 +329,9 @@ Text Domain:  twentytwentychild
     .swervy-footer {
       flex-direction: row; } }
   .swervy-footer .footer-huddle {
-    margin-top: 5em; }
+    margin-top: 5em;
+    padding-left: 3em;
+    padding-right: 4em; }
     .swervy-footer .footer-huddle .huddle-logo {
       width: 150px;
       padding-bottom: 1.5em; }
@@ -260,21 +351,37 @@ Text Domain:  twentytwentychild
       margin-top: 2em;
       font-size: 1.8em;
       margin-bottom: 3em; }
-  .swervy-footer .footer-form {
-    grid-column: -1 / 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: end; }
-    .swervy-footer .footer-form #email {
-      border-radius: 5px;
-      margin-top: 2em;
-      margin-bottom: 1em; }
-    .swervy-footer .footer-form button.subscribe-button {
+  .swervy-footer .newsletter {
+    padding-right: 3em; }
+    @media only screen and (min-width: 768px) {
+      .swervy-footer .newsletter .newsletter-header {
+        padding-top: 0.8em;
+        font-size: 2em; } }
+    .swervy-footer .newsletter .footer-form {
+      grid-column: -1 / 1;
       display: flex;
-      margin-left: auto;
-      border-radius: 5px;
-      width: 50%;
-      background-color: #ff52bf; }
+      flex-direction: column;
+      justify-content: end; }
+      @media only screen and (min-width: 768px) {
+        .swervy-footer .newsletter .footer-form {
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 2em; } }
+      .swervy-footer .newsletter .footer-form #email {
+        border-radius: 5px; }
+        @media only screen and (min-width: 768px) {
+          .swervy-footer .newsletter .footer-form #email {
+            margin-right: 0.2em; } }
+      .swervy-footer .newsletter .footer-form button.subscribe-button {
+        margin-left: auto;
+        border-radius: 5px;
+        width: 50%;
+        background-color: #ff52bf; }
+        @media only screen and (min-width: 768px) {
+          .swervy-footer .newsletter .footer-form button.subscribe-button {
+            font-size: 0.7em;
+            padding: 0;
+            height: 6em; } }
 
 #accordion-checkbox {
   display: none; }
