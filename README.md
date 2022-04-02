@@ -34,7 +34,7 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
   <summary><b>The Landing Page Template</b></summary>
   <br/>
   <section align="center">
-    <img src="assets/images/github-images/petspage.png" alt="" height="250" width="350">
+    <img src="assets/images/github-images/petspage.PNG" alt="" height="250" width="350">
   </section>
   <br/>
 
@@ -48,7 +48,7 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
   <summary><b>The Gallery Template</b></summary>
    <br/>
   <section align="center">
-    <img src="assets/images/github-images/gallery.png" alt="" height="250" width="350">
+    <img src="assets/images/github-images/gallery.PNG" alt="" height="250" width="350">
   </section>
   <br/>
 
@@ -62,7 +62,7 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 <summary><b>Sunny Landing Page Template</b></summary>
  <br/>
   <section align="center">
-    <img src="assets/images/github-images/sunnylanding.png" alt="" height="250" width="350">
+    <img src="assets/images/github-images/sunnylanding.PNG" alt="" height="250" width="350">
   </section>
   <br/>
 
@@ -77,7 +77,7 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 <summary><b>E-Commerce Shopping Page Template</b></summary>
 <br/>
   <section align="center">
-    <img src="assets/images/github-images/ecommerce.png" alt="" height="250" width="350">
+    <img src="assets/images/github-images/ecommerce.PNG" alt="" height="250" width="350">
   </section>
   <br/>
 
@@ -90,7 +90,7 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 <summary><b>Swervy Landing Page Template</b></summary>
 <br/>
   <section align="center">
-    <img src="assets/images/github-images/swervypage.png" alt="" height="250" width="350">
+    <img src="assets/images/github-images/swervypage.PNG" alt="" height="250" width="350">
   </section>
   <br/>
 
