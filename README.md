@@ -24,7 +24,12 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 - Navigate to the folder via CLI or terminal and type `npm install` to install dependencies 
 
 ### To auto-compile Sass: 
-- In the package.json file, add the following code to your `scripts` block `"sass": "node-sass -w assets/sass/style.scss  -o ./ --recursive"` 
+- In the package.json file, add the following code to your `scripts` block
+
+```json
+"sass": "node-sass -w src/scss/App.scss -o src --recursive"
+```
+
 - In the terminal, type `npm run sass` to start watching the sass file  
 
 <br/>
