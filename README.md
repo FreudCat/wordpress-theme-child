@@ -49,6 +49,15 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - How to use SVG fill:color and viewbox properties 
 - **PLEASE** don't be like me and forget to transpile scss then wonder why they website isn't updating 
 
+### E-Commerce Shopping Page Template 
+- How to create custom scss to override the pre-existing bootstrap framework. 
+- Even being just one pixel off is hugely obvious! 
+- Borders take up space when using the hover effect, causing the images to shrink in size. I learned two different methods to prevent the image from being changing shape on hover. 
+
+### Swervy Landing Page Template
+- How to use SVG paths and fill to create curved borders. 
+- I got a nice intro to CSS grids and flexbox. While they weren't used to their max potential, I have a better understanding of the concepts nonetheless.  
+
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)
 
