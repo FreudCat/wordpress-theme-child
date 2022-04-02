@@ -32,6 +32,11 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 ## What I Learned From Working On...
 <details>
   <summary><b>The Landing Page Template</b></summary>
+  <br/>
+  <section align="center">
+    <img src="assets/images/github-images/petspage.png" alt="" height="250" width="350">
+  </section>
+  <br/>
 
   - How to capture and utilize data from Advanced Custom Fields to populate a template
   - How to use conditionals in PHP to load content 
@@ -41,6 +46,11 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 
 <details>
   <summary><b>The Gallery Template</b></summary>
+   <br/>
+  <section align="center">
+    <img src="assets/images/github-images/gallery.png" alt="" height="250" width="350">
+  </section>
+  <br/>
 
   - The purpose of a [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) in WordPress and how to create one
   - The importance of uniform styling when naming classes, file names, etc. 
@@ -50,6 +60,11 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 
 <details>
 <summary><b>Sunny Landing Page Template</b></summary>
+ <br/>
+  <section align="center">
+    <img src="assets/images/github-images/sunnylanding.png" alt="" height="250" width="350">
+  </section>
+  <br/>
 
   - How to write useful and descriptive code for troubleshooting purposes 
   - If vw is 100% and I add padding to elements along the edge, I get an [annoying hortizontal scrollbar](https://stackoverflow.com/questions/36699885/padding-makes-horizontal-scrollbar-to-appear). I'm sure there's many reasons for the scrollbar appearing, but this was what caused it for me.
@@ -60,6 +75,11 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 
 <details>
 <summary><b>E-Commerce Shopping Page Template</b></summary>
+<br/>
+  <section align="center">
+    <img src="assets/images/github-images/ecommerce.png" alt="" height="250" width="350">
+  </section>
+  <br/>
 
   - How to create custom scss to override the pre-existing bootstrap framework. 
   - Even being just one pixel off is hugely obvious! 
@@ -68,6 +88,11 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 
 <details>
 <summary><b>Swervy Landing Page Template</b></summary>
+<br/>
+  <section align="center">
+    <img src="assets/images/github-images/swervypage.png" alt="" height="250" width="350">
+  </section>
+  <br/>
 
   - How to use SVG paths and fill to create curved borders. 
   - I got a nice intro to CSS grids and flexbox. While they weren't used to their max potential, I have a better understanding of the concepts nonetheless.  
