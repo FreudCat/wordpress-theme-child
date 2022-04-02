@@ -109,7 +109,7 @@ Thank you for stopping by, and welcome! This repository demonstrates landing pag
 <section align="center">
 <br/>
 
-### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
+### **Big thank you** to [HeyItsRocky](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)
 </section>
 
