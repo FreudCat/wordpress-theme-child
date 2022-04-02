@@ -58,6 +58,11 @@ The templates in this portfolio extend the [twentytwenty wordpress theme](https:
 - How to use SVG paths and fill to create curved borders. 
 - I got a nice intro to CSS grids and flexbox. While they weren't used to their max potential, I have a better understanding of the concepts nonetheless.  
 
+<br/>
+<hr/>
+
+<div align="center">
 ### **Big thank you** to [Rocky Kev](https://www.heyitsrocky.com/) for all of the feedback, support, and patience! 
 ![](https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif)
+</div>
 
