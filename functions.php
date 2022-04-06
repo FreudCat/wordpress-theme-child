@@ -27,13 +27,21 @@ function child_theme_enqueue_styles() {
     );
     wp_enqueue_script ('fontawesome', 'https://kit.fontawesome.com/73971c4e5a.js', array(), true); //using the fontawesome cdn
     if (basename(get_page_template()) == 'gallery-page-coded-images.php') { 
-        wp_enqueue_script( 'modal-JS',get_stylesheet_directory_uri().'/assets/js/modal.js', array(), rand(), true);
+        wp_enqueue_script( 'modal-JS', get_stylesheet_directory_uri().'/assets/js/modal.js', array(), rand(), true);
     }
-    if (basename(get_page_template()) == 'shopping-page.php') { 
+    if ((basename(get_page_template()) == 'shopping-page.php')) { 
         wp_enqueue_script( 'shopping-JS',get_stylesheet_directory_uri().'/assets/js/shopping.js', array(), rand(), true);
         wp_enqueue_script( 'bootstrap-JS',get_stylesheet_directory_uri().'/assets/bootstrap-5.1.3-dist/js/bootstrap.js', array(), rand(), true);
         wp_enqueue_script( 'bootstrap-CSS',get_stylesheet_directory_uri().'/assets/bootstrap-5.1.3-dist/css/bootstrap.css', array(), rand(), true);
         wp_enqueue_style( $parenthandle, get_stylesheet_directory_uri() . '/shoe-style.css', array());
+    }
+    if ((basename(get_page_template()) == 'main-portfolio-page.php')) { 
+        wp_enqueue_script( 'bootstrapPortfolioJS',get_stylesheet_directory_uri().'/bootstrap-5.1.3-dist/js/bootstrap.js', array(), rand());
+        wp_enqueue_style( 'bootstrapPortfolioCSS',get_stylesheet_directory_uri().'/bootstrap-5.1.3-dist/css/bootstrap.css', array(), rand());
+        wp_enqueue_style( "portfolioCSS", get_stylesheet_directory_uri() . '/portfolio.css', 
+        array(),  // if the parent theme code has a dependency, copy it to here
+        $theme->parent()->get('Version')
+    );
     }
     if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'sunny-page-dynamic.php')) { 
         wp_enqueue_style( 'bootstrapCSS','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), rand());
