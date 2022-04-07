@@ -39,12 +39,12 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       </div>
     </div>
   </nav>
-  <header class="portfolio-header">
-
+  <header class="portfolio-header mb-5">
+    <h1 class="text-center py-5 portfolio-header-font">My Projects</h1>
   </header>
-  <main class="container-fluid">
+  <main class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 d-flex justify-content-center">
         <div class="card portfolio-card">
           <img src="..." class="card-img-top" alt="...">
         <div class="card-body">

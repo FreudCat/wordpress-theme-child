@@ -13,6 +13,11 @@
 
 .portfolio-header {
   border-bottom: 1px solid #b7e8db;
+  .portfolio-header-font {
+    color: $light-grey;
+    font-size: 3em;
+    
+  }
 }
 
 .portfolio-card {

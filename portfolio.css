@@ -7821,6 +7821,9 @@ textarea.form-control-lg {
 
 .portfolio-header {
   border-bottom: 1px solid #b7e8db; }
+  .portfolio-header .portfolio-header-font {
+    color: #F7F7F9;
+    font-size: 3em; }
 
 .portfolio-card {
   width: 50%; }
