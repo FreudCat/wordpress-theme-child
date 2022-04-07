@@ -35,7 +35,7 @@ get_header();
   ?>
 
   <section class="card-holder">
-    <div class="card">
+    <div class="landing-page-card">
       <div class="front">
         <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>1.jpg" class="card-img" alt="">
         <div class="container">
@@ -48,7 +48,7 @@ get_header();
         <p class="card-back-text"><?php echo $miniItems ?></p>
       </div>
     </div>
-    <div class="card">
+    <div class="landing-page-card">
       <div class="front">
         <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>2.jpg')" class="card-img" alt="">
         <div class="container">
@@ -61,7 +61,7 @@ get_header();
         <p class="card-back-text"><?php echo $middleItems ?></p>
       </div>
     </div>
-    <div class="card">
+    <div class="landing-page-card">
       <div class="front">
         <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/<?php echo $topic ?>3.jpg" class="card-img" alt="">
         <div class="container">

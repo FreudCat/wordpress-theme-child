@@ -7829,8 +7829,44 @@ nav.navbar.portfolio-navbar {
     color: #F7F7F9;
     font-size: 3em; }
 
-.portfolio-card {
-  width: 75%; }
+.card.portfolio-card {
+  width: 75%;
+  border-color: #b7e8db;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden; }
+  .card.portfolio-card .card-corner {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.3s;
+    top: 0;
+    right: -15px;
+    height: 100%;
+    width: 33px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(8deg);
+    margin-right: -36px;
+    align-items: start;
+    background-color: #af3557; }
+  .card.portfolio-card .corner-arrow {
+    position: absolute;
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 0px;
+    opacity: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    transition: 0.3s; }
+  .card.portfolio-card:hover {
+    border: 1px solid #af3557; }
+    .card.portfolio-card:hover .card-corner {
+      margin-right: -4px; }
+    .card.portfolio-card:hover .corner-arrow {
+      opacity: 1; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

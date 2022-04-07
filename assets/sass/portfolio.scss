@@ -11,11 +11,11 @@ nav.navbar.portfolio-navbar {
   top: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid #b7e8db;
+  border-bottom: 1px solid $light-blue;
 }
 
 .portfolio-header {
-  border-bottom: 1px solid #b7e8db;
+  border-bottom: 1px solid $light-blue;
   margin-top: 5em;
   .portfolio-header-font {
     color: $light-grey;
@@ -23,8 +23,49 @@ nav.navbar.portfolio-navbar {
   }
 }
 
-.portfolio-card {
+.card.portfolio-card {
   width: 75%; 
+  border-color: $light-blue;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  .card-corner {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.3s;
+    top: 0;
+    right: -15px;
+    height: 100%;
+    width: 33px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(8deg);
+    margin-right: -36px;
+    align-items: start;
+    background-color: $dark-red;
+  }
+  .corner-arrow {
+    position: absolute;
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 0px;
+    opacity: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    transition: 0.3s;
+  }
+  &:hover {
+    .card-corner {
+      margin-right: -4px;
+    }
+    .corner-arrow {
+      opacity: 1;
+    }
+    border: 1px solid $dark-red;
+  }
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

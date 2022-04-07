@@ -45,11 +45,13 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <main class="container">
     <div class="row gy-5">
       <div class="col-xs-12 d-flex justify-content-center">
-        <div class="card portfolio-card">
+        <div class="card border-2 portfolio-card">
           <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+          <div class="card-body">
+            <p class="card-text">wef</p>
+          </div>
+          <div class="card-corner"><div class="corner-arrow">→</div></div>
+          
         </div>
       </div>
       <div class="col-xs-12 d-flex justify-content-center">

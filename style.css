@@ -463,7 +463,7 @@ Text Domain:  twentytwentychild
   width: 100vw;
   perspective: 900; }
 
-.card {
+.landing-page-card {
   position: relative;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -471,23 +471,23 @@ Text Domain:  twentytwentychild
   background-color: white;
   transition: 0.6s ease;
   transform-style: preserve-3d; }
-  .card:hover {
+  .landing-page-card:hover {
     transform: rotateY(180deg); }
-  .card .card-back-header {
+  .landing-page-card .card-back-header {
     width: 100%;
     text-align: center;
     position: absolute;
     font-weight: 600;
     top: -15em; }
-  .card .card-back-text {
+  .landing-page-card .card-back-text {
     width: 100%;
     margin: auto;
     text-align: center;
     position: absolute;
     top: -12em; }
-  .card .front {
+  .landing-page-card .front {
     backface-visibility: hidden; }
-  .card .back {
+  .landing-page-card .back {
     position: relative;
     transform: rotateY(180deg);
     width: 250px;
