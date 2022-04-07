@@ -115,12 +115,6 @@ $swervy-header-font: "Poppins", sans-serif;
   }
 }
 
-button {
-  &:hover, &:focus {
-    background-color: $light-pink;
-  }
-}
-
 .swervy-header {
   grid-column: -1 / 1;
   grid-template-columns: 0.3fr 0.7fr;

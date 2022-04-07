@@ -94,9 +94,6 @@ Text Domain:  twentytwentychild
       .swervy-navbar .try-button {
         font-size: 1em; } }
 
-button:hover, button:focus {
-  background-color: #ff8fd8; }
-
 .swervy-header {
   grid-column: -1 / 1;
   grid-template-columns: 0.3fr 0.7fr;

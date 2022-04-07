@@ -1,5 +1,17 @@
-header {
-  background-color: #2B2D42;
+@import "portfolio-page/variables";
+
+.portfolio-body  {
+  background-color: $dark-blue;
+}
+
+.portfolio-navbar {
+  background-color: $dark-blue;
+  position: fixed;
+  border-bottom: 1px solid #b7e8db;
+}
+
+.portfolio-card {
+  width: 50%; 
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
