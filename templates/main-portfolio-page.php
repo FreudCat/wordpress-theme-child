@@ -39,8 +39,8 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       </div>
     </div>
   </nav>
-  <header>
-    
+  <header class="portfolio-header">
+
   </header>
   <main class="container-fluid">
     <div class="row">

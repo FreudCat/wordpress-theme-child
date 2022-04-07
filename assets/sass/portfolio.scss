@@ -2,11 +2,16 @@
 
 .portfolio-body  {
   background-color: $dark-blue;
+  font-family: $portfolio-font;
 }
 
 .portfolio-navbar {
   background-color: $dark-blue;
   position: fixed;
+  border-bottom: 1px solid #b7e8db;
+}
+
+.portfolio-header {
   border-bottom: 1px solid #b7e8db;
 }
 

@@ -7811,11 +7811,15 @@ textarea.form-control-lg {
     display: none !important; } }
 
 .portfolio-body {
-  background-color: #2B2D42; }
+  background-color: #2B2D42;
+  font-family: "Kumbh Sans", sans-serif; }
 
 .portfolio-navbar {
   background-color: #2B2D42;
   position: fixed;
+  border-bottom: 1px solid #b7e8db; }
+
+.portfolio-header {
   border-bottom: 1px solid #b7e8db; }
 
 .portfolio-card {
