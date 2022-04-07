@@ -5,23 +5,26 @@
   font-family: $portfolio-font;
 }
 
-.portfolio-navbar {
+nav.navbar.portfolio-navbar {
   background-color: $dark-blue;
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   border-bottom: 1px solid #b7e8db;
 }
 
 .portfolio-header {
   border-bottom: 1px solid #b7e8db;
+  margin-top: 5em;
   .portfolio-header-font {
     color: $light-grey;
     font-size: 3em;
-    
   }
 }
 
 .portfolio-card {
-  width: 50%; 
+  width: 75%; 
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

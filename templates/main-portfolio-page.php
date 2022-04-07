@@ -22,7 +22,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <nav class="navbar navbar-expand navbar-dark portfolio-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/nav-logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/nav-logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
       </a>
       <div id="navbarNav">
         <ul class="navbar-nav">
@@ -43,10 +43,42 @@ remove_action('wp_head', '_admin_bar_bump_cb');
     <h1 class="text-center py-5 portfolio-header-font">My Projects</h1>
   </header>
   <main class="container">
-    <div class="row">
+    <div class="row gy-5">
       <div class="col-xs-12 d-flex justify-content-center">
         <div class="card portfolio-card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-xs-12 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-xs-12 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-xs-12 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-xs-12 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>

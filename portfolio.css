@@ -7814,19 +7814,23 @@ textarea.form-control-lg {
   background-color: #2B2D42;
   font-family: "Kumbh Sans", sans-serif; }
 
-.portfolio-navbar {
+nav.navbar.portfolio-navbar {
   background-color: #2B2D42;
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   border-bottom: 1px solid #b7e8db; }
 
 .portfolio-header {
-  border-bottom: 1px solid #b7e8db; }
+  border-bottom: 1px solid #b7e8db;
+  margin-top: 5em; }
   .portfolio-header .portfolio-header-font {
     color: #F7F7F9;
     font-size: 3em; }
 
 .portfolio-card {
-  width: 50%; }
+  width: 75%; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
