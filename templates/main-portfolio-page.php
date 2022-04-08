@@ -92,8 +92,10 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       </div>
     </div>
   </main>
+  <footer>
+    <?php 
+    get_footer('portfolio')
+    ?>
+  </footer>
 </body>
 
-<?php 
-  get_footer('portfolio')
-?>
