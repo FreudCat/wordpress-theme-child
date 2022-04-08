@@ -23,10 +23,18 @@ nav.navbar.portfolio-navbar {
   }
 }
 
+img.portfolio-card-image {
+  height: 141px;
+}
+
+p.portfolio-card-text {
+  font-size: 1.5em;
+}
+
 .card.portfolio-card {
   width: 75%; 
   border-color: $light-blue;
-  transition: 0.3s;
+  transition: 0.5s;
   position: relative;
   overflow: hidden;
   border-radius: 0;
@@ -37,7 +45,7 @@ nav.navbar.portfolio-navbar {
     overflow: hidden;
     transition: 0.3s;
     top: 0;
-    right: -24px;
+    right: -26px;
     height: 100%;
     width: 33px;
     padding-right: 9px;

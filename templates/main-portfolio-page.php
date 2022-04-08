@@ -48,38 +48,41 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         <div class="card border-2 portfolio-card">
           <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
           <div class="card-body">
-            <p class="card-text">An uncomplicated landing page to showcase pricing packages for various activities.</p>
+            <p class="card-text portfolio-card-text">An uncomplicated page showcasing price packages for various activities.</p>
           </div>
           <div class="card-corner"><div class="corner-arrow">→</div></div>
           
         </div>
       </div>
       <div class="col-xs-12 d-flex justify-content-center">
-        <div class="card portfolio-card">
-          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        </div>
-      </div>
-      <div class="col-xs-12 d-flex justify-content-center">
-        <div class="card portfolio-card">
-          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+        <div class="card portfolio-card border-2">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/ecommerce.PNG" class="card-img-top portfolio-card-image" alt="Sideview of tan, brown, and orange sneaker with flat tread placed onto of two flat rocks">
+          <div class="card-body">
+            <p class="card-text portfolio-card-text">An example of an e-commerce site shopping site. Let's buy some shoes!</p>
+          </div>
+          <div class="card-corner"><div class="corner-arrow">→</div></div>
         </div>
       </div>
       <div class="col-xs-12 d-flex justify-content-center">
-        <div class="card portfolio-card">
-          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+        <div class="card border-2 portfolio-card">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/chicago.jpg" class="card-img-top portfolio-card-image" alt="Chicago marquee and skyline">
+          <div class="card-body">
+            <p class="card-text portfolio-card-text">A gallery showing some of my favorite paintings, operas, and artists.</p>
+          </div>
+          <div class="card-corner"><div class="corner-arrow">→</div></div>
         </div>
       </div>
       <div class="col-xs-12 d-flex justify-content-center">
-        <div class="card portfolio-card">
+        <div class="card border-2 portfolio-card">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/transform.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+          <div class="card-body">
+            <p class="card-text portfolio-card-text">Light and cheery landing page to brighten up your day.</p>
+          </div>
+          <div class="card-corner"><div class="corner-arrow">→</div></div>
+        </div>
+      </div>
+      <div class="col-xs-12 d-flex justify-content-center">
+        <div class="card border-2 portfolio-card">
           <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
