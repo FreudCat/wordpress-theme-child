@@ -29,6 +29,7 @@ nav.navbar.portfolio-navbar {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+  border-radius: 0;
   .card-corner {
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ nav.navbar.portfolio-navbar {
     overflow: hidden;
     transition: 0.3s;
     top: 0;
-    right: -15px;
+    right: -24px;
     height: 100%;
     width: 33px;
     padding-right: 9px;

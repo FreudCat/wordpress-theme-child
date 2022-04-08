@@ -48,7 +48,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         <div class="card border-2 portfolio-card">
           <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
           <div class="card-body">
-            <p class="card-text">wef</p>
+            <p class="card-text">An uncomplicated landing page to showcase pricing packages for various activities.</p>
           </div>
           <div class="card-corner"><div class="corner-arrow">→</div></div>
           
