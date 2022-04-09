@@ -85,17 +85,15 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         <div class="card border-2 portfolio-card">
           <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
           <div class="card-body">
-            <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy</p>
+            <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
           </div>
           <div class="card-corner"><div class="corner-arrow">→</div></div>
         </div>
       </div>
     </div>
   </main>
-  <footer>
-    <?php 
-    get_footer('portfolio')
-    ?>
-  </footer>
+  <?php 
+  get_footer('portfolio')
+  ?>
 </body>
 

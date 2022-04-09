@@ -1,21 +1,21 @@
 @import "portfolio-page/variables";
 
 .portfolio-body  {
-  background-color: $dark-blue;
+  background-color: $main-background;
   font-family: $portfolio-font;
 }
 
 nav.navbar.portfolio-navbar {
-  background-color: $dark-blue;
+  background-color: $main-background;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid $light-blue;
+  border-bottom: 1px solid $card-outline;
 }
 
 .portfolio-header {
-  border-bottom: 1px solid $light-blue;
+  border-bottom: 1px solid $card-outline;
   margin-top: 5em;
   .portfolio-header-font {
     color: $light-grey;
@@ -33,7 +33,7 @@ p.portfolio-card-text {
 
 .card.portfolio-card {
   width: 75%; 
-  border-color: $light-blue;
+  border-color: $card-outline;
   transition: 0.5s;
   position: relative;
   overflow: hidden;
@@ -53,7 +53,7 @@ p.portfolio-card-text {
     transform: skew(8deg);
     margin-right: -36px;
     align-items: start;
-    background-color: $dark-red;
+    background-color: $inner-logo;
   }
   .corner-arrow {
     position: absolute;
@@ -73,12 +73,26 @@ p.portfolio-card-text {
     .corner-arrow {
       opacity: 1;
     }
-    border: 1px solid $dark-red;
+    border: 1px solid $inner-logo;
   }
 }
 
 .portfolio-footer {
-  background-color: #EAD637;
+  background: rgb(43,45,66);
+  background: linear-gradient(180deg, rgba(43,45,66,1) 2%, rgba(175,53,87,1) 100%);
+  font-size: 1.5em;
+  .footer-icon{
+    font-size: 1.5em;
+    &:hover, &:focus {
+      color: $link-hover;
+    }
+  }
+  .portfolio-navlink {
+    color: $link-color;
+    &:hover, &:focus {
+      color: $link-hover;
+    }
+  }
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
