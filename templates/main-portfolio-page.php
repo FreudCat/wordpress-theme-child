@@ -24,30 +24,17 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       <a class="navbar-brand" href="#">
         <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/nav-logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
       </a>
-      <div id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link portfolio-navlink active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link portfolio-navlink" href="<? echo home_url('/about-me');?>">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link portfolio-navlink" href="<? echo home_url('/contact');?>">Contact</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </nav>
   <header class="portfolio-header mb-5">
     <h1 class="text-center py-5 portfolio-header-font">My Projects</h1>
   </header>
   <main class="container">
-    <div class="row gy-5">
+    <div class="row">
       <a class="card-link-text" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
-        <div class="col-xs-12 d-flex justify-content-center">
+        <div class="col-xs-12 col-md-6 mb-5 d-flex justify-content-center ">
           <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top" alt="Two dogs and two cats sitting together in front of pink background">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
             <div class="card-body">
               <p class="card-text portfolio-card-text">An uncomplicated page showcasing price packages for various activities.</p>
             </div>
@@ -56,7 +43,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </div>
       </a>
       <a class="card-link-text" href="<? echo home_url('/sneaker-company')?>" target="_blank">
-        <div class="col-xs-12 d-flex justify-content-center">
+        <div class="col-xs-12 col-md-6 mb-5 d-flex justify-content-center">
           <div class="card portfolio-card border-2">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/ecommerce.PNG" class="card-img-top portfolio-card-image" alt="Sideview of tan, brown, and orange sneaker with flat tread placed onto of two flat rocks">
             <div class="card-body">
@@ -66,39 +53,44 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           </div>
         </div>
       </a>
-      <a class="card-link-text" href="<? echo home_url('/photo-gallery')?>" target="_blank">
-        <div class="col-xs-12 d-flex justify-content-center">
-          <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/chicago.jpg" class="card-img-top portfolio-card-image" alt="Chicago marquee and skyline">
-            <div class="card-body">
-              <p class="card-text portfolio-card-text">A gallery showing some of my favorite paintings, operas, and artists.</p>
+      </div>
+      <div class="row">
+        <a class="card-link-text" href="<? echo home_url('/photo-gallery')?>" target="_blank">
+          <div class="col-xs-12 col-md-6 mb-5 d-flex justify-content-center">
+            <div class="card border-2 portfolio-card">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/chicago.jpg" class="card-img-top portfolio-card-image" alt="Chicago marquee and skyline">
+              <div class="card-body">
+                <p class="card-text portfolio-card-text">A gallery showing some of my favorite paintings, operas, and artists.</p>
+              </div>
+              <div class="card-corner"><div class="corner-arrow">→</div></div>
             </div>
-            <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
-        </div>
-      </a>
-      <a class="card-link-text" href="<? echo home_url('/sunny-landing-page')?>" target="_blank">
-        <div class="col-xs-12 d-flex justify-content-center">
-          <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/transform.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
-            <div class="card-body">
-              <p class="card-text portfolio-card-text">Light and cheery landing page to brighten up your day.</p>
+        </a>
+        <a class="card-link-text" href="<? echo home_url('/sunny-landing-page')?>" target="_blank">
+          <div class="col-xs-12 col-md-6 mb-5 d-flex justify-content-center">
+            <div class="card border-2 portfolio-card">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/transform.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+              <div class="card-body">
+                <p class="card-text portfolio-card-text">Light and cheery landing page to brighten up your day.</p>
+              </div>
+              <div class="card-corner"><div class="corner-arrow">→</div></div>
             </div>
-            <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
-        </div>
-      </a>
-      <a class="card-link-text" href="<? echo home_url('/swervy-landing-page')?>" target="_blank">
-        <div class="col-xs-12 d-flex justify-content-center">
-          <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
-            <div class="card-body">
-              <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
+        </a>
+      </div>
+      <div class="row">
+        <a class="card-link-text" href="<? echo home_url('/swervy-landing-page')?>" target="_blank">
+          <div class="col-xs-12 col-md-6 mb-5 d-flex justify-content-center">
+            <div class="card border-2 portfolio-card">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+              <div class="card-body">
+                <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
+              </div>
+              <div class="card-corner"><div class="corner-arrow">→</div></div>
             </div>
-            <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </main>
   <?php 
