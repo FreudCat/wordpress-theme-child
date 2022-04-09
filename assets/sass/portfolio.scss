@@ -31,6 +31,14 @@ p.portfolio-card-text {
   font-size: 1.5em;
 }
 
+.card-link-text {
+  text-decoration: none;
+  color: black;
+  &:hover, &:focus {
+    color: black;
+  }
+}
+
 .card.portfolio-card {
   width: 75%; 
   border-color: $card-outline;
@@ -82,6 +90,7 @@ p.portfolio-card-text {
   background: linear-gradient(180deg, rgba(43,45,66,1) 2%, rgba(175,53,87,1) 100%);
   font-size: 1.5em;
   .footer-icon{
+    color: rgb(23, 23, 23);
     font-size: 1.5em;
     &:hover, &:focus {
       color: $link-hover;

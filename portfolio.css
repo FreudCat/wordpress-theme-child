@@ -7835,6 +7835,12 @@ img.portfolio-card-image {
 p.portfolio-card-text {
   font-size: 1.5em; }
 
+.card-link-text {
+  text-decoration: none;
+  color: black; }
+  .card-link-text:hover, .card-link-text:focus {
+    color: black; }
+
 .card.portfolio-card {
   width: 75%;
   border-color: #b7e8db;
@@ -7880,6 +7886,7 @@ p.portfolio-card-text {
   background: linear-gradient(180deg, #2b2d42 2%, #af3557 100%);
   font-size: 1.5em; }
   .portfolio-footer .footer-icon {
+    color: #171717;
     font-size: 1.5em; }
     .portfolio-footer .footer-icon:hover, .portfolio-footer .footer-icon:focus {
       color: #FFFFFF; }
