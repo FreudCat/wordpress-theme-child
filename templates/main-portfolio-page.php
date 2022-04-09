@@ -30,10 +30,10 @@ remove_action('wp_head', '_admin_bar_bump_cb');
             <a class="nav-link portfolio-navlink active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link portfolio-navlink" href="#">About</a>
+            <a class="nav-link portfolio-navlink" href="<? echo home_url('/about-me');?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link portfolio-navlink" href="#">Contact</a>
+            <a class="nav-link portfolio-navlink" href="<? echo home_url('/contact');?>">Contact</a>
           </li>
         </ul>
       </div>
