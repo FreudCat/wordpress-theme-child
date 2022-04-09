@@ -23,6 +23,12 @@ nav.navbar.portfolio-navbar {
   }
 }
 
+.row.portfolio-top-row {
+  @include media-breakpoint-up(lg) {
+    margin-top: 100px; 
+  }
+}
+
 img.portfolio-card-image {
   height: 165px;
   @include media-breakpoint-up(sm) {
@@ -30,6 +36,9 @@ img.portfolio-card-image {
   }
   @include media-breakpoint-up(md) {
     height: 250px; 
+  }
+  @include media-breakpoint-up(mid-lg) {
+    height: 275px; 
   }
 }
 
@@ -76,6 +85,11 @@ p.portfolio-card-text {
     background-color: $inner-logo;
     @include media-breakpoint-up(sm) {
     right: -21px;
+    }
+    @include media-breakpoint-up(mid-lg) {
+      right: -28px; 
+      margin-right: -60px;
+      width: 45px;
     }
   }
   .corner-arrow {

@@ -30,7 +30,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
     <h1 class="text-center py-5 portfolio-header-font">My Projects</h1>
   </header>
   <main class="container">
-    <div class="row">
+    <div class="row portfolio-top-row">
       <a class="card-link-text col-xs-12 col-md-6 d-flex justify-content-md-evenly" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
         <div class="mb-5 d-flex justify-content-center justify-content-md-end">
           <div class="card border-2 portfolio-card">
