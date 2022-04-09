@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$portfolio-grid-breakpoints: (
+$grid-breakpoints: (
   xs: 0,
   sm: 370px,
-  sm-md: 425px,
+  smmd: 425px,
   md: 768px,
   lg: 1024px,
   xl: 1400px,
   xxl: 1900px
 );
-$portfolio-container-max-widths: (
+$container-max-widths: (
   sm: 365px,
   smmd: 425px,
   md: 763px,
