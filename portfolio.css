@@ -532,7 +532,7 @@ progress {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-smmd, .container-md, .container-lg, .container-mid-lg {
-    max-width: 1200px; } }
+    max-width: 1300px; } }
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-smmd, .container-md, .container-lg, .container-mid-lg, .container-xl {
@@ -8959,8 +8959,17 @@ nav.navbar.portfolio-navbar {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid #b7e8db; }
+  nav.navbar.portfolio-navbar .logo-image {
+    width: 30px;
+    height: auto; }
+    @media (min-width: 1200px) {
+      nav.navbar.portfolio-navbar .logo-image {
+        width: 50px; } }
   nav.navbar.portfolio-navbar .portfolio-navlink {
     border-bottom: 2px solid transparent; }
+    @media (min-width: 1200px) {
+      nav.navbar.portfolio-navbar .portfolio-navlink {
+        font-size: 1.5em; } }
     nav.navbar.portfolio-navbar .portfolio-navlink:focus, nav.navbar.portfolio-navbar .portfolio-navlink:hover {
       border-bottom: 2px solid #af3557; }
     nav.navbar.portfolio-navbar .portfolio-navlink:active {
@@ -8971,6 +8980,12 @@ nav.navbar.portfolio-navbar {
 .portfolio-header {
   border-bottom: 1px solid #b7e8db;
   margin-top: 5em; }
+  @media (min-width: 1200px) {
+    .portfolio-header {
+      margin-top: 10em; } }
+  @media (min-width: 1400px) {
+    .portfolio-header {
+      margin-top: 7em; } }
   .portfolio-header .portfolio-header-font {
     color: #F7F7F9;
     font-size: 3em; }
@@ -8990,6 +9005,9 @@ img.portfolio-card-image {
   @media (min-width: 1200px) {
     img.portfolio-card-image {
       height: 275px; } }
+  @media (min-width: 1400px) {
+    img.portfolio-card-image {
+      height: 325px; } }
 
 p.portfolio-card-text {
   font-size: 1.5em; }
@@ -9012,7 +9030,18 @@ p.portfolio-card-text {
   border-radius: 0; }
   @media (min-width: 768px) {
     .card.portfolio-card {
-      width: 85%; } }
+      width: 90%; } }
+  @media (min-width: 1024px) {
+    .card.portfolio-card {
+      width: 75%; } }
+  @media (min-width: 1900px) {
+    .card.portfolio-card {
+      width: 50%; } }
+  .card.portfolio-card .portfolio-card-body {
+    height: 87.5px; }
+    @media (min-width: 768px) {
+      .card.portfolio-card .portfolio-card-body {
+        height: 120px; } }
   .card.portfolio-card .card-corner {
     display: flex;
     justify-content: center;
@@ -9032,9 +9061,19 @@ p.portfolio-card-text {
     @media (min-width: 370px) {
       .card.portfolio-card .card-corner {
         right: -21px; } }
+    @media (min-width: 768px) {
+      .card.portfolio-card .card-corner {
+        margin-right: -40px;
+        right: -26px;
+        width: 40px; } }
     @media (min-width: 1200px) {
       .card.portfolio-card .card-corner {
-        right: -28px;
+        right: -30px;
+        margin-right: -60px;
+        width: 45px; } }
+    @media (min-width: 1400px) {
+      .card.portfolio-card .card-corner {
+        right: -26px;
         margin-right: -60px;
         width: 45px; } }
   .card.portfolio-card .corner-arrow {
@@ -9068,6 +9107,9 @@ p.portfolio-card-text {
     @media (min-width: 768px) {
       .portfolio-footer .footer-icon {
         font-size: 5em; } }
+    @media (min-width: 1200px) {
+      .portfolio-footer .footer-icon {
+        font-size: 3em; } }
     .portfolio-footer .footer-icon:hover, .portfolio-footer .footer-icon:focus {
       color: #FFFFFF; }
   .portfolio-footer .portfolio-navlink {
@@ -9608,7 +9650,7 @@ progress {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-smmd, .container-md, .container-lg, .container-mid-lg {
-    max-width: 1200px; } }
+    max-width: 1300px; } }
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-smmd, .container-md, .container-lg, .container-mid-lg, .container-xl {

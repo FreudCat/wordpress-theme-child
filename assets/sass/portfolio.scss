@@ -12,8 +12,18 @@ nav.navbar.portfolio-navbar {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid $card-outline;
+  .logo-image {
+    width: 30px; 
+    height: auto;
+    @include media-breakpoint-up(mid-lg) {
+      width: 50px;
+    } 
+  }
   .portfolio-navlink {
     border-bottom: 2px solid transparent;
+    @include media-breakpoint-up(mid-lg) {
+      font-size: 1.5em;
+    }
     &:focus, &:hover {
       border-bottom: 2px solid $inner-logo;
     }
@@ -29,6 +39,12 @@ nav.navbar.portfolio-navbar {
 .portfolio-header {
   border-bottom: 1px solid $card-outline;
   margin-top: 5em;
+  @include media-breakpoint-up(mid-lg) {
+    margin-top: 10em;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 7em;
+  }
   .portfolio-header-font {
     color: $light-grey;
     font-size: 3em;
@@ -52,13 +68,16 @@ img.portfolio-card-image {
   @include media-breakpoint-up(mid-lg) {
     height: 275px; 
   }
+  @include media-breakpoint-up(xl) {
+    height: 325px; 
+  }
 }
 
 p.portfolio-card-text {
   font-size: 1.5em;
   @include media-breakpoint-up(md) {
     font-size: 2.2em;
-    }
+  }
 }
 
 .card-link-text {
@@ -77,8 +96,20 @@ p.portfolio-card-text {
   overflow: hidden;
   border-radius: 0;
   @include media-breakpoint-up(md) {
-    width: 85%;
+    width: 90%;
+  }
+  @include media-breakpoint-up(lg) {
+      width: 75%;
+   }
+  @include media-breakpoint-up(xxl) {
+    width: 50%;
+  }
+  .portfolio-card-body {
+    height: 87.5px;
+    @include media-breakpoint-up(md) {
+      height: 120px;
     }
+  }
   .card-corner {
     display: flex;
     justify-content: center;
@@ -98,8 +129,18 @@ p.portfolio-card-text {
     @include media-breakpoint-up(sm) {
     right: -21px;
     }
+    @include media-breakpoint-up(md) {
+      margin-right: -40px;
+      right: -26px;
+      width: 40px;
+    }
     @include media-breakpoint-up(mid-lg) {
-      right: -28px; 
+      right: -30px; 
+      margin-right: -60px;
+      width: 45px;
+    }
+    @include media-breakpoint-up(xl) {
+      right: -26px; 
       margin-right: -60px;
       width: 45px;
     }
@@ -139,7 +180,10 @@ p.portfolio-card-text {
     }
     @include media-breakpoint-up(md) {
       font-size: 5em;
-      }
+    }
+    @include media-breakpoint-up(mid-lg) {
+      font-size: 3em;
+    }
     &:hover, &:focus {
       color: $link-hover;
     }
