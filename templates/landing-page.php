@@ -20,8 +20,8 @@ get_header("landing");
   <!-- Note to self: "id" was used in the label element to provide more specificity over the parent style.css that was previously overriding my styles when just using tag:class -->
   
   <div class="accordion-content">
-    <p>This page is one of three pages that utilize the Landing Page template. My first attempt at a template, the focus is on exploring how to set up a WordPress site, the functionality of PHP, and injecting information from Advanced Custom Fields.</p>
-    <p>This template combines the elements southern California boardwalks where I would see lots of fancy dogs, foods, and people.</p>
+    <p>This page is one of three pages that utilize the Landing Page template. My first attempt at creating a flexible template, the focus is on exploring how to set up a WordPress site, the functionality of PHP, and injecting information from Advanced Custom Fields.</p>
+    <p>Rather than hardcoding the content, users can utilize Advanced Custom Fields and the WordPress editor to customize this template by changing the background image, page title, and card content. Here, I used the ACF and editor to highlight elements of southern California boardwalks where I would see lots of fancy dogs, excellent food, and interesting people.</p>
   </div> 
 
 
