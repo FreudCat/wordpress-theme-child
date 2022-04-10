@@ -7851,6 +7851,10 @@ textarea.form-control-lg {
     padding-top: 1em;
     padding-right: 2em; } }
 
+.btn.cart:hover, .btn.cart:active, .btn.cart:focus {
+  outline: 1px solid white;
+  box-shadow: none; }
+
 .cart .cart-amount-holder {
   justify-content: center;
   align-items: center;
@@ -7877,8 +7881,8 @@ textarea.form-control-lg {
       font-size: 1em; } }
   @media (min-width: 1400px) {
     .cart .cart-amount-holder {
-      top: 2em;
-      right: 6em; } }
+      top: 2.8em;
+      right: 7em; } }
   @media (min-width: 1900px) {
     .cart .cart-amount-holder {
       top: 3.4em;
@@ -8288,7 +8292,8 @@ textarea.form-control-lg {
     color: white; }
   .add-cart-button:active {
     opacity: 0.5;
-    color: white; }
+    color: white;
+    transform: translateY(2px); }
 
 @media only screen and (max-width: 900px) {
   .add-cart-div {

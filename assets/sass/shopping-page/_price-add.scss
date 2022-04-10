@@ -122,6 +122,7 @@
   &:active {
     opacity: 0.5;
     color: $light-background;
+    transform: translateY(2px);
   } 
 }
 
