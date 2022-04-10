@@ -7821,6 +7821,9 @@ textarea.form-control-lg {
       margin-bottom: 5em; } }
   .shopping-nav .shopping-nav-toggle {
     border: none; }
+    .shopping-nav .shopping-nav-toggle:focus, .shopping-nav .shopping-nav-toggle:active {
+      outline: 1px solid white;
+      box-shadow: none; }
   @media (min-width: 768px) {
     .shopping-nav .shopping-logo {
       width: 100%; } }
@@ -7883,7 +7886,7 @@ textarea.form-control-lg {
       font-size: 1.2em; } }
 
 .cart .svg-cart:hover {
-  fill: #000000; }
+  fill: #ff7d1a; }
 
 @media (min-width: 1024px) {
   .cart-svg {

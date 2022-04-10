@@ -10,6 +10,10 @@
   }
   .shopping-nav-toggle {
     border: none;
+    &:focus, &:active {
+      outline: 1px solid $light-background;
+      box-shadow: none;
+    }
   }
   .shopping-logo {
     @include media-breakpoint-up(md) {
@@ -76,7 +80,7 @@
   }
 }
 .svg-cart:hover{
-  fill: #000000;
+  fill: $button-and-outline;
 }
 }
 

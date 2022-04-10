@@ -829,7 +829,7 @@ button.close-nav-toggle {
       margin-top: 3em;
       margin-left: 2em;
       margin-right: 2em; } }
-  .container-fluid.nav-container .navbar-toggler {
+  .container-fluid.nav-container .sunny-nav-button {
     padding: 0;
     margin: 0; }
 
@@ -1014,7 +1014,7 @@ nav.navbar.transparent {
   padding: 0;
   background-color: transparent; }
 
-.navbar-toggler {
+.sunny-nav-button {
   padding: 10px 0 0 0; }
 
 section.sunny-sections {
