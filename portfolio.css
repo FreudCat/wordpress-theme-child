@@ -8959,6 +8959,14 @@ nav.navbar.portfolio-navbar {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid #b7e8db; }
+  nav.navbar.portfolio-navbar .portfolio-navlink {
+    border-bottom: 2px solid transparent; }
+    nav.navbar.portfolio-navbar .portfolio-navlink:focus, nav.navbar.portfolio-navbar .portfolio-navlink:hover {
+      border-bottom: 2px solid #af3557; }
+    nav.navbar.portfolio-navbar .portfolio-navlink:active {
+      border-bottom: 2px solid #fff200; }
+  nav.navbar.portfolio-navbar .portfolio-navlink.active {
+    border-bottom: 2px solid #fff200; }
 
 .portfolio-header {
   border-bottom: 1px solid #b7e8db;
@@ -9050,7 +9058,7 @@ p.portfolio-card-text {
   background: #2B2D42;
   background: linear-gradient(180deg, #2b2d42 2%, #af3557 100%); }
   .portfolio-footer .footer-icon {
-    color: #171717;
+    color: #676767;
     font-size: 3em; }
     @media (min-width: 425px) {
       .portfolio-footer .footer-icon {

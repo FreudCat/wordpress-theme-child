@@ -12,6 +12,18 @@ nav.navbar.portfolio-navbar {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid $card-outline;
+  .portfolio-navlink {
+    border-bottom: 2px solid transparent;
+    &:focus, &:hover {
+      border-bottom: 2px solid $inner-logo;
+    }
+    &:active {
+      border-bottom: 2px solid $link-active;
+    }
+  }
+  .portfolio-navlink.active {
+    border-bottom: 2px solid $link-active;
+  }
 }
 
 .portfolio-header {
@@ -118,7 +130,7 @@ p.portfolio-card-text {
   background: $main-background;
   background: linear-gradient(180deg, rgba(43,45,66,1) 2%, rgba(175,53,87,1) 100%);
   .footer-icon{
-    color: rgb(23, 23, 23);
+    color: rgb(103, 103, 103);
     font-size: 3em;
     @include media-breakpoint-up(smmd) {
       font-size: 3.2em;
