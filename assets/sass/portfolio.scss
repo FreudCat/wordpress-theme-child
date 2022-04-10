@@ -40,9 +40,6 @@ nav.navbar.portfolio-navbar {
   border-bottom: 1px solid $card-outline;
   margin-top: 5em;
   @include media-breakpoint-up(mid-lg) {
-    margin-top: 10em;
-  }
-  @include media-breakpoint-up(xl) {
     margin-top: 7em;
   }
   .portfolio-header-font {
@@ -100,7 +97,7 @@ p.portfolio-card-text {
   }
   @include media-breakpoint-up(lg) {
       width: 75%;
-   }
+  }
   @include media-breakpoint-up(xxl) {
     width: 50%;
   }
