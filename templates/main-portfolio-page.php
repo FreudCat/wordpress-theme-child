@@ -41,23 +41,23 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   </header>
   <main class="container">
     <div class="row portfolio-top-row">
-      <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
+      <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/sneaker-company')?>" target="_blank">
         <div class="mb-5 d-flex justify-content-center justify-content-md-end">
-          <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+          <div class="card portfolio-card border-2">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/ecommerce.PNG" class="card-img-top portfolio-card-image" alt="Sideview of tan, brown, and orange sneaker with flat tread placed onto of two flat rocks">
             <div class="card-body portfolio-card-body">
-              <p class="card-text portfolio-card-text">An uncomplicated page showcasing price packages for various activities.</p>
+              <p class="card-text portfolio-card-text">An example of an e-commerce site shopping site. Let's buy some shoes!</p>
             </div>
             <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
         </div>
       </a>
-      <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/sneaker-company')?>" target="_blank">
+      <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
         <div class="mb-5 d-flex justify-content-center justify-content-md-start">
-          <div class="card portfolio-card border-2">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/ecommerce.PNG" class="card-img-top portfolio-card-image" alt="Sideview of tan, brown, and orange sneaker with flat tread placed onto of two flat rocks">
+          <div class="card border-2 portfolio-card">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
             <div class="card-body portfolio-card-body">
-              <p class="card-text portfolio-card-text">An example of an e-commerce site shopping site. Let's buy some shoes!</p>
+              <p class="card-text portfolio-card-text">An uncomplicated page showcasing price packages for various activities.</p>
             </div>
             <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
