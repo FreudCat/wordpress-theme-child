@@ -13,7 +13,7 @@
 
 // Dynamic styles used in index.js
 .add-orange-outline {
-  outline: 2px solid $orange;
+  outline: 2px solid $button-and-outline;
 }
 .add-clear-outline {
   outline: 2px solid transparent;
@@ -47,8 +47,8 @@
 
   &:not(.collapsed) {
     width: 35%;
-    color: $white; 
-    background-color: $orange;
+    color: $light-background; 
+    background-color: $button-and-outline;
     @include media-breakpoint-up(md) {
       width: 20%;
     }
@@ -76,7 +76,7 @@
     font-size: 1em;
     font-weight: 800;
     margin-bottom: 0.5em;
-    color: $black;
+    color: $dark-font;
   }
 }
 
@@ -99,19 +99,19 @@
     border: none;
   }
   .thankyou-body {
-    background-color: $white;
+    background-color: $light-background;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
   .thankyou-footer {
-    background-color: $white;
+    background-color: $light-background;
   }
   .thankyou-button {
-    background-color: $orange;
+    background-color: $button-and-outline;
     font-family: $shopping-font;
     font-weight: 600;
     font-size: 1em;
-    color: $white;
+    color: $light-background;
     border-radius: 10px;
     &:active {
       opacity: 0.5;
@@ -128,7 +128,7 @@
 .thank-you {
   font-family: $shopping-font;
   font-weight: 400;
-  color: $dark-gray-blue;
+  color: $text-color;
 }
 
 
@@ -147,7 +147,7 @@
   position: absolute;
   height: 2.5em;
   width: 2.5em;
-  background-color: $white;
+  background-color: $light-background;
   opacity: 1;
   border-radius: 50px;
   top: 50%;
@@ -159,12 +159,12 @@
   &:hover, &:focus, &:active {
     opacity: 1;
     .svg-on-hover {
-      stroke: $orange;
+      stroke: $button-and-outline;
     }
   }
   @media only screen and (min-width: $shopping-desktop) {
     position: absolute;
-    background-color: $white;
+    background-color: $light-background;
     opacity: 1;
     border-radius: 50px;
     top: 43%;
@@ -175,7 +175,7 @@
   }
   @media only screen and (max-width: $shopping-desktop) {
     position: absolute;
-    background-color: $white;
+    background-color: $light-background;
     border-radius: 50px;
     opacity: 1;
     height: 2.5em;
@@ -190,12 +190,12 @@
   &:hover, &:focus, &:active {
     opacity: 1;
     .svg-on-hover {
-      stroke: $orange;
+      stroke: $button-and-outline;
     }
   }
   @media only screen and (min-width: $shopping-desktop) {
     position: absolute;
-    background-color: $white;
+    background-color: $light-background;
     opacity: 1;
     border-radius: 50px;
     top: 43%;
@@ -232,7 +232,7 @@
 
 .close-svg {
   &:hover {
-    fill: $orange;
+    fill: $button-and-outline;
   }
 }
 

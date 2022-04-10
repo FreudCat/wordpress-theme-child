@@ -1,10 +1,7 @@
-
-
-
 .container.dropdown-menu {
   width: 95%;
   border-radius: 10px;
-  box-shadow: 0 15px 55px -25px $dark-gray-blue;
+  box-shadow: 0 15px 55px -25px #727A88;
   border: none;
   transform: translate(2.5%, 2.5%);
   @include media-breakpoint-up(sm) {
@@ -51,13 +48,13 @@
     border-radius: 5px;
   }
   .checkout-button {
-    background-color: $orange;
+    background-color: $button-and-outline;
     border-radius: 10px;
     font-family: $shopping-font;
     text-align: center;
     font-size: 1em;
     font-weight: 600;
-    color: $white;
+    color: $light-background;
     @include media-breakpoint-up(xl) {
       font-size: 1.5em;
     }
@@ -100,14 +97,14 @@
     }
     .cart-item-total {
       font-weight: 700;
-      color: $black;
+      color: $dark-font;
     }
   }
   .empty-text {
     font-size: 1em;
     font-weight: 700;
     font-family: $shopping-font;
-    color: $dark-gray-blue;
+    color: $text-color;
     @include media-breakpoint-up(xl) {
       font-size: 1.5em;
     }
@@ -132,7 +129,7 @@
 }
 .delete-button:hover  {
   .delete-path {
-    fill: $orange;
+    fill: $button-and-outline;
   }
 }
 

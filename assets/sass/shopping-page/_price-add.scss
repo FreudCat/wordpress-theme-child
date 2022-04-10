@@ -1,6 +1,6 @@
 .current-price {
   font-family: $shopping-font;
-  color: $black;
+  color: $dark-font;
   font-size: 1.4em;
   font-weight: 700;
   margin-bottom: 0.2em;
@@ -13,8 +13,8 @@
 }
 
 .sale-tag {
-  background-color: $pale-orange;
-  color: $orange;
+  background-color: #ffede0;
+  color: $button-and-outline;
   font-family: $shopping-font;
   font-size: 1em;
   font-weight: 700;
@@ -27,7 +27,7 @@
 
 .previous-price {
   font-family: $shopping-font;
-  color: $gray-blue;
+  color: #B6BCC8;
   font-size: 0.9em;
   text-decoration: line-through;
   font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 .minus {
-  background-color: $light-gray-blue;
+  background-color: $price-background;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   .minus-box {
@@ -58,7 +58,7 @@
 }
 
 .plus {
-  background-color: $light-gray-blue;
+  background-color: $price-background;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   .plus-box {
@@ -80,7 +80,7 @@
 
 
 .amount {
-  background-color: $light-gray-blue;
+  background-color: $price-background;
   .number-box {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -106,10 +106,10 @@
 }
 
 .add-cart-button {
-  background-color: $orange;
+  background-color: $button-and-outline;
   font-family: $shopping-font;
   font-weight: 600;
-  color: $white;
+  color: $light-background;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   border-radius: 10px;
@@ -117,11 +117,11 @@
     font-size: 1.8em;
   }
   &:hover {
-    color: $white;
+    color: $light-background;
   }
   &:active {
     opacity: 0.5;
-    color: $white;
+    color: $light-background;
   } 
 }
 
@@ -130,6 +130,6 @@
   margin-bottom: 6em;
   }
 .add-cart-button {
-  box-shadow: 0 30px 50px -20px $orange;
+  box-shadow: 0 30px 50px -20px $button-and-outline;
 }
 }

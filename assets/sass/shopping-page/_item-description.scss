@@ -9,7 +9,7 @@
 .information-row {
   .title {
     font-family: $shopping-font;
-    color: $orange;
+    color: $button-and-outline;
     text-transform: uppercase;
     font-size: 0.7em;
     font-weight: 800;
@@ -35,7 +35,7 @@
   .shoe-name {
     margin-top: 0.4em;
     font-family: $shopping-font;
-    color: $black;
+    color: $dark-font;
     font-size: 1.8em;
     font-weight: 800;
     @include media-breakpoint-up(md) {
@@ -61,7 +61,7 @@
   .description {
     margin-top: 1em;
     font-family: $shopping-font;
-    color: $dark-gray-blue;
+    color: $text-color;
     font-size: 0.9em;
     font-weight: 500;
     line-height: 1.7em;
