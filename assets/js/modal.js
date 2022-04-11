@@ -13,7 +13,7 @@ for (let image of galleryImage) {
 }
 
 function populateModal(selectedImage) {
-  document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;&nbsp;${selectedImage.alt}&nbsp;&nbsp;&nbsp;`;
+  document.querySelector("figcaption").innerHTML = `${selectedImage.alt}`;
   document.querySelector("#image-for-modal").src = selectedImage.src;
   indexOfImage=srcArray.indexOf(selectedImage.src);
   return indexOfImage;
@@ -36,7 +36,7 @@ function newImage(indexOfNewImage) {
     indexOfNewImage = galleryImage.length-1;
     newSelectedImage = galleryImage[indexOfNewImage];
     console.log(`new selected image ${newSelectedImage.alt}`);
-    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;`;
+    document.querySelector("figcaption").innerHTML = `${newSelectedImage.alt}`;
     document.querySelector("#image-for-modal").src = newSelectedImage.src;
   }
   if (indexOfNewImage >= galleryImage.length) {
@@ -44,13 +44,14 @@ function newImage(indexOfNewImage) {
     indexOfNewImage = 0;
     newSelectedImage = galleryImage[indexOfNewImage];
     console.log(`new selected image ${newSelectedImage.alt}`);
-    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;`;
+    document.querySelector("figcaption").innerHTML = `${newSelectedImage.alt}`;
     document.querySelector("#image-for-modal").src = newSelectedImage.src;
   }
   else {
     newSelectedImage = galleryImage[indexOfNewImage];
     console.log(`new selected image ${newSelectedImage.alt}`);
-    document.querySelector("figcaption").innerHTML = `&nbsp;&nbsp;${newSelectedImage.alt}&nbsp;&nbsp;`;
+    document.querySelector("figcaption").innerHTML = `${newSelectedImage.alt}`;
     document.querySelector("#image-for-modal").src = newSelectedImage.src;
   }
+  document.querySelector("#image-for-modal").classList.add
 }

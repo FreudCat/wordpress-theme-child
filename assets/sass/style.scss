@@ -202,6 +202,18 @@ $large-screen-breakpoint: 1200px; // 1025px — 1200px // larger is greater 
   }
 }
 
+.gallery-header {
+	background: #551313;
+	.gallery-header-text {
+		font-size: 0.7em;
+		font-weight: normal;
+		padding-top: 1em;
+		margin: 0 0 0 1em;
+		padding-bottom: 1em;
+		color: rgb(245, 243, 243);
+	}
+}
+
 @media only screen and (max-width: $large-screen-breakpoint) {
 	.image-holder {
 		display: flex;
@@ -323,24 +335,30 @@ button.close-nav-toggle {
 		max-width:100%;
 		max-height: 70vh;
 		margin: auto;
-		box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.7),
+		box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.7);
+		opacity: 0.0;
+		transition: opacity linear 0.5s;
   }
 	figcaption {
 		text-align: center;
 		font-size: 1em;
+		width: 80%;
 		color: #fff;
 		display: inline-block;
+		padding: 0 7px 0 7px;
 		@media only screen and (max-width: $mobile-breakpoint) {
 			font-size: 0.8em;
 		}
 	}
 }
+
+
 // End modal styles
 
 // Carousel styles------------------------------------------------------------
 .caption-button-holder {
 	display: inline-block;
-	width: auto;
+	width: 100%;
 	text-align: center;
 	@media only screen and (max-width: $large-screen-breakpoint) {
 		margin-top: 1em;

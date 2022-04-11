@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Gallery Page Static */
-get_header();
+get_header('gallery');
 get_template_part( 'template-parts/modal-image' );
 ?>
 
