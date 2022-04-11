@@ -57,14 +57,13 @@ get_template_part( 'template-parts/modal-image' );
 
       <button class="toggle close-nav-toggle" data-toggle-target=".image-modal" data-toggle-body-class="showing-image-modal" aria-expanded="false" data-set-focus=".image-modal">Close</button>
         <figure class="modal-image fade"> 
-        <img id="image-for-modal" src="">
+        <img id="image-for-modal" src="">  
         <div class="caption-button-holder">
           <p class="previous">&#10094;</p>
           <figcaption></figcaption>
           <p class="next">&#10095;</p>
-        </div>  
+        </div>
         </figure>
-
       </div>
     </div>
   </div>
