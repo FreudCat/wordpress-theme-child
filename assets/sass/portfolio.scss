@@ -24,15 +24,22 @@ nav.navbar.portfolio-navbar {
     @include media-breakpoint-up(mid-lg) {
       font-size: 1.5em;
     }
-    &:focus, &:hover {
+  }
+  .portfolio-navlink.about {
+    &:focus, &:hover, &:active {
       border-bottom: 2px solid $inner-logo;
     }
-    &:active {
+  }
+  .portfolio-navlink.home {
+    &:focus, &:hover, &:active {
       border-bottom: 2px solid $link-active;
     }
   }
-  .portfolio-navlink.active {
+  .home.active {
     border-bottom: 2px solid $link-active;
+  }
+  .about.active {
+    border-bottom: 2px solid $inner-logo;
   }
 }
 
@@ -192,5 +199,86 @@ p.portfolio-card-text {
     }
   }
 }
+
+// About Page Styles
+
+.about-header {
+  border-bottom: 1px solid $card-outline;
+  margin-top: 5em;
+}
+
+.about-image-holder {
+  display: grid;
+  padding: 0 1.5rem;  
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1rem auto;
+  margin: auto;
+  position: relative;
+  box-shadow: 0.75rem -0.5rem 0 $link-active, 0 -0.5rem 0 $inner-logo,
+    -0.8rem -1em 0 $card-outline;
+  .about-image {
+    max-width: 100%;
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+  .about-header-text {
+    margin: 0;
+    grid-column: 1 / 5;
+    grid-row: 2 / span 1;
+    align-self: center;
+    padding: 0.25em;
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Major Mono Display", monospace;
+    color: $light-grey;
+  }
+}
+
+// @supports displays the following styles if the user's browser can support it. 
+// clip-path determines what portion of the image is displayed
+@supports (clip-path: circle(25%)) {
+  .about-image-holder {
+    clip-path: circle(0%);
+    animation: circle-grow 2000ms 450ms forwards;
+
+    &:hover .artist-card__img {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+    }
+  }
+  .about-image {
+    clip-path: polygon(
+      18.11% 16.5%,
+      50% 0%,
+      75% 50%,
+      54.09% 90.44%,
+      13.7% 63.94%
+    );
+    transition: clip-path 400ms ease-in-out;
+  }
+  .about-header-text {
+    clip-path: inset(50% 50%);
+    animation: heading-in 400ms 1000ms forwards;
+  }
+}
+
+@keyframes circle-grow {
+  to {
+    clip-path: circle(100%);
+  }
+}
+
+@keyframes heading-in {
+  to {
+    clip-path: inset(0% 0%);
+  }
+}
+
+
+
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

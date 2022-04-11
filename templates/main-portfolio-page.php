@@ -19,23 +19,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   }
 ?>
 <body class="portfolio-body">
-  <nav class="navbar navbar-expand navbar-dark pb-0 portfolio-navbar">
-    <div class="container-fluid d-flex align-items-end">
-      <a class="navbar-brand" href="#">
-        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/nav-logo.png" alt="logo" class="d-inline-block align-text-top logo-image">
-      </a>
-      <div id="navbarNav">
-        <ul class="navbar-nav me-mid-lg-5">
-          <li class="nav-item">
-            <a class="nav-link pb-3 pb-mid-lg-4 portfolio-navlink active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pb-3 pb-mid-lg-4 portfolio-navlink" href="<? echo home_url('/about')?>">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php get_template_part( 'template-parts/portfolio-nav' );?>
   <header class="portfolio-header mb-5">
     <h1 class="text-center py-5 portfolio-header-font">Landing Page Examples</h1>
   </header>

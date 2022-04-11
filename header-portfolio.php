@@ -1,6 +1,6 @@
 <?php
 /**
- * Header file for the main portfolio page.
+ * Header file for the main portfolio pages.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *

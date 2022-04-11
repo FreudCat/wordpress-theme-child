@@ -8970,12 +8970,14 @@ nav.navbar.portfolio-navbar {
     @media (min-width: 1200px) {
       nav.navbar.portfolio-navbar .portfolio-navlink {
         font-size: 1.5em; } }
-    nav.navbar.portfolio-navbar .portfolio-navlink:focus, nav.navbar.portfolio-navbar .portfolio-navlink:hover {
-      border-bottom: 2px solid #af3557; }
-    nav.navbar.portfolio-navbar .portfolio-navlink:active {
-      border-bottom: 2px solid #fff200; }
-  nav.navbar.portfolio-navbar .portfolio-navlink.active {
+  nav.navbar.portfolio-navbar .portfolio-navlink.about:focus, nav.navbar.portfolio-navbar .portfolio-navlink.about:hover, nav.navbar.portfolio-navbar .portfolio-navlink.about:active {
+    border-bottom: 2px solid #af3557; }
+  nav.navbar.portfolio-navbar .portfolio-navlink.home:focus, nav.navbar.portfolio-navbar .portfolio-navlink.home:hover, nav.navbar.portfolio-navbar .portfolio-navlink.home:active {
     border-bottom: 2px solid #fff200; }
+  nav.navbar.portfolio-navbar .home.active {
+    border-bottom: 2px solid #fff200; }
+  nav.navbar.portfolio-navbar .about.active {
+    border-bottom: 2px solid #af3557; }
 
 .portfolio-header {
   border-bottom: 1px solid #b7e8db;
@@ -9113,6 +9115,58 @@ p.portfolio-card-text {
     color: #B1B1B3; }
     .portfolio-footer .portfolio-navlink:hover, .portfolio-footer .portfolio-navlink:focus {
       color: #FFFFFF; }
+
+.about-header {
+  border-bottom: 1px solid #b7e8db;
+  margin-top: 5em; }
+
+.about-image-holder {
+  display: grid;
+  padding: 0 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1rem auto;
+  margin: auto;
+  position: relative;
+  box-shadow: 0.75rem -0.5rem 0 #fff200, 0 -0.5rem 0 #af3557, -0.8rem -1em 0 #b7e8db; }
+  .about-image-holder .about-image {
+    max-width: 100%;
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    align-self: center; }
+  .about-image-holder .about-header-text {
+    margin: 0;
+    grid-column: 1 / 5;
+    grid-row: 2 / span 1;
+    align-self: center;
+    padding: 0.25em;
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Major Mono Display", monospace;
+    color: #F7F7F9; }
+
+@supports (clip-path: circle(25%)) {
+  .about-image-holder {
+    clip-path: circle(0%);
+    animation: circle-grow 2000ms 450ms forwards; }
+    .about-image-holder:hover .artist-card__img {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%); }
+  .about-image {
+    clip-path: polygon(18.11% 16.5%, 50% 0%, 75% 50%, 54.09% 90.44%, 13.7% 63.94%);
+    transition: clip-path 400ms ease-in-out; }
+  .about-header-text {
+    clip-path: inset(50% 50%);
+    animation: heading-in 400ms 1000ms forwards; } }
+
+@keyframes circle-grow {
+  to {
+    clip-path: circle(100%); } }
+
+@keyframes heading-in {
+  to {
+    clip-path: inset(0% 0%); } }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
