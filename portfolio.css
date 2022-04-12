@@ -8966,18 +8966,18 @@ nav.navbar.portfolio-navbar {
       nav.navbar.portfolio-navbar .logo-image {
         width: 50px; } }
   nav.navbar.portfolio-navbar .portfolio-navlink {
-    border-bottom: 2px solid transparent; }
+    border-bottom: 3px solid transparent; }
     @media (min-width: 1200px) {
       nav.navbar.portfolio-navbar .portfolio-navlink {
         font-size: 1.5em; } }
   nav.navbar.portfolio-navbar .portfolio-navlink.about:focus, nav.navbar.portfolio-navbar .portfolio-navlink.about:hover, nav.navbar.portfolio-navbar .portfolio-navlink.about:active {
-    border-bottom: 2px solid #af3557; }
+    border-bottom: 3px solid #af3557; }
   nav.navbar.portfolio-navbar .portfolio-navlink.home:focus, nav.navbar.portfolio-navbar .portfolio-navlink.home:hover, nav.navbar.portfolio-navbar .portfolio-navlink.home:active {
-    border-bottom: 2px solid #fff200; }
+    border-bottom: 3px solid #fff200; }
   nav.navbar.portfolio-navbar .home.active {
-    border-bottom: 2px solid #fff200; }
+    border-bottom: 3px solid #fff200; }
   nav.navbar.portfolio-navbar .about.active {
-    border-bottom: 2px solid #af3557; }
+    border-bottom: 3px solid #af3557; }
 
 .portfolio-header {
   border-bottom: 1px solid #b7e8db;
@@ -9167,6 +9167,15 @@ p.portfolio-card-text {
 @keyframes heading-in {
   to {
     clip-path: inset(0% 0%); } }
+
+.about-body-text {
+  color: #F7F7F9;
+  font-size: 1.5em; }
+
+.about-bold-text {
+  color: #b7e8db;
+  font-size: 2em;
+  border-bottom: 1px solid #fff200; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

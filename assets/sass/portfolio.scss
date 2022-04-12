@@ -20,26 +20,26 @@ nav.navbar.portfolio-navbar {
     } 
   }
   .portfolio-navlink {
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     @include media-breakpoint-up(mid-lg) {
       font-size: 1.5em;
     }
   }
   .portfolio-navlink.about {
     &:focus, &:hover, &:active {
-      border-bottom: 2px solid $inner-logo;
+      border-bottom: 3px solid $inner-logo;
     }
   }
   .portfolio-navlink.home {
     &:focus, &:hover, &:active {
-      border-bottom: 2px solid $link-active;
+      border-bottom: 3px solid $link-active;
     }
   }
   .home.active {
-    border-bottom: 2px solid $link-active;
+    border-bottom: 3px solid $link-active;
   }
   .about.active {
-    border-bottom: 2px solid $inner-logo;
+    border-bottom: 3px solid $inner-logo;
   }
 }
 
@@ -275,6 +275,16 @@ p.portfolio-card-text {
   to {
     clip-path: inset(0% 0%);
   }
+}
+
+.about-body-text {
+  color: $light-grey;
+  font-size: 1.5em;
+}
+.about-bold-text {
+  color: $card-outline;
+  font-size: 2em;
+  border-bottom: 1px solid $link-active;
 }
 
 
