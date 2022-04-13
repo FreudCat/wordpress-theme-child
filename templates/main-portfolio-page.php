@@ -36,17 +36,17 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           </div>
         </div>
       </a>
-      <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
-        <div class="mb-5 d-flex justify-content-center justify-content-md-start">
-          <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
-            <div class="card-body portfolio-card-body">
-              <p class="card-text portfolio-card-text">An uncomplicated page showcasing price packages for various activities.</p>
+      <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/swervy-landing-page')?>" target="_blank">
+          <div class="mb-5 d-flex justify-content-center justify-content-md-start">
+            <div class="card border-2 portfolio-card">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+              <div class="card-body portfolio-card-body">
+                <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
+              </div>
+              <div class="card-corner"><div class="corner-arrow">→</div></div>
             </div>
-            <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
-        </div>
-      </a>
+        </a>
     </div>
       <div class="row">
         <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/photo-gallery')?>" target="_blank">
@@ -73,17 +73,18 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </a>
       </div>
       <div class="row">
-        <a class="card-link-text col-xs-12 offset-md-3 col-md-6" href="<? echo home_url('/swervy-landing-page')?>" target="_blank">
-          <div class="mb-5 d-flex justify-content-center">
-            <div class="card border-2 portfolio-card">
-              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
-              <div class="card-body portfolio-card-body">
-                <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
-              </div>
-              <div class="card-corner"><div class="corner-arrow">→</div></div>
+      <a class="card-link-text col-xs-12 offset-md-3 col-md-6" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
+        <div class="mb-5 d-flex justify-content-center">
+          <div class="card border-2 portfolio-card">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+            <div class="card-body portfolio-card-body">
+              <p class="card-text portfolio-card-text">An oldie but goodie - my first landing page. An uncomplicated page showcasing price packages for various activities.</p>
             </div>
+            <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
-        </a>
+        </div>
+      </a>
+        
       </div>
     </div>
   </main>
