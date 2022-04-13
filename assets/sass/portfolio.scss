@@ -205,8 +205,17 @@ p.portfolio-card-text {
 .about-header {
   border-bottom: 1px solid $card-outline;
   margin-top: 5em;
+  @include media-breakpoint-up(md) {
+    margin-top: 9em;
+    margin-bottom: 5em; 
+  }
 }
 
+.about-row {
+  @include media-breakpoint-up(md) {
+    max-width: 75%;
+  }
+}
 .about-image-holder {
   display: grid;
   padding: 0 1.5rem;  
@@ -235,6 +244,15 @@ p.portfolio-card-text {
     text-align: center;
     font-family: "Major Mono Display", monospace;
     color: $light-grey;
+    @include media-breakpoint-up(md) {
+      font-size: 3em;
+    }
+  }
+}
+
+.about-content-row {
+  @include media-breakpoint-up(md) {
+    margin-bottom: 20em;
   }
 }
 

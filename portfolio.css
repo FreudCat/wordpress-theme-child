@@ -9119,6 +9119,14 @@ p.portfolio-card-text {
 .about-header {
   border-bottom: 1px solid #b7e8db;
   margin-top: 5em; }
+  @media (min-width: 768px) {
+    .about-header {
+      margin-top: 9em;
+      margin-bottom: 5em; } }
+
+@media (min-width: 768px) {
+  .about-row {
+    max-width: 75%; } }
 
 .about-image-holder {
   display: grid;
@@ -9146,6 +9154,13 @@ p.portfolio-card-text {
     text-align: center;
     font-family: "Major Mono Display", monospace;
     color: #F7F7F9; }
+    @media (min-width: 768px) {
+      .about-image-holder .about-header-text {
+        font-size: 3em; } }
+
+@media (min-width: 768px) {
+  .about-content-row {
+    margin-bottom: 20em; } }
 
 @supports (clip-path: circle(25%)) {
   .about-image-holder {
