@@ -78,7 +78,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
             <div class="card-body portfolio-card-body">
-              <p class="card-text portfolio-card-text">An oldie but goodie - my first landing page. An uncomplicated page showcasing price packages for various activities.</p>
+              <p class="card-text portfolio-card-text">An oldie! An uncomplicated landing page showcasing price packages.</p>
             </div>
             <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
