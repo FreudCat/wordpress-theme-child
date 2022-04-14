@@ -1,9 +1,14 @@
+
 @import "shopping-page/variables";
 @import "shopping-page/header";
 @import "shopping-page/header-menus";
 @import "shopping-page/main-image-thumbnails";
 @import "shopping-page/item-description";
 @import "shopping-page/price-add";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
 
 
 // Main Portfolio Page styles------------------------------------------------------
@@ -339,7 +344,7 @@ p.portfolio-card-text {
 
 // End dynamic styles 
 
-.accordion-button {
+.accordion-button.shopping-accordion {
   width: 35%;
   font-family: $shopping-font; 
   background-color: lightgrey;
@@ -542,4 +547,8 @@ p.portfolio-card-text {
 .next-svg {
   margin-left: 0.8em;
 }
+
+
 // End ecommerce styles-------------------------------------------------------------------
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -79,7 +79,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       <div class="accordion accordion-flush" id="abstract-accordion">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ABSTRACT</button>
+            <button class="accordion-button shopping-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ABSTRACT</button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#abstract-accordion">
             <div class="accordion-body">
