@@ -1,0 +1,545 @@
+@import "shopping-page/variables";
+@import "shopping-page/header";
+@import "shopping-page/header-menus";
+@import "shopping-page/main-image-thumbnails";
+@import "shopping-page/item-description";
+@import "shopping-page/price-add";
+
+
+// Main Portfolio Page styles------------------------------------------------------
+.portfolio-body  {
+  background-color: $main-background;
+  font-family: $portfolio-font;
+}
+
+nav.navbar.portfolio-navbar {
+  background-color: $main-background;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid $card-outline;
+  .logo-image {
+    width: 30px; 
+    height: auto;
+    @include media-breakpoint-up(mid-lg) {
+      width: 50px;
+    } 
+  }
+  .portfolio-navlink {
+    border-bottom: 3px solid transparent;
+    @include media-breakpoint-up(mid-lg) {
+      font-size: 1.5em;
+    }
+  }
+  .portfolio-navlink.about {
+    &:focus, &:hover, &:active {
+      border-bottom: 3px solid $inner-logo;
+    }
+  }
+  .portfolio-navlink.home {
+    &:focus, &:hover, &:active {
+      border-bottom: 3px solid $link-active;
+    }
+  }
+  .home.active {
+    border-bottom: 3px solid $link-active;
+  }
+  .about.active {
+    border-bottom: 3px solid $inner-logo;
+  }
+}
+
+.portfolio-header {
+  border-bottom: 1px solid $card-outline;
+  margin-top: 5em;
+  @include media-breakpoint-up(mid-lg) {
+    margin-top: 7em;
+  }
+  .portfolio-header-font {
+    color: $light-grey;
+    font-size: 3em;
+  }
+}
+
+.row.portfolio-top-row {
+  @include media-breakpoint-up(lg) {
+    margin-top: 100px; 
+  }
+}
+
+img.portfolio-card-image {
+  height: 165px;
+  @include media-breakpoint-up(sm) {
+    height: 200px; 
+  }
+  @include media-breakpoint-up(md) {
+    height: 250px; 
+  }
+  @include media-breakpoint-up(mid-lg) {
+    height: 275px; 
+  }
+  @include media-breakpoint-up(xl) {
+    height: 325px; 
+  }
+}
+
+p.portfolio-card-text {
+  font-size: 1.5em;
+  @include media-breakpoint-up(md) {
+    font-size: 2.2em;
+  }
+}
+
+.card-link-text {
+  text-decoration: none;
+  color: black;
+  &:hover, &:focus {
+    color: black;
+  }
+}
+
+.card.portfolio-card {
+  width: 75%; 
+  border-color: $card-outline;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  @include media-breakpoint-up(md) {
+    width: 90%;
+  }
+  @include media-breakpoint-up(lg) {
+      width: 75%;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 50%;
+  }
+  .portfolio-card-body {
+    height: 87.5px;
+    @include media-breakpoint-up(md) {
+      height: 120px;
+    }
+  }
+  .card-corner {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.3s;
+    top: 0;
+    right: -24px;
+    height: 100%;
+    width: 33px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(8deg);
+    margin-right: -36px;
+    align-items: start;
+    background-color: $inner-logo;
+    @include media-breakpoint-up(sm) {
+    right: -21px;
+    }
+    @include media-breakpoint-up(md) {
+      margin-right: -40px;
+      right: -26px;
+      width: 40px;
+    }
+    @include media-breakpoint-up(mid-lg) {
+      right: -30px; 
+      margin-right: -60px;
+      width: 45px;
+    }
+    @include media-breakpoint-up(xl) {
+      right: -26px; 
+      margin-right: -60px;
+      width: 45px;
+    }
+  }
+  .corner-arrow {
+    position: absolute;
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 0px;
+    opacity: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    transition: 0.3s;
+  }
+  &:hover {
+    .card-corner {
+      margin-right: -4px;
+    }
+    .corner-arrow {
+      opacity: 1;
+    }
+    border: 1px solid $inner-logo;
+  }
+}
+
+.portfolio-footer {
+  background: $main-background;
+  background: linear-gradient(180deg, rgba(43,45,66,1) 2%, rgba(175,53,87,1) 100%);
+  .footer-icon{
+    color: rgb(103, 103, 103);
+    font-size: 3em;
+    @include media-breakpoint-up(smmd) {
+      font-size: 3.2em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 5em;
+    }
+    @include media-breakpoint-up(mid-lg) {
+      font-size: 3em;
+    }
+    &:hover, &:focus {
+      color: $link-hover;
+    }
+  }
+  .portfolio-navlink {
+    color: $link-color;
+    &:hover, &:focus {
+      color: $link-hover;
+    }
+  }
+}
+
+// About Page Styles
+
+.about-header {
+  border-bottom: 1px solid $card-outline;
+  margin-top: 5em;
+  @include media-breakpoint-up(md) {
+    margin-top: 9em;
+    margin-bottom: 5em; 
+  }
+}
+
+.about-row {
+  @include media-breakpoint-up(md) {
+    max-width: 75%;
+  }
+}
+.about-image-holder {
+  display: grid;
+  padding: 0 1.5rem;  
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1rem auto;
+  margin: auto;
+  position: relative;
+  box-shadow: 0.75rem -0.5rem 0 $link-active, 0 -0.5rem 0 $inner-logo,
+    -0.8rem -1em 0 $card-outline;
+  .about-image {
+    max-width: 100%;
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+  .about-header-text {
+    margin: 0;
+    grid-column: 1 / 5;
+    grid-row: 2 / span 1;
+    align-self: center;
+    padding: 0.25em;
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Major Mono Display", monospace;
+    color: $light-grey;
+    @include media-breakpoint-up(md) {
+      font-size: 3em;
+    }
+  }
+}
+
+.about-content-row {
+  @include media-breakpoint-up(md) {
+    margin-bottom: 20em;
+  }
+}
+
+// @supports displays the following styles if the user's browser can support it. 
+// clip-path determines what portion of the image is displayed
+@supports (clip-path: circle(25%)) {
+  .about-image-holder {
+    clip-path: circle(0%);
+    animation: circle-grow 2000ms 450ms forwards;
+
+    &:hover .artist-card__img {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+    }
+  }
+  .about-image {
+    clip-path: polygon(
+      18.11% 16.5%,
+      50% 0%,
+      75% 50%,
+      54.09% 90.44%,
+      13.7% 63.94%
+    );
+    transition: clip-path 400ms ease-in-out;
+  }
+  .about-header-text {
+    clip-path: inset(50% 50%);
+    animation: heading-in 400ms 1000ms forwards;
+  }
+}
+
+@keyframes circle-grow {
+  to {
+    clip-path: circle(100%);
+  }
+}
+
+@keyframes heading-in {
+  to {
+    clip-path: inset(0% 0%);
+  }
+}
+
+.about-body-text {
+  color: $light-grey;
+  font-size: 1.5em;
+}
+.about-bold-text {
+  color: $card-outline;
+  font-size: 2em;
+  border-bottom: 1px solid $link-active;
+}
+// End Main Portfolio Styles-------------------------------------------------------------
+
+// Ecommerce Styles----------------------------------------------------------------------
+// Dynamic styles used in index.js
+.add-orange-outline {
+  outline: 2px solid $button-and-outline;
+}
+.add-clear-outline {
+  outline: 2px solid transparent;
+}
+.opaque {
+  opacity: 1;
+}
+
+.less-opaque {
+  opacity: 0.3;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+// End dynamic styles 
+
+.accordion-button {
+  width: 35%;
+  font-family: $shopping-font; 
+  background-color: lightgrey;
+  font-weight: 800;
+  font-size: 0.5em;
+  padding: 0.5em;
+  margin-left: 0; 
+
+  &:not(.collapsed) {
+    width: 35%;
+    color: $light-background; 
+    background-color: $button-and-outline;
+    @include media-breakpoint-up(md) {
+      width: 20%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 15%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    width: 20%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 15%;
+  }
+}
+
+.accordion-body {
+  box-shadow: 0px 13px 35px -1px rgba(60,60,60,0.2);
+}
+
+.offcanvas.shopping {
+  width: 66%;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2); 
+  .offcanvas-link {
+    font-family: $shopping-font;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: $dark-font;
+  }
+}
+
+.modal-backdrop {
+  z-index: 2;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.main-image-button {
+  padding: 0;
+}
+
+.thankyou-content {
+  background-color: transparent;
+  border: none;
+  .thankyou-header {
+    border: none;
+  }
+  .thankyou-body {
+    background-color: $light-background;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .thankyou-footer {
+    background-color: $light-background;
+  }
+  .thankyou-button {
+    background-color: $button-and-outline;
+    font-family: $shopping-font;
+    font-weight: 600;
+    font-size: 1em;
+    color: $light-background;
+    border-radius: 10px;
+    &:active {
+      opacity: 0.5;
+      border: none;
+    }
+  }
+}
+
+.add-cart-text {
+  font-family: $shopping-font;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.thank-you {
+  font-family: $shopping-font;
+  font-weight: 400;
+  color: $text-color;
+}
+
+
+.shoe-modal-content {
+  background-color: transparent;
+  border: none;
+  .modal-image {
+    border-radius: 15px;
+  }
+  .modal-thumbnail-row {
+    margin-top: 2em;
+  }
+}
+
+.carousel-control-next {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: $light-background;
+  opacity: 1;
+  border-radius: 50px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  &:hover, &:focus, &:active {
+    opacity: 1;
+    .svg-on-hover {
+      stroke: $button-and-outline;
+    }
+  }
+  @media only screen and (min-width: $shopping-desktop) {
+    position: absolute;
+    background-color: $light-background;
+    opacity: 1;
+    border-radius: 50px;
+    top: 43%;
+    height: 3.2em;
+    width: 3.2em;
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
+  }
+  @media only screen and (max-width: $shopping-desktop) {
+    position: absolute;
+    background-color: $light-background;
+    border-radius: 50px;
+    opacity: 1;
+    height: 2.5em;
+    width: 2.5em;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.carousel-control-next {
+  &:hover, &:focus, &:active {
+    opacity: 1;
+    .svg-on-hover {
+      stroke: $button-and-outline;
+    }
+  }
+  @media only screen and (min-width: $shopping-desktop) {
+    position: absolute;
+    background-color: $light-background;
+    opacity: 1;
+    border-radius: 50px;
+    top: 43%;
+    height: 3.2em;
+    width: 3.2em;
+  -ms-transform: translateX(45%);
+  transform: translateX(45%);
+}
+@media only screen and (max-width: $shopping-desktop) {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+}
+.modal-thumbnail-div {
+  width: 20%;
+  border-radius: 13px;
+  background-color: white;
+  .modal-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+    &:hover, &:focus, &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.next-svg, .prev-svg {
+  overflow: visible;
+}
+
+.close-svg {
+  &:hover {
+    fill: $button-and-outline;
+  }
+}
+
+.next-svg {
+  margin-left: 0.8em;
+}
+// End ecommerce styles-------------------------------------------------------------------
