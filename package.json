@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -w assets/sass/style.scss  -o ./ --recursive",
-    "shoe-sass": "node-sass -w assets/sass/shoe-style.scss  -o ./ --recursive",
-    "portfolio-sass": "node-sass -w assets/sass/portfolio.scss  -o ./ --recursive"
+    "custom-bootstrap": "node-sass -w assets/sass/custom.scss -o ./ --recursive"
   },
   "author": "",
   "license": "ISC",

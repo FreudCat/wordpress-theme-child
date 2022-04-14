@@ -1,4 +1,5 @@
-@import "portfolio-page/variables";
+@import "./variables";
+@import "./ecommerce";
 
 .portfolio-body  {
   background-color: $main-background;
@@ -309,4 +310,3 @@ p.portfolio-card-text {
 
 
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";

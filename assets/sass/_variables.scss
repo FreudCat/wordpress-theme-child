@@ -27,6 +27,15 @@ $inner-logo: #af3557;
 $link-color: #B1B1B3;
 $link-hover: #FFFFFF;
 $link-active: #fff200;
+$shopping-desktop: 900px; 
+$shopping-mobile: 400px;
+$button-and-outline: hsl(26, 100%, 55%);
+$text-color: hsl(219, 9%, 45%);
+$price-background: hsl(223, 64%, 98%);
+$light-background: hsl(0, 0%, 100%);
+$dark-font: hsl(0, 0%, 0%);  //(with 75% opacity for lightbox background)
+$shopping-font: 'Kumbh Sans', sans-serif;
+
 
 $portfolio-font: 'Kumbh Sans', sans-serif;
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
