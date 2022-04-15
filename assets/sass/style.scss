@@ -184,11 +184,13 @@ $large-screen-breakpoint: 1200px; // 1025px — 1200px // larger is greater 
 
 
 // Gallery template page
-.gallery-image {
-	opacity: 0.7;
-	&:hover {
-		opacity: 1;
-		transform: translate(-1px, -1px);
+@media only screen and (min-width: $small-screen-breakpoint) {
+	.gallery-image {
+		opacity: 0.7;
+		&:hover {
+			opacity: 1;
+			transform: translate(-1px, -1px);
+		}
 	}
 }
 

@@ -537,11 +537,12 @@ Text Domain:  twentytwentychild
   width: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
-.gallery-image {
-  opacity: 0.7; }
-  .gallery-image:hover {
-    opacity: 1;
-    transform: translate(-1px, -1px); }
+@media only screen and (min-width: 1024px) {
+  .gallery-image {
+    opacity: 0.7; }
+    .gallery-image:hover {
+      opacity: 1;
+      transform: translate(-1px, -1px); } }
 
 .image-holder {
   display: flex;
