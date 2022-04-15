@@ -537,6 +537,12 @@ Text Domain:  twentytwentychild
   width: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
+.gallery-image {
+  opacity: 0.7; }
+  .gallery-image:hover {
+    opacity: 1;
+    transform: translate(-1px, -1px); }
+
 .image-holder {
   display: flex;
   flex-direction: row;
@@ -548,7 +554,7 @@ Text Domain:  twentytwentychild
   .image-holder .gallery-image {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     max-width: 30vw;
-    transition: box-shadow 0.3s !important; }
+    transition: all 0.3s !important; }
     .image-holder .gallery-image:hover {
       box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5); }
 
