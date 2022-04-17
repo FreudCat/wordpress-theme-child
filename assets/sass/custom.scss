@@ -176,7 +176,7 @@ p.portfolio-card-text {
   background: $main-background;
   background: linear-gradient(180deg, rgba(43,45,66,1) 2%, rgba(175,53,87,1) 100%);
   .footer-icon{
-    color: rgb(103, 103, 103);
+    color: $light-grey;
     font-size: 3em;
     @include media-breakpoint-up(smmd) {
       font-size: 3.2em;
@@ -198,6 +198,28 @@ p.portfolio-card-text {
     &:hover, &:focus {
       color: $link-hover;
     }
+  }
+}
+
+.github-icon {
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.4s;
+  &:hover {
+    transition: 0.4s;
+    border: 1px solid $light-grey
+  }
+}
+
+.linkedin-icon {
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: 0.4s;
+  &:hover {
+    transition: 0.4s;
+    border: 1px solid $light-grey
   }
 }
 

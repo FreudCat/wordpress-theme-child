@@ -39,9 +39,9 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       <a class="card-link-text col-xs-12 col-md-6" href="https://skyrimfalloutdogs.netlify.app/" target="_blank">
         <div class="mb-5 d-flex justify-content-center justify-content-md-start">
           <div class="card border-2 portfolio-card">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/skyrimfalloutdog.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/skyrimfalloutdog.jpg" class="card-img-top portfolio-card-image" alt="White fluffy dog sitting amongst red flowers">
             <div class="card-body portfolio-card-body">
-              <p class="card-text portfolio-card-text">A React app utilizing two APIs to provide information about dogs from Skyrim and Fallout</p>
+              <p class="card-text portfolio-card-text">A React app that provides information about dogs from Skyrim and Fallout.</p>
             </div>
             <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>

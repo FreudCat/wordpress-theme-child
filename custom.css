@@ -9778,7 +9778,7 @@ p.portfolio-card-text {
   background: #2B2D42;
   background: linear-gradient(180deg, #2b2d42 2%, #af3557 100%); }
   .portfolio-footer .footer-icon {
-    color: #676767;
+    color: #F7F7F9;
     font-size: 3em; }
     @media (min-width: 425px) {
       .portfolio-footer .footer-icon {
@@ -9797,6 +9797,24 @@ p.portfolio-card-text {
     color: #B1B1B3; }
     .portfolio-footer .portfolio-navlink:hover, .portfolio-footer .portfolio-navlink:focus {
       color: #FFFFFF; }
+
+.github-icon {
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.4s; }
+  .github-icon:hover {
+    transition: 0.4s;
+    border: 1px solid #F7F7F9; }
+
+.linkedin-icon {
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: 0.4s; }
+  .linkedin-icon:hover {
+    transition: 0.4s;
+    border: 1px solid #F7F7F9; }
 
 .about-header {
   border-bottom: 1px solid #b7e8db;

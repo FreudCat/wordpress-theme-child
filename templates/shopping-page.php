@@ -67,7 +67,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
               </div>
             </div>
           </div>
-          <div class="avatar-holder mt-2 mt-md-3 mt-lg-0 me-4 me-md-0 mb-md-3 mb-xxl-0 mt-xxl-1">
+          <div class="avatar-holder pt-xl-3 pt-xxl-0 mt-2 mt-md-3 mt-lg-0 me-4 me-md-0 mb-md-3 mb-xxl-0 mt-xxl-1">
             <img class="avatar w-100" src="../wp-content/themes/twentytwenty-child/assets/images/shopping-page-images/image-avatar.png" alt="avatar">
           </div>
         </div>
