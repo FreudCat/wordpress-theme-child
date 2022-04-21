@@ -35,7 +35,7 @@ function child_theme_enqueue_styles() {
         wp_enqueue_script( 'bootstrap-CSS',get_stylesheet_directory_uri().'/assets/bootstrap-5.1.3-dist/css/bootstrap.css', array(), rand(), true);
         wp_enqueue_style( $parenthandle, get_stylesheet_directory_uri() . '/custom.css', array());
     }
-    if ((basename(get_page_template()) == 'main-portfolio-page.php') || (basename(get_page_template()) == 'about-page.php') || (basename(get_page_template()) == 'github-page.php')) { 
+    if ((basename(get_page_template()) == 'main-portfolio-page.php') || (basename(get_page_template()) == 'about-page.php') || (basename(get_page_template()) == 'under-construction-page.php')) { 
         wp_enqueue_script( 'bootstrapPortfolioJS',get_stylesheet_directory_uri().'/bootstrap-5.1.3-dist/js/bootstrap.js', array(), rand());
         wp_enqueue_style( 'bootstrapPortfolioCSS',get_stylesheet_directory_uri().'/bootstrap-5.1.3-dist/css/bootstrap.css', array(), rand());
         wp_enqueue_style( "portfolioCSS", get_stylesheet_directory_uri() . '/custom.css', 

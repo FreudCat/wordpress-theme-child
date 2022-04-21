@@ -25,7 +25,5 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       </div>
     </div>
   </main>
-  <?php 
-  get_footer('portfolio')
-  ?>
+  <?php get_footer('portfolio') ?>
 </body>

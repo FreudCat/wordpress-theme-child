@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand navbar-dark pb-0 portfolio-navbar">
   <div class="container-fluid d-flex align-items-end">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="<? echo home_url()?>">
       <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/nav-logo.png" alt="logo" class="d-inline-block align-text-top logo-image">
     </a>
     <div id="navbarNav">
@@ -21,6 +21,12 @@
             <? echo 'active' ?>
             <?php } ?>
             " aria-current="page" href="<? echo home_url()?>">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pb-3 pb-mid-lg-4 portfolio-navlink construction
+          <?php if (basename(get_page_template()) == 'under-construction-page.php') { ?>
+            <? echo 'active' ?>
+            <?php } ?>" href="<? echo home_url('/current-projects')?>">In Progress</a>
         </li>
         <li class="nav-item">
           <a class="nav-link pb-3 pb-mid-lg-4 portfolio-navlink about

@@ -9652,12 +9652,16 @@ nav.navbar.portfolio-navbar {
     @media (min-width: 1200px) {
       nav.navbar.portfolio-navbar .portfolio-navlink {
         font-size: 1.5em; } }
+  nav.navbar.portfolio-navbar .portfolio-navlink.construction:focus, nav.navbar.portfolio-navbar .portfolio-navlink.construction:hover, nav.navbar.portfolio-navbar .portfolio-navlink.construction:active {
+    border-bottom: 3px solid #b7e8db; }
   nav.navbar.portfolio-navbar .portfolio-navlink.about:focus, nav.navbar.portfolio-navbar .portfolio-navlink.about:hover, nav.navbar.portfolio-navbar .portfolio-navlink.about:active {
     border-bottom: 3px solid #af3557; }
   nav.navbar.portfolio-navbar .portfolio-navlink.home:focus, nav.navbar.portfolio-navbar .portfolio-navlink.home:hover, nav.navbar.portfolio-navbar .portfolio-navlink.home:active {
     border-bottom: 3px solid #fff200; }
   nav.navbar.portfolio-navbar .home.active {
     border-bottom: 3px solid #fff200; }
+  nav.navbar.portfolio-navbar .construction.active {
+    border-bottom: 3px solid #b7e8db; }
   nav.navbar.portfolio-navbar .about.active {
     border-bottom: 3px solid #af3557; }
 
@@ -9708,13 +9712,14 @@ p.portfolio-card-text {
   transition: 0.5s;
   position: relative;
   overflow: hidden;
-  border-radius: 0; }
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.8); }
   @media (min-width: 768px) {
     .card.portfolio-card {
       width: 90%; } }
   @media (min-width: 1024px) {
     .card.portfolio-card {
-      width: 75%; } }
+      width: 65%; } }
   @media (min-width: 1900px) {
     .card.portfolio-card {
       width: 50%; } }
@@ -9773,6 +9778,9 @@ p.portfolio-card-text {
       margin-right: -4px; }
     .card.portfolio-card:hover .corner-arrow {
       opacity: 1; }
+  .card.portfolio-card:active {
+    transition: 0s;
+    transform: translate(2px, 2px); }
 
 .portfolio-footer {
   background: #2B2D42;
@@ -9891,3 +9899,20 @@ p.portfolio-card-text {
   color: #b7e8db;
   font-size: 2em;
   border-bottom: 1px solid #fff200; }
+
+.construction-text {
+  color: #F7F7F9;
+  font-size: 2em; }
+
+.octo-image {
+  background-color: #2B2D42; }
+
+.octo-body {
+  background-color: #fff; }
+
+.construction-icon {
+  font-size: 2em; }
+  .construction-icon:hover {
+    color: #FFFFFF; }
+  .construction-icon:active {
+    transform: translate(-1px, 1px); }

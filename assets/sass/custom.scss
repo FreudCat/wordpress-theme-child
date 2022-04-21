@@ -26,6 +26,11 @@ nav.navbar.portfolio-navbar {
       font-size: 1.5em;
     }
   }
+  .portfolio-navlink.construction {
+    &:focus, &:hover, &:active {
+      border-bottom: 3px solid $card-outline;
+    }
+  }
   .portfolio-navlink.about {
     &:focus, &:hover, &:active {
       border-bottom: 3px solid $inner-logo;
@@ -38,6 +43,9 @@ nav.navbar.portfolio-navbar {
   }
   .home.active {
     border-bottom: 3px solid $link-active;
+  }
+  .construction.active {
+    border-bottom: 3px solid $card-outline;
   }
   .about.active {
     border-bottom: 3px solid $inner-logo;
@@ -99,12 +107,13 @@ p.portfolio-card-text {
   transition: 0.5s;
   position: relative;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.8);
   @include media-breakpoint-up(md) {
     width: 90%;
   }
   @include media-breakpoint-up(lg) {
-      width: 75%;
+      width: 65%;
   }
   @include media-breakpoint-up(xxl) {
     width: 50%;
@@ -169,6 +178,10 @@ p.portfolio-card-text {
       opacity: 1;
     }
     border: 1px solid $inner-logo;
+  }
+  &:active {
+    transition: 0s;
+    transform: translate(2px, 2px);
   }
 }
 
@@ -328,6 +341,30 @@ p.portfolio-card-text {
   border-bottom: 1px solid $link-active;
 }
 
+// Construction page styles 
+
+.construction-text {
+  color: $light-grey;
+  font-size: 2em;
+}
+
+.octo-image {
+  background-color: $main-background;
+}
+
+.octo-body {
+  background-color: $white;
+}
+
+.construction-icon {
+  font-size: 2em;
+  &:hover {
+    color: $link-hover;
+  }
+  &:active {
+    transform: translate(-1px,1px);
+  }
+}
 
 
 
