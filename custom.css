@@ -9712,8 +9712,7 @@ p.portfolio-card-text {
 .card.portfolio-card {
   width: 75%;
   border-color: #b7e8db;
-  transition: 0.5s;
-  transition: transform 0s;
+  transition: transform 0s, border-color 0.3s;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -9737,7 +9736,7 @@ p.portfolio-card-text {
     justify-content: center;
     position: absolute;
     overflow: hidden;
-    transition: 0.3s;
+    transition: margin-right 0.3s;
     top: 0;
     right: -24px;
     height: 100%;
@@ -9783,7 +9782,6 @@ p.portfolio-card-text {
     .card.portfolio-card:hover .corner-arrow {
       opacity: 1; }
   .card.portfolio-card:active {
-    transition: 0s;
     transform: translate(2px, 2px); }
 
 .portfolio-footer {
