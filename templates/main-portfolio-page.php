@@ -21,7 +21,8 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 <body class="portfolio-body">
   <?php get_template_part( 'template-parts/portfolio-nav' );?>
   <header class="portfolio-header mb-5">
-    <h1 class="text-center py-5 portfolio-header-font">Landing Pages</h1>
+    <h1 class="text-center py-5 portfolio-header-font">Portfolio Samples</h1>
+    <p class="text-center portfolio-header-text">View examples of my work below</p>
   </header>
   <main class="container">
     <div class="row portfolio-top-row">
