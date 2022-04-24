@@ -9697,6 +9697,9 @@ img.portfolio-card-image {
     img.portfolio-card-image {
       height: 325px; } }
 
+.windy-image {
+  width: 75%; }
+
 p.portfolio-card-text {
   font-size: 1.5em; }
   @media (min-width: 768px) {

@@ -90,6 +90,10 @@ img.portfolio-card-image {
   }
 }
 
+.windy-image {
+  width: 75%;
+}
+
 p.portfolio-card-text {
   font-size: 1.5em;
   @include media-breakpoint-up(md) {
