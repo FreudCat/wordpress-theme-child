@@ -9709,6 +9709,10 @@ p.portfolio-card-text {
   .card-link-text:hover, .card-link-text:focus {
     color: black; }
 
+.main-git-row {
+  width: 88%;
+  font-size: 2em; }
+
 .card.portfolio-card {
   width: 75%;
   border-color: #b7e8db;
@@ -9812,9 +9816,11 @@ p.portfolio-card-text {
   padding: 3px;
   border: 1px solid transparent;
   border-radius: 50%;
-  transition: 0.4s; }
+  color: #af3557;
+  transition: border 0.5s, color 0.5s; }
   .github-icon:hover {
-    transition: 0.4s;
+    transition: border 0.5s, color 0.5s;
+    color: #fff;
     border: 1px solid #F7F7F9; }
 
 .linkedin-icon {

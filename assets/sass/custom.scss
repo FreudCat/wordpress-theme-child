@@ -105,6 +105,11 @@ p.portfolio-card-text {
   }
 }
 
+.main-git-row {
+  width: 88%;
+  font-size: 2em;
+}
+
 .card.portfolio-card {
   width: 75%; 
   border-color: $card-outline;
@@ -221,9 +226,12 @@ p.portfolio-card-text {
   padding: 3px;
   border: 1px solid transparent;
   border-radius: 50%;
-  transition: 0.4s;
+  color: $inner-logo;
+      transition: border 0.5s,
+      color 0.5s;
   &:hover {
-    transition: 0.4s;
+    transition: border 0.5s, color 0.5s;
+    color: $white;
     border: 1px solid $light-grey;
   }
 }

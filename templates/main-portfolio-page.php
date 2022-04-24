@@ -27,7 +27,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <main class="container">
     <div class="row portfolio-top-row">
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/sneaker-company')?>" target="_blank">
-        <div class="mb-5 d-flex justify-content-center justify-content-md-end">
+        <div class="mb-3 d-flex justify-content-center justify-content-md-end">
           <div class="card portfolio-card border-2">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/ecommerce.PNG" class="card-img-top portfolio-card-image" alt="Sideview of tan, brown, and orange sneaker with flat tread placed onto of two flat rocks">
             <div class="card-body portfolio-card-body">
@@ -37,8 +37,13 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           </div>
         </div>
       </a>
+      <div class="d-md-none main-git-row">
+        <div class="col-12 d-md-none mb-5 d-flex justify-content-end">
+          <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/shopping-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+        </div>
+      </div>
       <a class="card-link-text col-xs-12 col-md-6" href="https://skyrimfalloutdogs.netlify.app/" target="_blank">
-        <div class="mb-5 d-flex justify-content-center justify-content-md-start">
+        <div class="mt-2 mb-3 d-flex justify-content-center justify-content-md-start">
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/skyrimfalloutdog.jpg" class="card-img-top portfolio-card-image" alt="White fluffy dog sitting amongst red flowers">
             <div class="card-body portfolio-card-body">
@@ -48,6 +53,14 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           </div>
         </div>
       </a>
+    </div>
+    <div class="row mb-5">
+      <div class="d-none d-md-flex col-md-6 d-flex justify-content-end">
+        <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/shopping-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-end main-git-row">
+        <a href="https://github.com/FreudCat/dogs-are-great" target="_blank"><i class="fab fa-github github-icon"></i></a>
+      </div>
     </div>
     <div class="row">
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/photo-gallery')?>" target="_blank">
