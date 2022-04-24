@@ -22,7 +22,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <?php get_template_part( 'template-parts/portfolio-nav' );?>
   <header class="portfolio-header mb-5">
     <h1 class="text-center py-5 portfolio-header-font">Portfolio Samples</h1>
-    <p class="text-center portfolio-header-text">View examples of my work below</p>
+    <p class="text-center portfolio-header-text">View examples of my work</p>
   </header>
   <main class="container">
     <div class="row portfolio-top-row">
@@ -43,7 +43,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </div>
       </div>
       <a class="card-link-text col-xs-12 col-md-6" href="https://skyrimfalloutdogs.netlify.app/" target="_blank">
-        <div class="mt-2 mb-3 d-flex justify-content-center justify-content-md-start">
+        <div class="mt-xs-2 mb-3 d-flex justify-content-center justify-content-md-start">
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/skyrimfalloutdog.jpg" class="card-img-top portfolio-card-image" alt="White fluffy dog sitting amongst red flowers">
             <div class="card-body portfolio-card-body">
@@ -55,16 +55,16 @@ remove_action('wp_head', '_admin_bar_bump_cb');
       </a>
     </div>
     <div class="row mb-5">
-      <div class="d-none d-md-flex col-md-6 d-flex justify-content-end">
+      <div class="d-none d-md-flex col-md-6 d-flex justify-content-end main-git-row">
         <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/shopping-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
       </div>
-      <div class="col-12 col-md-6 d-flex justify-content-end main-git-row">
+      <div class="col-12 d-flex justify-content-end justify-content-md-start main-git-row">
         <a href="https://github.com/FreudCat/dogs-are-great" target="_blank"><i class="fab fa-github github-icon"></i></a>
       </div>
     </div>
     <div class="row">
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/photo-gallery')?>" target="_blank">
-        <div class=" mb-5 d-flex justify-content-center justify-content-md-end">
+        <div class="mt-xs-2 mb-3 d-flex justify-content-center justify-content-md-end">
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/chicago.jpg" class="card-img-top portfolio-card-image" alt="Chicago marquee and skyline">
             <div class="card-body portfolio-card-body">
@@ -74,8 +74,13 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           </div>
         </div>
       </a>
+      <div class="d-md-none main-git-row">
+        <div class="col-12 d-md-none mb-5 d-flex justify-content-end">
+          <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/gallery-page-coded-images.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+        </div>
+      </div>
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/sunny-landing-page')?>" target="_blank">
-        <div class="mb-5 d-flex justify-content-center justify-content-md-start">
+        <div class="mt-xs-2 mb-3 d-flex justify-content-center justify-content-md-start">
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sunny-page-images/transform.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
             <div class="card-body portfolio-card-body">
@@ -86,20 +91,33 @@ remove_action('wp_head', '_admin_bar_bump_cb');
         </div>
       </a>
     </div>
+    <div class="row mb-5">
+      <div class="d-none d-md-flex col-md-6 d-flex justify-content-end main-git-row">
+        <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/gallery-page-coded-images.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-end justify-content-md-start main-git-row">
+        <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/sunny-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+      </div>
+    </div>
     <div class="row">
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/swervy-landing-page')?>" target="_blank">
-          <div class="mb-5 d-flex justify-content-center justify-content-md-end">
-            <div class="card border-2 portfolio-card">
-              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
-              <div class="card-body portfolio-card-body">
-                <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
-              </div>
-              <div class="card-corner"><div class="corner-arrow">→</div></div>
+        <div class="mt-xs-2 mb-3 d-flex justify-content-center justify-content-md-end">
+          <div class="card border-2 portfolio-card">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/swervy-page-images/illustration-your-users.svg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
+            <div class="card-body portfolio-card-body">
+              <p class="card-text portfolio-card-text">Another landing page example, but this one is...curvy.</p>
             </div>
+            <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>
-        </a>
+        </div>
+      </a>
+      <div class="d-md-none main-git-row">
+        <div class="col-12 d-md-none mb-5 d-flex justify-content-end">
+          <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/swervy-landing-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+        </div>
+      </div>
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/pets-landing-page-template')?>" target="_blank">
-        <div class="mb-5 d-flex justify-content-center justify-content-md-start">
+        <div class="mt-xs-2 mb-3 d-flex justify-content-center justify-content-md-start">
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/landing-page-images/Pets.jpg" class="card-img-top portfolio-card-image" alt="Two dogs and two cats sitting together in front of pink background">
             <div class="card-body portfolio-card-body">
@@ -109,6 +127,14 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           </div>
         </div>
       </a>
+    </div>
+    <div class="row mb-5">
+      <div class="d-none d-md-flex col-md-6 d-flex justify-content-end main-git-row">
+        <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/swervy-landing-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-end justify-content-md-start main-git-row">
+        <a href="https://github.com/FreudCat/wordpress-theme-child/blob/main/templates/landing-page.php" target="_blank"><i class="fab fa-github github-icon"></i></a>
+      </div>
     </div>
   </main>
   <?php get_footer('portfolio') ?>

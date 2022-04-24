@@ -9712,6 +9712,12 @@ p.portfolio-card-text {
 .main-git-row {
   width: 88%;
   font-size: 2em; }
+  @media (min-width: 768px) {
+    .main-git-row {
+      width: 50%; } }
+
+.about-git-icon {
+  font-size: 2em; }
 
 .card.portfolio-card {
   width: 75%;
@@ -9793,15 +9799,15 @@ p.portfolio-card-text {
   background: linear-gradient(180deg, #2b2d42 2%, #af3557 100%); }
   .portfolio-footer .footer-icon {
     color: #F7F7F9;
-    font-size: 3em; }
+    font-size: 2.5em; }
     @media (min-width: 425px) {
       .portfolio-footer .footer-icon {
-        font-size: 3.2em;
+        font-size: 2.5em;
         margin-top: 1em;
         margin-bottom: 1em; } }
     @media (min-width: 768px) {
       .portfolio-footer .footer-icon {
-        font-size: 5em; } }
+        font-size: 3em; } }
     @media (min-width: 1200px) {
       .portfolio-footer .footer-icon {
         font-size: 3em; } }

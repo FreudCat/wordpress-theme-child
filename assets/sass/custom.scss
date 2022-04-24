@@ -108,6 +108,13 @@ p.portfolio-card-text {
 .main-git-row {
   width: 88%;
   font-size: 2em;
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}
+
+.about-git-icon {
+  font-size: 2em;
 }
 
 .card.portfolio-card {
@@ -198,14 +205,14 @@ p.portfolio-card-text {
   background: linear-gradient(180deg, rgba(43,45,66,1) 2%, rgba(175,53,87,1) 100%);
   .footer-icon{
     color: $light-grey;
-    font-size: 3em;
+    font-size: 2.5em;
     @include media-breakpoint-up(smmd) {
-      font-size: 3.2em;
+      font-size: 2.5em;
       margin-top: 1em;
       margin-bottom: 1em;
     }
     @include media-breakpoint-up(md) {
-      font-size: 5em;
+      font-size: 3em;
     }
     @include media-breakpoint-up(mid-lg) {
       font-size: 3em;
