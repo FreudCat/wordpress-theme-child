@@ -9644,7 +9644,7 @@ nav.navbar.portfolio-navbar {
   top: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid #b7e8db; }
+  border-bottom: 2px solid #b7e8db; }
   nav.navbar.portfolio-navbar .logo-image {
     width: 30px;
     height: auto; }
@@ -9680,7 +9680,7 @@ nav.navbar.portfolio-navbar {
     font-size: 3em; }
   .portfolio-header .portfolio-header-text {
     color: #F7F7F9;
-    font-size: 2em; }
+    font-size: 4em; }
 
 .parallax {
   background-image: url("assets/images/portfolio-images/portfolio-background.jpg");
