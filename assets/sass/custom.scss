@@ -85,7 +85,6 @@ nav.navbar.portfolio-navbar {
 .parallax {
   background-image: url("assets/images/portfolio-images/portfolio-background.jpg");
   height: 100vh;
-  background-attachment: initial;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +94,6 @@ nav.navbar.portfolio-navbar {
     background-attachment: fixed;
     background-size: cover;
   }
-
 }
 
 .row.portfolio-top-row {
