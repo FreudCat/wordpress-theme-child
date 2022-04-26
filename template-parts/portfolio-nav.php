@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand navbar-dark pb-0 portfolio-navbar">
   <div class="container-fluid d-flex align-items-end">
-    <a class="navbar-brand" href="<? echo home_url()?>">
+    <a class="navbar-brand mb-2" href="<? echo home_url()?>">
       <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/nav-logo.png" alt="logo" class="d-inline-block align-text-top logo-image">
     </a>
     <div id="navbarNav">
