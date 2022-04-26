@@ -7,4 +7,7 @@ window.addEventListener("scroll", function () {
 	if (scrolled > 0) {
 		document.querySelector("#to-blur").style.filter = `blur(${scrolled / 25}px)`;
 	}
+	if (scrolled === 0) {
+		document.querySelector("#to-blur").style.filter = `blur(0px)`;
+	}
 });
