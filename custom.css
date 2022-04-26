@@ -9630,9 +9630,13 @@ textarea.form-control-lg {
 .next-svg {
   margin-left: 0.8em; }
 
+.portfolio-html {
+  height: 100%; }
+
 .portfolio-body {
   background-color: #2B2D42;
-  font-family: "Kumbh Sans", sans-serif; }
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100%; }
 
 nav.navbar.portfolio-navbar {
   background-color: #2B2D42;
@@ -9677,6 +9681,14 @@ nav.navbar.portfolio-navbar {
   .portfolio-header .portfolio-header-text {
     color: #F7F7F9;
     font-size: 2em; }
+
+.parallax {
+  background-image: url("assets/images/portfolio-images/portfolio-background.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media (min-width: 1024px) {
   .row.portfolio-top-row {

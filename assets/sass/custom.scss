@@ -1,9 +1,14 @@
 @import "./variables";
 @import "./ecommerce";
 
+.portfolio-html {
+  height: 100%;
+}
+
 .portfolio-body  {
   background-color: $main-background;
   font-family: $portfolio-font;
+  height: 100%;
 }
 
 nav.navbar.portfolio-navbar {
@@ -66,6 +71,15 @@ nav.navbar.portfolio-navbar {
     color: $light-grey;
     font-size: 2em;
   }
+}
+
+.parallax {
+  background-image: url("assets/images/portfolio-images/portfolio-background.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .row.portfolio-top-row {
