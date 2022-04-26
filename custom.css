@@ -9690,22 +9690,20 @@ nav.navbar.portfolio-navbar {
       .portfolio-header .portfolio-header-text {
         font-size: 3em; } }
 
-.parallax {
+.portfolio-background-image {
   background-image: url("assets/images/portfolio-images/portfolio-background.jpg");
   height: 100vh;
-  background-attachment: initial;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 25vh;
   filter: blur(0); }
-  @media (min-width: 1024px) {
-    .parallax {
-      background-attachment: fixed; } }
 
-@media (min-width: 1024px) {
-  .row.portfolio-top-row {
-    margin-top: 100px; } }
+.row.portfolio-top-row {
+  margin-top: 50px; }
+  @media (min-width: 1024px) {
+    .row.portfolio-top-row {
+      margin-top: 100px; } }
 
 img.portfolio-card-image {
   height: 165px; }
