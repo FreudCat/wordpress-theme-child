@@ -21,12 +21,14 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 <body class="portfolio-body">
   <?php get_template_part( 'template-parts/portfolio-nav' );?>
   <main class="container">
-      <header class="portfolio-header mb-5">
-    <div class="row parallax d-flex align-items-center">
-      <h1 class="text-center portfolio-header-font col-12">Portfolio Samples</h1>
-      <p class="text-center portfolio-header-text col-12">View examples of my work</p>
-    </div>    
-  </header>
+    <header class="portfolio-header row text-center">
+      <div class="parallax pt-5 g-0">
+        <div class="my-text">
+        <h1 class="portfolio-header-font col-12 mb-0 mt-5">Portfolio Samples</h1>
+        <p class="portfolio-header-text col-12">View examples of my work</p>
+        </div>
+      </div>    
+    </header>
     <div class="row portfolio-top-row">
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/sneaker-company')?>" target="_blank">
         <div class="mb-3 d-flex justify-content-center justify-content-md-end">

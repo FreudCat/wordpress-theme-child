@@ -63,13 +63,22 @@ nav.navbar.portfolio-navbar {
   @include media-breakpoint-up(mid-lg) {
     margin-top: 7em;
   }
+  .my-text {
+    backdrop-filter: blur(15px);
+  }
   .portfolio-header-font {
     color: $light-grey;
     font-size: 3em;
+    @include media-breakpoint-up(lg) {
+      font-size: 5em;
+    }
   }
   .portfolio-header-text {
     color: $light-grey;
-    font-size: 4em;
+    font-size: 2em;
+    @include media-breakpoint-up(lg) {
+      font-size: 3em;
+    }
   }
 }
 

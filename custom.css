@@ -9675,12 +9675,20 @@ nav.navbar.portfolio-navbar {
   @media (min-width: 1200px) {
     .portfolio-header {
       margin-top: 7em; } }
+  .portfolio-header .my-text {
+    backdrop-filter: blur(15px); }
   .portfolio-header .portfolio-header-font {
     color: #F7F7F9;
     font-size: 3em; }
+    @media (min-width: 1024px) {
+      .portfolio-header .portfolio-header-font {
+        font-size: 5em; } }
   .portfolio-header .portfolio-header-text {
     color: #F7F7F9;
-    font-size: 4em; }
+    font-size: 2em; }
+    @media (min-width: 1024px) {
+      .portfolio-header .portfolio-header-text {
+        font-size: 3em; } }
 
 .parallax {
   background-image: url("assets/images/portfolio-images/portfolio-background.jpg");
