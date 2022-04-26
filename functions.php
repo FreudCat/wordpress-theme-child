@@ -71,9 +71,14 @@ function child_theme_enqueue_styles() {
     
     wp_add_inline_script( 'testimonial-JS', 'let testimonial_array = ' . wp_json_encode( $testimonial_array ), 'before' );
     wp_add_inline_script( 'testimonial-JS', 'let directory_uri = ' . wp_json_encode( $directory_uri ), 'before' );
+
+    // Add parallax blur 
+     if (basename(get_page_template()) == 'main-portfolio-page.php') { 
+        wp_enqueue_script( 'blur-JS', get_stylesheet_directory_uri().'/assets/js/blur-on-scroll.js', array(), rand(), true);
+    }
 }
 
-//function removes the white stripe at the top of the template associated with the admin toolbar
+// Function removes the white stripe at the top of the template associated with the admin toolbar
 add_action('get_header', 'remove_admin_tolbar_on_frontend');
 function remove_admin_tolbar_on_frontend() {  
     if ((basename(get_page_template()) == 'sunny-page.php') || (basename(get_page_template()) == 'shopping-page.php') || (basename(get_page_template()) == 'swervy-landing-page.php'))  { 
@@ -81,7 +86,7 @@ function remove_admin_tolbar_on_frontend() {
     }
 }
 
-//Register new menus for sunny landing page 
+// Register new menus for sunny landing page 
 function register_menus() { 
     register_nav_menus(
         array(
@@ -92,7 +97,7 @@ function register_menus() {
 }
 add_action( 'init', 'register_menus' );
 
-//add nav-link class to anchor tags in the sunny landing page - both fxns needed
+// Add nav-link class to anchor tags in the sunny landing page - both fxns needed
 function atg_menu_classes($classes, $item, $args) {
     if($args->theme_location == 'sunny-menu') {
         $classes[] = 'nav-link';

@@ -22,12 +22,12 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <?php get_template_part( 'template-parts/portfolio-nav' );?>
   <main class="container">
     <header class="portfolio-header row text-center mt-0">
-      <div class="parallax g-0">
+      <div id="to-blur" class="parallax g-0">
         <div class="my-text">
         <h1 class="portfolio-header-font col-12 mb-0 mt-5">Portfolio Samples</h1>
         <p class="portfolio-header-text col-12">View examples of my work</p>
         </div>
-      </div>    
+      </div>
     </header>
     <div class="row portfolio-top-row">
       <a class="card-link-text col-xs-12 col-md-6" href="<? echo home_url('/sneaker-company')?>" target="_blank">
