@@ -21,8 +21,8 @@ remove_action('wp_head', '_admin_bar_bump_cb');
 <body class="portfolio-body">
   <?php get_template_part( 'template-parts/portfolio-nav' );?>
   <main class="container">
-    <header class="portfolio-header row text-center">
-      <div class="parallax pt-5 g-0">
+    <header class="portfolio-header row text-center mt-0">
+      <div class="parallax g-0">
         <div class="my-text">
         <h1 class="portfolio-header-font col-12 mb-0 mt-5">Portfolio Samples</h1>
         <p class="portfolio-header-text col-12">View examples of my work</p>

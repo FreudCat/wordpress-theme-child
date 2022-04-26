@@ -9696,7 +9696,8 @@ nav.navbar.portfolio-navbar {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 25vh; }
 
 @media (min-width: 1024px) {
   .row.portfolio-top-row {
