@@ -34,7 +34,7 @@ remove_action('wp_head', '_admin_bar_bump_cb');
           <div class="card border-2 portfolio-card">
             <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/portfolio-images/transparent-windy.png" class="card-img-top portfolio-card-image mx-auto windy-image" alt="Figure in a raincoat and umbrella in a windy day">
             <div class="card-body portfolio-card-body">
-              <p class="card-text portfolio-card-text">My first landing page. An uncomplicated page showcasing price packages.</p>
+              <p class="card-text portfolio-card-text">This app that obtains weather data using Webpack, BootStrap, and API calls.</p>
             </div>
             <div class="card-corner"><div class="corner-arrow">→</div></div>
           </div>

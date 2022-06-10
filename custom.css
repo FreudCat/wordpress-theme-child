@@ -524,7 +524,7 @@ progress {
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-smmd, .container-md {
-    max-width: 900px; } }
+    max-width: 1000px; } }
 
 @media (min-width: 1085px) {
   .container, .container-sm, .container-smmd, .container-md, .container-lg {
